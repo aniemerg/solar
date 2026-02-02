@@ -39,6 +39,20 @@ Recommended layout (match worker expectations):
   - Path: `./tmp/solidity`
   - This directory must remain out of version control.
 
+### Current Harness Constraint (Worker Compatibility)
+
+- The leaderboard worker currently copies tests from `crates/codegen/testdata/` (not top-level `testdata/`).
+- Ported Solidity semantic tests should live under `crates/codegen/testdata/` for now to stay compatible with the
+  existing evaluation scripts.
+- Prefer placing ported tests directly into category folders (e.g., `crates/codegen/testdata/inheritance/`) rather than
+  a `semantic/` subfolder, to align with the current harness category discovery.
+
+### Porting Style Notes
+
+- Use existing Solar codegen tests as the “gold standard” for structure and naming.
+- `forge-std` is allowed (already used in `unifap-v2*`), but keep usage minimal and consistent.
+- Test function names must be globally unique across categories (baseline lookup is by test name only).
+
 ## Worker-Side Notes
 
 - Harness commit is pinned by the worker (scripts expect a stable layout under `scripts/leaderboard/harness/solar`).
