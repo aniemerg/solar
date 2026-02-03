@@ -227,6 +227,8 @@ Conventions:
 | test/libsolidity/semanticTests/tryCatch/simple.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchSimple | Basic try/catch on external call |
 | test/libsolidity/semanticTests/tryCatch/lowLevel.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchLowLevel | catch(bytes) revert data |
 | test/libsolidity/semanticTests/tryCatch/structured.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchStructured | catch Error(string) message |
+| test/libsolidity/semanticTests/tryCatch/require.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchRequire | try/catch around require |
+| test/libsolidity/semanticTests/tryCatch/panic.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchPanic | catch Panic(uint) + Error(string) |
 
 ## Payable (Additional Coverage)
 
