@@ -208,6 +208,11 @@ Conventions:
 | test/libsolidity/semanticTests/calldata/calldata_bytes_external.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataBytesExternal | External calldata slice access |
 | test/libsolidity/semanticTests/calldata/calldata_bytes_internal.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataBytesInternal | Internal calldata slice access |
 | test/libsolidity/semanticTests/calldata/calldata_bytes_to_memory.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataBytesToMemory | calldata bytes -> memory keccak |
+| test/libsolidity/semanticTests/calldata/calldata_bytes_array_bounds.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataBytesArrayBounds | bytes[] bounds checks |
+| test/libsolidity/semanticTests/calldata/calldata_bytes_to_memory_encode.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataBytesToMemoryEncode | abi.encode(bytes(calldata)) |
+| test/libsolidity/semanticTests/calldata/calldata_array_length.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataArrayLength | length on 1d/2d/fixed arrays (valid cases only) |
+| test/libsolidity/semanticTests/calldata/calldata_array_access.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataArrayAccess | element access + bounds reverts |
+| test/libsolidity/semanticTests/calldata/calldata_array_index_range_access.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataArrayIndexRangeAccess | slicing length + index access + bounds reverts |
 
 ## Memory Management (Additional Coverage)
 
@@ -220,6 +225,8 @@ Conventions:
 | Solidity Test Path | Category | Status | Risk | Solar Target Path | Notes |
 | --- | --- | --- | --- | --- | --- |
 | test/libsolidity/semanticTests/tryCatch/simple.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchSimple | Basic try/catch on external call |
+| test/libsolidity/semanticTests/tryCatch/lowLevel.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchLowLevel | catch(bytes) revert data |
+| test/libsolidity/semanticTests/tryCatch/structured.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchStructured | catch Error(string) message |
 
 ## Payable (Additional Coverage)
 
@@ -241,6 +248,8 @@ Conventions:
 | test/libsolidity/semanticTests/builtinFunctions/sha256_empty.sol | hashing | ported | low | crates/codegen/testdata/hashing/HashBuiltins | sha256 empty string |
 | test/libsolidity/semanticTests/builtinFunctions/ripemd160_empty.sol | hashing | ported | low | crates/codegen/testdata/hashing/HashBuiltins | ripemd160 empty string |
 | test/libsolidity/semanticTests/builtinFunctions/keccak256_with_bytes.sol | hashing | ported | low | crates/codegen/testdata/hashing/HashBuiltins | keccak256(bytes) matches literal |
+| test/libsolidity/semanticTests/builtinFunctions/msg_sig.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/MsgSig | msg.sig selector value |
+| test/libsolidity/semanticTests/builtinFunctions/msg_sig_after_internal_call_is_same.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/MsgSigInternal | msg.sig preserved across internal call |
 
 ## Enums (Additional Coverage)
 
