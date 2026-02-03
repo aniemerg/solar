@@ -250,6 +250,10 @@ Conventions:
 | test/libsolidity/semanticTests/builtinFunctions/keccak256_with_bytes.sol | hashing | ported | low | crates/codegen/testdata/hashing/HashBuiltins | keccak256(bytes) matches literal |
 | test/libsolidity/semanticTests/builtinFunctions/msg_sig.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/MsgSig | msg.sig selector value |
 | test/libsolidity/semanticTests/builtinFunctions/msg_sig_after_internal_call_is_same.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/MsgSigInternal | msg.sig preserved across internal call |
+| test/libsolidity/semanticTests/builtinFunctions/keccak256_packed.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/KeccakPacked | keccak256(abi.encodePacked) |
+| test/libsolidity/semanticTests/builtinFunctions/keccak256_multiple_arguments.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/KeccakMultiple | keccak256 packed 3 args |
+| test/libsolidity/semanticTests/builtinFunctions/keccak256_multiple_arguments_with_numeric_literals.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/KeccakMultipleNumeric | keccak256 packed numeric literals |
+| test/libsolidity/semanticTests/builtinFunctions/keccak256_multiple_arguments_with_string_literals.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/KeccakMultipleString | keccak256 packed string literal |
 
 ## Enums (Additional Coverage)
 
