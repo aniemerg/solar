@@ -159,6 +159,89 @@ Conventions:
 | test/libsolidity/semanticTests/strings/constant_string_literal.sol | strings | ported | medium | crates/codegen/testdata/strings/ConstantStringLiteral | Constant bytes32 + string literals |
 | test/libsolidity/semanticTests/strings/empty_string_input.sol | strings | ported | medium | crates/codegen/testdata/strings/EmptyStringInput | Empty string calldata handling |
 
+## Literals (Additional Coverage)
+
+| Solidity Test Path | Category | Status | Risk | Solar Target Path | Notes |
+| --- | --- | --- | --- | --- | --- |
+| test/libsolidity/semanticTests/literals/denominations.sol | literals | ported | low | crates/codegen/testdata/literals/Denominations | Ether/gwei/wei sums |
+| test/libsolidity/semanticTests/literals/ether.sol | literals | ported | low | crates/codegen/testdata/literals/EtherLiteral | Ether denomination |
+| test/libsolidity/semanticTests/literals/gwei.sol | literals | ported | low | crates/codegen/testdata/literals/GweiLiteral | Gwei denomination |
+| test/libsolidity/semanticTests/literals/wei.sol | literals | ported | low | crates/codegen/testdata/literals/WeiLiteral | Wei denomination |
+| test/libsolidity/semanticTests/literals/fractional_denominations.sol | literals | ported | low | crates/codegen/testdata/literals/FractionalDenominations | Fractional time/ether units |
+| test/libsolidity/semanticTests/literals/scientific_notation.sol | literals | ported | low | crates/codegen/testdata/literals/ScientificNotation | Scientific notation (int/uint) |
+
+## Expressions (Additional Coverage)
+
+| Solidity Test Path | Category | Status | Risk | Solar Target Path | Notes |
+| --- | --- | --- | --- | --- | --- |
+| test/libsolidity/semanticTests/expressions/conditional_expression_true_literal.sol | expressions | ported | low | crates/codegen/testdata/expressions/ConditionalExpression | Ternary with true literal |
+| test/libsolidity/semanticTests/expressions/conditional_expression_false_literal.sol | expressions | ported | low | crates/codegen/testdata/expressions/ConditionalExpression | Ternary with false literal |
+| test/libsolidity/semanticTests/expressions/inc_dec_operators.sol | expressions | ported | low | crates/codegen/testdata/expressions/IncDecOperators | Pre/post inc/dec evaluation |
+| test/libsolidity/semanticTests/expressions/bit_operators.sol | expressions | ported | medium | crates/codegen/testdata/expressions/BitOperators | Bitwise ops on mixed widths |
+| test/libsolidity/semanticTests/expressions/bytes_comparison.sol | expressions | ported | low | crates/codegen/testdata/expressions/BytesComparison | Bytes comparison ordering |
+
+## Operators (Additional Coverage)
+
+| Solidity Test Path | Category | Status | Risk | Solar Target Path | Notes |
+| --- | --- | --- | --- | --- | --- |
+| test/libsolidity/semanticTests/operators/shifts/shift_left.sol | operators | ported | low | crates/codegen/testdata/operators/ShiftLeft | Left shift semantics |
+| test/libsolidity/semanticTests/operators/shifts/shift_right.sol | operators | ported | low | crates/codegen/testdata/operators/ShiftRight | Right shift semantics |
+
+## Statements / Scoping (Additional Coverage)
+
+| Solidity Test Path | Category | Status | Risk | Solar Target Path | Notes |
+| --- | --- | --- | --- | --- | --- |
+| test/libsolidity/semanticTests/statements/empty_for_loop.sol | statements | ported | low | crates/codegen/testdata/statements/EmptyForLoop | Empty for-loop with break |
+| test/libsolidity/semanticTests/statements/do_while_loop_continue.sol | statements | ported | low | crates/codegen/testdata/statements/DoWhileLoopContinue | do/while + continue |
+| test/libsolidity/semanticTests/scoping/c99_scoping_activation.sol | scoping | ported | low | crates/codegen/testdata/scoping/C99ScopingActivation | C99 scoping/ shadowing |
+
+## Conversions (Additional Coverage)
+
+| Solidity Test Path | Category | Status | Risk | Solar Target Path | Notes |
+| --- | --- | --- | --- | --- | --- |
+| test/libsolidity/semanticTests/conversions/string_to_bytes.sol | conversions | ported | low | crates/codegen/testdata/conversions/StringToBytes | string -> bytes conversion |
+
+## Calldata (Additional Coverage)
+
+| Solidity Test Path | Category | Status | Risk | Solar Target Path | Notes |
+| --- | --- | --- | --- | --- | --- |
+| test/libsolidity/semanticTests/calldata/calldata_bytes_external.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataBytesExternal | External calldata slice access |
+| test/libsolidity/semanticTests/calldata/calldata_bytes_internal.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataBytesInternal | Internal calldata slice access |
+| test/libsolidity/semanticTests/calldata/calldata_bytes_to_memory.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataBytesToMemory | calldata bytes -> memory keccak |
+
+## Memory Management (Additional Coverage)
+
+| Solidity Test Path | Category | Status | Risk | Solar Target Path | Notes |
+| --- | --- | --- | --- | --- | --- |
+| test/libsolidity/semanticTests/memoryManagement/memory_types_initialisation.sol | memory | ported | medium | crates/codegen/testdata/memory-management/MemoryTypesInitialization | Zero-initialization of memory returns |
+
+## Try/Catch (Additional Coverage)
+
+| Solidity Test Path | Category | Status | Risk | Solar Target Path | Notes |
+| --- | --- | --- | --- | --- | --- |
+| test/libsolidity/semanticTests/tryCatch/simple.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchSimple | Basic try/catch on external call |
+
+## Payable (Additional Coverage)
+
+| Solidity Test Path | Category | Status | Risk | Solar Target Path | Notes |
+| --- | --- | --- | --- | --- | --- |
+| test/libsolidity/semanticTests/payable/no_nonpayable_circumvention_by_modifier.sol | payable | ported | medium | crates/codegen/testdata/payable/NoNonpayableCircumventionByModifier | Nonpayable enforcement through modifier |
+
+## Immutables (Additional Coverage)
+
+| Solidity Test Path | Category | Status | Risk | Solar Target Path | Notes |
+| --- | --- | --- | --- | --- | --- |
+| test/libsolidity/semanticTests/immutable/read_in_ctor.sol | immutable | ported | low | crates/codegen/testdata/immutable/ReadInConstructor | Immutable read inside constructor |
+
+## Builtins / Hashing (Additional Coverage)
+
+| Solidity Test Path | Category | Status | Risk | Solar Target Path | Notes |
+| --- | --- | --- | --- | --- | --- |
+| test/libsolidity/semanticTests/builtinFunctions/keccak256_empty.sol | hashing | ported | low | crates/codegen/testdata/hashing/HashBuiltins | keccak256 empty string |
+| test/libsolidity/semanticTests/builtinFunctions/sha256_empty.sol | hashing | ported | low | crates/codegen/testdata/hashing/HashBuiltins | sha256 empty string |
+| test/libsolidity/semanticTests/builtinFunctions/ripemd160_empty.sol | hashing | ported | low | crates/codegen/testdata/hashing/HashBuiltins | ripemd160 empty string |
+| test/libsolidity/semanticTests/builtinFunctions/keccak256_with_bytes.sol | hashing | ported | low | crates/codegen/testdata/hashing/HashBuiltins | keccak256(bytes) matches literal |
+
 ## Enums (Additional Coverage)
 
 | Solidity Test Path | Category | Status | Risk | Solar Target Path | Notes |
