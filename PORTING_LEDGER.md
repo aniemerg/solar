@@ -227,6 +227,7 @@ Conventions:
 | test/libsolidity/semanticTests/tryCatch/simple.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchSimple | Basic try/catch on external call |
 | test/libsolidity/semanticTests/tryCatch/lowLevel.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchLowLevel | catch(bytes) revert data |
 | test/libsolidity/semanticTests/tryCatch/structured.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchStructured | catch Error(string) message |
+| test/libsolidity/semanticTests/tryCatch/structuredAndLowLevel.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchStructuredAndLowLevel | catch Error(string) vs bytes |
 | test/libsolidity/semanticTests/tryCatch/require.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchRequire | try/catch around require |
 | test/libsolidity/semanticTests/tryCatch/panic.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchPanic | catch Panic(uint) + Error(string) |
 
@@ -256,6 +257,8 @@ Conventions:
 | test/libsolidity/semanticTests/builtinFunctions/keccak256_multiple_arguments.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/KeccakMultiple | keccak256 packed 3 args |
 | test/libsolidity/semanticTests/builtinFunctions/keccak256_multiple_arguments_with_numeric_literals.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/KeccakMultipleNumeric | keccak256 packed numeric literals |
 | test/libsolidity/semanticTests/builtinFunctions/keccak256_multiple_arguments_with_string_literals.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/KeccakMultipleString | keccak256 packed string literal |
+| test/libsolidity/semanticTests/builtinFunctions/sha256_packed.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/Sha256Packed | sha256 packed inputs |
+| test/libsolidity/semanticTests/builtinFunctions/ripemd160_packed.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/Ripemd160Packed | ripemd160 packed inputs |
 
 ## Enums (Additional Coverage)
 
