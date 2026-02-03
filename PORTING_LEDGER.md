@@ -210,8 +210,8 @@ Conventions:
 | test/libsolidity/semanticTests/calldata/calldata_bytes_to_memory.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataBytesToMemory | calldata bytes -> memory keccak |
 | test/libsolidity/semanticTests/calldata/calldata_bytes_array_bounds.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataBytesArrayBounds | bytes[] bounds checks |
 | test/libsolidity/semanticTests/calldata/calldata_bytes_to_memory_encode.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataBytesToMemoryEncode | abi.encode(bytes(calldata)) |
-| test/libsolidity/semanticTests/calldata/calldata_array_length.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataArrayLength | length on 1d/2d/fixed arrays (valid cases only) |
-| test/libsolidity/semanticTests/calldata/calldata_array_access.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataArrayAccess | element access + bounds reverts |
+| test/libsolidity/semanticTests/calldata/calldata_array_length.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataArrayLength | length on 1d/2d/fixed arrays + malformed offsets |
+| test/libsolidity/semanticTests/calldata/calldata_array_access.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataArrayAccess | element access + bounds + malformed calldata |
 | test/libsolidity/semanticTests/calldata/calldata_array_index_range_access.sol | calldata | ported | medium | crates/codegen/testdata/calldata/CalldataArrayIndexRangeAccess | slicing length + index access + bounds reverts |
 
 ## Memory Management (Additional Coverage)
