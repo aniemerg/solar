@@ -13,6 +13,10 @@ Conventions:
 | --- | --- | --- | --- | --- | --- |
 | test/libsolidity/semanticTests/arithmetics/checked_add_v2.sol | arithmetics | ported | medium | crates/codegen/testdata/arithmetic/CheckedAddV2 | Overflow behavior may differ; confirm Solar semantics before asserting reverts |
 | test/libsolidity/semanticTests/arithmetics/unchecked_div_by_zero.sol | arithmetics | ported | medium | crates/codegen/testdata/arithmetic/UncheckedDivByZero | Division/mod by zero should revert |
+| test/libsolidity/semanticTests/integer/basic.sol | arithmetics | ported | low | crates/codegen/testdata/arithmetic/IntegerBasic | Integer min/max constants |
+| test/libsolidity/semanticTests/exponentiation/literal_base.sol | arithmetics | ported | medium | crates/codegen/testdata/arithmetic/ExponentiationLiteralBase | Exponentiation with negative literal base |
+| test/libsolidity/semanticTests/exponentiation/signed_base.sol | arithmetics | ported | low | crates/codegen/testdata/arithmetic/ExponentiationSignedBase | Signed base exponentiation |
+| test/libsolidity/semanticTests/exponentiation/small_exp.sol | arithmetics | ported | low | crates/codegen/testdata/arithmetic/ExponentiationSmallExp | Exponentiation with small exponent |
 | test/libsolidity/semanticTests/storage/packed_storage_structs_uint.sol | storage | ported | low | crates/codegen/testdata/storage/PackedStorageStructsUint | Ported to storage category |
 | test/libsolidity/semanticTests/storage/packed_storage_structs_enum.sol | storage | ported | medium | crates/codegen/testdata/storage/PackedStorageStructsEnum | Enum packing in storage |
 | test/libsolidity/semanticTests/storage/packed_storage_structs_bytes.sol | storage | ported | medium | crates/codegen/testdata/storage/PackedStorageStructsBytes | Packed bytes in storage |
@@ -24,6 +28,9 @@ Conventions:
 | test/libsolidity/semanticTests/storage/state_smoke_test.sol | storage | ported | low | crates/codegen/testdata/storage/StateSmokeTest | Basic storage set/get |
 | test/libsolidity/semanticTests/storage/struct_accessor.sol | storage | ported | medium | crates/codegen/testdata/storage/StructAccessor | Public getter for struct mapping |
 | test/libsolidity/semanticTests/storage/array_accessor.sol | storage | ported | medium | crates/codegen/testdata/storage/ArrayAccessor | Public getters for arrays + mappings |
+| test/libsolidity/semanticTests/storage/accessors_mapping_for_array.sol | storage | ported | medium | crates/codegen/testdata/storage/AccessorsMappingForArray | Mapping getters for arrays |
+| test/libsolidity/semanticTests/storage/complex_accessors.sol | storage | ported | low | crates/codegen/testdata/storage/ComplexAccessors | Mapping getters for primitives |
+| test/libsolidity/semanticTests/storage/static_array_copy_cleanup.sol | storage | ported | medium | crates/codegen/testdata/storage/StaticArrayCopyCleanup | Static array copy cleanup + delete |
 | test/libsolidity/semanticTests/array/array_storage_index_access.sol | array | ported | medium | crates/codegen/testdata/arrays/ArrayStorageIndexAccess | Dynamic array index + length mutations |
 | test/libsolidity/semanticTests/array/array_storage_push_pop.sol | array | ported | medium | crates/codegen/testdata/arrays/ArrayStoragePushPop | Dynamic array push/pop |
 | test/libsolidity/semanticTests/array/array_storage_length_access.sol | array | ported | medium | crates/codegen/testdata/arrays/ArrayStorageLengthAccess | Dynamic array length access |
@@ -35,6 +42,30 @@ Conventions:
 | test/libsolidity/semanticTests/array/create_memory_array.sol | array | ported | medium | crates/codegen/testdata/arrays/CreateMemoryArray | Memory allocation of arrays/structs |
 | test/libsolidity/semanticTests/array/array_storage_pop_zero_length.sol | array | ported | medium | crates/codegen/testdata/arrays/ArrayStoragePopZeroLength | Pop from empty dynamic array |
 | test/libsolidity/semanticTests/array/array_storage_push_empty.sol | array | ported | medium | crates/codegen/testdata/arrays/ArrayStoragePushEmpty | Push zero values into dynamic array |
+| test/libsolidity/semanticTests/array/array_push_with_arg.sol | array | ported | medium | crates/codegen/testdata/arrays/ArrayPushWithArg | Push with argument + bounds |
+| test/libsolidity/semanticTests/array/array_push_return_reference.sol | array | ported | medium | crates/codegen/testdata/arrays/ArrayPushReturnReference | Push returns reference |
+| test/libsolidity/semanticTests/array/array_storage_push_empty_length_address.sol | array | ported | medium | crates/codegen/testdata/arrays/ArrayStoragePushEmptyLengthAddress | Address array length mutations |
+| test/libsolidity/semanticTests/array/storage_array_ref.sol | array | ported | medium | crates/codegen/testdata/arrays/StorageArrayRef | Storage array reference in internal call |
+| test/libsolidity/semanticTests/array/create_dynamic_array_with_zero_length.sol | array | ported | low | crates/codegen/testdata/arrays/CreateDynamicArrayZeroLength | Create empty nested dynamic array |
+| test/libsolidity/semanticTests/array/inline_array_singleton.sol | array | ported | low | crates/codegen/testdata/arrays/InlineArraySingleton | Inline array literal singleton |
+| test/libsolidity/semanticTests/array/byte_array_storage_layout.sol | array | ported | high | crates/codegen/testdata/arrays/ByteArrayStorageLayout | Bytes storage layout via assembly |
+| test/libsolidity/semanticTests/array/arrays_complex_from_and_to_storage.sol | array | ported | medium | crates/codegen/testdata/arrays/ArraysComplexFromAndToStorage | Nested fixed-size arrays to/from storage |
+| test/libsolidity/semanticTests/array/indexAccess/index_access.sol | array | ported | medium | crates/codegen/testdata/arrays/IndexAccess | Byte indexing and endian swap |
+| test/libsolidity/semanticTests/array/indexAccess/fixed_bytes_index_access.sol | array | ported | medium | crates/codegen/testdata/arrays/FixedBytesIndexAccess | Fixed bytes index access |
+| test/libsolidity/semanticTests/array/indexAccess/bytes_index_access.sol | array | ported | medium | crates/codegen/testdata/arrays/BytesIndexAccess | Bytes calldata/storage index access |
+| test/libsolidity/semanticTests/array/indexAccess/bytes_memory_index_access.sol | array | ported | low | crates/codegen/testdata/arrays/BytesMemoryIndexAccess | Bytes memory index access |
+| test/libsolidity/semanticTests/array/indexAccess/bytes_index_access_memory.sol | array | ported | low | crates/codegen/testdata/arrays/BytesIndexAccessMemory | Bytes memory index access via internal calls |
+| test/libsolidity/semanticTests/array/indexAccess/memory_arrays_index_access_write.sol | array | ported | low | crates/codegen/testdata/arrays/MemoryArraysIndexAccessWrite | Nested memory array index writes |
+| test/libsolidity/semanticTests/array/indexAccess/memory_arrays_dynamic_index_access_write.sol | array | ported | medium | crates/codegen/testdata/arrays/MemoryArraysDynamicIndexAccessWrite | Storage to memory dynamic index writes |
+| test/libsolidity/semanticTests/array/indexAccess/inline_array_index_access_ints.sol | array | ported | low | crates/codegen/testdata/arrays/InlineArrayIndexAccessInts | Inline array index access (ints) |
+| test/libsolidity/semanticTests/array/indexAccess/inline_array_index_access_strings.sol | array | ported | low | crates/codegen/testdata/arrays/InlineArrayIndexAccessStrings | Inline array index access (strings) |
+| test/libsolidity/semanticTests/array/indexAccess/arrays_complex_memory_index_access.sol | array | ported | medium | crates/codegen/testdata/arrays/ArraysComplexMemoryIndexAccess | Nested memory array index access |
+| test/libsolidity/semanticTests/array/string_literal_assign_to_storage_bytes.sol | array | ported | medium | crates/codegen/testdata/arrays/StringLiteralAssignToStorageBytes | Assign string literal to storage bytes |
+| test/libsolidity/semanticTests/array/arrayMemoryAllocation/array_zeroed_memory_index_access.sol | array | ported | medium | crates/codegen/testdata/arrays/ArrayZeroedMemoryIndexAccess | Zeroed memory array reads + bounds |
+| test/libsolidity/semanticTests/array/arrayMemoryAllocation/array_static_zeroed_memory_index_access.sol | array | ported | low | crates/codegen/testdata/arrays/ArrayStaticZeroedMemoryIndexAccess | Zeroed static memory array reads |
+| test/libsolidity/semanticTests/array/arrayMemoryAllocation/array_static_return_param_zeroed_memory_index_access.sol | array | ported | low | crates/codegen/testdata/arrays/ArrayStaticReturnParamZeroedMemory | Zeroed return params for arrays |
+| test/libsolidity/semanticTests/array/arrayMemoryAllocation/array_2d_zeroed_memory_index_access.sol | array | ported | medium | crates/codegen/testdata/arrays/Array2dZeroedMemoryIndexAccess | Zeroed 2D memory array bounds |
+| test/libsolidity/semanticTests/array/arrayMemoryAllocation/array_array_static.sol | array | ported | medium | crates/codegen/testdata/arrays/ArrayArrayStatic | Static subarray access bounds |
 | test/libsolidity/semanticTests/functionCall/external_call.sol | functionCall | ported | medium | crates/codegen/testdata/calls/ExternalCall | Requires external call support |
 | test/libsolidity/semanticTests/functionCall/multiple_return_values.sol | functionCall | ported | low | crates/codegen/testdata/calls/MultipleReturnValues | Multiple returns |
 | test/libsolidity/semanticTests/functionCall/calling_other_functions.sol | functionCall | ported | low | crates/codegen/testdata/control-flow/CollatzCalls | Internal calls + loops |
@@ -48,8 +79,15 @@ Conventions:
 | test/libsolidity/semanticTests/functionCall/creation_function_call_no_args.sol | functionCall | ported | high | crates/codegen/testdata/calls/CreationFunctionCallNoArgs | Contract creation in call |
 | test/libsolidity/semanticTests/functionCall/creation_function_call_with_args.sol | functionCall | ported | high | crates/codegen/testdata/calls/CreationFunctionCallWithArgs | Contract creation with args |
 | test/libsolidity/semanticTests/functionCall/external_function.sol | functionCall | ported | low | crates/codegen/testdata/calls/ExternalFunction | External function call |
+| test/libsolidity/semanticTests/functionTypes/selector_1.sol | functionTypes | ported | medium | crates/codegen/testdata/calls/FunctionSelector1 | Function selector constants |
+| test/libsolidity/semanticTests/functionTypes/selector_2.sol | functionTypes | ported | medium | crates/codegen/testdata/calls/FunctionSelector2 | Function selector constants |
 | test/libsolidity/semanticTests/constructor/state_variable_initialization.sol | constructor | ported | low | crates/codegen/testdata/constructor/StateVariableInitialization | Initialization correctness |
 | test/libsolidity/semanticTests/inheritance/constructor_with_params.sol | constructor | ported | low | crates/codegen/testdata/constructor/ConstructorWithParams | Constructor parameters |
+| test/libsolidity/semanticTests/constructor/order_of_evaluation.sol | constructor | ported | medium | crates/codegen/testdata/constructor/ConstructorOrderOfEvaluation | Base constructor evaluation order |
+| test/libsolidity/semanticTests/constructor/base_constructor_arguments.sol | constructor | ported | low | crates/codegen/testdata/constructor/BaseConstructorArguments | Base constructor args in inheritance |
+| test/libsolidity/semanticTests/constructor/arrays_in_constructors.sol | constructor | ported | medium | crates/codegen/testdata/constructor/ArraysInConstructors | Arrays passed through constructors |
+| test/libsolidity/semanticTests/constructor/constructor_static_array_argument.sol | constructor | ported | low | crates/codegen/testdata/constructor/ConstructorStaticArrayArgument | Static array ctor argument |
+| test/libsolidity/semanticTests/constructor/constructor_arguments_external.sol | constructor | ported | low | crates/codegen/testdata/constructor/ConstructorArgumentsExternal | External constructor args |
 | test/libsolidity/semanticTests/reverts/revert.sol | reverts | ported | medium | crates/codegen/testdata/reverts/RevertBasics | Revert behavior; ensure expectations match Solar |
 | test/libsolidity/semanticTests/reverts/assert_require.sol | reverts | ported | medium | crates/codegen/testdata/reverts/AssertRequire | assert/require behavior |
 | test/libsolidity/semanticTests/reverts/simple_throw.sol | reverts | ported | low | crates/codegen/testdata/reverts/SimpleThrow | Simple revert path |
@@ -75,6 +113,8 @@ Conventions:
 | test/libsolidity/semanticTests/events/event_anonymous.sol | events | ported | low | crates/codegen/testdata/events/EventAnonymous | Anonymous event |
 | test/libsolidity/semanticTests/events/event_emit.sol | events | ported | medium | crates/codegen/testdata/events/EventEmit | Indexed event with value |
 | test/libsolidity/semanticTests/events/event_indexed_string.sol | events | ported | high | crates/codegen/testdata/events/EventIndexedString | Indexed string + array topics |
+| test/libsolidity/semanticTests/events/event_anonymous_with_topics.sol | events | ported | medium | crates/codegen/testdata/events/EventAnonymousWithTopics | Anonymous event with topics |
+| test/libsolidity/semanticTests/events/event_selector.sol | events | ported | medium | crates/codegen/testdata/events/EventSelector | Event selector consistency |
 | test/libsolidity/semanticTests/inheritance/inherited_function.sol | inheritance | ported | medium | crates/codegen/testdata/inheritance/InheritedFunction | Uses `A.f()` base call in derived |
 | test/libsolidity/semanticTests/inheritance/constructor_inheritance_init_order.sol | inheritance | ported | medium | crates/codegen/testdata/inheritance/ConstructorInitOrder | Base constructor init order |
 | test/libsolidity/semanticTests/inheritance/super_in_constructor.sol | inheritance | ported | medium | crates/codegen/testdata/inheritance/SuperInConstructor | `super` call in constructor |
@@ -84,6 +124,8 @@ Conventions:
 | test/libsolidity/semanticTests/modifiers/return_in_modifier.sol | modifiers | ported | medium | crates/codegen/testdata/modifiers/ReturnInModifier | Modifier early return |
 | test/libsolidity/semanticTests/modifiers/evaluation_order.sol | modifiers | ported | medium | crates/codegen/testdata/modifiers/EvaluationOrder | Base ctor + modifier evaluation order |
 | test/libsolidity/semanticTests/modifiers/function_modifier_multiple_times.sol | modifiers | ported | low | crates/codegen/testdata/modifiers/FunctionModifierMultipleTimes | Repeated modifiers add up |
+| test/libsolidity/semanticTests/modifiers/function_modifier_loop.sol | modifiers | ported | medium | crates/codegen/testdata/modifiers/FunctionModifierLoop | Modifier invokes body in loop |
+| test/libsolidity/semanticTests/modifiers/function_modifier_multi_invocation.sol | modifiers | ported | medium | crates/codegen/testdata/modifiers/FunctionModifierMultiInvocation | Modifier invokes body multiple times |
 | test/libsolidity/semanticTests/receive/empty_calldata_calls_receive.sol | receive | ported | medium | crates/codegen/testdata/receive/EmptyCalldataCallsReceive | Empty calldata hits receive |
 | test/libsolidity/semanticTests/receive/ether_and_data.sol | receive | ported | medium | crates/codegen/testdata/receive/EtherAndData | Receive accepts ether, rejects data |
 | test/libsolidity/semanticTests/receive/inherited.sol | receive | ported | low | crates/codegen/testdata/receive/ReceiveInherited | Inherited receive |
@@ -95,6 +137,8 @@ Conventions:
 | test/libsolidity/semanticTests/fallback/fallback_or_receive.sol | fallback | ported | medium | crates/codegen/testdata/fallback/FallbackOrReceive | Distinguish fallback vs receive |
 | test/libsolidity/semanticTests/fallback/short_data_calls_fallback.sol | fallback | ported | medium | crates/codegen/testdata/fallback/ShortDataCallsFallback | Short calldata hits fallback |
 | test/libsolidity/semanticTests/fallback/fallback_argument.sol | fallback | ported | medium | crates/codegen/testdata/fallback/FallbackArgument | Fallback with calldata argument |
+| test/libsolidity/semanticTests/fallback/falback_return.sol | fallback | ported | low | crates/codegen/testdata/fallback/FallbackReturn | Fallback early return |
+| test/libsolidity/semanticTests/fallback/fallback_return_data.sol | fallback | ported | medium | crates/codegen/testdata/fallback/FallbackReturnData | Fallback returns calldata |
 
 ## Phase 3 (ABI + Edge Cases)
 
@@ -102,6 +146,8 @@ Conventions:
 | --- | --- | --- | --- | --- | --- |
 | test/libsolidity/semanticTests/abiEncodeDecode/* | abiEncodeDecode | planned | high | testdata/semantic/abiEncodeDecode/ | Expand to dynamic arrays, tuples |
 | test/libsolidity/semanticTests/revertStrings/* | revertStrings | planned | high | testdata/semantic/revertStrings/ | Strict revert data matching |
+| test/libsolidity/semanticTests/revertStrings/ether_non_payable_function.sol | revertStrings | ported | medium | crates/codegen/testdata/revert-strings/EtherNonPayableFunction | Non-payable revert |
+| test/libsolidity/semanticTests/revertStrings/unknown_sig_no_fallback.sol | revertStrings | ported | medium | crates/codegen/testdata/revert-strings/UnknownSigNoFallback | Unknown signature revert |
 | test/libsolidity/semanticTests/multiSource/* | multiSource | planned | medium | testdata/semantic/multiSource/ | Requires multi-file setup |
 
 ## Strings (Additional Coverage)
@@ -121,6 +167,7 @@ Conventions:
 | test/libsolidity/semanticTests/enums/minmax.sol | enums | ported | low | crates/codegen/testdata/enums/EnumMinMax | Enum min/max |
 | test/libsolidity/semanticTests/enums/using_enums.sol | enums | ported | low | crates/codegen/testdata/enums/UsingEnums | Enum stored in state |
 | test/libsolidity/semanticTests/enums/enum_referencing.sol | enums | ported | medium | crates/codegen/testdata/enums/EnumReferencing | Enum refs across interface/library |
+| test/libsolidity/semanticTests/enums/using_inherited_enum.sol | enums | ported | low | crates/codegen/testdata/enums/UsingInheritedEnum | Inherited enum usage |
 
 ## Errors (Additional Coverage)
 
@@ -128,6 +175,15 @@ Conventions:
 | --- | --- | --- | --- | --- | --- |
 | test/libsolidity/semanticTests/errors/simple.sol | errors | ported | medium | crates/codegen/testdata/errors/SimpleError | Custom error selector + args |
 | test/libsolidity/semanticTests/errors/error_selector.sol | errors | ported | medium | crates/codegen/testdata/errors/ErrorSelector | Error selector consistency |
+| test/libsolidity/semanticTests/errors/require_error_string_literal.sol | errors | ported | medium | crates/codegen/testdata/errors/RequireErrorStringLiteral | require with custom error string |
+| test/libsolidity/semanticTests/errors/require_error_string_memory.sol | errors | ported | medium | crates/codegen/testdata/errors/RequireErrorStringMemory | require with memory string |
+| test/libsolidity/semanticTests/errors/require_error_uint256.sol | errors | ported | medium | crates/codegen/testdata/errors/RequireErrorUint256 | require with custom error uint |
+| test/libsolidity/semanticTests/errors/named_error_args.sol | errors | ported | low | crates/codegen/testdata/errors/NamedErrorArgs | Named error args |
+| test/libsolidity/semanticTests/errors/require_error_multiple_arguments.sol | errors | ported | medium | crates/codegen/testdata/errors/RequireErrorMultipleArguments | Custom error with multiple args |
+| test/libsolidity/semanticTests/errors/require_error_condition_evaluated_only_once.sol | errors | ported | medium | crates/codegen/testdata/errors/RequireErrorConditionEvaluatedOnce | Require condition evaluated once |
+| test/libsolidity/semanticTests/errors/require_error_evaluation_order_1.sol | errors | ported | medium | crates/codegen/testdata/errors/RequireErrorEvaluationOrder1 | Require error evaluation order |
+| test/libsolidity/semanticTests/errors/require_error_evaluation_order_2.sol | errors | ported | medium | crates/codegen/testdata/errors/RequireErrorEvaluationOrder2 | Require error evaluation order (state) |
+| test/libsolidity/semanticTests/errors/require_error_evaluation_order_3.sol | errors | ported | medium | crates/codegen/testdata/errors/RequireErrorEvaluationOrder3 | Require error evaluation order (string) |
 
 ## Structs (Additional Coverage)
 
@@ -138,6 +194,11 @@ Conventions:
 | test/libsolidity/semanticTests/structs/memory_structs_read_write.sol | structs | ported | medium | crates/codegen/testdata/structs/MemoryStructsReadWrite | Memory struct read/write |
 | test/libsolidity/semanticTests/structs/struct_delete_member.sol | structs | ported | medium | crates/codegen/testdata/structs/StructDeleteMember | Delete struct member |
 | test/libsolidity/semanticTests/structs/struct_named_constructor.sol | structs | ported | low | crates/codegen/testdata/structs/StructNamedConstructor | Struct named constructor |
+| test/libsolidity/semanticTests/structs/struct_reference.sol | structs | ported | medium | crates/codegen/testdata/structs/StructReference | Recursive struct reference |
+| test/libsolidity/semanticTests/structs/struct_copy_via_local.sol | structs | ported | medium | crates/codegen/testdata/structs/StructCopyViaLocal | Struct copy via local memory |
+| test/libsolidity/semanticTests/structs/struct_assign_reference_to_struct.sol | structs | ported | medium | crates/codegen/testdata/structs/StructAssignReferenceToStruct | Struct storage reference vs copy |
+| test/libsolidity/semanticTests/structs/struct_storage_push_zero_value.sol | structs | ported | medium | crates/codegen/testdata/structs/StructStoragePushZeroValue | Struct push zero initialization |
+| test/libsolidity/semanticTests/array/strings_in_struct.sol | structs | ported | low | crates/codegen/testdata/structs/StringsInStruct | String member in struct |
 
 ## Libraries (Additional Coverage)
 
@@ -147,6 +208,13 @@ Conventions:
 | test/libsolidity/semanticTests/libraries/internal_library_function_attached_to_integer.sol | libraries | ported | low | crates/codegen/testdata/libraries/InternalLibraryFunctionAttachedToInteger | `using for` on uint256 |
 | test/libsolidity/semanticTests/libraries/internal_library_function_attached_to_bool.sol | libraries | ported | low | crates/codegen/testdata/libraries/InternalLibraryFunctionAttachedToBool | `using for` on bool |
 | test/libsolidity/semanticTests/libraries/internal_library_function_attached_to_string_accepting_memory.sol | libraries | ported | low | crates/codegen/testdata/libraries/InternalLibraryFunctionAttachedToStringMemory | `using for` on string (memory) |
+| test/libsolidity/semanticTests/libraries/internal_library_function_attached_to_array_named_pop_push.sol | libraries | ported | low | crates/codegen/testdata/libraries/InternalLibraryFunctionAttachedToArrayNamedPopPush | `using for` on fixed array |
+| test/libsolidity/semanticTests/libraries/internal_library_function_attached_to_address.sol | libraries | ported | low | crates/codegen/testdata/libraries/InternalLibraryFunctionAttachedToAddress | `using for` on address |
+| test/libsolidity/semanticTests/libraries/internal_library_function_attached_to_fixed_bytes.sol | libraries | ported | low | crates/codegen/testdata/libraries/InternalLibraryFunctionAttachedToFixedBytes | `using for` on fixed bytes |
+| test/libsolidity/semanticTests/libraries/internal_library_function_attached_to_enum.sol | libraries | ported | low | crates/codegen/testdata/libraries/InternalLibraryFunctionAttachedToEnum | `using for` on enum |
+| test/libsolidity/semanticTests/libraries/internal_library_function_attached_to_contract.sol | libraries | ported | low | crates/codegen/testdata/libraries/InternalLibraryFunctionAttachedToContract | `using for` on contract type |
+| test/libsolidity/semanticTests/libraries/internal_library_function_attached_to_dynamic_array.sol | libraries | ported | low | crates/codegen/testdata/libraries/InternalLibraryFunctionAttachedToDynamicArray | `using for` on dynamic array |
+| test/libsolidity/semanticTests/libraries/internal_library_function_attached_to_literal.sol | libraries | ported | low | crates/codegen/testdata/libraries/InternalLibraryFunctionAttachedToLiteral | `using for` on literal |
 
 ## Skips (EVM-Version-Specific or Out of Scope)
 
