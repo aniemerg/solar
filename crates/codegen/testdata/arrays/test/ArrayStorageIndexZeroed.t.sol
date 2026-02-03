@@ -11,9 +11,9 @@ contract ArrayStorageIndexZeroedTest {
     }
 
     function test_ArrayStorageIndexZeroed() public {
-        c.testZeroedIndices(1);
-        c.testZeroedIndices(5);
-        c.testZeroedIndices(10);
-        c.testZeroedIndices(15);
+        c.checkZeroedIndices(1);
+        c.checkZeroedIndices(5);
+        c.checkZeroedIndices(10);
+        c.checkZeroedIndices(15);
     }
 }

@@ -11,7 +11,7 @@ contract InternalLibraryFunctionAttachedToAddressTest {
     }
 
     function test_InternalLibraryFunctionAttachedToAddress() public view {
-        address a = 0x111122223333444455556666777788889999AaAa;
+        address a = 0x111122223333444455556666777788889999aAaa;
         assert(c.foo(a, a) == true);
         assert(c.foo(a, address(0)) == false);
     }

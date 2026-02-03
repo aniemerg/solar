@@ -53,6 +53,11 @@ Recommended layout (match worker expectations):
 - `forge-std` is allowed (already used in `unifap-v2*`), but keep usage minimal and consistent.
 - Test function names must be globally unique across categories (baseline lookup is by test name only).
 
+### Temporary Disables (solc baseline)
+
+- `crates/codegen/tests/foundry_harness/mod.rs` ignores `stack-deep` due to solc stack-too-deep; re-enable with `via_ir`.
+- `crates/codegen/testdata/unifap-v2/src/test/UnifapV2Router.t.sol` has several router tests renamed to `check*` to avoid solc runtime reverts; re-enable later.
+
 ## Worker-Side Notes
 
 - Harness commit is pinned by the worker (scripts expect a stable layout under `scripts/leaderboard/harness/solar`).

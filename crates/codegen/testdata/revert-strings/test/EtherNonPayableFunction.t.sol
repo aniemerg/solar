@@ -13,10 +13,10 @@ contract EtherNonPayableFunctionTest is Test {
     }
 
     function test_EtherNonPayableFunction() public {
-        vm.expectRevert();
-        c.f{value: 1 ether}();
-
-        (bool ok,) = address(c).call("");
+        (bool ok,) = address(c).call{value: 1 ether}(abi.encodeWithSignature("f()"));
         assert(!ok);
+
+        (bool ok2,) = address(c).call("");
+        assert(!ok2);
     }
 }

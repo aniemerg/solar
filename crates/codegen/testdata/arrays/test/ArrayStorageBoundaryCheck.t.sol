@@ -12,13 +12,13 @@ contract ArrayStorageBoundaryCheckTest is Test {
     }
 
     function test_ArrayStorageBoundaryCheck_InBounds() public {
-        assert(c.testBoundaryCheck(10, 9) == 0);
-        assert(c.testBoundaryCheck(256, 2) == 0);
-        assert(c.testBoundaryCheck(256, 255) == 0);
+        assert(c.checkBoundaryCheck(10, 9) == 0);
+        assert(c.checkBoundaryCheck(256, 2) == 0);
+        assert(c.checkBoundaryCheck(256, 255) == 0);
     }
 
     function test_ArrayStorageBoundaryCheck_OutOfBounds() public {
         vm.expectRevert();
-        c.testBoundaryCheck(10, 11);
+        c.checkBoundaryCheck(10, 11);
     }
 }

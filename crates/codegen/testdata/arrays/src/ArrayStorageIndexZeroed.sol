@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 contract ArrayStorageIndexZeroed {
     uint256[] storageArray;
 
-    function testZeroedIndices(uint256 len) public {
+    function checkZeroedIndices(uint256 len) public {
         while (storageArray.length < len) storageArray.push();
         while (storageArray.length > len) storageArray.pop();
 

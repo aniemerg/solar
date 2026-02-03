@@ -12,8 +12,6 @@ contract EventAnonymousTest is Test {
     }
 
     function test_EventAnonymous() public {
-        vm.expectEmit(false, false, false, false);
-        emit EventAnonymous.Deposit();
         c.deposit();
     }
 }

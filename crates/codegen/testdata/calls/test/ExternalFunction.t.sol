@@ -11,7 +11,7 @@ contract ExternalFunctionTest {
     }
 
     function test_ExternalFunction() public view {
-        (uint256 ra, uint256 rb) = c.test(2, 3);
+        (uint256 ra, uint256 rb) = c.checkExternal(2, 3);
         assert(ra == 9);
         assert(rb == 3);
     }

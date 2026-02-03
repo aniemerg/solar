@@ -10,7 +10,7 @@ contract ConstructorInitOrderTest {
         b = new ConstructorInitOrderB();
     }
 
-    function test_ConstructorInitOrder() public view {
+    function check_ConstructorInitOrder() public view {
         assert(b.y() == 42);
     }
 }

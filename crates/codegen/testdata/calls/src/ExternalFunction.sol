@@ -6,7 +6,7 @@ contract ExternalFunction {
         return a;
     }
 
-    function test(uint256 a, uint256 b) external pure returns (uint256 r_a, uint256 r_b) {
+    function checkExternal(uint256 a, uint256 b) external pure returns (uint256 r_a, uint256 r_b) {
         r_a = f(a + 7);
         r_b = b;
     }

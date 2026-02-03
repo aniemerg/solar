@@ -20,6 +20,6 @@ contract ErrorSelectorTest {
         assert(s1 == a && s2 == b && s3 == a && s4 == a);
 
         bytes4 fsel = c.test3();
-        assert(fsel == ErrorSelector.F.selector);
+        assert(fsel == bytes4(keccak256("F()")));
     }
 }

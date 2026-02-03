@@ -11,10 +11,10 @@ contract ArrayStorageIndexAccessTest {
     }
 
     function test_ArrayStorageIndexAccess() public {
-        c.testIndices(0);
-        c.testIndices(1);
-        c.testIndices(5);
-        c.testIndices(10);
-        c.testIndices(128);
+        c.checkIndices(0);
+        c.checkIndices(1);
+        c.checkIndices(5);
+        c.checkIndices(10);
+        c.checkIndices(128);
     }
 }

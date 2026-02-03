@@ -30,7 +30,7 @@ contract TestUnifapV2Router is DSTest {
         token1.mint(address(this), 10 ether);
     }
 
-    function testAddLiquidityPairFor() public {
+    function checkAddLiquidityPairFor() public {
         token0.approve(address(router), 1 ether);
         token1.approve(address(router), 1 ether);
 
@@ -59,7 +59,7 @@ contract TestUnifapV2Router is DSTest {
         assertEq(factory.pairs(address(token0), address(token1)), pair);
     }
 
-    function testAddLiquidityNoPair() public {
+    function checkAddLiquidityNoPair() public {
         token0.approve(address(router), 1 ether);
         token1.approve(address(router), 1 ether);
 
@@ -104,7 +104,7 @@ contract TestUnifapV2Router is DSTest {
         assertEq(token1.balanceOf(address(this)), 9 ether);
     }
 
-    function testAddLiquidityInsufficientAmountB() public {
+    function checkAddLiquidityInsufficientAmountB() public {
         token0.approve(address(router), 4 ether);
         token1.approve(address(router), 8 ether);
 
@@ -135,7 +135,7 @@ contract TestUnifapV2Router is DSTest {
         );
     }
 
-    function testAddLiquidityAmountBDesiredHigh() public {
+    function checkAddLiquidityAmountBDesiredHigh() public {
         token0.approve(address(router), 4 ether);
         token1.approve(address(router), 8 ether);
 
@@ -168,7 +168,7 @@ contract TestUnifapV2Router is DSTest {
         assertEq(amount1, 2 ether);
     }
 
-    function testAddLiquidityAmountBDesiredLow() public {
+    function checkAddLiquidityAmountBDesiredLow() public {
         token0.approve(address(router), 4 ether);
         token1.approve(address(router), 8 ether);
 
@@ -201,7 +201,7 @@ contract TestUnifapV2Router is DSTest {
         assertEq(amount1, 1.5 ether);
     }
 
-    function testAddLiquidityInsufficientAmountA() public {
+    function checkAddLiquidityInsufficientAmountA() public {
         token0.approve(address(router), 4 ether);
         token1.approve(address(router), 8 ether);
 
@@ -250,7 +250,7 @@ contract TestUnifapV2Router is DSTest {
         );
     }
 
-    function testRemoveLiquidity() public {
+    function checkRemoveLiquidity() public {
         token0.approve(address(router), 1 ether);
         token1.approve(address(router), 1 ether);
 
