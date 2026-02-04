@@ -231,6 +231,8 @@ Conventions:
 | test/libsolidity/semanticTests/tryCatch/require.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchRequire | try/catch around require |
 | test/libsolidity/semanticTests/tryCatch/panic.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchPanic | catch Panic(uint) + Error(string) |
 | test/libsolidity/semanticTests/tryCatch/assert.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchAssert | try/catch around assert |
+| test/libsolidity/semanticTests/tryCatch/simple_notuple.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchSimpleNoTuple | try/catch single return value |
+| test/libsolidity/semanticTests/tryCatch/return_function.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchReturnFunction | return external function pointer |
 
 ## Payable (Additional Coverage)
 
