@@ -230,6 +230,7 @@ Conventions:
 | test/libsolidity/semanticTests/tryCatch/structuredAndLowLevel.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchStructuredAndLowLevel | catch Error(string) vs bytes |
 | test/libsolidity/semanticTests/tryCatch/require.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchRequire | try/catch around require |
 | test/libsolidity/semanticTests/tryCatch/panic.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchPanic | catch Panic(uint) + Error(string) |
+| test/libsolidity/semanticTests/tryCatch/assert.sol | tryCatch | ported | medium | crates/codegen/testdata/try-catch/TryCatchAssert | try/catch around assert |
 
 ## Payable (Additional Coverage)
 
@@ -259,6 +260,8 @@ Conventions:
 | test/libsolidity/semanticTests/builtinFunctions/keccak256_multiple_arguments_with_string_literals.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/KeccakMultipleString | keccak256 packed string literal |
 | test/libsolidity/semanticTests/builtinFunctions/sha256_packed.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/Sha256Packed | sha256 packed inputs |
 | test/libsolidity/semanticTests/builtinFunctions/ripemd160_packed.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/Ripemd160Packed | ripemd160 packed inputs |
+| test/libsolidity/semanticTests/builtinFunctions/keccak256_packed_complex_types.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/KeccakPackedComplexTypes | keccak packed arrays + contract address |
+| test/libsolidity/semanticTests/builtinFunctions/function_types_sig.sol | builtin | ported | low | crates/codegen/testdata/builtin-functions/FunctionTypesSig | function selector from function types |
 
 ## Enums (Additional Coverage)
 
