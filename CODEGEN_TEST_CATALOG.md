@@ -1,12 +1,12 @@
 # Solar Codegen Test Catalog
 
-Exhaustive inventory of Foundry-based codegen test projects under `crates/codegen/testdata/`.
+Exhaustive inventory of Foundry-based codegen test projects under `crates/codegen/testdata-ported/`.
 Each category is a Foundry project; sub-categories list Solidity sources (`src/`) and test files (`test/`).
 Descriptions are inferred from file names when no explicit header comment exists.
 
 ## abi-encode-decode
 
-- Path: `crates/codegen/testdata/abi-encode-decode`
+- Path: `crates/codegen/testdata-ported/abi-encode-decode`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -31,7 +31,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## abi-encoding
 
-- Path: `crates/codegen/testdata/abi-encoding`
+- Path: `crates/codegen/testdata-ported/abi-encoding`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -44,7 +44,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## access-control
 
-- Path: `crates/codegen/testdata/access-control`
+- Path: `crates/codegen/testdata-ported/access-control`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -57,7 +57,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## arithmetic
 
-- Path: `crates/codegen/testdata/arithmetic`
+- Path: `crates/codegen/testdata-ported/arithmetic`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -88,7 +88,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## arrays
 
-- Path: `crates/codegen/testdata/arrays`
+- Path: `crates/codegen/testdata-ported/arrays`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -169,7 +169,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## calldata
 
-- Path: `crates/codegen/testdata/calldata`
+- Path: `crates/codegen/testdata-ported/calldata`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -186,7 +186,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## calls
 
-- Path: `crates/codegen/testdata/calls`
+- Path: `crates/codegen/testdata-ported/calls`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -227,7 +227,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## constructor
 
-- Path: `crates/codegen/testdata/constructor`
+- Path: `crates/codegen/testdata-ported/constructor`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -252,7 +252,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## constructor-args
 
-- Path: `crates/codegen/testdata/constructor-args`
+- Path: `crates/codegen/testdata-ported/constructor-args`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -265,7 +265,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## control-flow
 
-- Path: `crates/codegen/testdata/control-flow`
+- Path: `crates/codegen/testdata-ported/control-flow`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -284,7 +284,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## conversions
 
-- Path: `crates/codegen/testdata/conversions`
+- Path: `crates/codegen/testdata-ported/conversions`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -297,7 +297,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## edge-cases
 
-- Path: `crates/codegen/testdata/edge-cases`
+- Path: `crates/codegen/testdata-ported/edge-cases`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -310,7 +310,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## enums
 
-- Path: `crates/codegen/testdata/enums`
+- Path: `crates/codegen/testdata-ported/enums`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -333,7 +333,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## equivalence
 
-- Path: `crates/codegen/testdata/equivalence`
+- Path: `crates/codegen/testdata-ported/equivalence`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -351,7 +351,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## erc20-minimal
 
-- Path: `crates/codegen/testdata/erc20-minimal`
+- Path: `crates/codegen/testdata-ported/erc20-minimal`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -364,7 +364,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## erc721-minimal
 
-- Path: `crates/codegen/testdata/erc721-minimal`
+- Path: `crates/codegen/testdata-ported/erc721-minimal`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -377,7 +377,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## errors
 
-- Path: `crates/codegen/testdata/errors`
+- Path: `crates/codegen/testdata-ported/errors`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -410,7 +410,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## events
 
-- Path: `crates/codegen/testdata/events`
+- Path: `crates/codegen/testdata-ported/events`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -447,7 +447,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## expressions
 
-- Path: `crates/codegen/testdata/expressions`
+- Path: `crates/codegen/testdata-ported/expressions`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -466,7 +466,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## fallback
 
-- Path: `crates/codegen/testdata/fallback`
+- Path: `crates/codegen/testdata-ported/fallback`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -487,7 +487,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## hashing
 
-- Path: `crates/codegen/testdata/hashing`
+- Path: `crates/codegen/testdata-ported/hashing`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -502,7 +502,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## immutable
 
-- Path: `crates/codegen/testdata/immutable`
+- Path: `crates/codegen/testdata-ported/immutable`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -515,7 +515,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## inheritance
 
-- Path: `crates/codegen/testdata/inheritance`
+- Path: `crates/codegen/testdata-ported/inheritance`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -538,7 +538,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## interfaces
 
-- Path: `crates/codegen/testdata/interfaces`
+- Path: `crates/codegen/testdata-ported/interfaces`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -551,7 +551,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## libraries
 
-- Path: `crates/codegen/testdata/libraries`
+- Path: `crates/codegen/testdata-ported/libraries`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -588,7 +588,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## literals
 
-- Path: `crates/codegen/testdata/literals`
+- Path: `crates/codegen/testdata-ported/literals`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -611,12 +611,12 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## loop_optimization
 
-- Path: `crates/codegen/testdata/loop_optimization`
+- Path: `crates/codegen/testdata-ported/loop_optimization`
 - Foundry project: no
 
 ## low-level-calls
 
-- Path: `crates/codegen/testdata/low-level-calls`
+- Path: `crates/codegen/testdata-ported/low-level-calls`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -629,7 +629,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## memory-management
 
-- Path: `crates/codegen/testdata/memory-management`
+- Path: `crates/codegen/testdata-ported/memory-management`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -642,7 +642,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## modifiers
 
-- Path: `crates/codegen/testdata/modifiers`
+- Path: `crates/codegen/testdata-ported/modifiers`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -667,7 +667,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## multi-return
 
-- Path: `crates/codegen/testdata/multi-return`
+- Path: `crates/codegen/testdata-ported/multi-return`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -680,7 +680,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## multicall
 
-- Path: `crates/codegen/testdata/multicall`
+- Path: `crates/codegen/testdata-ported/multicall`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -694,7 +694,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## operators
 
-- Path: `crates/codegen/testdata/operators`
+- Path: `crates/codegen/testdata-ported/operators`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -709,7 +709,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## payable
 
-- Path: `crates/codegen/testdata/payable`
+- Path: `crates/codegen/testdata-ported/payable`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -722,7 +722,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## receive
 
-- Path: `crates/codegen/testdata/receive`
+- Path: `crates/codegen/testdata-ported/receive`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -739,7 +739,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## receive-fallback
 
-- Path: `crates/codegen/testdata/receive-fallback`
+- Path: `crates/codegen/testdata-ported/receive-fallback`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -752,7 +752,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## revert-strings
 
-- Path: `crates/codegen/testdata/revert-strings`
+- Path: `crates/codegen/testdata-ported/revert-strings`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -767,7 +767,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## reverts
 
-- Path: `crates/codegen/testdata/reverts`
+- Path: `crates/codegen/testdata-ported/reverts`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -784,7 +784,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## scoping
 
-- Path: `crates/codegen/testdata/scoping`
+- Path: `crates/codegen/testdata-ported/scoping`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -797,7 +797,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## stack-deep
 
-- Path: `crates/codegen/testdata/stack-deep`
+- Path: `crates/codegen/testdata-ported/stack-deep`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -812,7 +812,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## statements
 
-- Path: `crates/codegen/testdata/statements`
+- Path: `crates/codegen/testdata-ported/statements`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -827,7 +827,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## storage
 
-- Path: `crates/codegen/testdata/storage`
+- Path: `crates/codegen/testdata-ported/storage`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -878,7 +878,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## stress-arrays
 
-- Path: `crates/codegen/testdata/stress-arrays`
+- Path: `crates/codegen/testdata-ported/stress-arrays`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -891,7 +891,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## stress-control-flow
 
-- Path: `crates/codegen/testdata/stress-control-flow`
+- Path: `crates/codegen/testdata-ported/stress-control-flow`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -904,7 +904,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## stress-events
 
-- Path: `crates/codegen/testdata/stress-events`
+- Path: `crates/codegen/testdata-ported/stress-events`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -917,7 +917,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## stress-functions
 
-- Path: `crates/codegen/testdata/stress-functions`
+- Path: `crates/codegen/testdata-ported/stress-functions`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -930,7 +930,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## stress-inheritance
 
-- Path: `crates/codegen/testdata/stress-inheritance`
+- Path: `crates/codegen/testdata-ported/stress-inheritance`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -943,7 +943,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## stress-mappings
 
-- Path: `crates/codegen/testdata/stress-mappings`
+- Path: `crates/codegen/testdata-ported/stress-mappings`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -956,7 +956,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## stress-modifiers
 
-- Path: `crates/codegen/testdata/stress-modifiers`
+- Path: `crates/codegen/testdata-ported/stress-modifiers`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -969,7 +969,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## strings
 
-- Path: `crates/codegen/testdata/strings`
+- Path: `crates/codegen/testdata-ported/strings`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -988,7 +988,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## structs
 
-- Path: `crates/codegen/testdata/structs`
+- Path: `crates/codegen/testdata-ported/structs`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -1035,7 +1035,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## try-catch
 
-- Path: `crates/codegen/testdata/try-catch`
+- Path: `crates/codegen/testdata-ported/try-catch`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -1048,7 +1048,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## unifap-v2
 
-- Path: `crates/codegen/testdata/unifap-v2`
+- Path: `crates/codegen/testdata-ported/unifap-v2`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -1059,7 +1059,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## unifap-v2-create
 
-- Path: `crates/codegen/testdata/unifap-v2-create`
+- Path: `crates/codegen/testdata-ported/unifap-v2-create`
 - Foundry project: yes
 
 ### Sources (`src/`)
@@ -1076,7 +1076,7 @@ Descriptions are inferred from file names when no explicit header comment exists
 
 ## vault-minimal
 
-- Path: `crates/codegen/testdata/vault-minimal`
+- Path: `crates/codegen/testdata-ported/vault-minimal`
 - Foundry project: yes
 
 ### Sources (`src/`)

@@ -3,7 +3,7 @@
 ## Executive Summary
 
 - The existing Solar repo already has a Foundry-based codegen harness under `crates/codegen/tests/` with many small
-  Solidity test projects in `crates/codegen/testdata/`. These focus on runtime semantics and gas comparisons against
+  Solidity test projects in `crates/codegen/testdata-ported/`. These focus on runtime semantics and gas comparisons against
   solc.
 - Solidity’s canonical codegen tests live primarily in `tmp/solidity/test/libsolidity/semanticTests/`. These tests
   are concise single-file (or multi-source) programs with expected call results or failures encoded after
@@ -20,7 +20,7 @@
 
 - Harness entrypoint: `crates/codegen/tests/foundry.rs`
 - Runner logic: `crates/codegen/tests/foundry_harness/mod.rs`
-- Test projects: `crates/codegen/testdata/*` (each is a Foundry project with `src/` and `test/`)
+- Test projects: `crates/codegen/testdata-ported/*` (each is a Foundry project with `src/` and `test/`)
 
 The harness:
 1. Runs `forge test` with `FOUNDRY_SOLC=solar`.
@@ -228,7 +228,7 @@ Focus on behavior that is fundamental, widespread, and likely supported soon:
 
 ## Recommended Porting Approach
 
-1. **Create a “semantic-tests” Foundry project** inside `crates/codegen/testdata/` (or in the new harness if we
+1. **Create a “semantic-tests” Foundry project** inside `crates/codegen/testdata-ported/` (or in the new harness if we
    split it out). The goal is to map Solidity semantic tests one-to-one in structure.
 2. **Phase 1 (Core Semantics)**: arithmetic, storage, control flow, and internal calls.
 3. **Phase 2 (External Interfaces)**: events, external calls, libraries, modifiers, inheritance.

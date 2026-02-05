@@ -9,7 +9,7 @@
 
 ## Current Gold-Standard Tests
 
-- Located under `crates/codegen/testdata/` and run by `crates/codegen/tests/foundry_harness/mod.rs`.
+- Located under `crates/codegen/testdata-ported/` and run by `crates/codegen/tests/foundry_harness/mod.rs`.
 - Each test project is a Foundry project (`src/` + `test/`) with concise, explicit assertions.
 - These will remain authoritative for style, naming, and organization.
 
@@ -18,7 +18,7 @@
 - `harness/` (new) — Future home for a standalone runner if we split from `crates/codegen/tests`.
 - `testdata/` (new) — Staging area for ported semantic tests if we decide to keep them separate.
 
-Note: In the short term, ported tests can live under `crates/codegen/testdata/semantic/` to reuse the existing
+Note: In the short term, ported tests can live under `crates/codegen/testdata-ported/semantic/` to reuse the existing
 runner and keep things simple. The `harness/` + `testdata/` root-level layout is reserved for the eventual
 leaderboard harness if we choose to decouple from the codegen crate.
 
@@ -45,7 +45,7 @@ leaderboard harness if we choose to decouple from the codegen crate.
 
 ## Where Ported Tests Will Land (Initial)
 
-- `crates/codegen/testdata/semantic/` (new Foundry project root)
+- `crates/codegen/testdata-ported/semantic/` (new Foundry project root)
   - `src/` holds Solidity contracts copied from semantic tests.
   - `test/` holds Foundry tests mirroring `// ----` expectations.
 
