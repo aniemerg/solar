@@ -169,6 +169,9 @@ Conventions:
 | test/libsolidity/semanticTests/literals/wei.sol | literals | ported | low | crates/codegen/testdata/literals/WeiLiteral | Wei denomination |
 | test/libsolidity/semanticTests/literals/fractional_denominations.sol | literals | ported | low | crates/codegen/testdata/literals/FractionalDenominations | Fractional time/ether units |
 | test/libsolidity/semanticTests/literals/scientific_notation.sol | literals | ported | low | crates/codegen/testdata/literals/ScientificNotation | Scientific notation (int/uint) |
+| test/libsolidity/semanticTests/literals/hex_string_with_underscore.sol | literals | ported | low | crates/codegen/testdata/literals/HexStringWithUnderscore | Hex literal underscores |
+| test/libsolidity/semanticTests/literals/hex_string_with_non_printable_characters.sol | literals | ported | low | crates/codegen/testdata/literals/HexStringWithNonPrintableCharacters | Hex literal non-printable bytes |
+| test/libsolidity/semanticTests/literals/escape.sol | literals | ported | low | crates/codegen/testdata/literals/EscapeLiteral | Escaped string literal bytes |
 
 ## Expressions (Additional Coverage)
 

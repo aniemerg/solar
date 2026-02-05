@@ -15,6 +15,28 @@ use std::{
     time::{Duration, Instant, SystemTime},
 };
 
+fn add_forge_verbosity(cmd: &mut Command) {
+    let Ok(level) = std::env::var("SOLAR_FOUNDRY_VERBOSITY") else {
+        return;
+    };
+
+    let arg = if level.chars().all(|c| c == 'v') {
+        format!("-{}", level)
+    } else if level.chars().all(|c| c.is_ascii_digit()) {
+        let count: usize = level.parse().unwrap_or(0);
+        if count == 0 {
+            return;
+        }
+        format!("-{}", "v".repeat(count))
+    } else if level.starts_with('-') {
+        level
+    } else {
+        format!("-{}", level)
+    };
+
+    cmd.arg(arg);
+}
+
 // ============================================================================
 // Configuration
 // ============================================================================
@@ -278,13 +300,13 @@ fn run_forge_test_solar(
         .arg("test")
         .arg("--force")
         .arg("--json")
-        .arg("-vvvvv")
         .arg("--decode-internal")
         .arg("--out")
         .arg(out_dir)
         .arg("--cache-path")
         .arg(cache_dir)
         .env("FOUNDRY_SOLC", get_solar_binary());
+    add_forge_verbosity(&mut cmd);
 
     // Add forge match filters if specified
     if let Some(ref test_filter) = config.test_filter {
@@ -330,13 +352,13 @@ fn run_forge_test_solc(
         .arg("test")
         .arg("--force")
         .arg("--json")
-        .arg("-vvvvv")
         .arg("--decode-internal")
         .arg("--out")
         .arg(out_dir)
         .arg("--cache-path")
         .arg(cache_dir)
         .env("RUST_LOG", "foundry_compilers=trace");
+    add_forge_verbosity(&mut cmd);
 
     // Add forge match filters if specified
     if let Some(ref test_filter) = config.test_filter {
