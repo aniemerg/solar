@@ -173,7 +173,30 @@ fn filter_tests(tests: Vec<TestResult>, config: &TestConfig) -> Vec<TestResult> 
 fn parse_test_results(stdout: &str) -> Vec<TestResult> {
     let mut tests = Vec::new();
 
-    if let Ok(json) = serde_json::from_str::<serde_json::Value>(stdout) {
+    let json_value = match serde_json::from_str::<serde_json::Value>(stdout) {
+        Ok(json) => Some(json),
+        Err(_) => {
+            // Some runs include trace logs before/after JSON output.
+            // Try parsing the last line that looks like a JSON object.
+            if let Some(line) = stdout
+                .lines()
+                .rev()
+                .find(|line| line.trim_start().starts_with('{'))
+            {
+                if let Ok(json) = serde_json::from_str::<serde_json::Value>(line.trim()) {
+                    Some(json)
+                } else if let Some(start) = stdout.rfind(line) {
+                    serde_json::from_str(&stdout[start..]).ok()
+                } else {
+                    None
+                }
+            } else {
+                None
+            }
+        }
+    };
+
+    if let Some(json) = json_value {
         if let Some(obj) = json.as_object() {
             for (contract_path, contract_data) in obj {
                 // Extract contract name from path (e.g., "src/Test.t.sol:TestContract")

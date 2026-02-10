@@ -25,6 +25,30 @@ contract Arithmetic {
         return a % b;
     }
 
+    function addMod(uint256 a, uint256 b, uint256 m) public pure returns (uint256) {
+        return addmod(a, b, m);
+    }
+
+    function mulMod(uint256 a, uint256 b, uint256 m) public pure returns (uint256) {
+        return mulmod(a, b, m);
+    }
+
+    function exp(uint256 a, uint256 b) public pure returns (uint256) {
+        return a ** b;
+    }
+
+    function expLiteralBase(uint256 expVal) public pure returns (uint256) {
+        return 2 ** expVal;
+    }
+
+    function expSigned(int256 a, uint256 b) public pure returns (int256) {
+        return a ** b;
+    }
+
+    function expSignedLiteral(uint256 expVal) public pure returns (int256) {
+        return (-2) ** expVal;
+    }
+
     // Signed operations
     function signedAdd(int256 a, int256 b) public pure returns (int256) {
         return a + b;
@@ -40,6 +64,10 @@ contract Arithmetic {
 
     function signedDiv(int256 a, int256 b) public pure returns (int256) {
         return a / b;
+    }
+
+    function signedMod(int256 a, int256 b) public pure returns (int256) {
+        return a % b;
     }
 
     // Comparison operators
@@ -101,6 +129,22 @@ contract Arithmetic {
         return a >> bits;
     }
 
+    function signedShiftRight(int256 a, uint256 bits) public pure returns (int256) {
+        return a >> bits;
+    }
+
+    function byteAt(uint256 x, uint256 n) public pure returns (uint256) {
+        uint256 result;
+        assembly {
+            result := byte(n, x)
+        }
+        return result;
+    }
+
+    function isZero(uint256 a) public pure returns (bool) {
+        return a == 0;
+    }
+
     // Complex expressions
     function complexExpr(uint256 a, uint256 b, uint256 c) public pure returns (uint256) {
         return (a + b) * c - (a / (b + 1));
@@ -150,6 +194,24 @@ contract Arithmetic {
 
     function divAssign(uint256 x) public {
         value /= x;
+    }
+
+    function divUnchecked(uint256 a, uint256 b) public pure returns (uint256) {
+        unchecked {
+            if (b == 0) {
+                revert();
+            }
+            return a / b;
+        }
+    }
+
+    function modUnchecked(uint256 a, uint256 b) public pure returns (uint256) {
+        unchecked {
+            if (b == 0) {
+                revert();
+            }
+            return a % b;
+        }
     }
 
     function resetValue() public {

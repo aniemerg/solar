@@ -542,6 +542,17 @@ impl<'gcx> Lowerer<'gcx> {
             BinOpKind::Sub => builder.sub(lhs, rhs),
             BinOpKind::Mul => builder.mul(lhs, rhs),
             BinOpKind::Div => {
+                let is_zero = builder.iszero(rhs);
+                let revert_block = builder.create_block();
+                let continue_block = builder.create_block();
+
+                builder.branch(is_zero, revert_block, continue_block);
+
+                builder.switch_to_block(revert_block);
+                let zero = builder.imm_u64(0);
+                builder.revert(zero, zero);
+
+                builder.switch_to_block(continue_block);
                 if is_signed {
                     builder.sdiv(lhs, rhs)
                 } else {
@@ -549,6 +560,17 @@ impl<'gcx> Lowerer<'gcx> {
                 }
             }
             BinOpKind::Rem => {
+                let is_zero = builder.iszero(rhs);
+                let revert_block = builder.create_block();
+                let continue_block = builder.create_block();
+
+                builder.branch(is_zero, revert_block, continue_block);
+
+                builder.switch_to_block(revert_block);
+                let zero = builder.imm_u64(0);
+                builder.revert(zero, zero);
+
+                builder.switch_to_block(continue_block);
                 if is_signed {
                     builder.smod(lhs, rhs)
                 } else {

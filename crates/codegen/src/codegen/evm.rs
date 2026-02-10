@@ -1448,6 +1448,15 @@ impl EvmCodegen {
                             self.scheduler.stack.pop();
                             self.scheduler.stack.push(val);
                         }
+                        crate::mir::InstKind::SLoad(slot) => {
+                            // Re-emit SLOAD. This is safe only if storage hasn't been
+                            // mutated since the original load. Prefer spilling in lowering
+                            // for mutable storage operands.
+                            self.emit_value_fresh(func, *slot);
+                            self.asm.emit_op(opcodes::SLOAD);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
                         crate::mir::InstKind::Keccak256(offset, size) => {
                             // Re-emit KECCAK256 - memory content should still be valid
                             self.emit_value_fresh(func, *offset);
@@ -1464,6 +1473,174 @@ impl EvmCodegen {
                             self.emit_value_fresh(func, *b);
                             self.asm.emit_op(opcodes::ADD);
                             self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::Div(a, b) => {
+                            self.emit_value_fresh(func, *a);
+                            self.emit_value_fresh(func, *b);
+                            self.asm.emit_op(opcodes::DIV);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::SDiv(a, b) => {
+                            self.emit_value_fresh(func, *a);
+                            self.emit_value_fresh(func, *b);
+                            self.asm.emit_op(opcodes::SDIV);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::Mod(a, b) => {
+                            self.emit_value_fresh(func, *a);
+                            self.emit_value_fresh(func, *b);
+                            self.asm.emit_op(opcodes::MOD);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::SMod(a, b) => {
+                            self.emit_value_fresh(func, *a);
+                            self.emit_value_fresh(func, *b);
+                            self.asm.emit_op(opcodes::SMOD);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::Exp(a, b) => {
+                            self.emit_value_fresh(func, *a);
+                            self.emit_value_fresh(func, *b);
+                            self.asm.emit_op(opcodes::EXP);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::AddMod(a, b, n) => {
+                            self.emit_value_fresh(func, *n);
+                            self.emit_value_fresh(func, *b);
+                            self.emit_value_fresh(func, *a);
+                            self.asm.emit_op(opcodes::ADDMOD);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::MulMod(a, b, n) => {
+                            self.emit_value_fresh(func, *n);
+                            self.emit_value_fresh(func, *b);
+                            self.emit_value_fresh(func, *a);
+                            self.asm.emit_op(opcodes::MULMOD);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::And(a, b) => {
+                            self.emit_value_fresh(func, *a);
+                            self.emit_value_fresh(func, *b);
+                            self.asm.emit_op(opcodes::AND);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::Or(a, b) => {
+                            self.emit_value_fresh(func, *a);
+                            self.emit_value_fresh(func, *b);
+                            self.asm.emit_op(opcodes::OR);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::Xor(a, b) => {
+                            self.emit_value_fresh(func, *a);
+                            self.emit_value_fresh(func, *b);
+                            self.asm.emit_op(opcodes::XOR);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::Not(a) => {
+                            self.emit_value_fresh(func, *a);
+                            self.asm.emit_op(opcodes::NOT);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::Shl(shift, value) => {
+                            self.emit_value_fresh(func, *shift);
+                            self.emit_value_fresh(func, *value);
+                            self.asm.emit_op(opcodes::SHL);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::Shr(shift, value) => {
+                            self.emit_value_fresh(func, *shift);
+                            self.emit_value_fresh(func, *value);
+                            self.asm.emit_op(opcodes::SHR);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::Sar(shift, value) => {
+                            self.emit_value_fresh(func, *shift);
+                            self.emit_value_fresh(func, *value);
+                            self.asm.emit_op(opcodes::SAR);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::Byte(index, value) => {
+                            self.emit_value_fresh(func, *index);
+                            self.emit_value_fresh(func, *value);
+                            self.asm.emit_op(opcodes::BYTE);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::Lt(a, b) => {
+                            self.emit_value_fresh(func, *a);
+                            self.emit_value_fresh(func, *b);
+                            self.asm.emit_op(opcodes::LT);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::Gt(a, b) => {
+                            self.emit_value_fresh(func, *a);
+                            self.emit_value_fresh(func, *b);
+                            self.asm.emit_op(opcodes::GT);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::SLt(a, b) => {
+                            self.emit_value_fresh(func, *a);
+                            self.emit_value_fresh(func, *b);
+                            self.asm.emit_op(opcodes::SLT);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::SGt(a, b) => {
+                            self.emit_value_fresh(func, *a);
+                            self.emit_value_fresh(func, *b);
+                            self.asm.emit_op(opcodes::SGT);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::Eq(a, b) => {
+                            self.emit_value_fresh(func, *a);
+                            self.emit_value_fresh(func, *b);
+                            self.asm.emit_op(opcodes::EQ);
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.pop();
+                            self.scheduler.stack.push(val);
+                        }
+                        crate::mir::InstKind::IsZero(a) => {
+                            self.emit_value_fresh(func, *a);
+                            self.asm.emit_op(opcodes::ISZERO);
                             self.scheduler.stack.pop();
                             self.scheduler.stack.push(val);
                         }

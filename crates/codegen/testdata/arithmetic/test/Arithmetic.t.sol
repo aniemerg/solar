@@ -58,6 +58,24 @@ contract ArithmeticTest {
         assert(arith.mod(7, 4) == 3);
     }
 
+    function test_ExpBasic() public view {
+        assert(arith.exp(3, 4) == 81);
+        assert(arith.exp(2, 8) == 256);
+    }
+
+    function test_ExpLiteralBase() public view {
+        assert(arith.expLiteralBase(0) == 1);
+        assert(arith.expLiteralBase(1) == 2);
+        assert(arith.expLiteralBase(2) == 4);
+    }
+
+    function test_ExpSigned() public view {
+        assert(arith.expSigned(-2, 2) == 4);
+        assert(arith.expSigned(-2, 3) == -8);
+        assert(arith.expSignedLiteral(2) == 4);
+        assert(arith.expSignedLiteral(3) == -8);
+    }
+
     // ========== Comparison Operators ==========
 
     function test_LessThan() public view {
@@ -114,6 +132,11 @@ contract ArithmeticTest {
         assert(arith.bitwiseXor(0xAA, 0x55) == 0xFF);
     }
 
+    function test_BitwiseNot() public view {
+        assert(arith.bitwiseNot(0) == type(uint256).max);
+        assert(arith.bitwiseNot(0xFF) == (type(uint256).max - 0xFF));
+    }
+
     // ========== Signed Arithmetic ==========
 
     function test_SignedAdd() public view {
@@ -145,6 +168,12 @@ contract ArithmeticTest {
         assert(arith.signedDiv(-7, 2) == -3);
     }
 
+    function test_SignedMod() public view {
+        assert(arith.signedMod(10, 3) == 1);
+        assert(arith.signedMod(-7, 2) == -1);
+        assert(arith.signedMod(7, -2) == 1);
+    }
+
     function test_SignedLt() public view {
         assert(arith.signedLt(-5, 0) == true);
         assert(arith.signedLt(-10, -5) == true);
@@ -170,6 +199,23 @@ contract ArithmeticTest {
         assert(arith.shiftRight(256, 8) == 1);
         assert(arith.shiftRight(255, 4) == 15);
         assert(arith.shiftRight(1, 1) == 0);
+    }
+
+    function test_ShiftLarge() public view {
+        assert(arith.shiftLeft(1, 256) == 0);
+        assert(arith.shiftRight(1, 256) == 0);
+    }
+
+    function test_SignedShiftRight() public view {
+        assert(arith.signedShiftRight(4, 1) == 2);
+        assert(arith.signedShiftRight(-1, 1) == -1);
+        assert(arith.signedShiftRight(-2, 1) == -1);
+        assert(arith.signedShiftRight(-1, 256) == -1);
+    }
+
+    function test_IsZero() public view {
+        assert(arith.isZero(0) == true);
+        assert(arith.isZero(1) == false);
     }
 
     // ========== Complex Expressions ==========
@@ -230,5 +276,17 @@ contract ArithmeticTest {
         arith.setValue(100);
         arith.divAssign(5);
         assert(arith.value() == 20);
+    }
+
+    function test_DivByZeroReverts() public {
+        bytes memory data = hex"f41b496900000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000";
+        (bool success,) = address(arith).call{gas: 50000}(data);
+        assert(success == false);
+    }
+
+    function test_ModByZeroReverts() public {
+        bytes memory data = hex"ce97ab5100000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000";
+        (bool success,) = address(arith).call{gas: 50000}(data);
+        assert(success == false);
     }
 }
