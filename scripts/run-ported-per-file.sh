@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-PORTED_ROOT="$ROOT_DIR/crates/codegen/testdata-ported"
+PORTED_ROOT="$ROOT_DIR/crates/codegen/testdata-solc"
 OUTDIR="${OUTDIR:-/tmp/ported-per-file}"
 
 if [[ -n "${FOUNDRY_SOLC:-}" ]]; then

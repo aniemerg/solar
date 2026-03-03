@@ -854,161 +854,161 @@ mod tests {
 
     #[test]
     fn test_ported_abi_encode_decode() {
-        test_project_solar_ported("ported_abi_encode_decode", "testdata-ported/abi-encode-decode");
+        test_project_solar_ported("ported_abi_encode_decode", "testdata-solc/abi-encode-decode");
     }
 
     #[test]
     fn test_ported_arithmetic() {
-        test_project_solar_ported("ported_arithmetic", "testdata-ported/arithmetic");
+        test_project_solar_ported("ported_arithmetic", "testdata-solc/arithmetic");
     }
 
     #[test]
     fn test_ported_arrays() {
-        test_project_solar_ported("ported_arrays", "testdata-ported/arrays");
+        test_project_solar_ported("ported_arrays", "testdata-solc/arrays");
     }
 
     #[test]
     fn test_ported_builtin_functions() {
-        test_project_solar_ported("ported_builtin_functions", "testdata-ported/builtin-functions");
+        test_project_solar_ported("ported_builtin_functions", "testdata-solc/builtin-functions");
     }
 
     #[test]
     fn test_ported_calldata() {
-        test_project_solar_ported("ported_calldata", "testdata-ported/calldata");
+        test_project_solar_ported("ported_calldata", "testdata-solc/calldata");
     }
 
     #[test]
     fn test_ported_calls() {
-        test_project_solar_ported("ported_calls", "testdata-ported/calls");
+        test_project_solar_ported("ported_calls", "testdata-solc/calls");
     }
 
     #[test]
     fn test_ported_constructor() {
-        test_project_solar_ported("ported_constructor", "testdata-ported/constructor");
+        test_project_solar_ported("ported_constructor", "testdata-solc/constructor");
     }
 
     #[test]
     fn test_ported_control_flow() {
-        test_project_solar_ported("ported_control_flow", "testdata-ported/control-flow");
+        test_project_solar_ported("ported_control_flow", "testdata-solc/control-flow");
     }
 
     #[test]
     fn test_ported_conversions() {
-        test_project_solar_ported("ported_conversions", "testdata-ported/conversions");
+        test_project_solar_ported("ported_conversions", "testdata-solc/conversions");
     }
 
     #[test]
     fn test_ported_enums() {
-        test_project_solar_ported("ported_enums", "testdata-ported/enums");
+        test_project_solar_ported("ported_enums", "testdata-solc/enums");
     }
 
     #[test]
     fn test_ported_errors() {
-        test_project_solar_ported("ported_errors", "testdata-ported/errors");
+        test_project_solar_ported("ported_errors", "testdata-solc/errors");
     }
 
     #[test]
     fn test_ported_events() {
-        test_project_solar_ported("ported_events", "testdata-ported/events");
+        test_project_solar_ported("ported_events", "testdata-solc/events");
     }
 
     #[test]
     fn test_ported_expressions() {
-        test_project_solar_ported("ported_expressions", "testdata-ported/expressions");
+        test_project_solar_ported("ported_expressions", "testdata-solc/expressions");
     }
 
     #[test]
     fn test_ported_fallback() {
-        test_project_solar_ported("ported_fallback", "testdata-ported/fallback");
+        test_project_solar_ported("ported_fallback", "testdata-solc/fallback");
     }
 
     #[test]
     fn test_ported_hashing() {
-        test_project_solar_ported("ported_hashing", "testdata-ported/hashing");
+        test_project_solar_ported("ported_hashing", "testdata-solc/hashing");
     }
 
     #[test]
     fn test_ported_immutable() {
-        test_project_solar_ported("ported_immutable", "testdata-ported/immutable");
+        test_project_solar_ported("ported_immutable", "testdata-solc/immutable");
     }
 
     #[test]
     fn test_ported_inheritance() {
-        test_project_solar_ported("ported_inheritance", "testdata-ported/inheritance");
+        test_project_solar_ported("ported_inheritance", "testdata-solc/inheritance");
     }
 
     #[test]
     fn test_ported_libraries() {
-        test_project_solar_ported("ported_libraries", "testdata-ported/libraries");
+        test_project_solar_ported("ported_libraries", "testdata-solc/libraries");
     }
 
     #[test]
     fn test_ported_literals() {
-        test_project_solar_ported("ported_literals", "testdata-ported/literals");
+        test_project_solar_ported("ported_literals", "testdata-solc/literals");
     }
 
     #[test]
     fn test_ported_memory_management() {
-        test_project_solar_ported("ported_memory_management", "testdata-ported/memory-management");
+        test_project_solar_ported("ported_memory_management", "testdata-solc/memory-management");
     }
 
     #[test]
     fn test_ported_modifiers() {
-        test_project_solar_ported("ported_modifiers", "testdata-ported/modifiers");
+        test_project_solar_ported("ported_modifiers", "testdata-solc/modifiers");
     }
 
     #[test]
     fn test_ported_operators() {
-        test_project_solar_ported("ported_operators", "testdata-ported/operators");
+        test_project_solar_ported("ported_operators", "testdata-solc/operators");
     }
 
     #[test]
     fn test_ported_payable() {
-        test_project_solar_ported("ported_payable", "testdata-ported/payable");
+        test_project_solar_ported("ported_payable", "testdata-solc/payable");
     }
 
     #[test]
     fn test_ported_receive() {
-        test_project_solar_ported("ported_receive", "testdata-ported/receive");
+        test_project_solar_ported("ported_receive", "testdata-solc/receive");
     }
 
     #[test]
     fn test_ported_revert_strings() {
-        test_project_solar_ported("ported_revert_strings", "testdata-ported/revert-strings");
+        test_project_solar_ported("ported_revert_strings", "testdata-solc/revert-strings");
     }
 
     #[test]
     fn test_ported_reverts() {
-        test_project_solar_ported("ported_reverts", "testdata-ported/reverts");
+        test_project_solar_ported("ported_reverts", "testdata-solc/reverts");
     }
 
     #[test]
     fn test_ported_scoping() {
-        test_project_solar_ported("ported_scoping", "testdata-ported/scoping");
+        test_project_solar_ported("ported_scoping", "testdata-solc/scoping");
     }
 
     #[test]
     fn test_ported_statements() {
-        test_project_solar_ported("ported_statements", "testdata-ported/statements");
+        test_project_solar_ported("ported_statements", "testdata-solc/statements");
     }
 
     #[test]
     fn test_ported_storage() {
-        test_project_solar_ported("ported_storage", "testdata-ported/storage");
+        test_project_solar_ported("ported_storage", "testdata-solc/storage");
     }
 
     #[test]
     fn test_ported_strings() {
-        test_project_solar_ported("ported_strings", "testdata-ported/strings");
+        test_project_solar_ported("ported_strings", "testdata-solc/strings");
     }
 
     #[test]
     fn test_ported_structs() {
-        test_project_solar_ported("ported_structs", "testdata-ported/structs");
+        test_project_solar_ported("ported_structs", "testdata-solc/structs");
     }
 
     #[test]
     fn test_ported_try_catch() {
-        test_project_solar_ported("ported_try_catch", "testdata-ported/try-catch");
+        test_project_solar_ported("ported_try_catch", "testdata-solc/try-catch");
     }
 }
