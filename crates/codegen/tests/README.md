@@ -7,6 +7,15 @@ These tests compare Solar's EVM codegen against solc by:
 2. Deploying to a local anvil instance
 3. Running the same operations and comparing results
 
+## Solc-Ported Corpus
+
+Additional Foundry suites ported from Solidity semantic tests live under
+`crates/codegen/testdata-solc/`.
+
+Each subdirectory is an independent Foundry project (`src/`, `test/`, `foundry.toml`).
+The intended direction is a 1:1 correspondence between portable Solidity semantic tests and
+Solar harness tests, with solc behavior as the baseline.
+
 ### Prerequisites
 
 - `anvil` (from Foundry)
