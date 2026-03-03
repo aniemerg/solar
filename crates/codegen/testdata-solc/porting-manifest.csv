@@ -1,0 +1,1541 @@
+solidity_test,status,solar_suite,solar_src,solar_test,notes
+abiEncodeDecode/abi_decode_calldata.sol,ported,abi-encode-decode,src/AbiDecodeCalldata.sol,,ABI decode from calldata
+abiEncodeDecode/abi_decode_simple.sol,ported,abi-encode-decode,src/AbiDecodeSimple.sol,,ABI decoder parity risk
+abiEncodeDecode/abi_decode_simple_storage.sol,ported,abi-encode-decode,src/AbiDecodeSimpleStorage.sol,,ABI decode from storage
+abiEncodeDecode/abi_encode_call.sol,ported,abi-encode-decode,src/AbiEncodeCall.sol,,abi.encodeCall + UDVT + struct
+abiEncodeDecode/abi_encode_call_declaration.sol,pending,,,,
+abiEncodeDecode/abi_encode_call_is_consistent.sol,pending,,,,
+abiEncodeDecode/abi_encode_call_memory.sol,ported,abi-encode-decode,src/AbiEncodeCallMemory.sol,,abi.encodeCall with function pointers
+abiEncodeDecode/abi_encode_call_special_args.sol,pending,,,,
+abiEncodeDecode/abi_encode_call_uint_bytes.sol,pending,,,,
+abiEncodeDecode/abi_encode_empty_string_v1.sol,pending,,,,
+abiEncodeDecode/abi_encode_with_selector.sol,ported,abi-encode-decode,src/AbiEncodeWithSelector.sol,,Checks selector prefix and equivalence
+abiEncodeDecode/abi_encode_with_selectorv2.sol,pending,,,,
+abiEncodeDecode/abi_encode_with_signature.sol,ported,abi-encode-decode,src/AbiEncodeWithSignature.sol,,Selector hashing from signature
+abiEncodeDecode/abi_encode_with_signaturev2.sol,pending,,,,
+abiEncodeDecode/contract_array.sol,pending,,,,
+abiEncodeDecode/contract_array_v2.sol,pending,,,,
+abiEncodeDecode/offset_overflow_in_array_decoding.sol,pending,,,,
+abiEncodeDecode/offset_overflow_in_array_decoding_2.sol,pending,,,,
+abiEncodeDecode/offset_overflow_in_array_decoding_3.sol,pending,,,,
+abiEncoderV1/abi_decode_dynamic_array.sol,pending,,,,
+abiEncoderV1/abi_decode_fixed_arrays.sol,pending,,,,
+abiEncoderV1/abi_decode_static_array.sol,pending,,,,
+abiEncoderV1/abi_decode_static_array_v2.sol,pending,,,,
+abiEncoderV1/abi_decode_trivial.sol,pending,,,,
+abiEncoderV1/abi_decode_v2.sol,pending,,,,
+abiEncoderV1/abi_decode_v2_calldata.sol,pending,,,,
+abiEncoderV1/abi_decode_v2_storage.sol,pending,,,,
+abiEncoderV1/abi_encode.sol,pending,,,,
+abiEncoderV1/abi_encode_call.sol,pending,,,,
+abiEncoderV1/abi_encode_calldata_slice.sol,pending,,,,
+abiEncoderV1/abi_encode_decode_simple.sol,pending,,,,
+abiEncoderV1/abi_encode_empty_string.sol,pending,,,,
+abiEncoderV1/abi_encode_rational.sol,pending,,,,
+abiEncoderV1/bool_out_of_bounds.sol,pending,,,,
+abiEncoderV1/byte_arrays.sol,pending,,,,
+abiEncoderV1/calldata_arrays_too_large.sol,pending,,,,
+abiEncoderV1/calldata_bytes_bytes32_arrays.sol,pending,,,,
+abiEncoderV1/cleanup/cleanup.sol,pending,,,,
+abiEncoderV1/decode_slice.sol,pending,,,,
+abiEncoderV1/dynamic_arrays.sol,pending,,,,
+abiEncoderV1/dynamic_memory_copy.sol,pending,,,,
+abiEncoderV1/enums.sol,pending,,,,
+abiEncoderV1/memory_dynamic_array_and_calldata_bytes.sol,pending,,,,
+abiEncoderV1/memory_params_in_external_function.sol,pending,,,,
+abiEncoderV1/return_dynamic_types_cross_call_advanced.sol,pending,,,,
+abiEncoderV1/return_dynamic_types_cross_call_out_of_range_1.sol,pending,,,,
+abiEncoderV1/return_dynamic_types_cross_call_out_of_range_2.sol,pending,,,,
+abiEncoderV1/return_dynamic_types_cross_call_simple.sol,pending,,,,
+abiEncoderV1/struct/struct_storage_ptr.sol,pending,,,,
+abiEncoderV2/abi_encode_calldata_slice.sol,pending,,,,
+abiEncoderV2/abi_encode_empty_string_v2.sol,pending,,,,
+abiEncoderV2/abi_encode_rational_v2.sol,pending,,,,
+abiEncoderV2/abi_encode_v2.sol,pending,,,,
+abiEncoderV2/abi_encode_v2_in_function_inherited_in_v1_contract.sol,pending,,,,
+abiEncoderV2/abi_encode_v2_in_modifier_used_in_v1_contract.sol,pending,,,,
+abiEncoderV2/abi_encoder_v2_head_overflow_with_static_array_cleanup_bug.sol,pending,,,,
+abiEncoderV2/bool_out_of_bounds.sol,pending,,,,
+abiEncoderV2/byte_arrays.sol,pending,,,,
+abiEncoderV2/calldata_array.sol,pending,,,,
+abiEncoderV2/calldata_array_dynamic.sol,pending,,,,
+abiEncoderV2/calldata_array_dynamic_index_access.sol,pending,,,,
+abiEncoderV2/calldata_array_dynamic_static_dynamic.sol,pending,,,,
+abiEncoderV2/calldata_array_dynamic_static_in_library.sol,pending,,,,
+abiEncoderV2/calldata_array_dynamic_static_short_decode.sol,pending,,,,
+abiEncoderV2/calldata_array_dynamic_static_short_reencode.sol,pending,,,,
+abiEncoderV2/calldata_array_function_types.sol,pending,,,,
+abiEncoderV2/calldata_array_multi_dynamic.sol,pending,,,,
+abiEncoderV2/calldata_array_short.sol,pending,,,,
+abiEncoderV2/calldata_array_short_no_revert_string.sol,pending,,,,
+abiEncoderV2/calldata_array_static.sol,pending,,,,
+abiEncoderV2/calldata_array_static_dynamic_static.sol,pending,,,,
+abiEncoderV2/calldata_array_static_index_access.sol,pending,,,,
+abiEncoderV2/calldata_array_struct_dynamic.sol,pending,,,,
+abiEncoderV2/calldata_array_two_dynamic.sol,pending,,,,
+abiEncoderV2/calldata_array_two_static.sol,pending,,,,
+abiEncoderV2/calldata_dynamic_array_to_memory.sol,pending,,,,
+abiEncoderV2/calldata_nested_array_reencode.sol,pending,,,,
+abiEncoderV2/calldata_nested_array_static_reencode.sol,pending,,,,
+abiEncoderV2/calldata_overlapped_dynamic_arrays.sol,pending,,,,
+abiEncoderV2/calldata_overlapped_nested_dynamic_arrays.sol,pending,,,,
+abiEncoderV2/calldata_struct_array_reencode.sol,pending,,,,
+abiEncoderV2/calldata_struct_dynamic.sol,pending,,,,
+abiEncoderV2/calldata_struct_member_offset.sol,pending,,,,
+abiEncoderV2/calldata_struct_simple.sol,pending,,,,
+abiEncoderV2/calldata_three_dimensional_dynamic_array_index_access.sol,pending,,,,
+abiEncoderV2/calldata_with_garbage.sol,pending,,,,
+abiEncoderV2/cleanup/address.sol,pending,,,,
+abiEncoderV2/cleanup/bool.sol,pending,,,,
+abiEncoderV2/cleanup/bytesx.sol,pending,,,,
+abiEncoderV2/cleanup/cleanup.sol,pending,,,,
+abiEncoderV2/cleanup/dynamic_array.sol,pending,,,,
+abiEncoderV2/cleanup/function.sol,pending,,,,
+abiEncoderV2/cleanup/intx.sol,pending,,,,
+abiEncoderV2/cleanup/reencoded_calldata_string.sol,pending,,,,
+abiEncoderV2/cleanup/simple_struct.sol,pending,,,,
+abiEncoderV2/cleanup/static_array.sol,pending,,,,
+abiEncoderV2/cleanup/uintx.sol,pending,,,,
+abiEncoderV2/dynamic_arrays.sol,pending,,,,
+abiEncoderV2/dynamic_nested_arrays.sol,pending,,,,
+abiEncoderV2/enums.sol,pending,,,,
+abiEncoderV2/memory_dynamic_array_and_calldata_bytes.sol,pending,,,,
+abiEncoderV2/memory_dynamic_array_and_calldata_static_array.sol,pending,,,,
+abiEncoderV2/memory_params_in_external_function.sol,pending,,,,
+abiEncoderV2/storage_array_encoding.sol,pending,,,,
+abiEncoderV2/struct/mediocre2_struct.sol,pending,,,,
+abiEncoderV2/struct/mediocre_struct.sol,pending,,,,
+abiEncoderV2/struct/struct_function.sol,pending,,,,
+abiEncoderV2/struct/struct_short.sol,pending,,,,
+abiEncoderV2/struct/struct_simple.sol,pending,,,,
+abiEncoderV2/struct/struct_validation.sol,pending,,,,
+abiEncoderV2/struct/validation_function_type_inside_struct.sol,pending,,,,
+accessor/accessor_for_const_state_variable.sol,pending,,,,
+accessor/accessor_for_state_variable.sol,pending,,,,
+arithmetics/addmod_mulmod.sol,pending,,,,
+arithmetics/addmod_mulmod_zero.sol,pending,,,,
+arithmetics/block_inside_unchecked.sol,pending,,,,
+arithmetics/check_var_init.sol,pending,,,,
+arithmetics/checked_add_v1.sol,pending,,,,
+arithmetics/checked_add_v2.sol,ported,arithmetic,src/CheckedAddV2.sol,,Overflow behavior may differ; confirm Solar semantics before asserting reverts
+arithmetics/checked_called_by_unchecked.sol,pending,,,,
+arithmetics/checked_modifier_called_by_unchecked.sol,pending,,,,
+arithmetics/divisiod_by_zero.sol,pending,,,,
+arithmetics/exp_associativity.sol,pending,,,,
+arithmetics/signed_mod.sol,pending,,,,
+arithmetics/unchecked_called_by_checked.sol,pending,,,,
+arithmetics/unchecked_div_by_zero.sol,ported,arithmetic,src/UncheckedDivByZero.sol,,Division/mod by zero should revert
+array/arrayMemoryAllocation/array_2d_zeroed_memory_index_access.sol,ported,arrays,src/Array2dZeroedMemoryIndexAccess.sol,,Zeroed 2D memory array bounds
+array/arrayMemoryAllocation/array_array_static.sol,ported,arrays,src/ArrayArrayStatic.sol,,Static subarray access bounds
+array/arrayMemoryAllocation/array_static_return_param_zeroed_memory_index_access.sol,ported,arrays,src/ArrayStaticReturnParamZeroedMemory.sol,,Zeroed return params for arrays
+array/arrayMemoryAllocation/array_static_zeroed_memory_index_access.sol,ported,arrays,src/ArrayStaticZeroedMemoryIndexAccess.sol,,Zeroed static memory array reads
+array/arrayMemoryAllocation/array_zeroed_memory_index_access.sol,ported,arrays,src/ArrayZeroedMemoryIndexAccess.sol,,Zeroed memory array reads + bounds
+array/array_2d_assignment.sol,pending,,,,
+array/array_2d_new.sol,pending,,,,
+array/array_3d_assignment.sol,pending,,,,
+array/array_3d_new.sol,pending,,,,
+array/array_function_pointers.sol,pending,,,,
+array/array_memory_as_parameter.sol,pending,,,,
+array/array_memory_create.sol,pending,,,,
+array/array_memory_index_access.sol,ported,arrays,src/ArrayMemoryIndexAccess.sol,,Memory array access + bounds
+array/array_push_return_reference.sol,ported,arrays,src/ArrayPushReturnReference.sol,,Push returns reference
+array/array_push_with_arg.sol,ported,arrays,src/ArrayPushWithArg.sol,,Push with argument + bounds
+array/array_storage_index_access.sol,ported,arrays,src/ArrayStorageIndexAccess.sol,,Fuzz-style `test*` in src renamed; deterministic test calls helper to avoid OOG
+array/array_storage_index_boundary_test.sol,ported,arrays,src/ArrayStorageBoundaryCheck.sol,,Fuzz-style `test*` in src renamed; deterministic test calls helper to avoid OOG
+array/array_storage_index_zeroed_test.sol,ported,arrays,src/ArrayStorageIndexZeroed.sol,,Fuzz-style `test*` in src renamed; deterministic test calls helper to avoid OOG
+array/array_storage_length_access.sol,ported,arrays,src/ArrayStorageLengthAccess.sol,,Dynamic array length access
+array/array_storage_pop_zero_length.sol,ported,arrays,src/ArrayStoragePopZeroLength.sol,,Pop from empty dynamic array
+array/array_storage_push_empty.sol,ported,arrays,src/ArrayStoragePushEmpty.sol,,Push zero values into dynamic array
+array/array_storage_push_empty_length_address.sol,ported,arrays,src/ArrayStoragePushEmptyLengthAddress.sol,,Address array length mutations
+array/array_storage_push_pop.sol,ported,arrays,src/ArrayStoragePushPop.sol,,Dynamic array push/pop
+array/arrays_complex_from_and_to_storage.sol,ported,arrays,src/ArraysComplexFromAndToStorage.sol,,Nested fixed-size arrays to/from storage
+array/byte_array_storage_layout.sol,ported,arrays,src/ByteArrayStorageLayout.sol,,Bytes storage layout via assembly
+array/byte_array_transitional_2.sol,pending,,,,
+array/bytes_length_member.sol,pending,,,,
+array/bytes_to_fixed_bytes_cleanup.sol,pending,,,,
+array/bytes_to_fixed_bytes_simple.sol,pending,,,,
+array/bytes_to_fixed_bytes_too_long.sol,pending,,,,
+array/calldata_array.sol,ported,arrays,src/ArrayCalldataFixed.sol,,Fixed-size calldata array
+array/calldata_array_as_argument_internal_function.sol,ported,arrays,src/CalldataArraySlice.sol,,Calldata array slice and pass-through
+array/calldata_array_dynamic_invalid.sol,pending,,,,
+array/calldata_array_dynamic_invalid_static_middle.sol,pending,,,,
+array/calldata_array_of_struct.sol,pending,,,,
+array/calldata_array_two_dimensional.sol,pending,,,,
+array/calldata_array_two_dimensional_1.sol,pending,,,,
+array/calldata_bytes_array_bounds.sol,pending,,,,
+array/calldata_slice_access.sol,pending,,,,
+array/concat/bytes_concat_2_args.sol,pending,,,,
+array/concat/bytes_concat_3_args.sol,pending,,,,
+array/concat/bytes_concat_as_argument.sol,pending,,,,
+array/concat/bytes_concat_different_types.sol,pending,,,,
+array/concat/bytes_concat_empty_argument_list.sol,pending,,,,
+array/concat/bytes_concat_empty_strings.sol,pending,,,,
+array/concat/bytes_concat_nested.sol,pending,,,,
+array/constant_var_as_array_length.sol,pending,,,,
+array/copying/array_copy_calldata_storage.sol,pending,,,,
+array/copying/array_copy_cleanup_uint128.sol,pending,,,,
+array/copying/array_copy_cleanup_uint40.sol,pending,,,,
+array/copying/array_copy_clear_storage.sol,pending,,,,
+array/copying/array_copy_clear_storage_packed.sol,pending,,,,
+array/copying/array_copy_different_packing.sol,pending,,,,
+array/copying/array_copy_including_array.sol,pending,,,,
+array/copying/array_copy_memory_to_storage.sol,pending,,,,
+array/copying/array_copy_nested_array.sol,pending,,,,
+array/copying/array_copy_storage_abi_signed.sol,pending,,,,
+array/copying/array_copy_storage_storage_different_base.sol,pending,,,,
+array/copying/array_copy_storage_storage_different_base_nested.sol,pending,,,,
+array/copying/array_copy_storage_storage_dyn_dyn.sol,pending,,,,
+array/copying/array_copy_storage_storage_dynamic_dynamic.sol,pending,,,,
+array/copying/array_copy_storage_storage_static_dynamic.sol,pending,,,,
+array/copying/array_copy_storage_storage_static_simple.sol,pending,,,,
+array/copying/array_copy_storage_storage_static_static.sol,pending,,,,
+array/copying/array_copy_storage_storage_struct.sol,pending,,,,
+array/copying/array_copy_storage_to_memory.sol,pending,,,,
+array/copying/array_copy_storage_to_memory_nested.sol,pending,,,,
+array/copying/array_copy_target_leftover.sol,pending,,,,
+array/copying/array_copy_target_leftover2.sol,pending,,,,
+array/copying/array_copy_target_simple.sol,pending,,,,
+array/copying/array_copy_target_simple_2.sol,pending,,,,
+array/copying/array_elements_to_mapping.sol,pending,,,,
+array/copying/array_nested_calldata_to_memory.sol,pending,,,,
+array/copying/array_nested_calldata_to_storage.sol,pending,,,,
+array/copying/array_nested_memory_to_storage.sol,pending,,,,
+array/copying/array_nested_storage_to_memory.sol,pending,,,,
+array/copying/array_of_function_external_storage_to_storage_dynamic.sol,pending,,,,
+array/copying/array_of_function_external_storage_to_storage_dynamic_different_mutability.sol,pending,,,,
+array/copying/array_of_struct_calldata_to_memory.sol,pending,,,,
+array/copying/array_of_struct_calldata_to_storage.sol,pending,,,,
+array/copying/array_of_struct_memory_to_storage.sol,pending,,,,
+array/copying/array_of_structs_containing_arrays_calldata_to_memory.sol,pending,,,,
+array/copying/array_of_structs_containing_arrays_calldata_to_storage.sol,pending,,,,
+array/copying/array_of_structs_containing_arrays_memory_to_storage.sol,pending,,,,
+array/copying/array_storage_multi_items_per_slot.sol,pending,,,,
+array/copying/array_to_mapping.sol,pending,,,,
+array/copying/arrays_from_and_to_storage.sol,pending,,,,
+array/copying/bytes_calldata_to_string_calldata.sol,pending,,,,
+array/copying/bytes_inside_mappings.sol,pending,,,,
+array/copying/bytes_memory_to_storage.sol,pending,,,,
+array/copying/bytes_storage_to_memory.sol,pending,,,,
+array/copying/bytes_storage_to_storage.sol,pending,,,,
+array/copying/calldata_1d_array_into_2d_memory_array_element.sol,pending,,,,
+array/copying/calldata_2d_bytes_to_memory.sol,pending,,,,
+array/copying/calldata_2d_bytes_to_memory_2.sol,pending,,,,
+array/copying/calldata_array_dynamic_to_storage.sol,pending,,,,
+array/copying/calldata_array_of_struct_to_memory.sol,pending,,,,
+array/copying/calldata_array_static_to_memory.sol,pending,,,,
+array/copying/calldata_array_to_mapping.sol,pending,,,,
+array/copying/calldata_bytes_array_to_memory.sol,pending,,,,
+array/copying/calldata_bytes_to_storage.sol,pending,,,,
+array/copying/calldata_dyn_2d_bytes_to_memory.sol,pending,,,,
+array/copying/calldata_dynamic_array_to_memory.sol,pending,,,,
+array/copying/calldata_nested_array_copy_to_memory.sol,pending,,,,
+array/copying/calldata_to_storage_different_base.sol,pending,,,,
+array/copying/cleanup_during_multi_element_per_slot_copy.sol,pending,,,,
+array/copying/copy_byte_array_in_struct_to_storage.sol,pending,,,,
+array/copying/copy_byte_array_to_storage.sol,pending,,,,
+array/copying/copy_function_internal_storage_array.sol,pending,,,,
+array/copying/copy_internal_function_array_to_storage.sol,pending,,,,
+array/copying/copy_removes_bytes_data.sol,pending,,,,
+array/copying/copying_bytes_multiassign.sol,pending,,,,
+array/copying/dirty_memory_bytes_to_storage_copy.sol,pending,,,,
+array/copying/dirty_memory_bytes_to_storage_copy_ir.sol,pending,,,,
+array/copying/elements_of_nested_array_of_structs_calldata_to_storage.sol,pending,,,,
+array/copying/elements_of_nested_array_of_structs_memory_to_storage.sol,pending,,,,
+array/copying/empty_bytes_copy.sol,pending,,,,
+array/copying/function_type_array_to_storage.sol,pending,,,,
+array/copying/memory_dyn_2d_bytes_to_storage.sol,pending,,,,
+array/copying/memory_to_storage_different_base.sol,pending,,,,
+array/copying/nested_array_element_calldata_to_memory.sol,pending,,,,
+array/copying/nested_array_element_calldata_to_storage.sol,pending,,,,
+array/copying/nested_array_element_memory_to_memory.sol,pending,,,,
+array/copying/nested_array_element_memory_to_storage.sol,pending,,,,
+array/copying/nested_array_element_storage_to_memory.sol,pending,,,,
+array/copying/nested_array_element_storage_to_storage.sol,pending,,,,
+array/copying/nested_array_of_structs_calldata_to_memory.sol,pending,,,,
+array/copying/nested_array_of_structs_calldata_to_storage.sol,pending,,,,
+array/copying/nested_array_of_structs_memory_to_memory.sol,pending,,,,
+array/copying/nested_array_of_structs_memory_to_storage.sol,pending,,,,
+array/copying/nested_array_of_structs_storage_to_storage.sol,pending,,,,
+array/copying/nested_array_of_structs_with_nested_array_from_storage_to_memory.sol,pending,,,,
+array/copying/nested_dynamic_array_element_calldata_to_storage.sol,pending,,,,
+array/copying/storage_memory_nested.sol,pending,,,,
+array/copying/storage_memory_nested_bytes.sol,pending,,,,
+array/copying/storage_memory_nested_from_pointer.sol,pending,,,,
+array/copying/storage_memory_nested_struct.sol,pending,,,,
+array/copying/storage_memory_packed.sol,pending,,,,
+array/copying/storage_memory_packed_dyn.sol,pending,,,,
+array/copying/string_calldata_to_bytes_calldata.sol,pending,,,,
+array/create_dynamic_array_with_zero_length.sol,ported,arrays,src/CreateDynamicArrayZeroLength.sol,,Create empty nested dynamic array
+array/create_memory_array.sol,ported,arrays,src/CreateMemoryArray.sol,,Memory allocation of arrays/structs
+array/create_memory_array_too_large.sol,pending,,,,
+array/create_memory_byte_array.sol,pending,,,,
+array/create_multiple_dynamic_arrays.sol,pending,,,,
+array/delete/bytes_delete_element.sol,pending,,,,
+array/delete/delete_bytes_array.sol,pending,,,,
+array/delete/delete_memory_array.sol,pending,,,,
+array/delete/delete_on_array_of_structs.sol,pending,,,,
+array/delete/delete_removes_bytes_data.sol,pending,,,,
+array/delete/delete_storage_array.sol,pending,,,,
+array/delete/delete_storage_array_packed.sol,pending,,,,
+array/delete/memory_arrays_delete.sol,pending,,,,
+array/dynamic_array_cleanup.sol,pending,,,,
+array/dynamic_arrays_in_storage.sol,pending,,,,
+array/dynamic_multi_array_cleanup.sol,pending,,,,
+array/dynamic_out_of_bounds_array_access.sol,pending,,,,
+array/evm_exceptions_out_of_band_access.sol,pending,,,,
+array/external_array_args.sol,pending,,,,
+array/fixed_array_cleanup.sol,pending,,,,
+array/fixed_arrays_as_return_type.sol,pending,,,,
+array/fixed_arrays_in_constructors.sol,pending,,,,
+array/fixed_arrays_in_storage.sol,pending,,,,
+array/fixed_bytes_length_access.sol,pending,,,,
+array/fixed_out_of_bounds_array_access.sol,pending,,,,
+array/function_array_cross_calls.sol,pending,,,,
+array/function_memory_array.sol,pending,,,,
+array/indexAccess/arrays_complex_memory_index_access.sol,ported,arrays,src/ArraysComplexMemoryIndexAccess.sol,,Nested memory array index access
+array/indexAccess/bytes_index_access.sol,ported,arrays,src/BytesIndexAccess.sol,,Bytes calldata/storage index access
+array/indexAccess/bytes_index_access_memory.sol,ported,arrays,src/BytesIndexAccessMemory.sol,,Bytes memory index access via internal calls
+array/indexAccess/bytes_memory_index_access.sol,ported,arrays,src/BytesMemoryIndexAccess.sol,,Bytes memory index access
+array/indexAccess/fixed_bytes_index_access.sol,ported,arrays,src/FixedBytesIndexAccess.sol,,Fixed bytes index access
+array/indexAccess/index_access.sol,ported,arrays,src/IndexAccess.sol,,Byte indexing and endian swap
+array/indexAccess/inline_array_index_access_ints.sol,ported,arrays,src/InlineArrayIndexAccessInts.sol,,Inline array index access (ints)
+array/indexAccess/inline_array_index_access_strings.sol,ported,arrays,src/InlineArrayIndexAccessStrings.sol,,Inline array index access (strings)
+array/indexAccess/memory_arrays_dynamic_index_access_write.sol,ported,arrays,src/MemoryArraysDynamicIndexAccessWrite.sol,,Storage to memory dynamic index writes
+array/indexAccess/memory_arrays_index_access_write.sol,ported,arrays,src/MemoryArraysIndexAccessWrite.sol,,Nested memory array index writes
+array/inline_array_return.sol,pending,,,,
+array/inline_array_singleton.sol,ported,arrays,src/InlineArraySingleton.sol,,Inline array literal singleton
+array/inline_array_storage_to_memory_conversion_ints.sol,pending,,,,
+array/inline_array_storage_to_memory_conversion_strings.sol,pending,,,,
+array/inline_array_strings_from_document.sol,pending,,,,
+array/invalid_encoding_for_storage_byte_array.sol,pending,,,,
+array/long_byte_array_cleanup_after_delete.sol,pending,,,,
+array/long_byte_array_cleanup_after_overwrite_with_long.sol,pending,,,,
+array/memory.sol,pending,,,,
+array/memory_arrays_of_various_sizes.sol,pending,,,,
+array/nested_calldata_storage.sol,pending,,,,
+array/nested_calldata_storage2.sol,pending,,,,
+array/pop/array_pop.sol,pending,,,,
+array/pop/array_pop_array_transition.sol,pending,,,,
+array/pop/array_pop_empty_exception.sol,pending,,,,
+array/pop/array_pop_isolated.sol,pending,,,,
+array/pop/array_pop_storage_empty.sol,pending,,,,
+array/pop/array_pop_uint16_transition.sol,pending,,,,
+array/pop/array_pop_uint24_transition.sol,pending,,,,
+array/pop/byte_array_pop.sol,pending,,,,
+array/pop/byte_array_pop_copy_long.sol,pending,,,,
+array/pop/byte_array_pop_empty_exception.sol,pending,,,,
+array/pop/byte_array_pop_isolated.sol,pending,,,,
+array/pop/byte_array_pop_long_storage_empty.sol,pending,,,,
+array/pop/byte_array_pop_long_storage_empty_garbage_ref.sol,pending,,,,
+array/pop/byte_array_pop_masking_long.sol,pending,,,,
+array/pop/byte_array_pop_storage_empty.sol,pending,,,,
+array/pop/parenthesized.sol,pending,,,,
+array/push/array_push.sol,pending,,,,
+array/push/array_push_nested.sol,pending,,,,
+array/push/array_push_nested_from_calldata.sol,pending,,,,
+array/push/array_push_nested_from_memory.sol,pending,,,,
+array/push/array_push_packed_array.sol,pending,,,,
+array/push/array_push_struct.sol,pending,,,,
+array/push/array_push_struct_from_calldata.sol,pending,,,,
+array/push/byte_array_push.sol,pending,,,,
+array/push/byte_array_push_transition.sol,pending,,,,
+array/push/nested_bytes_push.sol,pending,,,,
+array/push/push_no_args_1d.sol,pending,,,,
+array/push/push_no_args_2d.sol,pending,,,,
+array/push/push_no_args_bytes.sol,pending,,,,
+array/push/push_no_args_struct.sol,pending,,,,
+array/reusing_memory.sol,pending,,,,
+array/short_fixed_array_cleanup.sol,pending,,,,
+array/slices/array_calldata_assignment.sol,pending,,,,
+array/slices/array_slice_calldata_as_argument_of_external_calls.sol,pending,,,,
+array/slices/array_slice_calldata_to_calldata.sol,pending,,,,
+array/slices/array_slice_calldata_to_memory.sol,pending,,,,
+array/slices/array_slice_calldata_to_storage.sol,pending,,,,
+array/storage_array_ref.sol,ported,arrays,src/StorageArrayRef.sol,,Storage array reference in internal call
+array/string_allocation_bug.sol,pending,,,,
+array/string_bytes_conversion.sol,pending,,,,
+array/string_literal_assign_to_storage_bytes.sol,ported,arrays,src/StringLiteralAssignToStorageBytes.sol,,Assign string literal to storage bytes
+array/strings_in_struct.sol,ported,structs,src/StringsInStruct.sol,,String member in struct
+builtinFunctions/assignment_to_const_var_involving_keccak.sol,pending,,,,
+builtinFunctions/blobhash.sol,pending,,,,
+builtinFunctions/blobhash_shadow_resolution.sol,pending,,,,
+builtinFunctions/blockhash.sol,pending,,,,
+builtinFunctions/blockhash_shadow_resolution.sol,pending,,,,
+builtinFunctions/function_types_sig.sol,ported,builtin-functions,src/FunctionTypesSig.sol,,function selector from function types
+builtinFunctions/iterated_keccak256_with_bytes.sol,pending,,,,
+builtinFunctions/keccak256.sol,pending,,,,
+builtinFunctions/keccak256_empty.sol,ported,hashing,src/HashBuiltins.sol,,keccak256 empty string
+builtinFunctions/keccak256_multiple_arguments.sol,ported,builtin-functions,src/KeccakMultiple.sol,,keccak256 packed 3 args
+builtinFunctions/keccak256_multiple_arguments_with_numeric_literals.sol,ported,builtin-functions,src/KeccakMultipleNumeric.sol,,keccak256 packed numeric literals
+builtinFunctions/keccak256_multiple_arguments_with_string_literals.sol,ported,builtin-functions,src/KeccakMultipleString.sol,,keccak256 packed string literal
+builtinFunctions/keccak256_packed.sol,ported,builtin-functions,src/KeccakPacked.sol,,keccak256(abi.encodePacked)
+builtinFunctions/keccak256_packed_complex_types.sol,ported,builtin-functions,src/KeccakPackedComplexTypes.sol,,keccak packed arrays + contract address
+builtinFunctions/keccak256_with_bytes.sol,ported,hashing,src/HashBuiltins.sol,,keccak256(bytes) matches literal
+builtinFunctions/msg_sig.sol,ported,builtin-functions,src/MsgSig.sol,,msg.sig selector value
+builtinFunctions/msg_sig_after_internal_call_is_same.sol,ported,builtin-functions,src/MsgSigInternal.sol,,msg.sig preserved across internal call
+builtinFunctions/ripemd160.sol,pending,,,,
+builtinFunctions/ripemd160_empty.sol,ported,hashing,src/HashBuiltins.sol,,ripemd160 empty string
+builtinFunctions/ripemd160_packed.sol,ported,builtin-functions,src/Ripemd160Packed.sol,,ripemd160 packed inputs
+builtinFunctions/sha256.sol,pending,,,,
+builtinFunctions/sha256_empty.sol,ported,hashing,src/HashBuiltins.sol,,sha256 empty string
+builtinFunctions/sha256_packed.sol,ported,builtin-functions,src/Sha256Packed.sol,,sha256 packed inputs
+calldata/calldata_array_access.sol,ported,calldata,src/CalldataArrayAccess.sol,,element access + bounds + malformed calldata
+calldata/calldata_array_dynamic_bytes.sol,ported,calldata,src/CalldataArrayDynamicBytes.sol,,Calldata fixed arrays of dynamic bytes
+calldata/calldata_array_index_range_access.sol,ported,calldata,src/CalldataArrayIndexRangeAccess.sol,,slicing length + index access + bounds reverts
+calldata/calldata_array_length.sol,ported,calldata,src/CalldataArrayLength.sol,,length on 1d/2d/fixed arrays + malformed offsets
+calldata/calldata_array_three_dimensional.sol,ported,calldata,src/CalldataArrayThreeDimensional.sol,,3D calldata array indexing and bounds
+calldata/calldata_attached_to_bytes.sol,ported,calldata,src/CalldataAttachedToBytes.sol,,Library using-for applied to calldata bytes
+calldata/calldata_attached_to_dynamic_array_or_slice.sol,ported,calldata,src/CalldataAttachedToDynamicArrayOrSlice.sol,,Library using-for applied to calldata array/slice
+calldata/calldata_attached_to_static_array.sol,ported,calldata,src/CalldataAttachedToStaticArray.sol,,Library using-for applied to calldata static array
+calldata/calldata_attached_to_struct.sol,ported,calldata,src/CalldataAttachedToStruct.sol,,Library using-for applied to calldata struct
+calldata/calldata_bytes_array_bounds.sol,ported,calldata,src/CalldataBytesArrayBounds.sol,,bytes[] bounds checks
+calldata/calldata_bytes_external.sol,ported,calldata,src/CalldataBytesExternal.sol,,External calldata slice access
+calldata/calldata_bytes_internal.sol,ported,calldata,src/CalldataBytesInternal.sol,,Internal calldata slice access
+calldata/calldata_bytes_to_memory.sol,ported,calldata,src/CalldataBytesToMemory.sol,,calldata bytes -> memory keccak
+calldata/calldata_bytes_to_memory_encode.sol,ported,calldata,src/CalldataBytesToMemoryEncode.sol,,abi.encode(bytes(calldata))
+calldata/calldata_internal_function_pointer.sol,ported,calldata,src/CalldataInternalFunctionPointer.sol,,Internal function pointer taking calldata arg
+calldata/calldata_internal_library.sol,ported,calldata,src/CalldataInternalLibrary.sol,,Internal library function with calldata arg
+calldata/calldata_internal_multi_array.sol,ported,calldata,src/CalldataInternalMultiArray.sol,,Internal calldata with multi-dim dynamic array return
+calldata/calldata_internal_multi_fixed_array.sol,ported,calldata,src/CalldataInternalMultiFixedArray.sol,,Internal calldata with multi-dim fixed array return
+calldata/calldata_memory_mixed.sol,ported,calldata,src/CalldataMemoryMixed.sol,,Mixed memory/calldata/memory parameters
+calldata/calldata_string_array.sol,ported,calldata,src/CalldataStringArray.sol,,Calldata string array element access
+calldata/calldata_struct.sol,ported,calldata,src/CalldataStruct.sol,,Struct calldata passed to library function
+calldata/calldata_struct_cleaning.sol,ported,calldata,src/CalldataStructCleaning.sol,,Calldata struct dirty bits cause revert
+calldata/calldata_struct_internal.sol,ported,calldata,src/CalldataStructInternal.sol,,Internal calldata struct forwarding
+calldata/copy_from_calldata_removes_bytes_data.sol,ported,calldata,src/CopyFromCalldataRemovesBytesData.sol,,Assigning empty calldata clears bytes storage
+cleanup/bool_conversion_v1.sol,pending,,,,
+cleanup/bool_conversion_v2.sol,pending,,,,
+cleanup/byte_array_to_storage_cleanup.sol,pending,,,,
+cleanup/cleanup_address_types_shortening.sol,pending,,,,
+cleanup/cleanup_address_types_v1.sol,pending,,,,
+cleanup/cleanup_address_types_v2.sol,pending,,,,
+cleanup/cleanup_bytes_types_shortening_OldCodeGen.sol,pending,,,,
+cleanup/cleanup_bytes_types_shortening_newCodeGen.sol,pending,,,,
+cleanup/cleanup_bytes_types_v1.sol,pending,,,,
+cleanup/cleanup_bytes_types_v2.sol,pending,,,,
+cleanup/cleanup_in_compound_assign.sol,pending,,,,
+cleanup/dirty_calldata_bytes.sol,pending,,,,
+cleanup/dirty_calldata_dynamic_array.sol,pending,,,,
+cleanup/exp_cleanup.sol,pending,,,,
+cleanup/exp_cleanup_direct.sol,pending,,,,
+cleanup/exp_cleanup_nonzero_base.sol,pending,,,,
+cleanup/exp_cleanup_smaller_base.sol,pending,,,,
+cleanup/indexed_log_topic_during_explicit_downcast.sol,pending,,,,
+cleanup/indexed_log_topic_during_explicit_downcast_during_emissions.sol,pending,,,,
+constantEvaluator/negative_fractional_mod.sol,pending,,,,
+constantEvaluator/rounding.sol,pending,,,,
+constants/asm_address_constant_regression.sol,pending,,,,
+constants/asm_constant_file_level.sol,pending,,,,
+constants/assign_type_info.sol,pending,,,,
+constants/constant_string.sol,pending,,,,
+constants/constant_string_at_file_level.sol,pending,,,,
+constants/constant_variables.sol,pending,,,,
+constants/constants_at_file_level_referencing.sol,pending,,,,
+constants/consteval_array_length.sol,pending,,,,
+constants/function_unreferenced.sol,pending,,,,
+constants/same_constants_different_files.sol,pending,,,,
+constants/simple_constant_variables_test.sol,pending,,,,
+constructor/arrays_in_constructors.sol,ported,constructor,src/ArraysInConstructors.sol,,Arrays passed through constructors
+constructor/base_constructor_arguments.sol,ported,constructor,src/BaseConstructorArguments.sol,,Base constructor args in inheritance
+constructor/bytes_in_constructors_packer.sol,ported,constructor,src/BytesInConstructorsPacker.sol,,Bytes passed through constructors with packing
+constructor/bytes_in_constructors_unpacker.sol,ported,constructor,src/BytesInConstructorsUnpacker.sol,,Bytes stored via constructor
+constructor/callvalue_check.sol,ported,constructor,src/CallvalueCheck.sol,,Callvalue check with inline assembly create
+constructor/constructor_arguments_external.sol,ported,constructor,src/ConstructorArgumentsExternal.sol,,External constructor args
+constructor/constructor_arguments_internal.sol,ported,constructor,src/ConstructorArgumentsInternal.sol,,Internal constructor args with nested deployment
+constructor/constructor_function_argument.sol,ported,constructor,src/ConstructorFunctionArgument.sol,,External function pointer as constructor argument
+constructor/constructor_function_complex.sol,ported,constructor,src/ConstructorFunctionComplex.sol,,External function pointer called in constructor
+constructor/constructor_static_array_argument.sol,ported,constructor,src/ConstructorStaticArrayArgument.sol,,Static array ctor argument
+constructor/evm_exceptions_in_constructor_call_fail.sol,ported,constructor,src/EvmExceptionsInConstructorCallFail.sol,,EVM exception in constructor via call
+constructor/function_usage_in_constructor_arguments.sol,ported,constructor,src/FunctionUsageInConstructorArguments.sol,,Function call in base constructor argument
+constructor/functions_called_by_constructor.sol,ported,constructor,src/FunctionsCalledByConstructor.sol,,Private function called from constructor
+constructor/functions_called_by_constructor_through_dispatch.sol,ported,constructor,src/FunctionsCalledByConstructorThroughDispatch.sol,,Internal function pointer dispatch in constructor
+constructor/inline_member_init_inheritence_without_constructor.sol,ported,constructor,src/InlineMemberInitInheritenceWithoutConstructor.sol,,Inline state variable init in inheritance chain
+constructor/no_callvalue_check.sol,ported,constructor,src/NoCallvalueCheck.sol,,Payable constructors accept value during creation
+constructor/order_of_evaluation.sol,ported,constructor,src/ConstructorOrderOfEvaluation.sol,,Base constructor evaluation order
+constructor/payable_constructor.sol,ported,constructor,src/PayableConstructor.sol,,Payable constructor deploys with value
+constructor/state_variable_initialization.sol,ported,constructor,src/StateVariableInitialization.sol,,Initialization correctness
+constructor/store_function_in_constructor.sol,ported,constructor,src/StoreFunctionInConstructor.sol,,Internal function pointer stored in constructor
+constructor/store_function_in_constructor_packed.sol,ported,constructor,src/StoreFunctionInConstructorPacked.sol,,Internal function pointer stored with packed storage
+constructor/store_internal_unused_function_in_constructor.sol,ported,constructor,src/StoreInternalUnusedFunctionInConstructor.sol,,Unused internal function stored in constructor
+constructor/store_internal_unused_library_function_in_constructor.sol,ported,constructor,src/StoreInternalUnusedLibraryFunctionInConstructor.sol,,Library internal function stored in constructor
+constructor/transient_state_variable_initialization.sol,ported,constructor,src/TransientStateVariableInitialization.sol,,Transient storage variable initialized in constructor
+conversions/function_type_array_to_storage.sol,pending,,,,
+conversions/string_to_bytes.sol,ported,conversions,src/StringToBytes.sol,,string -> bytes conversion
+deployedCodeExclusion/bound_function.sol,pending,,,,
+deployedCodeExclusion/library_function.sol,pending,,,,
+deployedCodeExclusion/library_function_deployed.sol,pending,,,,
+deployedCodeExclusion/module_function.sol,pending,,,,
+deployedCodeExclusion/module_function_deployed.sol,pending,,,,
+deployedCodeExclusion/static_base_function.sol,pending,,,,
+deployedCodeExclusion/static_base_function_deployed.sol,pending,,,,
+deployedCodeExclusion/subassembly_deduplication.sol,pending,,,,
+deployedCodeExclusion/super_function.sol,pending,,,,
+deployedCodeExclusion/super_function_deployed.sol,pending,,,,
+deployedCodeExclusion/virtual_function.sol,pending,,,,
+deployedCodeExclusion/virtual_function_deployed.sol,pending,,,,
+ecrecover/ecrecover.sol,pending,,,,
+ecrecover/ecrecover_abiV2.sol,pending,,,,
+ecrecover/failing_ecrecover_invalid_input.sol,pending,,,,
+ecrecover/failing_ecrecover_invalid_input_asm.sol,pending,,,,
+ecrecover/failing_ecrecover_invalid_input_proper.sol,pending,,,,
+enums/constructing_enums_from_ints.sol,ported,enums,src/ConstructingEnumsFromInts.sol,,Enum cast from int
+enums/enum_explicit_overflow.sol,ported,enums,src/EnumExplicitOverflow.sol,,Enum overflow reverts with Panic 0x21
+enums/enum_explicit_overflow_homestead.sol,skipped,,,,EVMVersion <byzantium (Homestead) only; test exercises pre-Byzantium behavior absent in >=byzantium. Current Foundry/Solar infra targets >=byzantium exclusively. Do not re-attempt without a pre-byzantium EVM target.
+enums/enum_referencing.sol,ported,enums,src/EnumReferencing.sol,,Enum refs across interface/library
+enums/enum_with_256_members.sol,ported,enums,src/EnumWith256Members.sol,,256-member enum int/enum conversions and ABI decode
+enums/invalid_enum_logged.sol,ported,enums,src/InvalidEnumLogged.sol,,Log with invalid enum value reverts
+enums/minmax.sol,ported,enums,src/EnumMinMax.sol,,Enum min/max
+enums/using_contract_enums_with_explicit_contract_name.sol,ported,enums,src/UsingContractEnumsWithExplicitContractName.sol,,Enum qualified by explicit contract name
+enums/using_enums.sol,ported,enums,src/UsingEnums.sol,,Enum stored in state
+enums/using_inherited_enum.sol,ported,enums,src/UsingInheritedEnum.sol,,Inherited enum usage
+enums/using_inherited_enum_excplicitly.sol,ported,enums,src/UsingInheritedEnumExplicitly.sol,,Inherited enum via explicit base contract name
+errors/error_in_library_and_interface.sol,ported,errors,src/ErrorInLibraryAndInterface.sol,,Errors in library and interface via member access
+errors/error_selector.sol,ported,errors,src/ErrorSelector.sol,,Error selector consistency
+errors/error_static_calldata_uint_array_and_dynamic_array.sol,ported,errors,src/ErrorStaticCalldataUintArrayAndDynamicArray.sol,,Error with mixed calldata static and dynamic array args
+errors/error_throw_from_module_via_member_access.sol,ported,errors,src/ErrorThrowFromModuleViaMemberAccess.sol,,Multi-source imports inlined; errors via module member access
+errors/errors_by_parameter_type.sol,ported,errors,src/ErrorsByParameterType.sol,,require(false error) syntax; uses pragma 0.8.26+
+errors/named_error_args.sol,ported,errors,src/NamedErrorArgs.sol,,Named error args
+errors/named_parameters_shadowing_types.sol,ported,errors,src/NamedParametersShadowingTypes.sol,,Named parameters that shadow type names
+errors/panic_via_import.sol,ported,errors,src/PanicViaImport.sol,,Multi-source import inlined; aliased error name
+errors/require_different_errors_same_parameters.sol,ported,errors,src/RequireDifferentErrorsSameParameters.sol,,Two distinct errors with same parameter types
+errors/require_error_condition_evaluated_only_once.sol,ported,errors,src/RequireErrorConditionEvaluatedOnce.sol,,Require condition evaluated once
+errors/require_error_evaluation_order_1.sol,ported,errors,src/RequireErrorEvaluationOrder1.sol,,Require error evaluation order
+errors/require_error_evaluation_order_2.sol,ported,errors,src/RequireErrorEvaluationOrder2.sol,,Require error evaluation order (state)
+errors/require_error_evaluation_order_3.sol,ported,errors,src/RequireErrorEvaluationOrder3.sol,,Require error evaluation order (string)
+errors/require_error_function_join_control_flow.sol,ported,errors,src/RequireErrorFunctionJoinControlFlow.sol,,require error in else branch with control flow join
+errors/require_error_function_pointer_parameter.sol,ported,errors,src/RequireErrorFunctionPointerParameter.sol,,Custom error with external function pointer parameter
+errors/require_error_multiple_arguments.sol,ported,errors,src/RequireErrorMultipleArguments.sol,,Custom error with multiple args
+errors/require_error_stack_check.sol,ported,errors,src/RequireErrorStackCheck.sol,,Stack cleanup after require with error in success branch
+errors/require_error_string_literal.sol,ported,errors,src/RequireErrorStringLiteral.sol,,require with custom error string
+errors/require_error_string_memory.sol,ported,errors,src/RequireErrorStringMemory.sol,,require with memory string
+errors/require_error_uint256.sol,ported,errors,src/RequireErrorUint256.sol,,require with custom error uint
+errors/require_inherited_error.sol,ported,errors,src/RequireInheritedError.sol,,require with inherited custom error
+errors/revert_conversion.sol,ported,errors,src/RevertConversion.sol,,revert with storage array converted to memory in error
+errors/simple.sol,ported,errors,src/SimpleError.sol,,Custom error selector + args
+errors/small_error_optimization.sol,ported,errors,src/SmallErrorOptimization.sol,,Small empty error bubbled through nested call
+errors/using_structs.sol,ported,errors,src/UsingStructs.sol,,Custom error with struct parameter
+errors/via_contract_type.sol,ported,errors,src/ViaContractType.sol,,Errors referenced via contract type
+errors/via_import.sol,ported,errors,src/ViaImport.sol,,Multi-source imports inlined; same error via multiple paths
+errors/weird_name.sol,ported,errors,src/WeirdName.sol,,Custom error using keyword 'error' as identifier
+events/emit_three_identical_events.sol,pending,,,,
+events/emit_two_identical_events.sol,pending,,,,
+events/event.sol,pending,,,,
+events/event_access_through_base_name_emit.sol,pending,,,,
+events/event_anonymous.sol,ported,events,src/EventAnonymous.sol,,`expectEmit` removed for solc baseline; just exercises emission
+events/event_anonymous_with_signature_collision.sol,pending,,,,
+events/event_anonymous_with_signature_collision2.sol,pending,,,,
+events/event_anonymous_with_topics.sol,ported,events,src/EventAnonymousWithTopics.sol,,Anonymous event with topics
+events/event_constructor.sol,pending,,,,
+events/event_dynamic_array_memory.sol,ported,events,src/EventDynamicArrayMemory.sol,,Dynamic array data in log
+events/event_dynamic_array_memory_v2.sol,pending,,,,
+events/event_dynamic_array_storage.sol,ported,events,src/EventDynamicArrayStorage.sol,,Dynamic array data in log (storage)
+events/event_dynamic_array_storage_v2.sol,pending,,,,
+events/event_dynamic_nested_array_memory_v2.sol,pending,,,,
+events/event_dynamic_nested_array_storage_v2.sol,pending,,,,
+events/event_emit.sol,ported,events,src/EventEmit.sol,,Indexed event with value
+events/event_emit_file_level.sol,pending,,,,
+events/event_emit_from_a_foreign_contract.sol,pending,,,,
+events/event_emit_from_a_foreign_contract_same_name.sol,pending,,,,
+events/event_emit_from_module_via_member_access.sol,pending,,,,
+events/event_emit_from_other_contract.sol,pending,,,,
+events/event_emit_interface_event_via_library.sol,pending,,,,
+events/event_emit_via_interface.sol,pending,,,,
+events/event_indexed_function.sol,pending,,,,
+events/event_indexed_function2.sol,pending,,,,
+events/event_indexed_mixed.sol,ported,events,src/EventIndexedMixed.sol,,Log topic ordering and ABI encoding
+events/event_indexed_string.sol,ported,events,src/EventIndexedString.sol,,Indexed string + array topics
+events/event_lots_of_data.sol,pending,,,,
+events/event_no_arguments.sol,ported,events,src/EventNoArguments.sol,,Event support required
+events/event_really_lots_of_data.sol,pending,,,,
+events/event_really_lots_of_data_from_storage.sol,pending,,,,
+events/event_really_really_lots_of_data_from_storage.sol,pending,,,,
+events/event_selector.sol,ported,events,src/EventSelector.sol,,Event selector consistency
+events/event_selector_file_level.sol,pending,,,,
+events/event_shadowing_file_level.sol,pending,,,,
+events/event_signature_in_library.sol,pending,,,,
+events/event_static_calldata_uint_array_and_dynamic_array.sol,pending,,,,
+events/event_string.sol,ported,events,src/EventString.sol,,Dynamic data in log
+events/event_struct_memory_v2.sol,ported,events,src/EventStructMemory.sol,,Struct data in log (memory)
+events/event_struct_storage_v2.sol,ported,events,src/EventStructStorage.sol,,Struct data in log (storage)
+events/events_with_same_name.sol,pending,,,,
+events/events_with_same_name_file_level.sol,pending,,,,
+events/events_with_same_name_inherited_emit.sol,pending,,,,
+events/simple.sol,pending,,,,
+experimental/stub.sol,pending,,,,
+experimental/type_class.sol,pending,,,,
+exponentiation/literal_base.sol,ported,arithmetic,src/ExponentiationLiteralBase.sol,,Exponentiation with negative literal base
+exponentiation/signed_base.sol,ported,arithmetic,src/ExponentiationSignedBase.sol,,Signed base exponentiation
+exponentiation/small_exp.sol,ported,arithmetic,src/ExponentiationSmallExp.sol,,Exponentiation with small exponent
+expressions/bit_operators.sol,ported,expressions,src/BitOperators.sol,,Bitwise ops on mixed widths
+expressions/bytes_comparison.sol,ported,expressions,src/BytesComparison.sol,,Bytes comparison ordering
+expressions/conditional_expression_different_types.sol,pending,,,,
+expressions/conditional_expression_false_literal.sol,ported,expressions,src/ConditionalExpression.sol,,Ternary with false literal
+expressions/conditional_expression_functions.sol,pending,,,,
+expressions/conditional_expression_multiple.sol,pending,,,,
+expressions/conditional_expression_storage_memory_1.sol,pending,,,,
+expressions/conditional_expression_storage_memory_2.sol,pending,,,,
+expressions/conditional_expression_true_literal.sol,ported,expressions,src/ConditionalExpression.sol,,Ternary with true literal
+expressions/conditional_expression_tuples.sol,pending,,,,
+expressions/conditional_expression_with_return_values.sol,pending,,,,
+expressions/exp_operator_const.sol,pending,,,,
+expressions/exp_operator_const_signed.sol,pending,,,,
+expressions/exp_zero_literal.sol,pending,,,,
+expressions/inc_dec_operators.sol,ported,expressions,src/IncDecOperators.sol,,Pre/post inc/dec evaluation
+expressions/module_from_ternary_expression.sol,pending,,,,
+expressions/tuple_from_ternary_expression.sol,pending,,,,
+expressions/unary_too_long_literal.sol,pending,,,,
+expressions/uncalled_address_transfer_send.sol,pending,,,,
+externalContracts/FixedFeeRegistrar.sol,pending,,,,
+externalContracts/_base64/base64_inline_asm.sol,pending,,,,
+externalContracts/_base64/base64_no_inline_asm.sol,pending,,,,
+externalContracts/_prbmath/PRBMathCommon.sol,pending,,,,
+externalContracts/_prbmath/PRBMathSD59x18.sol,pending,,,,
+externalContracts/_prbmath/PRBMathUD60x18.sol,pending,,,,
+externalContracts/_stringutils/stringutils.sol,pending,,,,
+externalContracts/base64.sol,pending,,,,
+externalContracts/deposit_contract.sol,pending,,,,
+externalContracts/prbmath_signed.sol,pending,,,,
+externalContracts/prbmath_unsigned.sol,pending,,,,
+externalContracts/ramanujan_pi.sol,pending,,,,
+externalContracts/snark.sol,pending,,,,
+externalContracts/strings.sol,pending,,,,
+externalSource/_external/external.sol,pending,,,,
+externalSource/_external/import.sol,pending,,,,
+externalSource/_external/import_with_subdir.sol,pending,,,,
+externalSource/_external/other_external.sol,pending,,,,
+externalSource/_external/subdir/import.sol,pending,,,,
+externalSource/_external/subdir/sub_external.sol,pending,,,,
+externalSource/_nonNormalizedPaths/a.sol,pending,,,,
+externalSource/_nonNormalizedPaths/c.sol,pending,,,,
+externalSource/_nonNormalizedPaths/d.sol,pending,,,,
+externalSource/_relativeImports/D/d.sol,pending,,,,
+externalSource/_relativeImports/c.sol,pending,,,,
+externalSource/_relativeImports/dir/B/b.sol,pending,,,,
+externalSource/_relativeImports/dir/G/g.sol,pending,,,,
+externalSource/_relativeImports/dir/a.sol,pending,,,,
+externalSource/_relativeImports/dir/contract.sol,pending,,,,
+externalSource/_relativeImports/h.sol,pending,,,,
+externalSource/_sourceNameStartingWithDots/b.sol,pending,,,,
+externalSource/_sourceNameStartingWithDots/dir/a.sol,pending,,,,
+externalSource/_sourceNameStartingWithDots/dir/contract.sol,pending,,,,
+externalSource/_sourceNameStartingWithDots/dot_a.sol,pending,,,,
+externalSource/_sourceNameStartingWithDots/dot_dot_b.sol,pending,,,,
+externalSource/multiple_equals_signs.sol,pending,,,,
+externalSource/multiple_external_source.sol,pending,,,,
+externalSource/multisource.sol,pending,,,,
+externalSource/non_normalized_paths.sol,pending,,,,
+externalSource/relative_imports.sol,pending,,,,
+externalSource/source.sol,pending,,,,
+externalSource/source_import.sol,pending,,,,
+externalSource/source_import_subdir.sol,pending,,,,
+externalSource/source_name_starting_with_dots.sol,pending,,,,
+externalSource/source_remapping.sol,pending,,,,
+fallback/call_forward_bytes.sol,ported,fallback,src/CallForwardBytes.sol,,fallback saves calldata and forwards to nested contract
+fallback/falback_return.sol,ported,fallback,src/FallbackReturn.sol,,Fallback early return
+fallback/fallback_argument.sol,ported,fallback,src/FallbackArgument.sol,,Fallback with calldata argument
+fallback/fallback_argument_to_storage.sol,ported,fallback,src/FallbackArgumentToStorage.sol,,fallback stores calldata input to storage
+fallback/fallback_or_receive.sol,ported,fallback,src/FallbackOrReceive.sol,,Distinguish fallback vs receive
+fallback/fallback_override.sol,ported,fallback,src/FallbackOverride.sol,,override parameterized fallback with bytes-returning version
+fallback/fallback_override2.sol,ported,fallback,src/FallbackOverride2.sol,,override parameterized fallback with no-arg fallback
+fallback/fallback_override_multi.sol,ported,fallback,src/FallbackOverrideMulti.sol,,override fallback from multiple bases
+fallback/fallback_return_data.sol,ported,fallback,src/FallbackReturnData.sol,,Fallback returns calldata
+fallback/inherited.sol,ported,fallback,src/FallbackInherited.sol,,inherited fallback sets storage
+fallback/short_data_calls_fallback.sol,ported,fallback,src/ShortDataCallsFallback.sol,,Short calldata hits fallback
+freeFunctions/easy.sol,pending,,,,
+freeFunctions/free_namesake_contract_function.sol,pending,,,,
+freeFunctions/free_runtimecode.sol,pending,,,,
+freeFunctions/import.sol,pending,,,,
+freeFunctions/libraries_from_free.sol,pending,,,,
+freeFunctions/new_operator.sol,pending,,,,
+freeFunctions/overloads.sol,pending,,,,
+freeFunctions/recursion.sol,pending,,,,
+freeFunctions/storage_calldata_refs.sol,pending,,,,
+functionCall/array_multiple_local_vars.sol,pending,,,,
+functionCall/bare_call_no_returndatacopy.sol,pending,,,,
+functionCall/call_attached_library_function_on_function.sol,pending,,,,
+functionCall/call_attached_library_function_on_storage_variable.sol,pending,,,,
+functionCall/call_attached_library_function_on_string.sol,pending,,,,
+functionCall/call_function_returning_function.sol,pending,,,,
+functionCall/call_function_returning_nothing_via_pointer.sol,pending,,,,
+functionCall/call_internal_function_via_expression.sol,pending,,,,
+functionCall/call_internal_function_with_multislot_arguments_via_pointer.sol,pending,,,,
+functionCall/call_options_overload.sol,ported,calls,src/CallOptionsOverload.sol,,Call options + overloads
+functionCall/calling_nonexisting_contract_throws.sol,pending,,,,
+functionCall/calling_other_functions.sol,ported,control-flow,src/CollatzCalls.sol,,Internal calls + loops
+functionCall/calling_uninitialized_function.sol,pending,,,,
+functionCall/calling_uninitialized_function_in_detail.sol,pending,,,,
+functionCall/calling_uninitialized_function_through_array.sol,pending,,,,
+functionCall/conditional_with_arguments.sol,ported,calls,src/ConditionalWithArguments.sol,,Ternary function selection
+functionCall/creation_function_call_no_args.sol,ported,calls,src/CreationFunctionCallNoArgs.sol,,Contract creation in call
+functionCall/creation_function_call_with_args.sol,ported,calls,src/CreationFunctionCallWithArgs.sol,,Contract creation with args
+functionCall/creation_function_call_with_salt.sol,pending,,,,
+functionCall/delegatecall_return_value.sol,pending,,,,
+functionCall/delegatecall_return_value_pre_byzantium.sol,pending,,,,
+functionCall/disordered_named_args.sol,pending,,,,
+functionCall/eof/call_options_overload.sol,pending,,,,
+functionCall/eof/calling_nonexisting_contract.sol,pending,,,,
+functionCall/eof/external_call_at_construction_time.sol,pending,,,,
+functionCall/eof/external_call_to_nonexisting.sol,pending,,,,
+functionCall/external_call.sol,ported,calls,src/ExternalCall.sol,,Requires external call support
+functionCall/external_call_at_construction_time.sol,pending,,,,
+functionCall/external_call_dynamic_returndata.sol,ported,calls,src/ExternalCallDynamicReturndata.sol,,External call returns dynamic data
+functionCall/external_call_to_nonexisting.sol,pending,,,,
+functionCall/external_call_to_nonexisting_debugstrings.sol,pending,,,,
+functionCall/external_call_value.sol,ported,calls,src/ExternalCallValue.sol,,External call with value
+functionCall/external_function.sol,ported,calls,src/ExternalFunction.sol,,External function call
+functionCall/external_public_override.sol,pending,,,,
+functionCall/failed_create.sol,pending,,,,
+functionCall/file_level_call_via_module.sol,pending,,,,
+functionCall/gas_and_value_basic.sol,pending,,,,
+functionCall/inheritance/base_base_overload.sol,pending,,,,
+functionCall/inheritance/base_overload.sol,pending,,,,
+functionCall/inheritance/call_base.sol,pending,,,,
+functionCall/inheritance/call_base_base.sol,pending,,,,
+functionCall/inheritance/call_base_base_explicit.sol,pending,,,,
+functionCall/inheritance/call_base_explicit.sol,pending,,,,
+functionCall/inheritance/call_unimplemented_base.sol,pending,,,,
+functionCall/inheritance/super_skip_unimplemented_in_abstract_contract.sol,pending,,,,
+functionCall/inheritance/super_skip_unimplemented_in_interface.sol,pending,,,,
+functionCall/mapping_array_internal_argument.sol,pending,,,,
+functionCall/mapping_internal_argument.sol,pending,,,,
+functionCall/mapping_internal_return.sol,pending,,,,
+functionCall/member_accessors.sol,pending,,,,
+functionCall/multiple_functions.sol,ported,calls,src/MultipleFunctions.sol,,Multiple selectors + missing selector
+functionCall/multiple_return_values.sol,ported,calls,src/MultipleReturnValues.sol,,Multiple returns
+functionCall/named_args.sol,ported,calls,src/NamedArgs.sol,,Named arguments in call
+functionCall/named_args_overload.sol,ported,calls,src/NamedArgsOverload.sol,,Named args with overloads
+functionCall/precompile_extcodesize_check.sol,pending,,,,
+functionCall/return_size_bigger_than_expected.sol,pending,,,,
+functionCall/return_size_shorter_than_expected.sol,pending,,,,
+functionCall/return_size_shorter_than_expected_evm_version_after_homestead.sol,pending,,,,
+functionCall/send_zero_ether.sol,pending,,,,
+functionCall/transaction_status.sol,pending,,,,
+functionCall/value_test.sol,pending,,,,
+functionSelector/function_selector_via_contract_name.sol,pending,,,,
+functionTypes/address_member.sol,pending,,,,
+functionTypes/call_to_zero_initialized_function_type_ir.sol,pending,,,,
+functionTypes/call_to_zero_initialized_function_type_legacy.sol,pending,,,,
+functionTypes/comparison_operator_for_external_function_cleans_dirty_bits.sol,pending,,,,
+functionTypes/comparison_operators_for_external_functions.sol,pending,,,,
+functionTypes/duplicated_function_definition_with_same_id_in_internal_dispatcher.sol,pending,,,,
+functionTypes/external_functions_with_calldata_args_assigned_to_function_pointers_with_memory_type.sol,pending,,,,
+functionTypes/function_delete_stack.sol,pending,,,,
+functionTypes/function_delete_storage.sol,pending,,,,
+functionTypes/function_external_delete_storage.sol,pending,,,,
+functionTypes/function_type_library_internal.sol,pending,,,,
+functionTypes/inline_array_with_value_call_option.sol,pending,,,,
+functionTypes/mapping_of_functions.sol,pending,,,,
+functionTypes/pass_function_types_externally.sol,pending,,,,
+functionTypes/pass_function_types_internally.sol,pending,,,,
+functionTypes/same_function_in_construction_and_runtime.sol,pending,,,,
+functionTypes/same_function_in_construction_and_runtime_equality_check.sol,pending,,,,
+functionTypes/selector_1.sol,ported,calls,src/FunctionSelector1.sol,,Function selector constants
+functionTypes/selector_2.sol,ported,calls,src/FunctionSelector2.sol,,Function selector constants
+functionTypes/selector_assignment_expression.sol,pending,,,,
+functionTypes/selector_expression_side_effect.sol,pending,,,,
+functionTypes/selector_ternary.sol,pending,,,,
+functionTypes/selector_ternary_function_pointer_from_function_call.sol,pending,,,,
+functionTypes/stack_height_check_on_adding_gas_variable_to_function.sol,pending,,,,
+functionTypes/store_function.sol,pending,,,,
+functionTypes/struct_with_external_function.sol,pending,,,,
+functionTypes/struct_with_functions.sol,pending,,,,
+functionTypes/ternary_contract_internal_function.sol,pending,,,,
+functionTypes/ternary_contract_library_internal_function.sol,pending,,,,
+functionTypes/ternary_contract_public_function.sol,pending,,,,
+functionTypes/uninitialized_internal_storage_function_call.sol,pending,,,,
+getters/array_mapping_struct.sol,pending,,,,
+getters/arrays.sol,pending,,,,
+getters/bytes.sol,pending,,,,
+getters/mapping.sol,pending,,,,
+getters/mapping_array_struct.sol,pending,,,,
+getters/mapping_of_string.sol,pending,,,,
+getters/mapping_to_struct.sol,pending,,,,
+getters/mapping_with_names.sol,pending,,,,
+getters/string_and_bytes.sol,pending,,,,
+getters/struct_with_bytes.sol,pending,,,,
+getters/struct_with_bytes_simple.sol,pending,,,,
+getters/transient_value_types.sol,pending,,,,
+getters/transient_value_types_multi_frame_call.sol,pending,,,,
+getters/value_types.sol,pending,,,,
+immutable/assign_at_declaration.sol,ported,immutable,src/AssignAtDeclaration.sol,,Immutable assigned at declaration
+immutable/assign_from_immutables.sol,ported,immutable,src/AssignFromImmutables.sol,,Immutables assigned from other immutables
+immutable/delete.sol,ported,immutable,src/ImmutableDelete.sol,,Delete resets immutable to zero in constructor
+immutable/fun_read_in_ctor.sol,ported,immutable,src/FunReadInCtor.sol,,Immutable read via function call in constructor
+immutable/getter.sol,ported,immutable,src/ImmutableGetter.sol,,Public immutable auto-generates getter
+immutable/getter_call_in_constructor.sol,ported,immutable,src/GetterCallInConstructor.sol,,External getter call during construction reverts
+immutable/immutable_signed.sol,ported,immutable,src/ImmutableSigned.sol,,Signed immutable and assembly read
+immutable/immutable_tag_too_large_bug.sol,ported,immutable,src/ImmutableTagTooLargeBug.sol,,Regression test for immutable tag overflow
+immutable/increment_decrement.sol,ported,immutable,src/IncrementDecrement.sol,,Increment/decrement operators on immutables
+immutable/inheritance.sol,ported,immutable,src/ImmutableInheritance.sol,,Immutable diamond inheritance
+immutable/internal_function_pointer.sol,ported,immutable,src/InternalFunctionPointer.sol,,Internal function pointer as immutable
+immutable/multi_creation.sol,ported,immutable,src/MultiCreation.sol,,Multiple contract creations with immutables
+immutable/multiple_initializations.sol,ported,immutable,src/MultipleInitializations.sol,,Multiple accumulative immutable initialization
+immutable/read_in_ctor.sol,ported,immutable,src/ReadInConstructor.sol,,Immutable read inside constructor
+immutable/small_types_in_reverse.sol,ported,immutable,src/SmallTypesInReverse.sol,,Small uint16 immutables assigned in reverse order
+immutable/stub.sol,ported,immutable,src/ImmutableStub.sol,,Basic immutable read and arithmetic
+immutable/uninitialized.sol,ported,immutable,src/UninitializedImmutable.sol,,Uninitialized immutables are zero
+immutable/use_scratch.sol,ported,immutable,src/UseScratch.sol,,Immutables with mapping and scratch memory allocation
+inheritance/access_base_storage.sol,pending,,,,
+inheritance/address_overload_resolution.sol,pending,,,,
+inheritance/base_access_to_function_type_variables.sol,pending,,,,
+inheritance/constructor_inheritance_init_order.sol,ported,inheritance,src/ConstructorInitOrder.sol,,Harness test temporarily ignored; re-enable once baseline behavior confirmed
+inheritance/constructor_inheritance_init_order_2.sol,pending,,,,
+inheritance/constructor_inheritance_init_order_3_legacy.sol,pending,,,,
+inheritance/constructor_inheritance_init_order_3_viaIR.sol,pending,,,,
+inheritance/constructor_with_params.sol,ported,constructor,src/ConstructorWithParams.sol,,Constructor parameters
+inheritance/constructor_with_params_diamond_inheritance.sol,pending,,,,
+inheritance/constructor_with_params_inheritance.sol,pending,,,,
+inheritance/constructor_with_params_inheritance_2.sol,pending,,,,
+inheritance/dataLocation/external_public_calldata.sol,pending,,,,
+inheritance/derived_overload_base_function_direct.sol,pending,,,,
+inheritance/derived_overload_base_function_indirect.sol,pending,,,,
+inheritance/explicit_base_class.sol,pending,,,,
+inheritance/inherited_constant_state_var.sol,pending,,,,
+inheritance/inherited_function.sol,ported,inheritance,src/InheritedFunction.sol,,Uses `A.f()` base call in derived
+inheritance/inherited_function_calldata_calldata_interface.sol,pending,,,,
+inheritance/inherited_function_calldata_memory.sol,pending,,,,
+inheritance/inherited_function_calldata_memory_interface.sol,pending,,,,
+inheritance/inherited_function_from_a_library.sol,pending,,,,
+inheritance/inherited_function_through_dispatch.sol,pending,,,,
+inheritance/interface_inheritance_conversions.sol,pending,,,,
+inheritance/member_notation_ctor.sol,pending,,,,
+inheritance/overloaded_function_call_resolve_to_first.sol,pending,,,,
+inheritance/overloaded_function_call_resolve_to_second.sol,pending,,,,
+inheritance/overloaded_function_call_with_if_else.sol,pending,,,,
+inheritance/pass_dynamic_arguments_to_the_base.sol,pending,,,,
+inheritance/pass_dynamic_arguments_to_the_base_base.sol,pending,,,,
+inheritance/pass_dynamic_arguments_to_the_base_base_with_gap.sol,pending,,,,
+inheritance/state_variables_init_order.sol,ported,inheritance,src/StateVariablesInitOrder.sol,,State var init order
+inheritance/state_variables_init_order_2.sol,pending,,,,
+inheritance/state_variables_init_order_3.sol,pending,,,,
+inheritance/super_in_constructor.sol,ported,inheritance,src/SuperInConstructor.sol,,`super` call in constructor
+inheritance/super_in_constructor_assignment.sol,pending,,,,
+inheritance/super_overload.sol,pending,,,,
+inheritance/transient_storage_state_variable.sol,pending,,,,
+inheritance/transient_storage_state_variable_abstract_contract.sol,pending,,,,
+inheritance/value_for_constructor.sol,pending,,,,
+inlineAssembly/basefee_berlin_function.sol,pending,,,,
+inlineAssembly/blobbasefee_shanghai_function.sol,pending,,,,
+inlineAssembly/blobhash.sol,pending,,,,
+inlineAssembly/blobhash_index_exceeding_blob_count.sol,pending,,,,
+inlineAssembly/blobhash_pre_cancun.sol,pending,,,,
+inlineAssembly/calldata_array_assign_dynamic.sol,pending,,,,
+inlineAssembly/calldata_array_assign_static.sol,pending,,,,
+inlineAssembly/calldata_array_read.sol,pending,,,,
+inlineAssembly/calldata_assign.sol,pending,,,,
+inlineAssembly/calldata_assign_from_nowhere.sol,pending,,,,
+inlineAssembly/calldata_length_read.sol,pending,,,,
+inlineAssembly/calldata_offset_read.sol,pending,,,,
+inlineAssembly/calldata_offset_read_write.sol,pending,,,,
+inlineAssembly/calldata_struct_assign.sol,pending,,,,
+inlineAssembly/calldata_struct_assign_and_return.sol,pending,,,,
+inlineAssembly/chainid.sol,pending,,,,
+inlineAssembly/clz.sol,pending,,,,
+inlineAssembly/clz_pre_osaka.sol,pending,,,,
+inlineAssembly/constant_access.sol,pending,,,,
+inlineAssembly/constant_access_referencing.sol,pending,,,,
+inlineAssembly/difficulty.sol,pending,,,,
+inlineAssembly/external_function_pointer_address.sol,pending,,,,
+inlineAssembly/external_function_pointer_address_assignment.sol,pending,,,,
+inlineAssembly/external_function_pointer_selector.sol,pending,,,,
+inlineAssembly/external_function_pointer_selector_assignment.sol,pending,,,,
+inlineAssembly/external_identifier_access_shadowing.sol,pending,,,,
+inlineAssembly/for_loop_break.sol,pending,,,,
+inlineAssembly/for_loop_continue.sol,pending,,,,
+inlineAssembly/for_loop_nested.sol,pending,,,,
+inlineAssembly/function_name_clash.sol,pending,,,,
+inlineAssembly/inline_assembly_embedded_function_call.sol,pending,,,,
+inlineAssembly/inline_assembly_for.sol,pending,,,,
+inlineAssembly/inline_assembly_for2.sol,pending,,,,
+inlineAssembly/inline_assembly_function_call.sol,pending,,,,
+inlineAssembly/inline_assembly_function_call2.sol,pending,,,,
+inlineAssembly/inline_assembly_function_call_assignment.sol,pending,,,,
+inlineAssembly/inline_assembly_if.sol,pending,,,,
+inlineAssembly/inline_assembly_in_modifiers.sol,pending,,,,
+inlineAssembly/inline_assembly_memory_access.sol,pending,,,,
+inlineAssembly/inline_assembly_read_and_write_stack.sol,pending,,,,
+inlineAssembly/inline_assembly_recursion.sol,pending,,,,
+inlineAssembly/inline_assembly_storage_access.sol,pending,,,,
+inlineAssembly/inline_assembly_storage_access_inside_function.sol,pending,,,,
+inlineAssembly/inline_assembly_storage_access_local_var.sol,pending,,,,
+inlineAssembly/inline_assembly_storage_access_via_pointer.sol,pending,,,,
+inlineAssembly/inline_assembly_switch.sol,pending,,,,
+inlineAssembly/inline_assembly_transient_storage_access_inside_function.sol,pending,,,,
+inlineAssembly/inline_assembly_write_to_stack.sol,pending,,,,
+inlineAssembly/inlineasm_empty_let.sol,pending,,,,
+inlineAssembly/keccak256_assembly.sol,pending,,,,
+inlineAssembly/keccak256_optimization.sol,pending,,,,
+inlineAssembly/keccak256_optimizer_bug_different_memory_location.sol,pending,,,,
+inlineAssembly/keccak256_optimizer_cache_bug.sol,pending,,,,
+inlineAssembly/keccak_optimization_bug_string.sol,pending,,,,
+inlineAssembly/keccak_yul_optimization.sol,pending,,,,
+inlineAssembly/leave.sol,pending,,,,
+inlineAssembly/mcopy.sol,pending,,,,
+inlineAssembly/mcopy_as_identifier_pre_cancun.sol,pending,,,,
+inlineAssembly/mcopy_empty.sol,pending,,,,
+inlineAssembly/mcopy_overlap.sol,pending,,,,
+inlineAssembly/optimize_memory_store_multi_block.sol,pending,,,,
+inlineAssembly/optimize_memory_store_multi_block_bugreport.sol,pending,,,,
+inlineAssembly/prevrandao.sol,pending,,,,
+inlineAssembly/selfbalance.sol,pending,,,,
+inlineAssembly/shadowing_local_function_opcode.sol,pending,,,,
+inlineAssembly/slot_access.sol,pending,,,,
+inlineAssembly/slot_access_via_mapping_pointer.sol,pending,,,,
+inlineAssembly/tload_tstore_not_reserved_before_cancun.sol,pending,,,,
+inlineAssembly/transient_storage_creation.sol,pending,,,,
+inlineAssembly/transient_storage_low_level_calls.sol,pending,,,,
+inlineAssembly/transient_storage_multiple_calls_different_transactions.sol,pending,,,,
+inlineAssembly/transient_storage_multiple_transactions.sol,pending,,,,
+inlineAssembly/transient_storage_reset_between_creation_runtime.sol,pending,,,,
+inlineAssembly/transient_storage_sanity_checks.sol,pending,,,,
+inlineAssembly/transient_storage_selfdestruct.sol,pending,,,,
+inlineAssembly/transient_storage_simple_reentrancy_lock.sol,pending,,,,
+inlineAssembly/truefalse.sol,pending,,,,
+inlineAssembly/tstore_hidden_staticcall.sol,pending,,,,
+integer/basic.sol,ported,arithmetic,src/IntegerBasic.sol,,Integer min/max constants
+integer/int.sol,pending,,,,
+integer/many_local_variables.sol,pending,,,,
+integer/small_signed_types.sol,pending,,,,
+integer/uint.sol,pending,,,,
+interfaceID/homer.sol,pending,,,,
+interfaceID/homer_interfaceId.sol,pending,,,,
+interfaceID/interfaceId_events.sol,pending,,,,
+interfaceID/interfaces.sol,pending,,,,
+interfaceID/lisa.sol,pending,,,,
+interfaceID/lisa_interfaceId.sol,pending,,,,
+isoltestTesting/account.sol,pending,,,,
+isoltestTesting/balance_other_contract.sol,pending,,,,
+isoltestTesting/balance_with_balance.sol,pending,,,,
+isoltestTesting/balance_with_balance2.sol,pending,,,,
+isoltestTesting/balance_without_balance.sol,pending,,,,
+isoltestTesting/builtins.sol,pending,,,,
+isoltestTesting/effects.sol,pending,,,,
+isoltestTesting/empty_contract.sol,pending,,,,
+isoltestTesting/format_raw_string_with_control_chars.sol,pending,,,,
+isoltestTesting/isoltestFormatting.sol,pending,,,,
+isoltestTesting/precompiles_ignoring_trailing_input.sol,pending,,,,
+isoltestTesting/storage/storage_empty.sol,pending,,,,
+isoltestTesting/storage/storage_nonempty.sol,pending,,,,
+libraries/attached_internal_library_function_accepting_calldata.sol,pending,,,,
+libraries/attached_internal_library_function_returning_calldata.sol,pending,,,,
+libraries/attached_public_library_function_accepting_calldata.sol.sol,pending,,,,
+libraries/attached_public_library_function_returning_calldata.sol,pending,,,,
+libraries/external_call_with_function_pointer_parameter.sol,pending,,,,
+libraries/external_call_with_storage_array_parameter.sol,pending,,,,
+libraries/external_call_with_storage_mapping_parameter.sol,pending,,,,
+libraries/internal_call_attached_with_parentheses.sol,pending,,,,
+libraries/internal_call_unattached_with_parentheses.sol,pending,,,,
+libraries/internal_library_function.sol,ported,libraries,src/InternalLibraryFunction.sol,,Internal library function inlined
+libraries/internal_library_function_attached_to_address.sol,ported,libraries,src/InternalLibraryFunctionAttachedToAddress.sol,,`using for` on address
+libraries/internal_library_function_attached_to_address_named_send_transfer.sol,pending,,,,
+libraries/internal_library_function_attached_to_array_named_pop_push.sol,ported,libraries,src/InternalLibraryFunctionAttachedToArrayNamedPopPush.sol,,`using for` on fixed array
+libraries/internal_library_function_attached_to_bool.sol,ported,libraries,src/InternalLibraryFunctionAttachedToBool.sol,,`using for` on bool
+libraries/internal_library_function_attached_to_contract.sol,ported,libraries,src/InternalLibraryFunctionAttachedToContract.sol,,`using for` on contract type
+libraries/internal_library_function_attached_to_dynamic_array.sol,ported,libraries,src/InternalLibraryFunctionAttachedToDynamicArray.sol,,`using for` on dynamic array
+libraries/internal_library_function_attached_to_enum.sol,ported,libraries,src/InternalLibraryFunctionAttachedToEnum.sol,,`using for` on enum
+libraries/internal_library_function_attached_to_external_function_type.sol,pending,,,,
+libraries/internal_library_function_attached_to_fixed_array.sol,pending,,,,
+libraries/internal_library_function_attached_to_fixed_bytes.sol,ported,libraries,src/InternalLibraryFunctionAttachedToFixedBytes.sol,,`using for` on fixed bytes
+libraries/internal_library_function_attached_to_integer.sol,ported,libraries,src/InternalLibraryFunctionAttachedToInteger.sol,,`using for` on uint256
+libraries/internal_library_function_attached_to_interface.sol,pending,,,,
+libraries/internal_library_function_attached_to_internal_function_type.sol,pending,,,,
+libraries/internal_library_function_attached_to_internal_function_type_named_selector.sol,pending,,,,
+libraries/internal_library_function_attached_to_literal.sol,ported,libraries,src/InternalLibraryFunctionAttachedToLiteral.sol,,`using for` on literal
+libraries/internal_library_function_attached_to_mapping.sol,pending,,,,
+libraries/internal_library_function_attached_to_string_accepting_memory.sol,ported,libraries,src/InternalLibraryFunctionAttachedToStringMemory.sol,,`using for` on string (memory)
+libraries/internal_library_function_attached_to_string_accepting_storage.sol,pending,,,,
+libraries/internal_library_function_attached_to_struct.sol,pending,,,,
+libraries/internal_library_function_calling_private.sol,pending,,,,
+libraries/internal_library_function_pointer.sol,pending,,,,
+libraries/internal_library_function_return_var_size.sol,pending,,,,
+libraries/internal_types_in_library.sol,pending,,,,
+libraries/library_address.sol,pending,,,,
+libraries/library_address_homestead.sol,pending,,,,
+libraries/library_address_via_module.sol,pending,,,,
+libraries/library_call_in_homestead.sol,pending,,,,
+libraries/library_delegatecall_guard_pure.sol,pending,,,,
+libraries/library_delegatecall_guard_view_needed.sol,pending,,,,
+libraries/library_delegatecall_guard_view_not_needed.sol,pending,,,,
+libraries/library_delegatecall_guard_view_staticcall.sol,pending,,,,
+libraries/library_enum_as_an_expression.sol,pending,,,,
+libraries/library_function_selectors.sol,pending,,,,
+libraries/library_function_selectors_struct.sol,pending,,,,
+libraries/library_references_preserve.sol,pending,,,,
+libraries/library_return_struct_with_mapping.sol,pending,,,,
+libraries/library_staticcall_delegatecall.sol,pending,,,,
+libraries/library_stray_values.sol,pending,,,,
+libraries/library_struct_as_an_expression.sol,pending,,,,
+libraries/mapping_arguments_in_library.sol,pending,,,,
+libraries/mapping_returns_in_library.sol,pending,,,,
+libraries/mapping_returns_in_library_named.sol,pending,,,,
+libraries/payable_function_calls_library.sol,pending,,,,
+libraries/stub.sol,pending,,,,
+libraries/stub_internal.sol,pending,,,,
+libraries/using_for_by_name.sol,pending,,,,
+libraries/using_for_function_on_int.sol,pending,,,,
+libraries/using_for_overload.sol,pending,,,,
+libraries/using_for_storage_structs.sol,pending,,,,
+libraries/using_library_mappings_public.sol,pending,,,,
+libraries/using_library_mappings_return.sol,pending,,,,
+libraries/using_library_structs.sol,pending,,,,
+literals/denominations.sol,ported,literals,src/Denominations.sol,,Ether/gwei/wei sums
+literals/denominations_in_array_sizes.sol,pending,,,,
+literals/escape.sol,ported,literals,src/EscapeLiteral.sol,,Escaped string literal bytes
+literals/ether.sol,ported,literals,src/EtherLiteral.sol,,Ether denomination
+literals/fractional_denominations.sol,ported,literals,src/FractionalDenominations.sol,,Fractional time/ether units
+literals/gwei.sol,ported,literals,src/GweiLiteral.sol,,Gwei denomination
+literals/hex_string_with_non_printable_characters.sol,ported,literals,src/HexStringWithNonPrintableCharacters.sol,,Hex literal non-printable bytes
+literals/hex_string_with_underscore.sol,ported,literals,src/HexStringWithUnderscore.sol,,Hex literal underscores
+literals/scientific_notation.sol,ported,literals,src/ScientificNotation.sol,,Scientific notation (int/uint)
+literals/ternary_operator_with_literal_types_overflow.sol,pending,,,,
+literals/wei.sol,ported,literals,src/WeiLiteral.sol,,Wei denomination
+memoryManagement/assembly_access.sol,pending,,,,
+memoryManagement/memory_types_initialisation.sol,ported,memory-management,src/MemoryTypesInitialization.sol,,Zero-initialization of memory returns
+memoryManagement/return_variable.sol,pending,,,,
+memoryManagement/static_memory_array_allocation.sol,pending,,,,
+memoryManagement/struct_allocation.sol,pending,,,,
+metaTypes/name_other_contract.sol,pending,,,,
+modifiers/access_through_contract_name.sol,pending,,,,
+modifiers/access_through_module_name.sol,pending,,,,
+modifiers/break_in_modifier.sol,pending,,,,
+modifiers/continue_in_modifier.sol,pending,,,,
+modifiers/evaluation_order.sol,ported,modifiers,src/EvaluationOrder.sol,,Base ctor + modifier evaluation order
+modifiers/function_modifier.sol,ported,modifiers,src/FunctionModifier.sol,,`msg.value`-gated modifier
+modifiers/function_modifier_calling_functions_in_creation_context.sol,pending,,,,
+modifiers/function_modifier_empty.sol,pending,,,,
+modifiers/function_modifier_for_constructor.sol,pending,,,,
+modifiers/function_modifier_library.sol,pending,,,,
+modifiers/function_modifier_library_inheritance.sol,pending,,,,
+modifiers/function_modifier_local_variables.sol,pending,,,,
+modifiers/function_modifier_loop.sol,ported,modifiers,src/FunctionModifierLoop.sol,,Modifier invokes body in loop
+modifiers/function_modifier_loop_viair.sol,pending,,,,
+modifiers/function_modifier_multi_invocation.sol,ported,modifiers,src/FunctionModifierMultiInvocation.sol,,Modifier invokes body multiple times
+modifiers/function_modifier_multi_invocation_viair.sol,pending,,,,
+modifiers/function_modifier_multi_with_return.sol,pending,,,,
+modifiers/function_modifier_multiple_times.sol,ported,modifiers,src/FunctionModifierMultipleTimes.sol,,Repeated modifiers add up
+modifiers/function_modifier_multiple_times_local_vars.sol,pending,,,,
+modifiers/function_modifier_overriding.sol,pending,,,,
+modifiers/function_modifier_return_reference.sol,pending,,,,
+modifiers/function_return_parameter.sol,pending,,,,
+modifiers/function_return_parameter_complex.sol,pending,,,,
+modifiers/modifer_recursive.sol,pending,,,,
+modifiers/modifier_in_constructor_ice.sol,pending,,,,
+modifiers/modifier_init_return.sol,pending,,,,
+modifiers/modifiers_in_construction_context.sol,pending,,,,
+modifiers/return_does_not_skip_modifier.sol,pending,,,,
+modifiers/return_in_modifier.sol,ported,modifiers,src/ReturnInModifier.sol,,Modifier early return
+modifiers/stacked_return_with_modifiers.sol,pending,,,,
+modifiers/transient_state_variable_value_type.sol,pending,,,,
+multiSource/circular_import.sol,pending,,,,
+multiSource/circular_import_2.sol,pending,,,,
+multiSource/circular_reimport.sol,pending,,,,
+multiSource/circular_reimport_2.sol,pending,,,,
+multiSource/free_different_interger_types.sol,pending,,,,
+multiSource/free_function_resolution_base_contract.sol,pending,,,,
+multiSource/free_function_resolution_override_virtual.sol,pending,,,,
+multiSource/free_function_resolution_override_virtual_super.sol,pending,,,,
+multiSource/free_function_resolution_override_virtual_transitive.sol,pending,,,,
+multiSource/free_function_transitive_import.sol,pending,,,,
+multiSource/import.sol,pending,,,,
+multiSource/import_overloaded_function.sol,pending,,,,
+multiSource/imported_free_function_via_alias.sol,pending,,,,
+multiSource/imported_free_function_via_alias_direct_call.sol,pending,,,,
+multiSource/reimport_imported_function.sol,pending,,,,
+operators/compound_assign.sol,pending,,,,
+operators/compound_assign_transient_storage.sol,pending,,,,
+operators/shifts/bitwise_shifting_constantinople.sol,pending,,,,
+operators/shifts/bitwise_shifting_constantinople_combined.sol,pending,,,,
+operators/shifts/bitwise_shifting_constants_constantinople.sol,pending,,,,
+operators/shifts/shift_bytes_cleanup.sol,pending,,,,
+operators/shifts/shift_bytes_cleanup_viaYul.sol,pending,,,,
+operators/shifts/shift_cleanup.sol,pending,,,,
+operators/shifts/shift_cleanup_garbled.sol,pending,,,,
+operators/shifts/shift_constant_left.sol,pending,,,,
+operators/shifts/shift_constant_left_assignment.sol,pending,,,,
+operators/shifts/shift_constant_right.sol,pending,,,,
+operators/shifts/shift_constant_right_assignment.sol,pending,,,,
+operators/shifts/shift_left.sol,ported,operators,src/ShiftLeft.sol,,Left shift semantics
+operators/shifts/shift_left_assignment.sol,pending,,,,
+operators/shifts/shift_left_assignment_different_type.sol,pending,,,,
+operators/shifts/shift_left_larger_type.sol,pending,,,,
+operators/shifts/shift_left_uint32.sol,pending,,,,
+operators/shifts/shift_left_uint8.sol,pending,,,,
+operators/shifts/shift_negative_constant_left.sol,pending,,,,
+operators/shifts/shift_negative_constant_right.sol,pending,,,,
+operators/shifts/shift_overflow.sol,pending,,,,
+operators/shifts/shift_right.sol,ported,operators,src/ShiftRight.sol,,Right shift semantics
+operators/shifts/shift_right_assignment.sol,pending,,,,
+operators/shifts/shift_right_garbled_signed_v1.sol,pending,,,,
+operators/shifts/shift_right_garbled_signed_v2.sol,pending,,,,
+operators/shifts/shift_right_garbled_v1.sol,pending,,,,
+operators/shifts/shift_right_garbled_v2.sol,pending,,,,
+operators/shifts/shift_right_negative_literal.sol,pending,,,,
+operators/shifts/shift_right_negative_lvalue.sol,pending,,,,
+operators/shifts/shift_right_negative_lvalue_assignment.sol,pending,,,,
+operators/shifts/shift_right_negative_lvalue_int16.sol,pending,,,,
+operators/shifts/shift_right_negative_lvalue_int32.sol,pending,,,,
+operators/shifts/shift_right_negative_lvalue_int8.sol,pending,,,,
+operators/shifts/shift_right_negative_lvalue_signextend_int16_v1.sol,pending,,,,
+operators/shifts/shift_right_negative_lvalue_signextend_int16_v2.sol,pending,,,,
+operators/shifts/shift_right_negative_lvalue_signextend_int32_v1.sol,pending,,,,
+operators/shifts/shift_right_negative_lvalue_signextend_int32_v2.sol,pending,,,,
+operators/shifts/shift_right_negative_lvalue_signextend_int8_v1.sol,pending,,,,
+operators/shifts/shift_right_negative_lvalue_signextend_int8_v2.sol,pending,,,,
+operators/shifts/shift_right_uint32.sol,pending,,,,
+operators/shifts/shift_right_uint8.sol,pending,,,,
+operators/shifts/shift_underflow_negative_rvalue.sol,pending,,,,
+operators/shifts/shifts.sol,pending,,,,
+operators/transient_storage_variable_increment_decrement.sol,pending,,,,
+operators/userDefined/all_possible_operators.sol,pending,,,,
+operators/userDefined/all_possible_user_defined_value_types_with_operators.sol,pending,,,,
+operators/userDefined/attaching_and_defining_operator_with_same_function.sol,pending,,,,
+operators/userDefined/checked_operators.sol,pending,,,,
+operators/userDefined/consecutive_operator_invocations.sol,pending,,,,
+operators/userDefined/fixed_point_udvt_with_operators.sol,pending,,,,
+operators/userDefined/multiple_operator_definitions_different_types_different_functions_separate_directives.sol,pending,,,,
+operators/userDefined/multiple_operator_definitions_same_type_same_function_same_directive.sol,pending,,,,
+operators/userDefined/operator_definition_shadowing_builtin_keccak256.sol,pending,,,,
+operators/userDefined/operator_evaluation_order.sol,pending,,,,
+operators/userDefined/operator_making_pure_external_call.sol,pending,,,,
+operators/userDefined/operator_making_view_external_call.sol,pending,,,,
+operators/userDefined/operator_parameter_and_return_cleanup_between_calls.sol,pending,,,,
+operators/userDefined/operator_parameter_cleanup.sol,pending,,,,
+operators/userDefined/operator_precendence.sol,pending,,,,
+operators/userDefined/operator_return_parameter_cleanup.sol,pending,,,,
+operators/userDefined/recursive_operator.sol,pending,,,,
+operators/userDefined/unchecked_operators.sol,pending,,,,
+payable/no_nonpayable_circumvention_by_modifier.sol,ported,payable,src/NoNonpayableCircumventionByModifier.sol,,Nonpayable enforcement through modifier
+receive/empty_calldata_calls_receive.sol,ported,receive,src/EmptyCalldataCallsReceive.sol,,Empty calldata hits receive
+receive/ether_and_data.sol,ported,receive,src/EtherAndData.sol,,"Receive accepts ether, rejects data"
+receive/inherited.sol,ported,receive,src/ReceiveInherited.sol,,Inherited receive
+revertStrings/array_slices.sol,pending,,,,
+revertStrings/bubble.sol,pending,,,,
+revertStrings/calldata_array_dynamic_invalid.sol,pending,,,,
+revertStrings/calldata_array_dynamic_static_short_decode.sol,pending,,,,
+revertStrings/calldata_array_dynamic_static_short_reencode.sol,pending,,,,
+revertStrings/calldata_array_invalid_length.sol,pending,,,,
+revertStrings/calldata_arrays_too_large.sol,pending,,,,
+revertStrings/calldata_tail_short.sol,pending,,,,
+revertStrings/calldata_too_short_v1.sol,pending,,,,
+revertStrings/called_contract_has_code.sol,pending,,,,
+revertStrings/empty_v1.sol,pending,,,,
+revertStrings/empty_v2.sol,pending,,,,
+revertStrings/enum_v1.sol,pending,,,,
+revertStrings/enum_v2.sol,pending,,,,
+revertStrings/ether_non_payable_function.sol,ported,revert-strings,src/EtherNonPayableFunction.sol,,Non-payable revert
+revertStrings/function_entry_checks_v1.sol,pending,,,,
+revertStrings/function_entry_checks_v2.sol,pending,,,,
+revertStrings/invalid_abi_decoding_calldata_v1.sol,pending,,,,
+revertStrings/invalid_abi_decoding_memory_v1.sol,pending,,,,
+revertStrings/library_non_view_call.sol,pending,,,,
+revertStrings/short_input_array.sol,pending,,,,
+revertStrings/short_input_bytes.sol,pending,,,,
+revertStrings/transfer.sol,pending,,,,
+revertStrings/unknown_sig_no_fallback.sol,ported,revert-strings,src/UnknownSigNoFallback.sol,,Unknown signature revert
+reverts/assert_require.sol,ported,reverts,src/AssertRequire.sol,,assert/require behavior
+reverts/eof/revert_return_area.sol,skipped,,,,eof/ category excluded from default porting scope via --exclude-prefix in solc_porting_audit.py. Re-enable only if EOF tests are explicitly brought into scope.
+reverts/error_struct.sol,ported,reverts,src/ErrorStruct.sol,,custom error collision with struct field name
+reverts/invalid_enum_as_external_arg.sol,ported,reverts,src/InvalidEnumAsExternalArg.sol,,out-of-range enum as external call argument triggers Panic(0x21)
+reverts/invalid_enum_as_external_ret.sol,ported,reverts,src/InvalidEnumAsExternalRet.sol,,out-of-range enum return value triggers Panic(0x21)
+reverts/invalid_enum_compared.sol,ported,reverts,src/InvalidEnumCompared.sol,,comparing invalid enum triggers Panic(0x21)
+reverts/invalid_enum_stored.sol,ported,reverts,src/InvalidEnumStored.sol,,storing invalid enum triggers Panic(0x21)
+reverts/invalid_instruction.sol,ported,reverts,src/InvalidInstruction.sol,,invalid() opcode reverts
+reverts/revert.sol,ported,reverts,src/RevertBasics.sol,,Revert behavior; ensure expectations match Solar
+reverts/revert_return_area.sol,ported,reverts,src/RevertReturnArea.sol,,revert data written into return area via inline assembly call
+reverts/simple_throw.sol,ported,reverts,src/SimpleThrow.sol,,Simple revert path
+saltedCreate/eof/salted_create_with_value.sol,pending,,,,
+saltedCreate/prediction_example.sol,pending,,,,
+saltedCreate/salted_create.sol,pending,,,,
+saltedCreate/salted_create_with_value.sol,pending,,,,
+scoping/c99_scoping_activation.sol,ported,scoping,src/C99ScopingActivation.sol,,C99 scoping/ shadowing
+smoke/alignment.sol,pending,,,,
+smoke/arrays.sol,pending,,,,
+smoke/basic.sol,pending,,,,
+smoke/bytes_and_strings.sol,pending,,,,
+smoke/constructor.sol,pending,,,,
+smoke/failure.sol,pending,,,,
+smoke/fallback.sol,pending,,,,
+smoke/multiline.sol,pending,,,,
+smoke/multiline_comments.sol,pending,,,,
+smoke/structs.sol,pending,,,,
+specialFunctions/abi_encode_with_signature_from_string.sol,pending,,,,
+specialFunctions/abi_functions_member_access.sol,pending,,,,
+specialFunctions/keccak256_optimized.sol,pending,,,,
+state/blobhash.sol,pending,,,,
+state/block_basefee.sol,pending,,,,
+state/block_blobbasefee.sol,pending,,,,
+state/block_chainid.sol,pending,,,,
+state/block_coinbase.sol,pending,,,,
+state/block_difficulty.sol,pending,,,,
+state/block_difficulty_post_paris.sol,pending,,,,
+state/block_gaslimit.sol,pending,,,,
+state/block_number.sol,pending,,,,
+state/block_prevrandao.sol,pending,,,,
+state/block_prevrandao_pre_paris.sol,pending,,,,
+state/block_timestamp.sol,pending,,,,
+state/blockhash_basic.sol,pending,,,,
+state/gasleft.sol,pending,,,,
+state/msg_data.sol,pending,,,,
+state/msg_sender.sol,pending,,,,
+state/msg_sig.sol,pending,,,,
+state/msg_value.sol,pending,,,,
+state/tx_gasprice.sol,pending,,,,
+state/tx_origin.sol,pending,,,,
+state/uncalled_blobhash.sol,pending,,,,
+state/uncalled_blockhash.sol,pending,,,,
+statements/do_while_loop_continue.sol,ported,statements,src/DoWhileLoopContinue.sol,,do/while + continue
+statements/empty_for_loop.sol,ported,statements,src/EmptyForLoop.sol,,Empty for-loop with break
+storage/accessors_mapping_for_array.sol,ported,storage,src/AccessorsMappingForArray.sol,,Mapping getters for arrays
+storage/array_accessor.sol,ported,storage,src/ArrayAccessor.sol,,Mapping-struct getter test disabled (solc tuple shape mismatch); re-enable later
+storage/chop_sign_bits.sol,ported,storage,src/ChopSignBits.sol,,Sign bit chopping on narrower integer assignment to storage
+storage/complex_accessors.sol,ported,storage,src/ComplexAccessors.sol,,Mapping getters for primitives
+storage/empty_nonempty_empty.sol,ported,storage,src/EmptyNonemptyEmpty.sol,,Bytes storage transitions across inline/long encoding boundary
+storage/mapping_state.sol,ported,storage,src/MappingState.sol,,Mapping state + control flow
+storage/mapping_string_key.sol,ported,storage,src/MappingStringKey.sol,,Mapping with string key
+storage/mappings_array2d_pop_delete.sol,ported,storage,src/MappingsArray2dPopDelete.sol,,2D dynamic array of mappings with pop and delete
+storage/mappings_array_pop_delete.sol,ported,storage,src/MappingsArrayPopDelete.sol,,Dynamic array of mappings with pop and delete
+storage/packed_functions.sol,ported,storage,src/PackedFunctions.sol,,Internal and external function pointers in packed storage slot
+storage/packed_storage_overflow.sol,ported,storage,src/PackedStorageOverflow.sol,,Unchecked overflow in packed storage
+storage/packed_storage_signed.sol,ported,storage,src/PackedStorageSigned.sol,,Signed storage packing
+storage/packed_storage_structs_bytes.sol,ported,storage,src/PackedStorageStructsBytes.sol,,Packed bytes in storage
+storage/packed_storage_structs_enum.sol,ported,storage,src/PackedStorageStructsEnum.sol,,Enum packing in storage
+storage/packed_storage_structs_uint.sol,ported,storage,src/PackedStorageStructsUint.sol,,Ported to storage category
+storage/simple_accessor.sol,ported,storage,src/SimpleAccessor.sol,,Getter correctness
+storage/state_smoke_test.sol,ported,storage,src/StateSmokeTest.sol,,Basic storage set/get
+storage/static_array_copy_cleanup.sol,ported,storage,src/StaticArrayCopyCleanup.sol,,Static array copy cleanup + delete
+storage/storage_boundary_array_and_partial_assignment_with_layout.sol,skipped,,,,Uses non-standard `contract C layout at 2**256-5` Solidity syntax that is not emitted by standard solc and not parseable by Foundry. No portable equivalent is possible without framework-level layout control. Do not re-attempt.
+storage/storage_boundary_array_assignment.sol,ported,storage,src/StorageBoundaryArrayAssignment.sol,,Array assignment straddling storage slot boundary (pragma ^0.8.32)
+storage/storage_boundary_array_copy.sol,ported,storage,src/StorageBoundaryArrayCopy.sol,,Array copy across storage boundary; requires solc ^0.8.32 (bug SOL-2025-1 fix)
+storage/storage_boundary_array_delete.sol,ported,storage,src/StorageBoundaryArrayDelete.sol,,Array delete across storage boundary; requires solc ^0.8.32 (bug SOL-2025-1 fix)
+storage/storage_boundary_array_delete_overlapping_variable.sol,ported,storage,src/StorageBoundaryArrayDeleteOverlappingVariable.sol,,Array delete overlapping normal variable; requires solc ^0.8.32
+storage/storage_boundary_array_packing_not_overlapping_variable.sol,ported,storage,src/StorageBoundaryArrayPackingNotOverlappingVariable.sol,,Packed array shrink/clear at boundary with canary; requires solc ^0.8.32
+storage/storage_boundary_array_partial_assignment.sol,ported,storage,src/StorageBoundaryArrayPartialAssignment.sol,,Partial array assignment across boundary; requires solc ^0.8.32
+storage/storage_boundary_delete_overflow_bug.sol,ported,storage,src/StorageBoundaryDeleteOverflowBug.sol,,Delete overflow bug fix test (SOL-2025-1); requires solc ^0.8.32
+storage/storage_boundary_packed_array.sol,ported,storage,src/StorageBoundaryPackedArray.sol,,Packed uint64 array delete at boundary; requires solc ^0.8.32
+storage/storage_boundary_struct_array_mixed_types.sol,ported,storage,src/StorageBoundaryStructArrayMixedTypes.sol,,Struct array with mixed types at storage boundary; requires solc ^0.8.32
+storage/storage_boundary_struct_array_multislot.sol,ported,storage,src/StorageBoundaryStructArrayMultislot.sol,,Multi-slot struct array at storage boundary; requires solc ^0.8.32
+storage/storage_boundary_struct_array_packed.sol,ported,storage,src/StorageBoundaryStructArrayPacked.sol,,Packed struct array at storage boundary; requires solc ^0.8.32
+storage/storage_packed_array_copy.sol,ported,storage,src/StoragePackedArrayCopy.sol,,Copy packed bytes8 array into wider bytes17 array
+storage/struct_accessor.sol,ported,storage,src/StructAccessor.sol,,Public getter for struct mapping
+storageLayoutSpecifier/base_slot_max_value.sol,pending,,,,
+storageLayoutSpecifier/constructor.sol,pending,,,,
+storageLayoutSpecifier/delete.sol,pending,,,,
+storageLayoutSpecifier/delete_transient_storage.sol,pending,,,,
+storageLayoutSpecifier/dynamic_array_storage_end.sol,pending,,,,
+storageLayoutSpecifier/function_from_base_contract.sol,pending,,,,
+storageLayoutSpecifier/getters.sol,pending,,,,
+storageLayoutSpecifier/inheritance_from_abstract_contract.sol,pending,,,,
+storageLayoutSpecifier/inheritance_from_interface.sol,pending,,,,
+storageLayoutSpecifier/inheritance_from_same_base_state_var_slots.sol,pending,,,,
+storageLayoutSpecifier/inheritance_simple.sol,pending,,,,
+storageLayoutSpecifier/inheritance_state_variable_slot_offset.sol,pending,,,,
+storageLayoutSpecifier/inline_assembly_direct_load.sol,pending,,,,
+storageLayoutSpecifier/inline_assembly_direct_store.sol,pending,,,,
+storageLayoutSpecifier/last_allowed_storage_slot.sol,pending,,,,
+storageLayoutSpecifier/mapping_storage_end.sol,pending,,,,
+storageLayoutSpecifier/multiple_inheritance.sol,pending,,,,
+storageLayoutSpecifier/multiple_inheritance_state_var_slots.sol,pending,,,,
+storageLayoutSpecifier/state_variable_arithmetic_expression.sol,pending,,,,
+storageLayoutSpecifier/state_variable_constant_and_immutable.sol,pending,,,,
+storageLayoutSpecifier/state_variable_dynamic_array.sol,pending,,,,
+storageLayoutSpecifier/state_variable_enum.sol,pending,,,,
+storageLayoutSpecifier/state_variable_mapping.sol,pending,,,,
+storageLayoutSpecifier/state_variable_reference_types_slot_offset.sol,pending,,,,
+storageLayoutSpecifier/state_variable_slot_offset.sol,pending,,,,
+storageLayoutSpecifier/state_variable_struct.sol,pending,,,,
+storageLayoutSpecifier/state_variables_transient.sol,pending,,,,
+storageLayoutSpecifier/storage_reference_array.sol,pending,,,,
+storageLayoutSpecifier/storage_reference_inheritance.sol,pending,,,,
+storageLayoutSpecifier/storage_reference_library_function.sol,pending,,,,
+storageLayoutSpecifier/transient_state_variable_slot_offset.sol,pending,,,,
+storageLayoutSpecifier/variable_cleanup.sol,pending,,,,
+storageLayoutSpecifier/variable_cleanup_sstore.sol,pending,,,,
+storageLayoutSpecifier/virtual_functions.sol,pending,,,,
+strings/concat/string_concat_2_args.sol,ported,strings,src/StringConcat2Args.sol,,string.concat with two string args
+strings/concat/string_concat_different_types.sol,ported,strings,src/StringConcatDifferentTypes.sol,,string.concat with memory/calldata/storage/literal args
+strings/concat/string_concat_empty_argument_list.sol,ported,strings,src/StringConcatEmptyArgumentList.sol,,string.concat() with no args returns empty
+strings/concat/string_concat_empty_strings.sol,ported,strings,src/StringConcatEmptyStrings.sol,,string.concat with empty string args
+strings/concat/string_concat_nested.sol,ported,strings,src/StringConcatNested.sol,,Nested string.concat calls
+strings/constant_string_literal.sol,ported,strings,src/ConstantStringLiteral.sol,,Constant bytes32 + string literals
+strings/empty_storage_string.sol,ported,strings,src/EmptyStorageString.sol,,Empty/uninitialized storage string operations
+strings/empty_string.sol,ported,strings,src/EmptyString.sol,,Empty string returns
+strings/empty_string_input.sol,ported,strings,src/EmptyStringInput.sol,,Empty string calldata handling
+strings/return_string.sol,ported,strings,src/ReturnString.sol,,Storage -> memory string returns
+strings/string_escapes.sol,ported,strings,src/StringEscapes.sol,,Standard escape sequences in string literals
+strings/unicode_escapes.sol,ported,strings,src/UnicodeEscapes.sol,,Unicode escape sequences in string literals
+strings/unicode_string.sol,ported,strings,src/UnicodeString.sol,,"unicode""..."" emoji string literals"
+structs/array_of_recursive_struct.sol,pending,,,,
+structs/calldata/calldata_nested_structs.sol,pending,,,,
+structs/calldata/calldata_struct.sol,pending,,,,
+structs/calldata/calldata_struct_and_ints.sol,pending,,,,
+structs/calldata/calldata_struct_array_member.sol,pending,,,,
+structs/calldata/calldata_struct_array_member_dynamic.sol,pending,,,,
+structs/calldata/calldata_struct_as_argument_of_lib_function.sol,pending,,,,
+structs/calldata/calldata_struct_as_memory_argument.sol,pending,,,,
+structs/calldata/calldata_struct_struct_member.sol,pending,,,,
+structs/calldata/calldata_struct_struct_member_dynamic.sol,pending,,,,
+structs/calldata/calldata_struct_to_memory.sol,pending,,,,
+structs/calldata/calldata_struct_to_memory_tuple_assignment.sol,pending,,,,
+structs/calldata/calldata_struct_to_storage.sol,pending,,,,
+structs/calldata/calldata_struct_with_array_to_memory.sol,pending,,,,
+structs/calldata/calldata_struct_with_bytes_to_memory.sol,pending,,,,
+structs/calldata/calldata_struct_with_nested_array_to_memory.sol,pending,,,,
+structs/calldata/calldata_struct_with_nested_array_to_storage.sol,pending,,,,
+structs/calldata/calldata_structs.sol,pending,,,,
+structs/calldata/dynamic_nested.sol,pending,,,,
+structs/calldata/dynamically_encoded.sol,pending,,,,
+structs/conversion/recursive_storage_memory.sol,pending,,,,
+structs/conversion/recursive_storage_memory_complex.sol,pending,,,,
+structs/copy_from_mapping.sol,pending,,,,
+structs/copy_from_storage.sol,pending,,,,
+structs/copy_struct_array_from_storage.sol,pending,,,,
+structs/copy_struct_with_nested_array_from_calldata_to_memory.sol,pending,,,,
+structs/copy_struct_with_nested_array_from_calldata_to_storage.sol,pending,,,,
+structs/copy_struct_with_nested_array_from_memory_to_memory.sol,pending,,,,
+structs/copy_struct_with_nested_array_from_storage_to_storage.sol,pending,,,,
+structs/copy_substructures_from_mapping.sol,pending,,,,
+structs/copy_substructures_to_mapping.sol,pending,,,,
+structs/copy_to_mapping.sol,pending,,,,
+structs/delete_struct.sol,pending,,,,
+structs/event.sol,pending,,,,
+structs/function_type_copy.sol,pending,,,,
+structs/global.sol,pending,,,,
+structs/lone_struct_array_type.sol,pending,,,,
+structs/memory_struct_named_constructor.sol,pending,,,,
+structs/memory_structs_as_function_args.sol,pending,,,,
+structs/memory_structs_nested.sol,pending,,,,
+structs/memory_structs_nested_load.sol,pending,,,,
+structs/memory_structs_read_write.sol,ported,structs,src/MemoryStructsReadWrite.sol,,Memory struct read/write
+structs/msg_data_to_struct_member_copy.sol,pending,,,,
+structs/multislot_struct_allocation.sol,pending,,,,
+structs/nested_struct_allocation.sol,pending,,,,
+structs/packed_storage_structs_delete.sol,pending,,,,
+structs/recursive_struct_2.sol,pending,,,,
+structs/recursive_structs.sol,pending,,,,
+structs/simple_struct_allocation.sol,ported,structs,src/SimpleStructAllocation.sol,,Memory struct allocation
+structs/struct_assign_reference_to_struct.sol,ported,structs,src/StructAssignReferenceToStruct.sol,,Struct storage reference vs copy
+structs/struct_constructor_nested.sol,pending,,,,
+structs/struct_containing_bytes_copy_and_delete.sol,pending,,,,
+structs/struct_copy.sol,ported,structs,src/StructCopy.sol,,Struct copy in mapping
+structs/struct_copy_via_local.sol,ported,structs,src/StructCopyViaLocal.sol,,Struct copy via local memory
+structs/struct_delete_member.sol,ported,structs,src/StructDeleteMember.sol,,Delete struct member
+structs/struct_delete_storage.sol,pending,,,,
+structs/struct_delete_storage_nested_small.sol,pending,,,,
+structs/struct_delete_storage_small.sol,pending,,,,
+structs/struct_delete_storage_with_array.sol,pending,,,,
+structs/struct_delete_storage_with_arrays_small.sol,pending,,,,
+structs/struct_delete_struct_in_mapping.sol,pending,,,,
+structs/struct_memory_to_storage.sol,pending,,,,
+structs/struct_memory_to_storage_function_ptr.sol,pending,,,,
+structs/struct_named_constructor.sol,ported,structs,src/StructNamedConstructor.sol,,Struct named constructor
+structs/struct_reference.sol,ported,structs,src/StructReference.sol,,Recursive struct reference
+structs/struct_referencing.sol,pending,,,,
+structs/struct_storage_push_zero_value.sol,ported,structs,src/StructStoragePushZeroValue.sol,,Struct push zero initialization
+structs/struct_storage_to_mapping.sol,pending,,,,
+structs/struct_storage_to_memory.sol,pending,,,,
+structs/struct_storage_to_memory_function_ptr.sol,pending,,,,
+structs/structs.sol,pending,,,,
+structs/using_for_function_on_struct.sol,pending,,,,
+tryCatch/assert.sol,ported,try-catch,src/TryCatchAssert.sol,,try/catch around assert
+tryCatch/assert_pre_byzantium.sol,skipped,,,,Requires EVMVersion <byzantium; test relies on pre-Byzantium assert behavior (no revert propagation). Current Foundry/Solar infra targets >=byzantium. Do not re-attempt without a pre-byzantium EVM target.
+tryCatch/create.sol,ported,try-catch,src/TryCatchCreate.sol,,try/catch around constructor creation
+tryCatch/invalid_error_encoding.sol,ported,try-catch,src/TryCatchInvalidErrorEncoding.sol,,malformed Error selector/offset/length handling
+tryCatch/lowLevel.sol,ported,try-catch,src/TryCatchLowLevel.sol,,catch(bytes) revert data
+tryCatch/malformed_error.sol,ported,try-catch,src/TryCatchMalformedError.sol,,malformed Error revert data boundary cases
+tryCatch/malformed_panic.sol,ported,try-catch,src/TryCatchMalformedPanic.sol,,malformed Panic revert data boundary cases
+tryCatch/malformed_panic_2.sol,ported,try-catch,src/TryCatchMalformedPanic2.sol,,malformed Panic re-thrown when no low-level catch (Panic-only)
+tryCatch/malformed_panic_3.sol,ported,try-catch,src/TryCatchMalformedPanic3.sol,,malformed Panic re-thrown when no low-level catch (Panic+Error)
+tryCatch/malformed_panic_4.sol,ported,try-catch,src/TryCatchMalformedPanic4.sol,,malformed Panic caught by low-level catch block
+tryCatch/nested.sol,ported,try-catch,src/TryCatchNested.sol,,nested try/catch blocks
+tryCatch/panic.sol,ported,try-catch,src/TryCatchPanic.sol,,catch Panic(uint) + Error(string)
+tryCatch/require.sol,ported,try-catch,src/TryCatchRequire.sol,,try/catch around require
+tryCatch/require_pre_byzantium.sol,skipped,,,,Requires EVMVersion <byzantium; test relies on pre-Byzantium require behavior (no revert propagation). Current Foundry/Solar infra targets >=byzantium. Do not re-attempt without a pre-byzantium EVM target.
+tryCatch/return_function.sol,ported,try-catch,src/TryCatchReturnFunction.sol,,return external function pointer
+tryCatch/simple.sol,ported,try-catch,src/TryCatchSimple.sol,,Basic try/catch on external call
+tryCatch/simple_notuple.sol,ported,try-catch,src/TryCatchSimpleNoTuple.sol,,try/catch single return value
+tryCatch/structured.sol,ported,try-catch,src/TryCatchStructured.sol,,catch Error(string) message
+tryCatch/structuredAndLowLevel.sol,ported,try-catch,src/TryCatchStructuredAndLowLevel.sol,,catch Error(string) vs bytes
+tryCatch/try_catch_library_call.sol,ported,try-catch,src/TryCatchLibraryCall.sol,,try/catch on external library calls
+types/array_mapping_abstract_constructor_param.sol,pending,,,,
+types/assign_calldata_value_type.sol,pending,,,,
+types/convert_fixed_bytes_to_fixed_bytes_greater_size.sol,pending,,,,
+types/convert_fixed_bytes_to_fixed_bytes_same_size.sol,pending,,,,
+types/convert_fixed_bytes_to_fixed_bytes_smaller_size.sol,pending,,,,
+types/convert_fixed_bytes_to_uint_greater_size.sol,pending,,,,
+types/convert_fixed_bytes_to_uint_same_min_size.sol,pending,,,,
+types/convert_fixed_bytes_to_uint_same_type.sol,pending,,,,
+types/convert_fixed_bytes_to_uint_smaller_size.sol,pending,,,,
+types/convert_uint_to_fixed_bytes_greater_size.sol,pending,,,,
+types/convert_uint_to_fixed_bytes_same_min_size.sol,pending,,,,
+types/convert_uint_to_fixed_bytes_same_size.sol,pending,,,,
+types/convert_uint_to_fixed_bytes_smaller_size.sol,pending,,,,
+types/external_function_to_address.sol,pending,,,,
+types/mapping/copy_from_mapping_to_mapping.sol,pending,,,,
+types/mapping/copy_struct_to_array_stored_in_mapping.sol,pending,,,,
+types/mapping/user_defined_types_mapping_storage.sol,pending,,,,
+types/mapping_abstract_constructor_param.sol,pending,,,,
+types/mapping_contract_key.sol,pending,,,,
+types/mapping_contract_key_getter.sol,pending,,,,
+types/mapping_contract_key_library.sol,pending,,,,
+types/mapping_enum_key_getter_v1.sol,pending,,,,
+types/mapping_enum_key_getter_v2.sol,pending,,,,
+types/mapping_enum_key_library_v1.sol,pending,,,,
+types/mapping_enum_key_library_v2.sol,pending,,,,
+types/mapping_enum_key_v1.sol,pending,,,,
+types/mapping_enum_key_v2.sol,pending,,,,
+types/mapping_simple.sol,pending,,,,
+types/nested_tuples.sol,pending,,,,
+types/packing_signed_types.sol,pending,,,,
+types/packing_unpacking_types.sol,pending,,,,
+types/strings.sol,pending,,,,
+types/struct_mapping_abstract_constructor_param.sol,pending,,,,
+types/tuple_assign_multi_slot_grow.sol,pending,,,,
+types/type_conversion_cleanup.sol,pending,,,,
+underscore/as_function.sol,pending,,,,
+uninitializedFunctionPointer/invalidInConstructor.sol,pending,,,,
+uninitializedFunctionPointer/invalidStoredInConstructor.sol,pending,,,,
+uninitializedFunctionPointer/store2.sol,pending,,,,
+uninitializedFunctionPointer/storeInConstructor.sol,pending,,,,
+uninitializedFunctionPointer/uninitialized_internal_storage_function_legacy.sol,pending,,,,
+uninitializedFunctionPointer/uninitialized_internal_storage_function_via_yul.sol,pending,,,,
+userDefinedValueType/abicodec.sol,pending,,,,
+userDefinedValueType/assembly_access_bytes2_abicoder_v1.sol,pending,,,,
+userDefinedValueType/assembly_access_bytes2_abicoder_v2.sol,pending,,,,
+userDefinedValueType/calldata.sol,pending,,,,
+userDefinedValueType/calldata_to_storage.sol,pending,,,,
+userDefinedValueType/cleanup.sol,pending,,,,
+userDefinedValueType/cleanup_abicoderv1.sol,pending,,,,
+userDefinedValueType/constant.sol,pending,,,,
+userDefinedValueType/conversion.sol,pending,,,,
+userDefinedValueType/conversion_abicoderv1.sol,pending,,,,
+userDefinedValueType/dirty_slot.sol,pending,,,,
+userDefinedValueType/dirty_uint8_read.sol,pending,,,,
+userDefinedValueType/erc20.sol,pending,,,,
+userDefinedValueType/fixedpoint.sol,pending,,,,
+userDefinedValueType/immutable_signed.sol,pending,,,,
+userDefinedValueType/in_parenthesis.sol,pending,,,,
+userDefinedValueType/mapping_key.sol,pending,,,,
+userDefinedValueType/memory_to_storage.sol,pending,,,,
+userDefinedValueType/multisource.sol,pending,,,,
+userDefinedValueType/multisource_module.sol,pending,,,,
+userDefinedValueType/ownable.sol,pending,,,,
+userDefinedValueType/parameter.sol,pending,,,,
+userDefinedValueType/simple.sol,pending,,,,
+userDefinedValueType/storage_layout.sol,pending,,,,
+userDefinedValueType/storage_layout_struct.sol,pending,,,,
+userDefinedValueType/storage_signed.sol,pending,,,,
+userDefinedValueType/wrap_unwrap.sol,pending,,,,
+userDefinedValueType/wrap_unwrap_via_contract_name.sol,pending,,,,
+userDefinedValueType/zero_cost_abstraction_comparison_elementary.sol,pending,,,,
+userDefinedValueType/zero_cost_abstraction_comparison_userdefined.sol,pending,,,,
+using/calldata_memory_copy.sol,pending,,,,
+using/free_function_braces.sol,pending,,,,
+using/free_function_multi.sol,pending,,,,
+using/free_functions_individual.sol,pending,,,,
+using/imported_functions.sol,pending,,,,
+using/library_functions_inside_contract.sol,pending,,,,
+using/library_on_interface.sol,pending,,,,
+using/library_through_module.sol,pending,,,,
+using/module_renamed.sol,pending,,,,
+using/private_library_function.sol,pending,,,,
+using/recursive_import.sol,pending,,,,
+using/using_global_all_the_types.sol,pending,,,,
+using/using_global_for_global.sol,pending,,,,
+using/using_global_invisible.sol,pending,,,,
+using/using_global_library.sol,pending,,,,
+variables/delete_local.sol,pending,,,,
+variables/delete_locals.sol,pending,,,,
+variables/delete_transient_state_variable.sol,pending,,,,
+variables/delete_transient_state_variable_non_zero_offset.sol,pending,,,,
+variables/mapping_local_assignment.sol,pending,,,,
+variables/mapping_local_compound_assignment.sol,pending,,,,
+variables/mapping_local_tuple_assignment.sol,pending,,,,
+variables/public_state_overridding.sol,pending,,,,
+variables/public_state_overridding_dynamic_struct.sol,pending,,,,
+variables/public_state_overridding_mapping_to_dynamic_struct.sol,pending,,,,
+variables/storing_invalid_boolean.sol,pending,,,,
+variables/transient_function_type_state_variable.sol,pending,,,,
+variables/transient_state_address_variable_members.sol,pending,,,,
+variables/transient_state_enum_variable.sol,pending,,,,
+variables/transient_state_variable.sol,pending,,,,
+variables/transient_state_variable_cleanup_assignment.sol,pending,,,,
+variables/transient_state_variable_cleanup_tstore.sol,pending,,,,
+variables/transient_state_variable_slot_inline_assembly.sol,pending,,,,
+variables/transient_state_variable_slots_and_offsets.sol,pending,,,,
+variables/transient_state_variable_tuple_assignment.sol,pending,,,,
+variables/transient_state_variable_udvt.sol,pending,,,,
+various/address_code.sol,pending,,,,
+various/address_code_complex.sol,pending,,,,
+various/assignment_to_const_var_involving_expression.sol,pending,,,,
+various/balance.sol,pending,,,,
+various/byte_optimization_bug.sol,pending,,,,
+various/code_access_content.sol,pending,,,,
+various/code_access_create.sol,pending,,,,
+various/code_access_padding.sol,pending,,,,
+various/code_access_runtime.sol,pending,,,,
+various/code_length.sol,pending,,,,
+various/code_length_contract_member.sol,pending,,,,
+various/codebalance_assembly.sol,pending,,,,
+various/codehash.sol,pending,,,,
+various/codehash_assembly.sol,pending,,,,
+various/contract_binary_dependencies.sol,pending,,,,
+various/crazy_elementary_typenames_on_stack.sol,pending,,,,
+various/create_calldata.sol,pending,,,,
+various/create_random.sol,pending,,,,
+various/cross_contract_types.sol,pending,,,,
+various/decayed_tuple.sol,pending,,,,
+various/destructuring_assignment.sol,pending,,,,
+various/different_call_type_transient.sol,pending,,,,
+various/empty_name_return_parameter.sol,pending,,,,
+various/eof/create_calldata.sol,pending,,,,
+various/erc20.sol,pending,,,,
+various/external_types_in_calls.sol,pending,,,,
+various/flipping_sign_tests.sol,pending,,,,
+various/gasleft_decrease.sol,pending,,,,
+various/gasleft_shadow_resolution.sol,pending,,,,
+various/inline_member_init.sol,pending,,,,
+various/inline_member_init_inheritence.sol,pending,,,,
+various/inline_tuple_with_rational_numbers.sol,pending,,,,
+various/iszero_bnot_correct.sol,pending,,,,
+various/literal_empty_string.sol,pending,,,,
+various/many_subassemblies.sol,pending,,,,
+various/memory_overwrite.sol,pending,,,,
+various/multi_modifiers.sol,pending,,,,
+various/multi_variable_declaration.sol,pending,,,,
+various/negative_stack_height.sol,pending,,,,
+various/nested_calldata_struct.sol,pending,,,,
+various/nested_calldata_struct_to_memory.sol,pending,,,,
+various/positive_integers_to_signed.sol,pending,,,,
+various/selfdestruct_post_cancun.sol,pending,,,,
+various/selfdestruct_post_cancun_multiple_beneficiaries.sol,pending,,,,
+various/selfdestruct_post_cancun_redeploy.sol,pending,,,,
+various/selfdestruct_pre_cancun.sol,pending,,,,
+various/selfdestruct_pre_cancun_multiple_beneficiaries.sol,pending,,,,
+various/selfdestruct_pre_cancun_redeploy.sol,pending,,,,
+various/senders_balance.sol,pending,,,,
+various/single_copy_with_multiple_inheritance.sol,pending,,,,
+various/skip_dynamic_types.sol,pending,,,,
+various/skip_dynamic_types_for_static_arrays_with_dynamic_elements.sol,pending,,,,
+various/skip_dynamic_types_for_structs.sol,pending,,,,
+various/state_variable_local_variable_mixture.sol,pending,,,,
+various/state_variable_under_contract_name.sol,pending,,,,
+various/staticcall_for_view_and_pure.sol,pending,,,,
+various/staticcall_for_view_and_pure_pre_byzantium.sol,pending,,,,
+various/storage_string_as_mapping_key_without_variable.sol,pending,,,,
+various/store_bytes.sol,pending,,,,
+various/string_tuples.sol,pending,,,,
+various/super.sol,pending,,,,
+various/super_alone.sol,pending,,,,
+various/super_parentheses.sol,pending,,,,
+various/swap_in_storage_overwrite.sol,pending,,,,
+various/test_underscore_in_hex.sol,pending,,,,
+various/transient_storage_reentrancy_lock.sol,pending,,,,
+various/tuples.sol,pending,,,,
+various/typed_multi_variable_declaration.sol,pending,,,,
+various/write_storage_external.sol,pending,,,,
+virtualFunctions/internal_virtual_function_calls.sol,pending,,,,
+virtualFunctions/internal_virtual_function_calls_through_dispatch.sol,pending,,,,
+virtualFunctions/virtual_function_calls.sol,pending,,,,
+virtualFunctions/virtual_function_usage_in_constructor_arguments.sol,pending,,,,
+virtualFunctions/virtual_override_changing_mutability_internal.sol,pending,,,,
+virtualFunctions/virtual_override_changing_mutability_public.sol,pending,,,,
