@@ -1,0 +1,15 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract ByteArrayPopStorageEmpty {
+    bytes data;
+
+    function runTest() public {
+        data.push(0x07);
+        data.push(0x05);
+        data.push(0x03);
+        data.pop();
+        data.pop();
+        data.pop();
+    }
+}

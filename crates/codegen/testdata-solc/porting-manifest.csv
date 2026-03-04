@@ -164,13 +164,13 @@ array/calldata_array_two_dimensional.sol,pending,,,,
 array/calldata_array_two_dimensional_1.sol,pending,,,,
 array/calldata_bytes_array_bounds.sol,pending,,,,
 array/calldata_slice_access.sol,pending,,,,
-array/concat/bytes_concat_2_args.sol,pending,,,,
-array/concat/bytes_concat_3_args.sol,pending,,,,
-array/concat/bytes_concat_as_argument.sol,pending,,,,
-array/concat/bytes_concat_different_types.sol,pending,,,,
-array/concat/bytes_concat_empty_argument_list.sol,pending,,,,
-array/concat/bytes_concat_empty_strings.sol,pending,,,,
-array/concat/bytes_concat_nested.sol,pending,,,,
+array/concat/bytes_concat_2_args.sol,ported,arrays,src/BytesConcat2Args.sol,test/BytesConcat2Args.t.sol,bytes.concat with 2 args
+array/concat/bytes_concat_3_args.sol,ported,arrays,src/BytesConcat3Args.sol,test/BytesConcat3Args.t.sol,bytes.concat with 3 args
+array/concat/bytes_concat_as_argument.sol,ported,arrays,src/BytesConcatAsArgument.sol,test/BytesConcatAsArgument.t.sol,bytes.concat used as argument
+array/concat/bytes_concat_different_types.sol,ported,arrays,src/BytesConcatDifferentTypes.sol,test/BytesConcatDifferentTypes.t.sol,bytes.concat with different source types
+array/concat/bytes_concat_empty_argument_list.sol,ported,arrays,src/BytesConcatEmptyArgumentList.sol,test/BytesConcatEmptyArgumentList.t.sol,bytes.concat with empty argument list
+array/concat/bytes_concat_empty_strings.sol,ported,arrays,src/BytesConcatEmptyStrings.sol,test/BytesConcatEmptyStrings.t.sol,bytes.concat with empty byte strings
+array/concat/bytes_concat_nested.sol,ported,arrays,src/BytesConcatNested.sol,test/BytesConcatNested.t.sol,Nested bytes.concat calls
 array/constant_var_as_array_length.sol,pending,,,,
 array/copying/array_copy_calldata_storage.sol,pending,,,,
 array/copying/array_copy_cleanup_uint128.sol,pending,,,,
@@ -270,14 +270,14 @@ array/create_memory_array.sol,ported,arrays,src/CreateMemoryArray.sol,,Memory al
 array/create_memory_array_too_large.sol,pending,,,,
 array/create_memory_byte_array.sol,pending,,,,
 array/create_multiple_dynamic_arrays.sol,pending,,,,
-array/delete/bytes_delete_element.sol,pending,,,,
-array/delete/delete_bytes_array.sol,pending,,,,
-array/delete/delete_memory_array.sol,pending,,,,
-array/delete/delete_on_array_of_structs.sol,pending,,,,
-array/delete/delete_removes_bytes_data.sol,pending,,,,
-array/delete/delete_storage_array.sol,pending,,,,
-array/delete/delete_storage_array_packed.sol,pending,,,,
-array/delete/memory_arrays_delete.sol,pending,,,,
+array/delete/bytes_delete_element.sol,ported,arrays,src/BytesDeleteElement.sol,test/BytesDeleteElement.t.sol,Delete individual bytes elements
+array/delete/delete_bytes_array.sol,ported,arrays,src/DeleteBytesArray.sol,test/DeleteBytesArray.t.sol,Delete full bytes storage array
+array/delete/delete_memory_array.sol,ported,arrays,src/DeleteMemoryArray.sol,test/DeleteMemoryArray.t.sol,Delete memory array zeroes length
+array/delete/delete_on_array_of_structs.sol,ported,arrays,src/DeleteOnArrayOfStructs.sol,test/DeleteOnArrayOfStructs.t.sol,Delete dynamic array of structs
+array/delete/delete_removes_bytes_data.sol,ported,arrays,src/DeleteRemovesBytesData.sol,test/DeleteRemovesBytesData.t.sol,Delete removes bytes storage data
+array/delete/delete_storage_array.sol,ported,arrays,src/DeleteStorageArray.sol,test/DeleteStorageArray.t.sol,Delete uint[] storage array
+array/delete/delete_storage_array_packed.sol,ported,arrays,src/DeleteStorageArrayPacked.sol,test/DeleteStorageArrayPacked.t.sol,Delete packed uint120 storage array
+array/delete/memory_arrays_delete.sol,ported,arrays,src/MemoryArraysDelete.sol,test/MemoryArraysDelete.t.sol,Delete elements of memory 2D fixed array
 array/dynamic_array_cleanup.sol,pending,,,,
 array/dynamic_arrays_in_storage.sol,pending,,,,
 array/dynamic_multi_array_cleanup.sol,pending,,,,
@@ -314,43 +314,43 @@ array/memory.sol,pending,,,,
 array/memory_arrays_of_various_sizes.sol,pending,,,,
 array/nested_calldata_storage.sol,pending,,,,
 array/nested_calldata_storage2.sol,pending,,,,
-array/pop/array_pop.sol,pending,,,,
-array/pop/array_pop_array_transition.sol,pending,,,,
-array/pop/array_pop_empty_exception.sol,pending,,,,
-array/pop/array_pop_isolated.sol,pending,,,,
-array/pop/array_pop_storage_empty.sol,pending,,,,
-array/pop/array_pop_uint16_transition.sol,pending,,,,
-array/pop/array_pop_uint24_transition.sol,pending,,,,
-array/pop/byte_array_pop.sol,pending,,,,
-array/pop/byte_array_pop_copy_long.sol,pending,,,,
-array/pop/byte_array_pop_empty_exception.sol,pending,,,,
-array/pop/byte_array_pop_isolated.sol,pending,,,,
-array/pop/byte_array_pop_long_storage_empty.sol,pending,,,,
-array/pop/byte_array_pop_long_storage_empty_garbage_ref.sol,pending,,,,
-array/pop/byte_array_pop_masking_long.sol,pending,,,,
-array/pop/byte_array_pop_storage_empty.sol,pending,,,,
-array/pop/parenthesized.sol,pending,,,,
-array/push/array_push.sol,pending,,,,
-array/push/array_push_nested.sol,pending,,,,
-array/push/array_push_nested_from_calldata.sol,pending,,,,
-array/push/array_push_nested_from_memory.sol,pending,,,,
-array/push/array_push_packed_array.sol,pending,,,,
-array/push/array_push_struct.sol,pending,,,,
-array/push/array_push_struct_from_calldata.sol,pending,,,,
-array/push/byte_array_push.sol,pending,,,,
-array/push/byte_array_push_transition.sol,pending,,,,
-array/push/nested_bytes_push.sol,pending,,,,
-array/push/push_no_args_1d.sol,pending,,,,
-array/push/push_no_args_2d.sol,pending,,,,
-array/push/push_no_args_bytes.sol,pending,,,,
-array/push/push_no_args_struct.sol,pending,,,,
+array/pop/array_pop.sol,ported,arrays,src/ArrayPop.sol,test/ArrayPop.t.sol,Basic pop from uint256 array
+array/pop/array_pop_array_transition.sol,ported,arrays,src/ArrayPopArrayTransition.sol,test/ArrayPopArrayTransition.t.sol,Pop from 2D array transitions
+array/pop/array_pop_empty_exception.sol,ported,arrays,src/ArrayPopEmptyException.sol,test/ArrayPopEmptyException.t.sol,Pop from empty array panics
+array/pop/array_pop_isolated.sol,ported,arrays,src/ArrayPopIsolated.sol,test/ArrayPopIsolated.t.sol,pop member access without call
+array/pop/array_pop_storage_empty.sol,ported,arrays,src/ArrayPopStorageEmpty.sol,test/ArrayPopStorageEmpty.t.sol,Push then pop leaves storage empty
+array/pop/array_pop_uint16_transition.sol,ported,arrays,src/ArrayPopUint16Transition.sol,test/ArrayPopUint16Transition.t.sol,Pop from packed uint16 array transitions
+array/pop/array_pop_uint24_transition.sol,ported,arrays,src/ArrayPopUint24Transition.sol,test/ArrayPopUint24Transition.t.sol,Pop from packed uint24 array transitions
+array/pop/byte_array_pop.sol,ported,arrays,src/ByteArrayPop.sol,test/ByteArrayPop.t.sol,Pop from bytes array
+array/pop/byte_array_pop_copy_long.sol,ported,arrays,src/ByteArrayPopCopyLong.sol,test/ByteArrayPopCopyLong.t.sol,Pop from long bytes array copies correctly
+array/pop/byte_array_pop_empty_exception.sol,ported,arrays,src/ByteArrayPopEmptyException.sol,test/ByteArrayPopEmptyException.t.sol,Pop from empty bytes panics
+array/pop/byte_array_pop_isolated.sol,ported,arrays,src/ByteArrayPopIsolated.sol,test/ByteArrayPopIsolated.t.sol,bytes pop member access without call
+array/pop/byte_array_pop_long_storage_empty.sol,ported,arrays,src/ByteArrayPopLongStorageEmpty.sol,test/ByteArrayPopLongStorageEmpty.t.sol,Pop long bytes array to empty
+array/pop/byte_array_pop_long_storage_empty_garbage_ref.sol,ported,arrays,src/ByteArrayPopLongStorageEmptyGarbageRef.sol,test/ByteArrayPopLongStorageEmptyGarbageRef.t.sol,Pop long bytes array with garbage memory
+array/pop/byte_array_pop_masking_long.sol,ported,arrays,src/ByteArrayPopMaskingLong.sol,test/ByteArrayPopMaskingLong.t.sol,Pop masks trailing bytes in long array
+array/pop/byte_array_pop_storage_empty.sol,ported,arrays,src/ByteArrayPopStorageEmpty.sol,test/ByteArrayPopStorageEmpty.t.sol,Pop bytes to empty storage
+array/pop/parenthesized.sol,ported,arrays,src/ArrayPopParenthesized.sol,test/ArrayPopParenthesized.t.sol,Parenthesized pop call syntax
+array/push/array_push.sol,ported,arrays,src/ArrayPush.sol,test/ArrayPush.t.sol,Push uint256 values to dynamic array
+array/push/array_push_nested.sol,ported,arrays,src/ArrayPushNested.sol,test/ArrayPushNested.t.sol,Nested 2D array push
+array/push/array_push_nested_from_calldata.sol,ported,arrays,src/ArrayPushNestedFromCalldata.sol,test/ArrayPushNestedFromCalldata.t.sol,Push calldata slice to 2D array
+array/push/array_push_nested_from_memory.sol,ported,arrays,src/ArrayPushNestedFromMemory.sol,test/ArrayPushNestedFromMemory.t.sol,Push memory array to 2D storage array
+array/push/array_push_packed_array.sol,ported,arrays,src/ArrayPushPackedArray.sol,test/ArrayPushPackedArray.t.sol,Push/pop with packed uint80 array
+array/push/array_push_struct.sol,ported,arrays,src/ArrayPushStruct.sol,test/ArrayPushStruct.t.sol,Push memory struct to storage array
+array/push/array_push_struct_from_calldata.sol,ported,arrays,src/ArrayPushStructFromCalldata.sol,test/ArrayPushStructFromCalldata.t.sol,Push calldata struct to storage array
+array/push/byte_array_push.sol,ported,arrays,src/ByteArrayPush.sol,test/ByteArrayPush.t.sol,Push bytes to byte array
+array/push/byte_array_push_transition.sol,ported,arrays,src/ByteArrayPushTransition.sol,test/ByteArrayPushTransition.t.sol,Bytes push short/long encoding transition
+array/push/nested_bytes_push.sol,ported,arrays,src/NestedBytesPush.sol,test/NestedBytesPush.t.sol,Push nested bytes slices
+array/push/push_no_args_1d.sol,ported,arrays,src/PushNoArgs1d.sol,test/PushNoArgs1d.t.sol,push() returns reference for 1D array
+array/push/push_no_args_2d.sol,ported,arrays,src/PushNoArgs2d.sol,test/PushNoArgs2d.t.sol,push() returns reference for 2D array
+array/push/push_no_args_bytes.sol,ported,arrays,src/PushNoArgsBytes.sol,test/PushNoArgsBytes.t.sol,push() returns reference for bytes
+array/push/push_no_args_struct.sol,ported,arrays,src/PushNoArgsStruct.sol,test/PushNoArgsStruct.t.sol,push() returns storage reference for struct
 array/reusing_memory.sol,pending,,,,
 array/short_fixed_array_cleanup.sol,pending,,,,
-array/slices/array_calldata_assignment.sol,pending,,,,
-array/slices/array_slice_calldata_as_argument_of_external_calls.sol,pending,,,,
-array/slices/array_slice_calldata_to_calldata.sol,pending,,,,
-array/slices/array_slice_calldata_to_memory.sol,pending,,,,
-array/slices/array_slice_calldata_to_storage.sol,pending,,,,
+array/slices/array_calldata_assignment.sol,ported,arrays,src/ArrayCalldataAssignment.sol,test/ArrayCalldataAssignment.t.sol,Calldata array reassignment
+array/slices/array_slice_calldata_as_argument_of_external_calls.sol,ported,arrays,src/ArraySliceCalldataAsArgumentOfExternalCalls.sol,test/ArraySliceCalldataAsArgumentOfExternalCalls.t.sol,Calldata slice passed to external functions
+array/slices/array_slice_calldata_to_calldata.sol,ported,arrays,src/ArraySliceCalldataToCalldata.sol,test/ArraySliceCalldataToCalldata.t.sol,Calldata slice passed to calldata parameter
+array/slices/array_slice_calldata_to_memory.sol,ported,arrays,src/ArraySliceCalldataToMemory.sol,test/ArraySliceCalldataToMemory.t.sol,Calldata slice assigned to memory
+array/slices/array_slice_calldata_to_storage.sol,ported,arrays,src/ArraySliceCalldataToStorage.sol,test/ArraySliceCalldataToStorage.t.sol,Calldata slice assigned to storage
 array/storage_array_ref.sol,ported,arrays,src/StorageArrayRef.sol,,Storage array reference in internal call
 array/string_allocation_bug.sol,pending,,,,
 array/string_bytes_conversion.sol,pending,,,,
