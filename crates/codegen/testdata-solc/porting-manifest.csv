@@ -473,11 +473,11 @@ deployedCodeExclusion/super_function.sol,skipped,deployed-code-exclusion,,,"Do n
 deployedCodeExclusion/super_function_deployed.sol,ported,deployed-code-exclusion,src/SuperFunctionDeployed.sol,test/SuperFunctionDeployed.t.sol,keccak256 comparison of data vs function pointer call result
 deployedCodeExclusion/virtual_function.sol,skipped,deployed-code-exclusion,,,"Do not re-attempt: tests compiler bytecode optimization (codesize < data.length with bytecodeFormat:legacy), not portable Solidity runtime semantics"
 deployedCodeExclusion/virtual_function_deployed.sol,ported,deployed-code-exclusion,src/VirtualFunctionDeployed.sol,test/VirtualFunctionDeployed.t.sol,keccak256 comparison of data vs function pointer call result
-ecrecover/ecrecover.sol,pending,,,,
-ecrecover/ecrecover_abiV2.sol,pending,,,,
-ecrecover/failing_ecrecover_invalid_input.sol,pending,,,,
-ecrecover/failing_ecrecover_invalid_input_asm.sol,pending,,,,
-ecrecover/failing_ecrecover_invalid_input_proper.sol,pending,,,,
+ecrecover/ecrecover.sol,ported,ecrecover,src/Ecrecover.sol,test/Ecrecover.t.sol,ecrecover precompile with known test vector
+ecrecover/ecrecover_abiV2.sol,ported,ecrecover,src/EcrecoverAbiV2.sol,test/EcrecoverAbiV2.t.sol,ecrecover with abicoder v2 (default in 0.8.x)
+ecrecover/failing_ecrecover_invalid_input.sol,ported,ecrecover,src/FailingEcrecoverInvalidInput.sol,test/FailingEcrecoverInvalidInput.t.sol,ecrecover returns zero for invalid v
+ecrecover/failing_ecrecover_invalid_input_asm.sol,ported,ecrecover,src/FailingEcrecoverInvalidInputAsm.sol,test/FailingEcrecoverInvalidInputAsm.t.sol,ecrecover returns zero for invalid v with inline assembly
+ecrecover/failing_ecrecover_invalid_input_proper.sol,ported,ecrecover,src/FailingEcrecoverInvalidInputProper.sol,test/FailingEcrecoverInvalidInputProper.t.sol,ecrecover returns zero via recover wrapper with invalid v
 enums/constructing_enums_from_ints.sol,ported,enums,src/ConstructingEnumsFromInts.sol,,Enum cast from int
 enums/enum_explicit_overflow.sol,ported,enums,src/EnumExplicitOverflow.sol,,Enum overflow reverts with Panic 0x21
 enums/enum_explicit_overflow_homestead.sol,skipped,,,,EVMVersion <byzantium (Homestead) only; test exercises pre-Byzantium behavior absent in >=byzantium. Current Foundry/Solar infra targets >=byzantium exclusively. Do not re-attempt without a pre-byzantium EVM target.
@@ -893,16 +893,16 @@ inlineAssembly/transient_storage_simple_reentrancy_lock.sol,pending,,,,
 inlineAssembly/truefalse.sol,pending,,,,
 inlineAssembly/tstore_hidden_staticcall.sol,pending,,,,
 integer/basic.sol,ported,arithmetic,src/IntegerBasic.sol,,Integer min/max constants
-integer/int.sol,pending,,,,
-integer/many_local_variables.sol,pending,,,,
-integer/small_signed_types.sol,pending,,,,
-integer/uint.sol,pending,,,,
-interfaceID/homer.sol,pending,,,,
-interfaceID/homer_interfaceId.sol,pending,,,,
-interfaceID/interfaceId_events.sol,pending,,,,
-interfaceID/interfaces.sol,pending,,,,
-interfaceID/lisa.sol,pending,,,,
-interfaceID/lisa_interfaceId.sol,pending,,,,
+integer/int.sol,ported,integer,src/Int.sol,test/Int.t.sol,type(intN).min and .max for all signed integer sizes
+integer/many_local_variables.sol,ported,integer,src/ManyLocalVariables.sol,test/ManyLocalVariables.t.sol,many local variables including small uint types
+integer/small_signed_types.sol,ported,integer,src/SmallSignedTypes.sol,test/SmallSignedTypes.t.sol,multiplication of small signed types
+integer/uint.sol,ported,integer,src/Uint.sol,test/Uint.t.sol,type(uintN).min and .max for all unsigned integer sizes
+interfaceID/homer.sol,ported,interface-id,src/Homer.sol,test/Homer.t.sol,ERC165 supportsInterface via selector XOR
+interfaceID/homer_interfaceId.sol,ported,interface-id,src/HomerInterfaceId.sol,test/HomerInterfaceId.t.sol,ERC165 supportsInterface via type().interfaceId
+interfaceID/interfaceId_events.sol,ported,interface-id,src/InterfaceIdEvents.sol,test/InterfaceIdEvents.t.sol,events excluded from interfaceId computation
+interfaceID/interfaces.sol,ported,interface-id,src/Interfaces.sol,test/Interfaces.t.sol,interfaceId for multiple interfaces including derived
+interfaceID/lisa.sol,ported,interface-id,src/Lisa.sol,test/Lisa.t.sol,ERC165 mapping implementation via selector XOR
+interfaceID/lisa_interfaceId.sol,ported,interface-id,src/LisaInterfaceId.sol,test/LisaInterfaceId.t.sol,ERC165 mapping implementation via type().interfaceId
 isoltestTesting/account.sol,skipped,isoltest-testing,,,"Do not re-attempt: tests isoltest framework internals (account: caller-switching directive), not expressible as Solidity runtime semantics"
 isoltestTesting/balance_other_contract.sol,skipped,isoltest-testing,,,"Do not re-attempt: tests isoltest framework internals (balance: directive for checking account ETH balance), not expressible as Solidity runtime semantics"
 isoltestTesting/balance_with_balance.sol,skipped,isoltest-testing,,,"Do not re-attempt: tests isoltest framework internals (balance -> directive), not expressible as Solidity runtime semantics"
@@ -989,11 +989,11 @@ literals/hex_string_with_underscore.sol,ported,literals,src/HexStringWithUndersc
 literals/scientific_notation.sol,ported,literals,src/ScientificNotation.sol,,Scientific notation (int/uint)
 literals/ternary_operator_with_literal_types_overflow.sol,ported,literals,src/TernaryOperatorWithLiteralTypesOverflow.sol,test/TernaryOperatorWithLiteralTypesOverflow.t.sol,ternary with literal branches typed as uint8; sum overflows uint8 at runtime causing Panic 0x11
 literals/wei.sol,ported,literals,src/WeiLiteral.sol,,Wei denomination
-memoryManagement/assembly_access.sol,pending,,,,
+memoryManagement/assembly_access.sol,ported,memory-management,src/AssemblyAccess.sol,test/AssemblyAccess.t.sol,uninitialized dynamic array has non-zero memory pointer
 memoryManagement/memory_types_initialisation.sol,ported,memory-management,src/MemoryTypesInitialization.sol,,Zero-initialization of memory returns
-memoryManagement/return_variable.sol,pending,,,,
-memoryManagement/static_memory_array_allocation.sol,pending,,,,
-memoryManagement/struct_allocation.sol,pending,,,,
+memoryManagement/return_variable.sol,ported,memory-management,src/ReturnVariable.sol,test/ReturnVariable.t.sol,memory allocation for named and unnamed return variables
+memoryManagement/static_memory_array_allocation.sol,ported,memory-management,src/StaticMemoryArrayAllocation.sol,test/StaticMemoryArrayAllocation.t.sol,static memory array allocation vs pointer copy
+memoryManagement/struct_allocation.sol,ported,memory-management,src/StructAllocation.sol,test/StructAllocation.t.sol,struct memory allocation vs pointer copy
 metaTypes/name_other_contract.sol,ported,meta-types,src/NameOtherContract.sol,test/NameOtherContract.t.sol,"type(C).name for contract, abstract contract, and interface"
 modifiers/access_through_contract_name.sol,ported,modifiers,src/AccessThroughContractName.sol,test/AccessThroughContractName.t.sol,Access modifier via qualified A.m vs override m
 modifiers/access_through_module_name.sol,skipped,,,,"Do not re-attempt: self-import via module alias (import ""a"" as M) not reproducible in Foundry"
@@ -1143,10 +1143,10 @@ reverts/invalid_instruction.sol,ported,reverts,src/InvalidInstruction.sol,,inval
 reverts/revert.sol,ported,reverts,src/RevertBasics.sol,,Revert behavior; ensure expectations match Solar
 reverts/revert_return_area.sol,ported,reverts,src/RevertReturnArea.sol,,revert data written into return area via inline assembly call
 reverts/simple_throw.sol,ported,reverts,src/SimpleThrow.sol,,Simple revert path
-saltedCreate/eof/salted_create_with_value.sol,pending,,,,
-saltedCreate/prediction_example.sol,pending,,,,
-saltedCreate/salted_create.sol,pending,,,,
-saltedCreate/salted_create_with_value.sol,pending,,,,
+saltedCreate/eof/salted_create_with_value.sol,skipped,,,,Do not re-attempt: bytecodeFormat >=EOFv1 only; EOF not supported in standard Foundry/solc 0.8
+saltedCreate/prediction_example.sol,ported,salted-create,src/PredictionExample.sol,test/PredictionExample.t.sol,CREATE2 address prediction matches actual deployment
+saltedCreate/salted_create.sol,ported,salted-create,src/SaltedCreate.sol,test/SaltedCreate.t.sol,CREATE2 different salts produce different addresses; same salt reverts
+saltedCreate/salted_create_with_value.sol,ported,salted-create,src/SaltedCreateWithValue.sol,test/SaltedCreateWithValue.t.sol,CREATE2 with ETH value forwarding
 scoping/c99_scoping_activation.sol,ported,scoping,src/C99ScopingActivation.sol,,C99 scoping/ shadowing
 smoke/alignment.sol,pending,,,,
 smoke/arrays.sol,pending,,,,
@@ -1392,12 +1392,12 @@ types/struct_mapping_abstract_constructor_param.sol,ported,types,src/StructMappi
 types/tuple_assign_multi_slot_grow.sol,ported,types,src/TupleAssignMultiSlotGrow.sol,,Nested tuple assignment with multi-slot bytes types
 types/type_conversion_cleanup.sol,ported,types,src/TypeConversionCleanup.sol,,Type conversion chain cleanup - uint200->uint128->uint160->uint
 underscore/as_function.sol,ported,underscore,src/AsFunction.sol,test/AsFunction.t.sol,underscore as function name and as no-op expression statement in function body
-uninitializedFunctionPointer/invalidInConstructor.sol,pending,,,,
-uninitializedFunctionPointer/invalidStoredInConstructor.sol,pending,,,,
-uninitializedFunctionPointer/store2.sol,pending,,,,
-uninitializedFunctionPointer/storeInConstructor.sol,pending,,,,
-uninitializedFunctionPointer/uninitialized_internal_storage_function_legacy.sol,pending,,,,
-uninitializedFunctionPointer/uninitialized_internal_storage_function_via_yul.sol,pending,,,,
+uninitializedFunctionPointer/invalidInConstructor.sol,ported,uninitialized-function-pointer,src/InvalidInConstructor.sol,test/InvalidInConstructor.t.sol,calling uninitialized function pointer in constructor panics with Panic(0x51)
+uninitializedFunctionPointer/invalidStoredInConstructor.sol,ported,uninitialized-function-pointer,src/InvalidStoredInConstructor.sol,test/InvalidStoredInConstructor.t.sol,calling stored uninitialized function pointer set in constructor panics with Panic(0x51)
+uninitializedFunctionPointer/store2.sol,ported,uninitialized-function-pointer,src/Store2.sol,test/Store2.t.sol,calling stored uninitialized function pointer with many locals panics with Panic(0x51)
+uninitializedFunctionPointer/storeInConstructor.sol,ported,uninitialized-function-pointer,src/StoreInConstructor.sol,test/StoreInConstructor.t.sol,stored uninitialized function pointer panics twice (no state change on revert)
+uninitializedFunctionPointer/uninitialized_internal_storage_function_legacy.sol,skipped,,,,"Do not re-attempt: compileViaYul:false (legacy codegen) only; tests internal representation of uninitialized fn ptr (nonzero tag), not portable to via-Yul/Foundry"
+uninitializedFunctionPointer/uninitialized_internal_storage_function_via_yul.sol,skipped,,,,"Do not re-attempt: compileViaYul:true only; tests that uninitialized fn ptr slot is zero in Yul codegen, complementary to legacy test, not a standalone portable test"
 userDefinedValueType/abicodec.sol,ported,user-defined-value-type,src/AbiCodec.sol,test/AbiCodec.t.sol,abi.encodeWithSelector and abi.decode with UDVT
 userDefinedValueType/assembly_access_bytes2_abicoder_v1.sol,skipped,,,,Do not re-attempt: compileViaYul: false / abicoder v1 specific; runtime behavior covered by v2 variant
 userDefinedValueType/assembly_access_bytes2_abicoder_v2.sol,ported,user-defined-value-type,src/AssemblyAccessBytes2.sol,test/AssemblyAccessBytes2.t.sol,Assembly access of bytes2 UDVT fields
@@ -1533,9 +1533,9 @@ various/transient_storage_reentrancy_lock.sol,pending,,,,
 various/tuples.sol,pending,,,,
 various/typed_multi_variable_declaration.sol,pending,,,,
 various/write_storage_external.sol,pending,,,,
-virtualFunctions/internal_virtual_function_calls.sol,pending,,,,
-virtualFunctions/internal_virtual_function_calls_through_dispatch.sol,pending,,,,
-virtualFunctions/virtual_function_calls.sol,pending,,,,
-virtualFunctions/virtual_function_usage_in_constructor_arguments.sol,pending,,,,
-virtualFunctions/virtual_override_changing_mutability_internal.sol,pending,,,,
-virtualFunctions/virtual_override_changing_mutability_public.sol,pending,,,,
+virtualFunctions/internal_virtual_function_calls.sol,ported,virtual-functions,src/InternalVirtualFunctionCalls.sol,test/InternalVirtualFunctionCalls.t.sol,internal virtual function override dispatch
+virtualFunctions/internal_virtual_function_calls_through_dispatch.sol,ported,virtual-functions,src/InternalVirtualFunctionCallsThroughDispatch.sol,test/InternalVirtualFunctionCallsThroughDispatch.t.sol,internal virtual function dispatch via function pointer
+virtualFunctions/virtual_function_calls.sol,ported,virtual-functions,src/VirtualFunctionCalls.sol,test/VirtualFunctionCalls.t.sol,public virtual function override dispatch
+virtualFunctions/virtual_function_usage_in_constructor_arguments.sol,ported,virtual-functions,src/VirtualFunctionUsageInConstructorArguments.sol,test/VirtualFunctionUsageInConstructorArguments.t.sol,virtual function call in base constructor argument uses most derived override
+virtualFunctions/virtual_override_changing_mutability_internal.sol,ported,virtual-functions,src/VirtualOverrideChangingMutabilityInternal.sol,test/VirtualOverrideChangingMutabilityInternal.t.sol,override can increase mutability restriction (internal functions)
+virtualFunctions/virtual_override_changing_mutability_public.sol,ported,virtual-functions,src/VirtualOverrideChangingMutabilityPublic.sol,test/VirtualOverrideChangingMutabilityPublic.t.sol,override can increase mutability restriction (public functions)
