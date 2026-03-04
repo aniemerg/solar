@@ -1,0 +1,14 @@
+error: identifier `this` already declared
+   ╭▸ ROOT/tests/ui/solc/events/IllegalNamesException.sol:LL:CC
+   │
+LL │     event this();
+   ╰╴          ━━━━
+
+error: identifier `super` already declared
+   ╭▸ ROOT/tests/ui/solc/events/IllegalNamesException.sol:LL:CC
+   │
+LL │     event super();
+   ╰╴          ━━━━━
+
+error: aborting due to 2 previous errors
+

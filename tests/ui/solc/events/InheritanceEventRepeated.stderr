@@ -1,0 +1,14 @@
+error: event with same name and parameter types declared twice
+   ╭▸ ROOT/tests/ui/solc/events/InheritanceEventRepeated.sol:LL:CC
+   │
+LL │     event X(uint);
+   │           ━
+   ╰╴
+note: other declaration
+   ╭▸ ROOT/tests/ui/solc/events/InheritanceEventRepeated.sol:LL:CC
+   │
+LL │     event X(uint);
+   ╰╴          ━
+
+error: aborting due to 1 previous error
+

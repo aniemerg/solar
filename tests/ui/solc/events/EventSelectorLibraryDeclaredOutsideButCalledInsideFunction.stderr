@@ -1,0 +1,8 @@
+error: member `E` not found on type `type(library Y)`
+   ╭▸ ROOT/tests/ui/solc/events/EventSelectorLibraryDeclaredOutsideButCalledInsideFunction.sol:LL:CC
+   │
+LL │     bytes32 s5 = Y.E.selector;
+   ╰╴                   ━
+
+error: aborting due to 1 previous error
+

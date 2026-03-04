@@ -1,0 +1,14 @@
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/GasWithCallNonpayable.sol:LL:CC
+   │
+LL │         (success,) = a.call{gas: 42}("");
+   ╰╴        ━━━━━━━━━━
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/GasWithCallNonpayable.sol:LL:CC
+   │
+LL │         (success,) = a.call{gas: 42}("");
+   ╰╴                                     ━━ expected `bytes memory`, found `utf8_string_literal[32]`
+
+error: aborting due to 2 previous errors
+

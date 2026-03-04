@@ -1,0 +1,38 @@
+error: member `s` not found on type `type(contract A)`
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/AccessToBaseMemberStruct.sol:LL:CC
+   │
+LL │         A.s = A.S(2);
+   ╰╴          ━
+
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/AccessToBaseMemberStruct.sol:LL:CC
+   │
+LL │         A.s = A.S(2);
+   ╰╴        ━━━
+
+error: member `S` not found on type `type(contract A)`
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/AccessToBaseMemberStruct.sol:LL:CC
+   │
+LL │         A.s = A.S(2);
+   ╰╴                ━
+
+error: member `s` not found on type `type(contract A)`
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/AccessToBaseMemberStruct.sol:LL:CC
+   │
+LL │         A.s.x = 2;
+   ╰╴          ━
+
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/AccessToBaseMemberStruct.sol:LL:CC
+   │
+LL │         A.s.x = 2;
+   ╰╴        ━━━━━
+
+error: member `s` not found on type `type(contract A)`
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/AccessToBaseMemberStruct.sol:LL:CC
+   │
+LL │         return A.s.x;
+   ╰╴                 ━
+
+error: aborting due to 6 previous errors
+

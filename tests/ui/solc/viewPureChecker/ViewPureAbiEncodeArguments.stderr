@@ -1,0 +1,74 @@
+error: wrong argument count for function call: 1 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/ViewPureAbiEncodeArguments.sol:LL:CC
+   │
+LL │         return abi.encode(gView());
+   │                ━━━━━━━━━━┬────────
+   │                          │
+   ╰╴                         expected 0 arguments, found 1
+
+error: wrong argument count for function call: 1 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/ViewPureAbiEncodeArguments.sol:LL:CC
+   │
+LL │         return abi.encodePacked(gView());
+   │                ━━━━━━━━━━━━━━━━┬────────
+   │                                │
+   ╰╴                               expected 0 arguments, found 1
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/ViewPureAbiEncodeArguments.sol:LL:CC
+   │
+LL │ …     return abi.encodeWithSelector(0x12345678, gView());
+   │              ━━━━━━━━━━━━━━━━━━━━━━┬────────────────────
+   │                                    │
+   ╰╴                                   expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/ViewPureAbiEncodeArguments.sol:LL:CC
+   │
+LL │ …     return abi.encodeWithSignature("f(uint256)", gView());
+   │              ━━━━━━━━━━━━━━━━━━━━━━━┬──────────────────────
+   │                                     │
+   ╰╴                                    expected 0 arguments, found 2
+
+error: wrong argument count for function call: 1 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/ViewPureAbiEncodeArguments.sol:LL:CC
+   │
+LL │         return abi.encode(gNonPayable());
+   │                ━━━━━━━━━━┬──────────────
+   │                          │
+   ╰╴                         expected 0 arguments, found 1
+
+error: wrong argument count for function call: 1 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/ViewPureAbiEncodeArguments.sol:LL:CC
+   │
+LL │         return abi.encodePacked(gNonPayable());
+   │                ━━━━━━━━━━━━━━━━┬──────────────
+   │                                │
+   ╰╴                               expected 0 arguments, found 1
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/ViewPureAbiEncodeArguments.sol:LL:CC
+   │
+LL │ …     return abi.encodeWithSelector(0x12345678, gNonPayable());
+   │              ━━━━━━━━━━━━━━━━━━━━━━┬──────────────────────────
+   │                                    │
+   ╰╴                                   expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/ViewPureAbiEncodeArguments.sol:LL:CC
+   │
+LL │ …     return abi.encodeWithSignature("f(uint256)", gNonPayable());
+   │              ━━━━━━━━━━━━━━━━━━━━━━━┬────────────────────────────
+   │                                     │
+   ╰╴                                    expected 0 arguments, found 2
+
+error: wrong argument count for function call: 1 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/ViewPureAbiEncodeArguments.sol:LL:CC
+   │
+LL │         return abi.encode(2);
+   │                ━━━━━━━━━━┬──
+   │                          │
+   ╰╴                         expected 0 arguments, found 1
+
+error: aborting due to 9 previous errors
+

@@ -1,0 +1,19 @@
+//@ compile-flags: -Ztypeck
+contract C {
+    function f() view public {
+        bytes32 x = keccak256("abc"); //~ ERROR: mismatched types
+        bytes32 y = sha256("abc"); //~ ERROR: mismatched types
+        address z = ecrecover(bytes32(uint256(1)), uint8(2), bytes32(uint256(3)), bytes32(uint256(4)));
+        require(true); //~ ERROR: no matching declarations found
+        assert(true);
+        x; y; z;
+    }
+    function g() public {
+        bytes32 x = keccak256("abc"); //~ ERROR: mismatched types
+        bytes32 y = sha256("abc"); //~ ERROR: mismatched types
+        address z = ecrecover(bytes32(uint256(1)), uint8(2), bytes32(uint256(3)), bytes32(uint256(4)));
+        require(true); //~ ERROR: no matching declarations found
+        assert(true);
+        x; y; z;
+    }
+}

@@ -1,0 +1,14 @@
+error: identifier `dup` already declared
+   ╭▸ ROOT/tests/ui/solc/events/EventFunctionInheritanceClash.sol:LL:CC
+   │
+LL │     event dup();
+   │           ━━━
+   ╰╴
+note: previous declaration declared here
+   ╭▸ ROOT/tests/ui/solc/events/EventFunctionInheritanceClash.sol:LL:CC
+   │
+LL │     function dup() public returns (uint) {
+   ╰╴             ━━━
+
+error: aborting due to 1 previous error
+

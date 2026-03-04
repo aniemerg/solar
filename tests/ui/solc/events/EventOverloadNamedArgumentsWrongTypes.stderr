@@ -1,0 +1,8 @@
+error: no matching declarations found
+   ╭▸ ROOT/tests/ui/solc/events/EventOverloadNamedArgumentsWrongTypes.sol:LL:CC
+   │
+LL │         emit e({s: 2, u: "abc"});
+   ╰╴             ━
+
+error: aborting due to 1 previous error
+

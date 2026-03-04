@@ -1,0 +1,8 @@
+error: `global` can only be used at file level
+   ╭▸ ROOT/tests/ui/solc/using/GlobalInsideContract.sol:LL:CC
+   │
+LL │     using {f} for uint global;
+   ╰╴    ━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

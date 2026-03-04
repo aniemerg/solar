@@ -1,0 +1,8 @@
+error: no matching declarations found
+   ╭▸ ROOT/tests/ui/solc/viewPureChecker/MsgValueModifier.sol:LL:CC
+   │
+LL │     modifier m(uint _amount, uint _avail) { require(_avail >= _amount); _; }
+   ╰╴                                            ━━━━━━━
+
+error: aborting due to 1 previous error
+

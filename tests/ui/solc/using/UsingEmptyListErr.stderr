@@ -1,0 +1,8 @@
+error: expected identifier, found `}`
+   ╭▸ ROOT/tests/ui/solc/using/UsingEmptyListErr.sol:LL:CC
+   │
+LL │     using {} for uint;
+   ╰╴           ━
+
+error: aborting due to 1 previous error
+

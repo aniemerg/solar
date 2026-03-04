@@ -1,0 +1,44 @@
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/abiEncoder/AbiEncodecallTupleFromErrorEvent.sol:LL:CC
+   │
+LL │         abi.encodeCall(this.f0, Ev());
+   │         ━━━━━━━━━━━━━━┬──────────────
+   │                       │
+   ╰╴                      expected 0 arguments, found 2
+
+error: event invocations have to be prefixed by "emit"
+   ╭▸ ROOT/tests/ui/solc/abiEncoder/AbiEncodecallTupleFromErrorEvent.sol:LL:CC
+   │
+LL │         abi.encodeCall(this.f0, Ev());
+   ╰╴                                ━━━━
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/abiEncoder/AbiEncodecallTupleFromErrorEvent.sol:LL:CC
+   │
+LL │         abi.encodeCall(this.f0, Er());
+   │         ━━━━━━━━━━━━━━┬──────────────
+   │                       │
+   ╰╴                      expected 0 arguments, found 2
+
+error: errors can only be used with revert statements
+   ╭▸ ROOT/tests/ui/solc/abiEncoder/AbiEncodecallTupleFromErrorEvent.sol:LL:CC
+   │
+LL │         abi.encodeCall(this.f0, Er());
+   ╰╴                                ━━━━
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/abiEncoder/AbiEncodecallTupleFromErrorEvent.sol:LL:CC
+   │
+LL │         abi.encodeCall(this.f0, revert());
+   │         ━━━━━━━━━━━━━━┬──────────────────
+   │                       │
+   ╰╴                      expected 0 arguments, found 2
+
+error: no matching declarations found
+   ╭▸ ROOT/tests/ui/solc/abiEncoder/AbiEncodecallTupleFromErrorEvent.sol:LL:CC
+   │
+LL │         abi.encodeCall(this.f0, revert());
+   ╰╴                                ━━━━━━
+
+error: aborting due to 6 previous errors
+

@@ -1,0 +1,8 @@
+error: no matching declarations found
+   ╭▸ ROOT/tests/ui/solc/events/EventOverloadNamedArgumentsAmbiguousImplicitConversion.sol:LL:CC
+   │
+LL │         emit e({u: 2, s: "abc"});
+   ╰╴             ━
+
+error: aborting due to 1 previous error
+

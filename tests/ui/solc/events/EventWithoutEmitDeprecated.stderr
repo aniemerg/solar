@@ -1,0 +1,8 @@
+error: event invocations have to be prefixed by "emit"
+   ╭▸ ROOT/tests/ui/solc/events/EventWithoutEmitDeprecated.sol:LL:CC
+   │
+LL │         e();
+   ╰╴        ━━━
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,14 @@
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/events/EventIncompatibleUnaryOperator.sol:LL:CC
+   │
+LL │         MyCustomEvent++;
+   ╰╴        ━━━━━━━━━━━━━
+
+error: cannot apply unary operator `++` to `event C.MyCustomEvent(uint256)`
+   ╭▸ ROOT/tests/ui/solc/events/EventIncompatibleUnaryOperator.sol:LL:CC
+   │
+LL │         MyCustomEvent++;
+   ╰╴        ━━━━━━━━━━━━━
+
+error: aborting due to 2 previous errors
+

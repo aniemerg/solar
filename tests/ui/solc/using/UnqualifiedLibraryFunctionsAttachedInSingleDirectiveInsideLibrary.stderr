@@ -1,0 +1,26 @@
+error: member `externalFunction` not found on type `uint256`
+   ╭▸ ROOT/tests/ui/solc/using/UnqualifiedLibraryFunctionsAttachedInSingleDirectiveInsideLibrary.sol:LL:CC
+   │
+LL │         x.externalFunction();
+   ╰╴          ━━━━━━━━━━━━━━━━
+
+error: member `publicFunction` not found on type `uint256`
+   ╭▸ ROOT/tests/ui/solc/using/UnqualifiedLibraryFunctionsAttachedInSingleDirectiveInsideLibrary.sol:LL:CC
+   │
+LL │         x.publicFunction();
+   ╰╴          ━━━━━━━━━━━━━━
+
+error: member `internalFunction` not found on type `uint256`
+   ╭▸ ROOT/tests/ui/solc/using/UnqualifiedLibraryFunctionsAttachedInSingleDirectiveInsideLibrary.sol:LL:CC
+   │
+LL │         x.internalFunction();
+   ╰╴          ━━━━━━━━━━━━━━━━
+
+error: member `privateFunction` not found on type `uint256`
+   ╭▸ ROOT/tests/ui/solc/using/UnqualifiedLibraryFunctionsAttachedInSingleDirectiveInsideLibrary.sol:LL:CC
+   │
+LL │         x.privateFunction();
+   ╰╴          ━━━━━━━━━━━━━━━
+
+error: aborting due to 4 previous errors
+

@@ -1,0 +1,16 @@
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/abiEncoder/AbiEncodecallEventFreeFunction.sol:LL:CC
+   │
+LL │     abi.encodeCall(L.E, (1));
+   │     ━━━━━━━━━━━━━━┬─────────
+   │                   │
+   ╰╴                  expected 0 arguments, found 2
+
+error: member `E` not found on type `type(library L)`
+   ╭▸ ROOT/tests/ui/solc/abiEncoder/AbiEncodecallEventFreeFunction.sol:LL:CC
+   │
+LL │     abi.encodeCall(L.E, (1));
+   ╰╴                     ━
+
+error: aborting due to 2 previous errors
+

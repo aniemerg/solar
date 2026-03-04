@@ -1,0 +1,22 @@
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/abiEncoder/AbiEncodeConversionsAddress.sol:LL:CC
+   │
+LL │ …     abi.encodeCall(testInterface.A, (address(0)));
+   │       ━━━━━━━━━━━━━━┬──────────────────────────────
+   │                     │
+   ╰╴                    expected 0 arguments, found 2
+
+error: member `A` not found on type `type(contract testInterface)`
+   ╭▸ ROOT/tests/ui/solc/abiEncoder/AbiEncodeConversionsAddress.sol:LL:CC
+   │
+LL │ …     abi.encodeCall(testInterface.A, (address(0)));
+   ╰╴                                   ━
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/abiEncoder/AbiEncodeConversionsAddress.sol:LL:CC
+   │
+LL │ …     abi.encodeCall(testInterface.A, (address(0)));
+   ╰╴                                       ━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
+
+error: aborting due to 3 previous errors
+

@@ -1,0 +1,8 @@
+error: expected `;`, found keyword `anonymous`
+   ╭▸ ROOT/tests/ui/solc/events/AnonymousEventMultipleAnonymousSpecifiers.sol:LL:CC
+   │
+LL │     event e(uint a) anonymous anonymous;
+   ╰╴                              ━━━━━━━━━ expected `;`
+
+error: aborting due to 1 previous error
+

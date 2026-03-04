@@ -1,0 +1,18 @@
+//@ compile-flags: -Ztypeck
+function id(uint x) pure returns (uint) {
+    return x;
+}
+
+function zero(address) pure returns (address) {
+    return address(0);
+}
+
+contract C {
+    using * for *; //~ ERROR: expected identifier, found `*`
+    function f(uint x) pure external returns (uint) {
+        return x.id();
+    }
+    function g(address a) pure external returns (address) {
+        return a.zero();
+    }
+}

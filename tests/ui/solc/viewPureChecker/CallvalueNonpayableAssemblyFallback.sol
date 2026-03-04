@@ -1,0 +1,10 @@
+//@ compile-flags: -Ztypeck
+contract C
+{
+    fallback() external {
+        uint x;
+        assembly {
+            x := callvalue()
+        }
+    }
+}

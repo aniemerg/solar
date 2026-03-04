@@ -1,0 +1,14 @@
+error: event with same name and parameter types declared twice
+   ╭▸ ROOT/tests/ui/solc/events/DoubleEventDeclaration.sol:LL:CC
+   │
+LL │     event A(uint i);
+   │           ━
+   ╰╴
+note: other declaration
+   ╭▸ ROOT/tests/ui/solc/events/DoubleEventDeclaration.sol:LL:CC
+   │
+LL │     event A(uint i);
+   ╰╴          ━
+
+error: aborting due to 1 previous error
+
