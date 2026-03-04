@@ -1,0 +1,8 @@
+error: enum cannot have more than 256 variants
+   ╭▸ ROOT/tests/ui/solc/enums/EnumWithTooManyMembers.sol:LL:CC
+   │
+LL │ enum E {
+   ╰╴     ━
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,14 @@
+error: function with same name and parameter types declared twice
+   ╭▸ ROOT/tests/ui/solc/freeFunctions/FreeFunctionNamesakeDifferentParameterTypes.sol:LL:CC
+   │
+LL │ function g() pure returns (uint) { return 1; }
+   │          ━
+   ╰╴
+note: other declaration
+   ╭▸ ROOT/tests/ui/solc/freeFunctions/FreeFunctionNamesakeDifferentParameterTypes.sol:LL:CC
+   │
+LL │ function g() pure returns (string memory) { return "1"; }
+   ╰╴         ━
+
+error: aborting due to 1 previous error
+

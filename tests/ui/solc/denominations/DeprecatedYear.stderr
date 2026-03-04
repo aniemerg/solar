@@ -1,0 +1,8 @@
+error: using "years" as a unit denomination is deprecated
+   ╭▸ ROOT/tests/ui/solc/denominations/DeprecatedYear.sol:LL:CC
+   │
+LL │     uint constant a = 3 years;
+   ╰╴                      ━━━━━━━
+
+error: aborting due to 1 previous error
+

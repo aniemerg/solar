@@ -1,0 +1,8 @@
+error: expected one of `(`, `.`, `;`, `?`, `[`, or `{`, found `finney`
+   ╭▸ ROOT/tests/ui/solc/denominations/FinneyInvalid.sol:LL:CC
+   │
+LL │         uint x = 1 finney;
+   ╰╴                   ━━━━━━ expected one of `(`, `.`, `;`, `?`, `[`, or `{`
+
+error: aborting due to 1 previous error
+

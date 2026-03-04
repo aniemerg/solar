@@ -1,0 +1,10 @@
+error: hexadecimal numbers cannot be used with unit denominations
+   ╭▸ ROOT/tests/ui/solc/denominations/InvalidDenominationAddress.sol:LL:CC
+   │
+LL │     address a = 0x11111122222333334444455555666667777788888 wei;
+   │                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: you can use an expression of the form "0x1234 * 1 days" instead
+
+error: aborting due to 1 previous error
+

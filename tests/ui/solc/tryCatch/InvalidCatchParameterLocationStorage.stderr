@@ -1,0 +1,10 @@
+error: invalid data location `storage`
+   ╭▸ ROOT/tests/ui/solc/tryCatch/InvalidCatchParameterLocationStorage.sol:LL:CC
+   │
+LL │         try this.f() {} catch (string storage a) { }
+   │                                ━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory` for try/catch clause, but got `storage`
+
+error: aborting due to 1 previous error
+

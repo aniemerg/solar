@@ -1,0 +1,6 @@
+//@compile-flags: -Ztypeck
+contract C {
+    function f(uint256[] calldata x) external pure {
+        x[0] = 42; //~ ERROR: calldata arrays are read-only
+    }
+}

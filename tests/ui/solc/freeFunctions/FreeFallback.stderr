@@ -1,0 +1,8 @@
+error: fallbacks are not allowed in the global scope
+   ╭▸ ROOT/tests/ui/solc/freeFunctions/FreeFallback.sol:LL:CC
+   │
+LL │ fallback(){}
+   ╰╴━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

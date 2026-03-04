@@ -1,0 +1,26 @@
+error: expected function, found `contract C`
+   ╭▸ ROOT/tests/ui/solc/freeFunctions/IllegalNames.sol:LL:CC
+   │
+LL │         this();
+   │         ━━━━
+   ╰╴
+note: call expression requires function
+   ╭▸ ROOT/tests/ui/solc/freeFunctions/IllegalNames.sol:LL:CC
+   │
+LL │         this();
+   ╰╴        ━━━━━━
+
+error: expected function, found `contract C`
+   ╭▸ ROOT/tests/ui/solc/freeFunctions/IllegalNames.sol:LL:CC
+   │
+LL │         super();
+   │         ━━━━━
+   ╰╴
+note: call expression requires function
+   ╭▸ ROOT/tests/ui/solc/freeFunctions/IllegalNames.sol:LL:CC
+   │
+LL │         super();
+   ╰╴        ━━━━━━━
+
+error: aborting due to 2 previous errors
+

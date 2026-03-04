@@ -1,0 +1,28 @@
+error: rational literals are not supported
+   ╭▸ ROOT/tests/ui/solc/operators/SignedRationalModulus.sol:LL:CC
+   │
+LL │         fixed a = 0.42578125 % -0.4271087646484375;
+   ╰╴                  ━━━━━━━━━━
+
+error: rational literals are not supported
+   ╭▸ ROOT/tests/ui/solc/operators/SignedRationalModulus.sol:LL:CC
+   │
+LL │         fixed a = 0.42578125 % -0.4271087646484375;
+   ╰╴                                ━━━━━━━━━━━━━━━━━━
+
+error: rational literals are not supported
+   ╭▸ ROOT/tests/ui/solc/operators/SignedRationalModulus.sol:LL:CC
+   │
+LL │         fixed b = .5 % a;
+   ╰╴                  ━━
+
+error: cannot apply builtin operator `%` to `fixed256x0` and `fixed256x0`
+   ╭▸ ROOT/tests/ui/solc/operators/SignedRationalModulus.sol:LL:CC
+   │
+LL │         fixed c = a % b;
+   │                   ┬ ━ ─ fixed256x0
+   │                   │
+   ╰╴                  fixed256x0
+
+error: aborting due to 4 previous errors
+

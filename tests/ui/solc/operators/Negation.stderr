@@ -1,0 +1,8 @@
+error: cannot apply unary operator `-` to `uint256`
+   ╭▸ ROOT/tests/ui/solc/operators/Negation.sol:LL:CC
+   │
+LL │         -y;
+   ╰╴         ━
+
+error: aborting due to 1 previous error
+

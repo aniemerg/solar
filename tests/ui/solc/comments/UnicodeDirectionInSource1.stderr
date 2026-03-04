@@ -1,0 +1,8 @@
+error: unknown start of token: \u{202c}
+   ╭▸ ROOT/tests/ui/solc/comments/UnicodeDirectionInSource1.sol:LL:CC
+   │
+LL │         if �(b) { return; }
+   ╰╴           ━
+
+error: aborting due to 1 previous error
+

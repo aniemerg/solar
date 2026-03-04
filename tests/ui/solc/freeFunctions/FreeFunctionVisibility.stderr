@@ -1,0 +1,18 @@
+error: free functions cannot have visibility
+   ╭▸ ROOT/tests/ui/solc/freeFunctions/FreeFunctionVisibility.sol:LL:CC
+   │
+LL │ function fun1() public { }
+   │ ━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: remove `public` from the declaration
+
+error: free functions cannot have visibility
+   ╭▸ ROOT/tests/ui/solc/freeFunctions/FreeFunctionVisibility.sol:LL:CC
+   │
+LL │ function fun2() internal { }
+   │ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: remove `internal` from the declaration
+
+error: aborting due to 2 previous errors
+

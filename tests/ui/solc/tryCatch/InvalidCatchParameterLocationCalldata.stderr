@@ -1,0 +1,10 @@
+error: invalid data location `calldata`
+   ╭▸ ROOT/tests/ui/solc/tryCatch/InvalidCatchParameterLocationCalldata.sol:LL:CC
+   │
+LL │         try this.f() {} catch (string calldata a) { }
+   │                                ━━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory` for try/catch clause, but got `calldata`
+
+error: aborting due to 1 previous error
+

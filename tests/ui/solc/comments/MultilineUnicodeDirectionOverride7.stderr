@@ -1,0 +1,18 @@
+error: unterminated block comment
+   ╭▸ ROOT/tests/ui/solc/comments/MultilineUnicodeDirectionOverride7.sol:LL:CC
+   │
+LL │ ┏         /* LRO� LRE� RLE �  PDF� RLO� PDF � PDF�
+LL │ ┃     }
+LL │ ┃ }
+   ╰╴┗━━┛
+
+error: expected contract item (function, variable, struct, or modifier definition), found `<eof>`
+   ╭▸ ROOT/tests/ui/solc/comments/MultilineUnicodeDirectionOverride7.sol:LL:CC
+   │
+LL │     function f() public pure {
+   │                              ━
+   │
+   ╰ note: for a full list of valid contract items, see <https://docs.soliditylang.org/en/latest/grammar.html#a4.SolidityParser.contractBodyElement>
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,38 @@
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/tryCatch/ElementaryNonAddressStateMutabilityCatch.sol:LL:CC
+   │
+LL │         try this.a() {} catch (string payable memory) {}
+   ╰╴                               ━━━━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/tryCatch/ElementaryNonAddressStateMutabilityCatch.sol:LL:CC
+   │
+LL │         try this.c() {} catch (bytes payable memory) {}
+   ╰╴                               ━━━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/tryCatch/ElementaryNonAddressStateMutabilityCatch.sol:LL:CC
+   │
+LL │         try this.a() {} catch (string view memory) {}
+   ╰╴                               ━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/tryCatch/ElementaryNonAddressStateMutabilityCatch.sol:LL:CC
+   │
+LL │         try this.c() {} catch (bytes view memory) {}
+   ╰╴                               ━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/tryCatch/ElementaryNonAddressStateMutabilityCatch.sol:LL:CC
+   │
+LL │         try this.a() {} catch (string pure memory) {}
+   ╰╴                               ━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/tryCatch/ElementaryNonAddressStateMutabilityCatch.sol:LL:CC
+   │
+LL │         try this.c() {} catch (bytes pure memory) {}
+   ╰╴                               ━━━━━━━━━━
+
+error: aborting due to 6 previous errors
+

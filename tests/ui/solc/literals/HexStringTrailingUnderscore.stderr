@@ -1,0 +1,8 @@
+error: invalid underscore in hex literal
+   ╭▸ ROOT/tests/ui/solc/literals/HexStringTrailingUnderscore.sol:LL:CC
+   │
+LL │         hex"1234_";
+   ╰╴                ━
+
+error: aborting due to 1 previous error
+
