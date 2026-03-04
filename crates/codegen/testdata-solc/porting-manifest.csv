@@ -743,20 +743,20 @@ functionTypes/ternary_contract_internal_function.sol,pending,,,,
 functionTypes/ternary_contract_library_internal_function.sol,pending,,,,
 functionTypes/ternary_contract_public_function.sol,pending,,,,
 functionTypes/uninitialized_internal_storage_function_call.sol,pending,,,,
-getters/array_mapping_struct.sol,pending,,,,
-getters/arrays.sol,pending,,,,
-getters/bytes.sol,pending,,,,
-getters/mapping.sol,pending,,,,
-getters/mapping_array_struct.sol,pending,,,,
-getters/mapping_of_string.sol,pending,,,,
-getters/mapping_to_struct.sol,pending,,,,
-getters/mapping_with_names.sol,pending,,,,
-getters/string_and_bytes.sol,pending,,,,
-getters/struct_with_bytes.sol,pending,,,,
-getters/struct_with_bytes_simple.sol,pending,,,,
-getters/transient_value_types.sol,pending,,,,
-getters/transient_value_types_multi_frame_call.sol,pending,,,,
-getters/value_types.sol,pending,,,,
+getters/array_mapping_struct.sol,ported,getters,src/ArrayMappingStruct.sol,,Auto-getter for array of mappings to struct
+getters/arrays.sol,ported,getters,src/Arrays.sol,,Auto-getter for fixed array of dynamic arrays
+getters/bytes.sol,ported,getters,src/Bytes.sol,,Auto-getter for bytes storage variable
+getters/mapping.sol,ported,getters,src/Mapping.sol,,Auto-getter for nested mapping
+getters/mapping_array_struct.sol,ported,getters,src/MappingArrayStruct.sol,,Auto-getter for mapping to array of struct
+getters/mapping_of_string.sol,ported,getters,src/MappingOfString.sol,,Auto-getter for mapping with string key to fixed array
+getters/mapping_to_struct.sol,ported,getters,src/MappingToStruct.sol,,Auto-getter for nested mapping to struct
+getters/mapping_with_names.sol,ported,getters,src/MappingWithNames.sol,,Auto-getter for mapping with named keys
+getters/string_and_bytes.sol,ported,getters,src/StringAndBytes.sol,,Auto-getter for string and bytes storage variables
+getters/struct_with_bytes.sol,ported,getters,src/StructWithBytes.sol,,Auto-getter for struct with bytes field (mapping/array excluded)
+getters/struct_with_bytes_simple.sol,ported,getters,src/StructWithBytesSimple.sol,,Auto-getter for struct with bytes (no dynamic array push)
+getters/transient_value_types.sol,skipped,getters,,,Do not re-attempt: transient storage cross-tx semantics cannot be replicated in Foundry test context
+getters/transient_value_types_multi_frame_call.sol,skipped,getters,,,Do not re-attempt: transient storage cross-tx semantics cannot be replicated in Foundry test context
+getters/value_types.sol,ported,getters,src/ValueTypes.sol,,Auto-getter for all primitive value types
 immutable/assign_at_declaration.sol,ported,immutable,src/AssignAtDeclaration.sol,,Immutable assigned at declaration
 immutable/assign_from_immutables.sol,ported,immutable,src/AssignFromImmutables.sol,,Immutables assigned from other immutables
 immutable/delete.sol,ported,immutable,src/ImmutableDelete.sol,,Delete resets immutable to zero in constructor
@@ -1356,41 +1356,41 @@ tryCatch/simple_notuple.sol,ported,try-catch,src/TryCatchSimpleNoTuple.sol,,try/
 tryCatch/structured.sol,ported,try-catch,src/TryCatchStructured.sol,,catch Error(string) message
 tryCatch/structuredAndLowLevel.sol,ported,try-catch,src/TryCatchStructuredAndLowLevel.sol,,catch Error(string) vs bytes
 tryCatch/try_catch_library_call.sol,ported,try-catch,src/TryCatchLibraryCall.sol,,try/catch on external library calls
-types/array_mapping_abstract_constructor_param.sol,pending,,,,
-types/assign_calldata_value_type.sol,pending,,,,
-types/convert_fixed_bytes_to_fixed_bytes_greater_size.sol,pending,,,,
-types/convert_fixed_bytes_to_fixed_bytes_same_size.sol,pending,,,,
-types/convert_fixed_bytes_to_fixed_bytes_smaller_size.sol,pending,,,,
-types/convert_fixed_bytes_to_uint_greater_size.sol,pending,,,,
-types/convert_fixed_bytes_to_uint_same_min_size.sol,pending,,,,
-types/convert_fixed_bytes_to_uint_same_type.sol,pending,,,,
-types/convert_fixed_bytes_to_uint_smaller_size.sol,pending,,,,
-types/convert_uint_to_fixed_bytes_greater_size.sol,pending,,,,
-types/convert_uint_to_fixed_bytes_same_min_size.sol,pending,,,,
-types/convert_uint_to_fixed_bytes_same_size.sol,pending,,,,
-types/convert_uint_to_fixed_bytes_smaller_size.sol,pending,,,,
-types/external_function_to_address.sol,pending,,,,
-types/mapping/copy_from_mapping_to_mapping.sol,pending,,,,
-types/mapping/copy_struct_to_array_stored_in_mapping.sol,pending,,,,
-types/mapping/user_defined_types_mapping_storage.sol,pending,,,,
-types/mapping_abstract_constructor_param.sol,pending,,,,
-types/mapping_contract_key.sol,pending,,,,
-types/mapping_contract_key_getter.sol,pending,,,,
-types/mapping_contract_key_library.sol,pending,,,,
-types/mapping_enum_key_getter_v1.sol,pending,,,,
-types/mapping_enum_key_getter_v2.sol,pending,,,,
-types/mapping_enum_key_library_v1.sol,pending,,,,
-types/mapping_enum_key_library_v2.sol,pending,,,,
-types/mapping_enum_key_v1.sol,pending,,,,
-types/mapping_enum_key_v2.sol,pending,,,,
-types/mapping_simple.sol,pending,,,,
-types/nested_tuples.sol,pending,,,,
-types/packing_signed_types.sol,pending,,,,
-types/packing_unpacking_types.sol,pending,,,,
-types/strings.sol,pending,,,,
-types/struct_mapping_abstract_constructor_param.sol,pending,,,,
-types/tuple_assign_multi_slot_grow.sol,pending,,,,
-types/type_conversion_cleanup.sol,pending,,,,
+types/array_mapping_abstract_constructor_param.sol,ported,types,src/ArrayMappingAbstractConstructorParam.sol,,Array of mappings passed as storage ref to abstract constructor
+types/assign_calldata_value_type.sol,ported,types,src/AssignCalldataValueType.sol,,Calldata value type is copy-on-assign
+types/convert_fixed_bytes_to_fixed_bytes_greater_size.sol,ported,types,src/ConvertFixedBytesToFixedBytesGreaterSize.sol,,bytes2->bytes4 conversion (zero-padded right)
+types/convert_fixed_bytes_to_fixed_bytes_same_size.sol,ported,types,src/ConvertFixedBytesToFixedBytesSameSize.sol,,bytes4->bytes4 identity conversion
+types/convert_fixed_bytes_to_fixed_bytes_smaller_size.sol,ported,types,src/ConvertFixedBytesToFixedBytesSmallerSize.sol,,bytes4->bytes2 truncation conversion
+types/convert_fixed_bytes_to_uint_greater_size.sol,ported,types,src/ConvertFixedBytesToUintGreaterSize.sol,,bytes4->uint64 via uint32 intermediate
+types/convert_fixed_bytes_to_uint_same_min_size.sol,ported,types,src/ConvertFixedBytesToUintSameMinSize.sol,,bytes1->uint8 same-size conversion
+types/convert_fixed_bytes_to_uint_same_type.sol,ported,types,src/ConvertFixedBytesToUintSameType.sol,,bytes32->uint256 conversion preserves left-alignment
+types/convert_fixed_bytes_to_uint_smaller_size.sol,ported,types,src/ConvertFixedBytesToUintSmallerSize.sol,,bytes4->uint16 via uint32 intermediate
+types/convert_uint_to_fixed_bytes_greater_size.sol,ported,types,src/ConvertUintToFixedBytesGreaterSize.sol,,uint16->bytes8 via uint64 expansion
+types/convert_uint_to_fixed_bytes_same_min_size.sol,ported,types,src/ConvertUintToFixedBytesSameMinSize.sol,,uint8->bytes1 same-size conversion
+types/convert_uint_to_fixed_bytes_same_size.sol,ported,types,src/ConvertUintToFixedBytesSameSize.sol,,uint256->bytes32 same-size conversion
+types/convert_uint_to_fixed_bytes_smaller_size.sol,ported,types,src/ConvertUintToFixedBytesSmallerSize.sol,,uint32->bytes2 via uint16 truncation
+types/external_function_to_address.sol,ported,types,src/ExternalFunctionToAddress.sol,,External function .address member extraction
+types/mapping/copy_from_mapping_to_mapping.sol,ported,types,src/CopyFromMappingToMapping.sol,,Copy struct from one mapping to another
+types/mapping/copy_struct_to_array_stored_in_mapping.sol,ported,types,src/CopyStructToArrayStoredInMapping.sol,,Copy struct from storage/memory/calldata to array in mapping
+types/mapping/user_defined_types_mapping_storage.sol,ported,types,src/UserDefinedTypesMappingStorage.sol,,UDVT as mapping key with library overloading
+types/mapping_abstract_constructor_param.sol,ported,types,src/MappingAbstractConstructorParam.sol,,Mapping passed as storage ref to abstract constructor
+types/mapping_contract_key.sol,ported,types,src/MappingContractKey.sol,,Interface type as mapping key
+types/mapping_contract_key_getter.sol,ported,types,src/MappingContractKeyGetter.sol,,Interface type as mapping key with public getter
+types/mapping_contract_key_library.sol,ported,types,src/MappingContractKeyLibrary.sol,,Interface type as mapping key accessed via library
+types/mapping_enum_key_getter_v1.sol,skipped,types,,,Do not re-attempt: ABIEncoderV1Only + compileViaYul:false - out-of-bounds enum not caught in v2 mode
+types/mapping_enum_key_getter_v2.sol,ported,types,src/MappingEnumKeyGetterV2.sol,,Enum type as mapping key with public getter (ABI v2)
+types/mapping_enum_key_library_v1.sol,skipped,types,,,Do not re-attempt: ABIEncoderV1Only + compileViaYul:false - specific panic behavior for OOB enum
+types/mapping_enum_key_library_v2.sol,ported,types,src/MappingEnumKeyLibraryV2.sol,,Enum type as mapping key via external library (ABI v2)
+types/mapping_enum_key_v1.sol,skipped,types,,,Do not re-attempt: ABIEncoderV1Only + compileViaYul:false - specific panic behavior for OOB enum
+types/mapping_enum_key_v2.sol,ported,types,src/MappingEnumKeyV2.sol,,Enum type as mapping key (ABI v2)
+types/mapping_simple.sol,ported,types,src/MappingSimple.sol,,Simple uint8->uint8 mapping CRUD
+types/nested_tuples.sol,ported,types,src/NestedTuples.sol,,Nested tuple destructuring assignments
+types/packing_signed_types.sol,ported,types,src/PackingSignedTypes.sol,,uint8 to int8 reinterpret cast (wrapping)
+types/packing_unpacking_types.sol,ported,types,src/PackingUnpackingTypes.sol,,Multi-type packing via bitwise ops
+types/strings.sol,ported,types,src/Strings.sol,,Fixed bytes string literals and pipe-through
+types/struct_mapping_abstract_constructor_param.sol,ported,types,src/StructMappingAbstractConstructorParam.sol,,Struct with mapping passed as storage ref to abstract constructor
+types/tuple_assign_multi_slot_grow.sol,ported,types,src/TupleAssignMultiSlotGrow.sol,,Nested tuple assignment with multi-slot bytes types
+types/type_conversion_cleanup.sol,ported,types,src/TypeConversionCleanup.sol,,Type conversion chain cleanup - uint200->uint128->uint160->uint
 underscore/as_function.sol,pending,,,,
 uninitializedFunctionPointer/invalidInConstructor.sol,pending,,,,
 uninitializedFunctionPointer/invalidStoredInConstructor.sol,pending,,,,
@@ -1428,21 +1428,21 @@ userDefinedValueType/wrap_unwrap.sol,pending,,,,
 userDefinedValueType/wrap_unwrap_via_contract_name.sol,pending,,,,
 userDefinedValueType/zero_cost_abstraction_comparison_elementary.sol,pending,,,,
 userDefinedValueType/zero_cost_abstraction_comparison_userdefined.sol,pending,,,,
-using/calldata_memory_copy.sol,pending,,,,
-using/free_function_braces.sol,pending,,,,
-using/free_function_multi.sol,pending,,,,
-using/free_functions_individual.sol,pending,,,,
-using/imported_functions.sol,pending,,,,
-using/library_functions_inside_contract.sol,pending,,,,
-using/library_on_interface.sol,pending,,,,
-using/library_through_module.sol,pending,,,,
-using/module_renamed.sol,pending,,,,
-using/private_library_function.sol,pending,,,,
-using/recursive_import.sol,pending,,,,
-using/using_global_all_the_types.sol,pending,,,,
-using/using_global_for_global.sol,pending,,,,
-using/using_global_invisible.sol,pending,,,,
-using/using_global_library.sol,pending,,,,
+using/calldata_memory_copy.sol,ported,using,src/CalldataMemoryCopy.sol,,using for with calldata->memory copy via free function
+using/free_function_braces.sol,ported,using,src/FreeFunctionBraces.sol,,"using {fn1, fn2} for type syntax inside contract"
+using/free_function_multi.sol,ported,using,src/FreeFunctionMulti.sol,,using with multiple free functions for same type
+using/free_functions_individual.sol,ported,using,src/FreeFunctionsIndividual.sol,,using directives at file and contract scope combined
+using/imported_functions.sol,ported,using,src/ImportedFunctions.sol,,Simplified from multi-source: using with imported free functions
+using/library_functions_inside_contract.sol,ported,using,src/LibraryFunctionsInsideContract.sol,,using {L.fn} for type with external/public/internal library fns
+using/library_on_interface.sol,ported,using,src/LibraryOnInterface.sol,,using library for interface type at file scope
+using/library_through_module.sol,ported,using,src/LibraryThroughModule.sol,,Simplified from multi-source: using M.L for type via namespace import
+using/module_renamed.sol,ported,using,src/ModuleRenamed.sol,,Simplified from multi-source: using with renamed imported functions
+using/private_library_function.sol,ported,using,src/PrivateLibraryFunction.sol,,using private library function inside the library itself
+using/recursive_import.sol,ported,using,src/RecursiveImport.sol,,Simplified from multi-source: recursive import with global using directives
+using/using_global_all_the_types.sol,ported,using,src/UsingGlobalAllTheTypes.sol,,using global for enum/struct/UDVT types with library overloading
+using/using_global_for_global.sol,ported,using,src/UsingGlobalForGlobal.sol,,Simplified: using global directive for UDVT with chained method calls
+using/using_global_invisible.sol,ported,using,src/UsingGlobalInvisible.sol,,Simplified: global using directives accessible across contract boundaries
+using/using_global_library.sol,ported,using,src/UsingGlobalLibrary.sol,,using library for UDVT globally with internal/external functions
 variables/delete_local.sol,ported,variables,src/DeleteLocal.sol,test/DeleteLocal.t.sol,delete local variable resets to zero
 variables/delete_locals.sol,ported,variables,src/DeleteLocals.sol,test/DeleteLocals.t.sol,delete does not affect other locals
 variables/delete_transient_state_variable.sol,ported,variables,src/DeleteTransientStateVariable.sol,test/DeleteTransientStateVariable.t.sol,delete transient state variable clears to zero
