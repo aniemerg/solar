@@ -1,0 +1,8 @@
+error: expected `is`, found `(`
+   ╭▸ ROOT/tests/ui/solc/experimental/inference/PolymorphicType.sol:LL:CC
+   │
+LL │ type T(P, Q, R);
+   ╰╴      ━ expected `is`
+
+error: aborting due to 1 previous error
+

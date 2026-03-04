@@ -1,0 +1,8 @@
+error: member `value` not unique on type `contract C`
+   ╭▸ ROOT/tests/ui/solc/memberLookup/MemberValueNotUnique.sol:LL:CC
+   │
+LL │         return f().value;
+   ╰╴                   ━━━━━
+
+error: aborting due to 1 previous error
+

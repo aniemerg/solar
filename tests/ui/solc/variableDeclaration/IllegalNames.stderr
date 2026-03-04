@@ -1,0 +1,20 @@
+error: identifier `this` already declared
+   ╭▸ ROOT/tests/ui/solc/variableDeclaration/IllegalNames.sol:LL:CC
+   │
+LL │     address this;
+   ╰╴            ━━━━
+
+error: identifier `super` already declared
+   ╭▸ ROOT/tests/ui/solc/variableDeclaration/IllegalNames.sol:LL:CC
+   │
+LL │     int super;
+   ╰╴        ━━━━━
+
+error: identifier `this` already declared
+   ╭▸ ROOT/tests/ui/solc/variableDeclaration/IllegalNames.sol:LL:CC
+   │
+LL │     address[] this;
+   ╰╴              ━━━━
+
+error: aborting due to 3 previous errors
+

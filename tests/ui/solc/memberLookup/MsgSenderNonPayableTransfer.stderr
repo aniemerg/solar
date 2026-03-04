@@ -1,0 +1,8 @@
+error: member `transfer` not found on type `address`
+   ╭▸ ROOT/tests/ui/solc/memberLookup/MsgSenderNonPayableTransfer.sol:LL:CC
+   │
+LL │         (msg.sender).transfer(10);
+   ╰╴                     ━━━━━━━━
+
+error: aborting due to 1 previous error
+

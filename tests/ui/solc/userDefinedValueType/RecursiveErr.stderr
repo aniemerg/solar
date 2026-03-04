@@ -1,0 +1,14 @@
+error: the underlying type of UDVTs must be an elementary value type
+   ╭▸ ROOT/tests/ui/solc/userDefinedValueType/RecursiveErr.sol:LL:CC
+   │
+LL │ type MyInt1 is MyInt2;
+   ╰╴               ━━━━━━
+
+error: the underlying type of UDVTs must be an elementary value type
+   ╭▸ ROOT/tests/ui/solc/userDefinedValueType/RecursiveErr.sol:LL:CC
+   │
+LL │ type MyInt2 is MyInt1;
+   ╰╴               ━━━━━━
+
+error: aborting due to 2 previous errors
+

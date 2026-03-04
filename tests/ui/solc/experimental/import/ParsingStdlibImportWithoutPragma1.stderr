@@ -1,0 +1,8 @@
+error: expected one of `*`, `{`, or string literal, found `std`
+   ╭▸ ROOT/tests/ui/solc/experimental/import/ParsingStdlibImportWithoutPragma1.sol:LL:CC
+   │
+LL │ import std.stub;
+   ╰╴       ━━━ expected one of `*`, `{`, or string literal
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,8 @@
+error: invalid character in unicode escape
+   ╭▸ ROOT/tests/ui/solc/string/UnicodeEscapeLiteralsInvalidFormat.sol:LL:CC
+   │
+LL │         bytes32 invalid = "\u00xx";
+   ╰╴                               ━
+
+error: aborting due to 1 previous error
+

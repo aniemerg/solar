@@ -1,0 +1,14 @@
+error: unknown character escape
+   ╭▸ ROOT/tests/ui/solc/string/InvalidLegacyEscape.sol:LL:CC
+   │
+LL │         bytes32 escapeCharacters = "\t\b\f";
+   ╰╴                                       ━
+
+error: unknown character escape
+   ╭▸ ROOT/tests/ui/solc/string/InvalidLegacyEscape.sol:LL:CC
+   │
+LL │         bytes32 escapeCharacters = "\t\b\f";
+   ╰╴                                         ━
+
+error: aborting due to 2 previous errors
+

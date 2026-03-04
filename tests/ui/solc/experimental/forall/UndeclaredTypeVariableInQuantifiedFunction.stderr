@@ -1,0 +1,10 @@
+error: expected one of `;` or `=`, found keyword `function`
+   ╭▸ ROOT/tests/ui/solc/experimental/forall/UndeclaredTypeVariableInQuantifiedFunction.sol:LL:CC
+   │
+LL │ forall A
+   │         ─ expected one of `;` or `=`
+LL │ function f(b: B) {
+   ╰╴━━━━━━━━ unexpected token
+
+error: aborting due to 1 previous error
+

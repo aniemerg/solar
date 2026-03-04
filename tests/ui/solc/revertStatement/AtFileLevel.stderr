@@ -1,0 +1,8 @@
+error: expected one of `;` or `=`, found `(`
+   ╭▸ ROOT/tests/ui/solc/revertStatement/AtFileLevel.sol:LL:CC
+   │
+LL │ revert X();
+   ╰╴        ━ expected one of `;` or `=`
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,110 @@
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)&x) = ((), true);
+   ╰╴          ━━
+
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)&x) = ((), true);
+   ╰╴         ━━━━━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)&x) = ((), true);
+   ╰╴                      ━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)+x) = ((), true);
+   ╰╴          ━━
+
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)+x) = ((), true);
+   ╰╴         ━━━━━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)+x) = ((), true);
+   ╰╴                      ━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)-x) = ((), true);
+   ╰╴          ━━
+
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)-x) = ((), true);
+   ╰╴         ━━━━━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)-x) = ((), true);
+   ╰╴                      ━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)/x) = ((), true);
+   ╰╴          ━━
+
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)/x) = ((), true);
+   ╰╴         ━━━━━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)/x) = ((), true);
+   ╰╴                      ━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)*x) = ((), true);
+   ╰╴          ━━
+
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)*x) = ((), true);
+   ╰╴         ━━━━━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)*x) = ((), true);
+   ╰╴                      ━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)|x) = ((), true);
+   ╰╴          ━━
+
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)|x) = ((), true);
+   ╰╴         ━━━━━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/NestedTupleToTupleAssignment.sol:LL:CC
+   │
+LL │         (((),x)|x) = ((), true);
+   ╰╴                      ━━
+
+error: aborting due to 18 previous errors
+

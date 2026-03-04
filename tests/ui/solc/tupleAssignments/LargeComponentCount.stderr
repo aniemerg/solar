@@ -1,0 +1,68 @@
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/LargeComponentCount.sol:LL:CC
+   │
+LL │         (,,,,a,,,,b,,,,) = g();
+   ╰╴        ━━━━━━━━━━━━━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/LargeComponentCount.sol:LL:CC
+   │
+LL │         (,,,,a,,,,b,,,,) = g();
+   ╰╴        ━━━━━━━━━━━━━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/LargeComponentCount.sol:LL:CC
+   │
+LL │         (,,,,a,,,,b,,,,) = g();
+   ╰╴        ━━━━━━━━━━━━━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/LargeComponentCount.sol:LL:CC
+   │
+LL │         (,,,,a,,,,b,,,,) = g();
+   ╰╴        ━━━━━━━━━━━━━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/LargeComponentCount.sol:LL:CC
+   │
+LL │         (,,,,a,,,,b,,,,) = g();
+   ╰╴        ━━━━━━━━━━━━━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/LargeComponentCount.sol:LL:CC
+   │
+LL │         (,,,,a,,,,b,,,,) = g();
+   ╰╴        ━━━━━━━━━━━━━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/LargeComponentCount.sol:LL:CC
+   │
+LL │         (,,,,a,,,,b,,,,) = g();
+   ╰╴        ━━━━━━━━━━━━━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/LargeComponentCount.sol:LL:CC
+   │
+LL │         (,,,,a,,,,b,,,,) = g();
+   ╰╴        ━━━━━━━━━━━━━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/LargeComponentCount.sol:LL:CC
+   │
+LL │         (,,,,a,,,,b,,,,) = g();
+   ╰╴        ━━━━━━━━━━━━━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/LargeComponentCount.sol:LL:CC
+   │
+LL │         (,,,,a,,,,b,,,,) = g();
+   ╰╴        ━━━━━━━━━━━━━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/LargeComponentCount.sol:LL:CC
+   │
+LL │         (,,,,a,,,,b,,,,) = g();
+   ╰╴        ━━━━━━━━━━━━━━━━
+
+error: aborting due to 11 previous errors
+

@@ -1,0 +1,14 @@
+error: empty rational
+   ╭▸ ROOT/tests/ui/solc/unterminatedBlocks/ZeroDot.sol:LL:CC
+   │
+LL │     function f() pure public { 0.
+   ╰╴                               ━━
+
+error: expected one of `(`, `.`, `;`, `?`, `[`, or `{`, found `<eof>`
+   ╭▸ ROOT/tests/ui/solc/unterminatedBlocks/ZeroDot.sol:LL:CC
+   │
+LL │     function f() pure public { 0.
+   ╰╴                               ━━ expected one of `(`, `.`, `;`, `?`, `[`, or `{`
+
+error: aborting due to 2 previous errors
+

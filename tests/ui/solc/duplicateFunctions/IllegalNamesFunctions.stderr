@@ -1,0 +1,14 @@
+error: identifier `super` already declared
+   ╭▸ ROOT/tests/ui/solc/duplicateFunctions/IllegalNamesFunctions.sol:LL:CC
+   │
+LL │     function super() internal {
+   ╰╴             ━━━━━
+
+error: identifier `this` already declared
+   ╭▸ ROOT/tests/ui/solc/duplicateFunctions/IllegalNamesFunctions.sol:LL:CC
+   │
+LL │     function this() internal {
+   ╰╴             ━━━━
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,20 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/inlineArrays/InlineArrayDeclarationAndPassingImplicitConversionStrings.sol:LL:CC
+   │
+LL │         string memory x = "Hello";
+   ╰╴                          ━━━━━━━ expected `string memory`, found `utf8_string_literal[5]`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/inlineArrays/InlineArrayDeclarationAndPassingImplicitConversionStrings.sol:LL:CC
+   │
+LL │         string memory y = "World";
+   ╰╴                          ━━━━━━━ expected `string memory`, found `utf8_string_literal[5]`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/inlineArrays/InlineArrayDeclarationAndPassingImplicitConversionStrings.sol:LL:CC
+   │
+LL │         string[2] memory z = [x, y];
+   ╰╴                             ━━━━━━ expected `string[2] memory`, found `string memory[2]`
+
+error: aborting due to 3 previous errors
+

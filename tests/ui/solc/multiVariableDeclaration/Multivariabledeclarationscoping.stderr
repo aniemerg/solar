@@ -1,0 +1,8 @@
+error: unresolved symbol `a`
+   ╭▸ ROOT/tests/ui/solc/multiVariableDeclaration/Multivariabledeclarationscoping.sol:LL:CC
+   │
+LL │     a;
+   ╰╴    ━
+
+error: aborting due to 1 previous error
+

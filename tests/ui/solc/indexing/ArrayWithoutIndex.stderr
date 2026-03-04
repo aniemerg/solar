@@ -1,0 +1,8 @@
+error: index expression cannot be omitted
+   ╭▸ ROOT/tests/ui/solc/indexing/ArrayWithoutIndex.sol:LL:CC
+   │
+LL │     a[];
+   ╰╴    ━━━
+
+error: aborting due to 1 previous error
+

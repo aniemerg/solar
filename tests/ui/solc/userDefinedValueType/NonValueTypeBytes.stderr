@@ -1,0 +1,8 @@
+error: the underlying type of UDVTs must be an elementary value type
+   ╭▸ ROOT/tests/ui/solc/userDefinedValueType/NonValueTypeBytes.sol:LL:CC
+   │
+LL │ type MyBytes is bytes;
+   ╰╴                ━━━━━
+
+error: aborting due to 1 previous error
+

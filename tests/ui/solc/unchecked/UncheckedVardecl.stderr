@@ -1,0 +1,8 @@
+error: expected one of `(`, `+`, `[`, `delete`, `new`, `payable`, `type`, elementary type name, identifier, or literal, found keyword `unchecked`
+   ╭▸ ROOT/tests/ui/solc/unchecked/UncheckedVardecl.sol:LL:CC
+   │
+LL │     uint x = unchecked { f() + 2 }
+   ╰╴             ━━━━━━━━━ expected one of 10 possible tokens
+
+error: aborting due to 1 previous error
+

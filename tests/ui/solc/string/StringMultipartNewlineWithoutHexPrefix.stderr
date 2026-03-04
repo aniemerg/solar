@@ -1,0 +1,10 @@
+error: expected one of `(`, `.`, `;`, `?`, `[`, or `{`, found `<string>`
+   ╭▸ ROOT/tests/ui/solc/string/StringMultipartNewlineWithoutHexPrefix.sol:LL:CC
+   │
+LL │         bytes32 escapeCharacters = hex"0000"
+   │                                             ─ expected one of `(`, `.`, `;`, `?`, `[`, or `{`
+LL │         "deaf"
+   ╰╴        ━━━━━━ unexpected token
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,26 @@
+error: identifier `MyInt` already declared
+   ╭▸ ROOT/tests/ui/solc/userDefinedValueType/RepetitionErr.sol:LL:CC
+   │
+LL │ type MyInt is int;
+   │      ━━━━━
+   ╰╴
+note: previous declaration declared here
+   ╭▸ ROOT/tests/ui/solc/userDefinedValueType/RepetitionErr.sol:LL:CC
+   │
+LL │ type MyInt is int;
+   ╰╴     ━━━━━
+
+error: identifier `MyAddress` already declared
+   ╭▸ ROOT/tests/ui/solc/userDefinedValueType/RepetitionErr.sol:LL:CC
+   │
+LL │ type MyAddress is uint;
+   │      ━━━━━━━━━
+   ╰╴
+note: previous declaration declared here
+   ╭▸ ROOT/tests/ui/solc/userDefinedValueType/RepetitionErr.sol:LL:CC
+   │
+LL │ type MyAddress is address;
+   ╰╴     ━━━━━━━━━
+
+error: aborting due to 2 previous errors
+

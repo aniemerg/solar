@@ -1,0 +1,10 @@
+error: invalid data location `storage`
+   ╭▸ ROOT/tests/ui/solc/multiVariableDeclaration/Multivariabledeclarationthatisexpression.sol:LL:CC
+   │
+LL │   struct S { function() returns (S storage)[] x; }
+   │                                  ━━━━━━━━━
+   │
+   ╰ note: data location must be `memory` or `calldata` for function return parameter, but got `storage`
+
+error: aborting due to 1 previous error
+

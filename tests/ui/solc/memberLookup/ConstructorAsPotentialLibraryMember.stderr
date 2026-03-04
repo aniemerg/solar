@@ -1,0 +1,8 @@
+error: member `x` not found on type `type(library L)`
+   ╭▸ ROOT/tests/ui/solc/memberLookup/ConstructorAsPotentialLibraryMember.sol:LL:CC
+   │
+LL │ library L{ constructor() { L.x; } }
+   ╰╴                             ━
+
+error: aborting due to 1 previous error
+

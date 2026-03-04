@@ -1,0 +1,8 @@
+error: contract requires too much storage
+   ╭▸ ROOT/tests/ui/solc/largeTypes/OversizedContractInheritance.sol:LL:CC
+   │
+LL │ contract D is C {
+   ╰╴         ━
+
+error: aborting due to 1 previous error
+

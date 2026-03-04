@@ -1,0 +1,8 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/inlineArrays/InlineArrayDeclarationConstStringConversion.sol:LL:CC
+   │
+LL │         string[2] memory z = ["Hello", "World"];
+   ╰╴                             ━━━━━━━━━━━━━━━━━━ expected `string[2] memory`, found `string memory[2]`
+
+error: aborting due to 1 previous error
+

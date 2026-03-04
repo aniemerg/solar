@@ -1,0 +1,14 @@
+error: fallback function already declared
+   ╭▸ ROOT/tests/ui/solc/fallback/FallbackDuplicateReturns.sol:LL:CC
+   │
+LL │     fallback() external {}
+   │     ━━━━━━━━━━━━━━━━━━━━━━
+   ╰╴
+note: previous declaration here
+   ╭▸ ROOT/tests/ui/solc/fallback/FallbackDuplicateReturns.sol:LL:CC
+   │
+LL │     fallback(bytes calldata _input) external returns (bytes memory _output) {}
+   ╰╴    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

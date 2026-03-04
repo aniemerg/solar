@@ -1,0 +1,8 @@
+error: expected identifier, found `(`
+   ╭▸ ROOT/tests/ui/solc/experimental/parsing/ForallFreeFunction.sol:LL:CC
+   │
+LL │ forall (A)
+   ╰╴       ━
+
+error: aborting due to 1 previous error
+

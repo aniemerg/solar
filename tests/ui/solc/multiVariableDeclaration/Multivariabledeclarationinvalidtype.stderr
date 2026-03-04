@@ -1,0 +1,8 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/multiVariableDeclaration/Multivariabledeclarationinvalidtype.sol:LL:CC
+   │
+LL │     (uint a, string memory b,,) = f();
+   ╰╴                                  ━━━ expected `uint256`, found `string memory`
+
+error: aborting due to 1 previous error
+

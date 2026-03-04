@@ -1,0 +1,8 @@
+error: unresolved symbol `now`
+   ╭▸ ROOT/tests/ui/solc/globalFunctions/NowDeprecate.sol:LL:CC
+   │
+LL │         now;
+   ╰╴        ━━━
+
+error: aborting due to 1 previous error
+

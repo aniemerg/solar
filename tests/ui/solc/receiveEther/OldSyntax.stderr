@@ -1,0 +1,10 @@
+error: expected a state variable declaration
+   ╭▸ ROOT/tests/ui/solc/receiveEther/OldSyntax.sol:LL:CC
+   │
+LL │     function() external payable {}
+   │                                 ━
+   │
+   ╰ note: this style of fallback function has been removed; use the `fallback` or `receive` keywords instead
+
+error: aborting due to 1 previous error
+

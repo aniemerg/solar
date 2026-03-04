@@ -1,0 +1,8 @@
+error: `pure` not allowed here; allowed values: payable
+   ╭▸ ROOT/tests/ui/solc/receiveEther/PureModifier.sol:LL:CC
+   │
+LL │     receive() external pure { x = 2; }
+   ╰╴                       ━━━━
+
+error: aborting due to 1 previous error
+

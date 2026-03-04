@@ -1,0 +1,8 @@
+error: member `send` not found on type `address`
+   ╭▸ ROOT/tests/ui/solc/memberLookup/ContractNotPayableSend.sol:LL:CC
+   │
+LL │         address(this).send(10);
+   ╰╴                      ━━━━
+
+error: aborting due to 1 previous error
+

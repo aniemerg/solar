@@ -1,0 +1,8 @@
+error: expected one of `;` or `{`, found keyword `unchecked`
+   ╭▸ ROOT/tests/ui/solc/unchecked/UncheckedFunctionBody.sol:LL:CC
+   │
+LL │ function f() pure returns (uint) unchecked {}
+   ╰╴                                 ━━━━━━━━━ expected one of `;` or `{`
+
+error: aborting due to 1 previous error
+

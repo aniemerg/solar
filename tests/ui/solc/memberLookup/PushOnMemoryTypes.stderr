@@ -1,0 +1,8 @@
+error: member `push` not found on type `uint256[] memory`
+   ╭▸ ROOT/tests/ui/solc/memberLookup/PushOnMemoryTypes.sol:LL:CC
+   │
+LL │         x.push(1);
+   ╰╴          ━━━━
+
+error: aborting due to 1 previous error
+

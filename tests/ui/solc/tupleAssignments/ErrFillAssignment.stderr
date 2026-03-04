@@ -1,0 +1,14 @@
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/ErrFillAssignment.sol:LL:CC
+   │
+LL │         (a,) = f();
+   ╰╴        ━━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/ErrFillAssignment.sol:LL:CC
+   │
+LL │         (,b) = f();
+   ╰╴        ━━━━
+
+error: aborting due to 2 previous errors
+

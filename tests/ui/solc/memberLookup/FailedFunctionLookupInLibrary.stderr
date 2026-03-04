@@ -1,0 +1,8 @@
+error: member `f` not found on type `type(library L)`
+   ╭▸ ROOT/tests/ui/solc/memberLookup/FailedFunctionLookupInLibrary.sol:LL:CC
+   │
+LL │   function g() public { L.f(1, 2, 3); }
+   ╰╴                          ━
+
+error: aborting due to 1 previous error
+

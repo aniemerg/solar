@@ -1,0 +1,14 @@
+error: expected identifier, found keyword `uint`
+   ╭▸ ROOT/tests/ui/solc/experimental/inference/PolymorphicTypeAbsAndRep.sol:LL:CC
+   │
+LL │ type uint;
+   ╰╴     ━━━━
+
+error: expected `is`, found `;`
+   ╭▸ ROOT/tests/ui/solc/experimental/inference/PolymorphicTypeAbsAndRep.sol:LL:CC
+   │
+LL │ type uint;
+   ╰╴         ━ expected `is`
+
+error: aborting due to 2 previous errors
+

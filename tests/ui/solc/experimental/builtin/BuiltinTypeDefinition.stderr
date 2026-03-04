@@ -1,0 +1,8 @@
+error: expected `is`, found `=`
+   ╭▸ ROOT/tests/ui/solc/experimental/builtin/BuiltinTypeDefinition.sol:LL:CC
+   │
+LL │ type void = __builtin("void");
+   ╰╴          ━ expected `is`
+
+error: aborting due to 1 previous error
+

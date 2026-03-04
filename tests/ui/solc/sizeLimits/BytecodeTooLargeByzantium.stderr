@@ -1,0 +1,8 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/sizeLimits/BytecodeTooLargeByzantium.sol:LL:CC
+   │
+LL │ …et = "...............................................….........................................";
+   ╰╴      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━…━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ expected `string memory`, found `utf8_string_literal[32]`
+
+error: aborting due to 1 previous error
+

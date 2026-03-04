@@ -1,0 +1,74 @@
+error: mismatched number of components
+   ╭▸ ROOT/tests/ui/solc/multiVariableDeclaration/Disallowwildcards.sol:LL:CC
+   │
+LL │         (uint a,) = (1,2,3);
+   │         ━━━━━━━━━━━━┬──────━
+   │                     │
+   ╰╴                    expected a tuple with 2 elements, found one with 3 elements
+
+error: mismatched number of components
+   ╭▸ ROOT/tests/ui/solc/multiVariableDeclaration/Disallowwildcards.sol:LL:CC
+   │
+LL │         (,uint b) = (1,2,3);
+   │         ━━━━━━━━━━━━┬──────━
+   │                     │
+   ╰╴                    expected a tuple with 2 elements, found one with 3 elements
+
+error: mismatched number of components
+   ╭▸ ROOT/tests/ui/solc/multiVariableDeclaration/Disallowwildcards.sol:LL:CC
+   │
+LL │         (,uint c,) = (1,2,3,4,5);
+   │         ━━━━━━━━━━━━━┬──────────━
+   │                      │
+   ╰╴                     expected a tuple with 3 elements, found one with 5 elements
+
+error: mismatched number of components
+   ╭▸ ROOT/tests/ui/solc/multiVariableDeclaration/Disallowwildcards.sol:LL:CC
+   │
+LL │         (uint d, uint e,) = (1,2,3,4);
+   │         ━━━━━━━━━━━━━━━━━━━━┬────────━
+   │                             │
+   ╰╴                            expected a tuple with 3 elements, found one with 4 elements
+
+error: mismatched number of components
+   ╭▸ ROOT/tests/ui/solc/multiVariableDeclaration/Disallowwildcards.sol:LL:CC
+   │
+LL │         (,uint f, uint g) = (1,2,3,4);
+   │         ━━━━━━━━━━━━━━━━━━━━┬────────━
+   │                             │
+   ╰╴                            expected a tuple with 3 elements, found one with 4 elements
+
+error: mismatched number of components
+   ╭▸ ROOT/tests/ui/solc/multiVariableDeclaration/Disallowwildcards.sol:LL:CC
+   │
+LL │         (,uint h, uint i,) = (1,2,3);
+   │         ━━━━━━━━━━━━━━━━━━━━━┬──────━
+   │                              │
+   ╰╴                             expected a tuple with 4 elements, found one with 3 elements
+
+error: mismatched number of components
+   ╭▸ ROOT/tests/ui/solc/multiVariableDeclaration/Disallowwildcards.sol:LL:CC
+   │
+LL │         (uint j,) = 1;
+   │         ━━━━━━━━━━━━┬━
+   │                     │
+   ╰╴                    expected a tuple with 2 elements, found one with 1 element
+
+error: mismatched number of components
+   ╭▸ ROOT/tests/ui/solc/multiVariableDeclaration/Disallowwildcards.sol:LL:CC
+   │
+LL │         (,uint k) = 1;
+   │         ━━━━━━━━━━━━┬━
+   │                     │
+   ╰╴                    expected a tuple with 2 elements, found one with 1 element
+
+error: mismatched number of components
+   ╭▸ ROOT/tests/ui/solc/multiVariableDeclaration/Disallowwildcards.sol:LL:CC
+   │
+LL │         (,uint l,) = 1;
+   │         ━━━━━━━━━━━━━┬━
+   │                      │
+   ╰╴                     expected a tuple with 3 elements, found one with 1 element
+
+error: aborting due to 9 previous errors
+

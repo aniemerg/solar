@@ -1,0 +1,10 @@
+error: unescaped newline
+   ╭▸ ROOT/tests/ui/solc/string/StringNewLine.sol:LL:CC
+   │
+LL │           bytes32 escapeCharacters = "This a test
+   │ ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+LL │ ┃         ";
+   ╰╴┗━┛
+
+error: aborting due to 1 previous error
+

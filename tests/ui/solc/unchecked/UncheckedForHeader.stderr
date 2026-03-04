@@ -1,0 +1,8 @@
+error: expected one of `(`, `+`, `;`, `[`, `delete`, `new`, `payable`, `type`, elementary type name, identifier, or literal, found keyword `unchecked`
+   ╭▸ ROOT/tests/ui/solc/unchecked/UncheckedForHeader.sol:LL:CC
+   │
+LL │ …     for (unchecked { uint x = 2 }; x < 2; x ++) {
+   ╰╴           ━━━━━━━━━ expected one of 11 possible tokens
+
+error: aborting due to 1 previous error
+

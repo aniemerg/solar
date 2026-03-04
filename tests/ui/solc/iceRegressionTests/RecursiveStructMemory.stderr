@@ -1,0 +1,14 @@
+error: identifier `d` already declared
+   ╭▸ ROOT/tests/ui/solc/iceRegressionTests/RecursiveStructMemory.sol:LL:CC
+   │
+LL │                 mapping ( uint => address payable [ ] ) d ;
+   │                                                         ━
+   ╰╴
+note: previous declaration declared here
+   ╭▸ ROOT/tests/ui/solc/iceRegressionTests/RecursiveStructMemory.sol:LL:CC
+   │
+LL │                 address payable d ;
+   ╰╴                                ━
+
+error: aborting due to 1 previous error
+

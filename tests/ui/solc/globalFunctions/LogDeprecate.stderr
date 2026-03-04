@@ -1,0 +1,32 @@
+error: unresolved symbol `log0`
+   ╭▸ ROOT/tests/ui/solc/globalFunctions/LogDeprecate.sol:LL:CC
+   │
+LL │         log0;
+   ╰╴        ━━━━
+
+error: unresolved symbol `log1`
+   ╭▸ ROOT/tests/ui/solc/globalFunctions/LogDeprecate.sol:LL:CC
+   │
+LL │         log1;
+   ╰╴        ━━━━
+
+error: unresolved symbol `log2`
+   ╭▸ ROOT/tests/ui/solc/globalFunctions/LogDeprecate.sol:LL:CC
+   │
+LL │         log2;
+   ╰╴        ━━━━
+
+error: unresolved symbol `log3`
+   ╭▸ ROOT/tests/ui/solc/globalFunctions/LogDeprecate.sol:LL:CC
+   │
+LL │         log3;
+   ╰╴        ━━━━
+
+error: unresolved symbol `log4`
+   ╭▸ ROOT/tests/ui/solc/globalFunctions/LogDeprecate.sol:LL:CC
+   │
+LL │         log4;
+   ╰╴        ━━━━
+
+error: aborting due to 5 previous errors
+

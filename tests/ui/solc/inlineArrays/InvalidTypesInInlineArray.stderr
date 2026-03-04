@@ -1,0 +1,8 @@
+error: cannot infer array element type
+   ╭▸ ROOT/tests/ui/solc/inlineArrays/InvalidTypesInInlineArray.sol:LL:CC
+   │
+LL │         uint[3] memory x = [45, 'foo', true];
+   ╰╴                           ━━━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

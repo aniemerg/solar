@@ -1,0 +1,8 @@
+error: type `struct Test.S memory` is only valid in storage because it contains a (nested) mapping
+   ╭▸ ROOT/tests/ui/solc/memberLookup/MemoryStructsWithMappings.sol:LL:CC
+   │
+LL │         S memory x;
+   ╰╴        ━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

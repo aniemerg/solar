@@ -1,0 +1,8 @@
+error: index expression cannot be omitted
+   ╭▸ ROOT/tests/ui/solc/indexing/FixedbytesWithoutIndex.sol:LL:CC
+   │
+LL │     b[];
+   ╰╴    ━━━
+
+error: aborting due to 1 previous error
+

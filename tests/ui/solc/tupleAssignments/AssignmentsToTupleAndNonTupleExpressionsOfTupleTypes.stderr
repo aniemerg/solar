@@ -1,0 +1,62 @@
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/AssignmentsToTupleAndNonTupleExpressionsOfTupleTypes.sol:LL:CC
+   │
+LL │         (f()) = ();
+   ╰╴         ━━━
+
+error: tuple components cannot be empty
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/AssignmentsToTupleAndNonTupleExpressionsOfTupleTypes.sol:LL:CC
+   │
+LL │         (f()) = ();
+   ╰╴         ━━━
+
+error: no matching declarations found
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/AssignmentsToTupleAndNonTupleExpressionsOfTupleTypes.sol:LL:CC
+   │
+LL │         (revert()) = ();
+   ╰╴         ━━━━━━
+
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/AssignmentsToTupleAndNonTupleExpressionsOfTupleTypes.sol:LL:CC
+   │
+LL │         (revert()) = ();
+   ╰╴         ━━━━━━━━
+
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/AssignmentsToTupleAndNonTupleExpressionsOfTupleTypes.sol:LL:CC
+   │
+LL │         (h()) = (1, 1);
+   ╰╴         ━━━
+
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/AssignmentsToTupleAndNonTupleExpressionsOfTupleTypes.sol:LL:CC
+   │
+LL │         (j()) = (1, 1);
+   ╰╴         ━━━
+
+error: member `push` not unique on type `uint256[] storage`
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/AssignmentsToTupleAndNonTupleExpressionsOfTupleTypes.sol:LL:CC
+   │
+LL │         ((array.push(), array.push())) = (1, 1);
+   ╰╴                ━━━━
+
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/AssignmentsToTupleAndNonTupleExpressionsOfTupleTypes.sol:LL:CC
+   │
+LL │         ((array.push(), array.push())) = (1, 1);
+   ╰╴          ━━━━━━━━━━━━
+
+error: member `push` not unique on type `uint256[] storage`
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/AssignmentsToTupleAndNonTupleExpressionsOfTupleTypes.sol:LL:CC
+   │
+LL │         ((array.push(), array.push())) = (1, 1);
+   ╰╴                              ━━━━
+
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/tupleAssignments/AssignmentsToTupleAndNonTupleExpressionsOfTupleTypes.sol:LL:CC
+   │
+LL │         ((array.push(), array.push())) = (1, 1);
+   ╰╴                        ━━━━━━━━━━━━
+
+error: aborting due to 10 previous errors
+

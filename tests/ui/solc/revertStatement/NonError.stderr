@@ -1,0 +1,8 @@
+error: expected one of `(`, `.`, `;`, `?`, `[`, or `{`, found `<integer>`
+   ╭▸ ROOT/tests/ui/solc/revertStatement/NonError.sol:LL:CC
+   │
+LL │     revert 1;
+   ╰╴           ━ expected one of `(`, `.`, `;`, `?`, `[`, or `{`
+
+error: aborting due to 1 previous error
+

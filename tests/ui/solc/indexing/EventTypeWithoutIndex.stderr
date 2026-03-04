@@ -1,0 +1,8 @@
+error: cannot index into event MyContract.MyCustomEvent(uint256)
+   ╭▸ ROOT/tests/ui/solc/indexing/EventTypeWithoutIndex.sol:LL:CC
+   │
+LL │         MyCustomEvent[];
+   ╰╴        ━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

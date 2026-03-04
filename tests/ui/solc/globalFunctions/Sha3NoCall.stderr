@@ -1,0 +1,8 @@
+error: unresolved symbol `sha3`
+   ╭▸ ROOT/tests/ui/solc/globalFunctions/Sha3NoCall.sol:LL:CC
+   │
+LL │         sha3;
+   ╰╴        ━━━━
+
+error: aborting due to 1 previous error
+

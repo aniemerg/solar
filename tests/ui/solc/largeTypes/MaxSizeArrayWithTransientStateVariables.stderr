@@ -1,0 +1,10 @@
+error: failed to evaluate constant: arithmetic overflow
+   ╭▸ ROOT/tests/ui/solc/largeTypes/MaxSizeArrayWithTransientStateVariables.sol:LL:CC
+   │
+LL │     uint[2**256 - 1] x;
+   │          ┬─────━━━━
+   │          │
+   ╰╴         evaluation of constant value failed here
+
+error: aborting due to 1 previous error
+

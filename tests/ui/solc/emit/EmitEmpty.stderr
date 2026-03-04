@@ -1,0 +1,8 @@
+error: expected identifier, found `;`
+   ╭▸ ROOT/tests/ui/solc/emit/EmitEmpty.sol:LL:CC
+   │
+LL │     emit;
+   ╰╴        ━
+
+error: aborting due to 1 previous error
+
