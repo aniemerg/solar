@@ -916,68 +916,68 @@ isoltestTesting/isoltestFormatting.sol,pending,,,,
 isoltestTesting/precompiles_ignoring_trailing_input.sol,pending,,,,
 isoltestTesting/storage/storage_empty.sol,pending,,,,
 isoltestTesting/storage/storage_nonempty.sol,pending,,,,
-libraries/attached_internal_library_function_accepting_calldata.sol,pending,,,,
-libraries/attached_internal_library_function_returning_calldata.sol,pending,,,,
-libraries/attached_public_library_function_accepting_calldata.sol.sol,pending,,,,
-libraries/attached_public_library_function_returning_calldata.sol,pending,,,,
-libraries/external_call_with_function_pointer_parameter.sol,pending,,,,
-libraries/external_call_with_storage_array_parameter.sol,pending,,,,
-libraries/external_call_with_storage_mapping_parameter.sol,pending,,,,
-libraries/internal_call_attached_with_parentheses.sol,pending,,,,
-libraries/internal_call_unattached_with_parentheses.sol,pending,,,,
+libraries/attached_internal_library_function_accepting_calldata.sol,ported,libraries,src/AttachedInternalLibraryFunctionAcceptingCalldata.sol,,`using for bytes` with internal calldata/memory overloads
+libraries/attached_internal_library_function_returning_calldata.sol,ported,libraries,src/AttachedInternalLibraryFunctionReturningCalldata.sol,,`using for bytes` with internal calldata-returning overloads
+libraries/attached_public_library_function_accepting_calldata.sol.sol,ported,libraries,src/AttachedPublicLibraryFunctionAcceptingCalldata.sol,,`using for bytes` with public calldata/memory overloads (external lib)
+libraries/attached_public_library_function_returning_calldata.sol,ported,libraries,src/AttachedPublicLibraryFunctionReturningCalldata.sol,,`using for bytes` with public calldata-returning overloads (external lib)
+libraries/external_call_with_function_pointer_parameter.sol,ported,libraries,src/ExternalCallWithFunctionPointerParameter.sol,,External library call passing function pointer
+libraries/external_call_with_storage_array_parameter.sol,ported,libraries,src/ExternalCallWithStorageArrayParameter.sol,,External library call with storage array parameter
+libraries/external_call_with_storage_mapping_parameter.sol,ported,libraries,src/ExternalCallWithStorageMappingParameter.sol,,External library call with storage mapping parameter
+libraries/internal_call_attached_with_parentheses.sol,ported,libraries,src/InternalCallAttachedWithParentheses.sol,,Calling attached internal lib function via parenthesized expression
+libraries/internal_call_unattached_with_parentheses.sol,ported,libraries,src/InternalCallUnattachedWithParentheses.sol,,Calling unattached internal lib function via parenthesized expression
 libraries/internal_library_function.sol,ported,libraries,src/InternalLibraryFunction.sol,,Internal library function inlined
 libraries/internal_library_function_attached_to_address.sol,ported,libraries,src/InternalLibraryFunctionAttachedToAddress.sol,,`using for` on address
-libraries/internal_library_function_attached_to_address_named_send_transfer.sol,pending,,,,
+libraries/internal_library_function_attached_to_address_named_send_transfer.sol,ported,libraries,src/InternalLibraryFunctionAttachedToAddressNamedSendTransfer.sol,,`using for address` with functions named send/transfer shadowing builtins
 libraries/internal_library_function_attached_to_array_named_pop_push.sol,ported,libraries,src/InternalLibraryFunctionAttachedToArrayNamedPopPush.sol,,`using for` on fixed array
 libraries/internal_library_function_attached_to_bool.sol,ported,libraries,src/InternalLibraryFunctionAttachedToBool.sol,,`using for` on bool
 libraries/internal_library_function_attached_to_contract.sol,ported,libraries,src/InternalLibraryFunctionAttachedToContract.sol,,`using for` on contract type
 libraries/internal_library_function_attached_to_dynamic_array.sol,ported,libraries,src/InternalLibraryFunctionAttachedToDynamicArray.sol,,`using for` on dynamic array
 libraries/internal_library_function_attached_to_enum.sol,ported,libraries,src/InternalLibraryFunctionAttachedToEnum.sol,,`using for` on enum
-libraries/internal_library_function_attached_to_external_function_type.sol,pending,,,,
-libraries/internal_library_function_attached_to_fixed_array.sol,pending,,,,
+libraries/internal_library_function_attached_to_external_function_type.sol,ported,libraries,src/InternalLibraryFunctionAttachedToExternalFunctionType.sol,,`using for` on external function type
+libraries/internal_library_function_attached_to_fixed_array.sol,ported,libraries,src/InternalLibraryFunctionAttachedToFixedArray.sol,,`using for` on fixed-size array type
 libraries/internal_library_function_attached_to_fixed_bytes.sol,ported,libraries,src/InternalLibraryFunctionAttachedToFixedBytes.sol,,`using for` on fixed bytes
 libraries/internal_library_function_attached_to_integer.sol,ported,libraries,src/InternalLibraryFunctionAttachedToInteger.sol,,`using for` on uint256
-libraries/internal_library_function_attached_to_interface.sol,pending,,,,
-libraries/internal_library_function_attached_to_internal_function_type.sol,pending,,,,
-libraries/internal_library_function_attached_to_internal_function_type_named_selector.sol,pending,,,,
+libraries/internal_library_function_attached_to_interface.sol,ported,libraries,src/InternalLibraryFunctionAttachedToInterface.sol,,`using for` on interface type
+libraries/internal_library_function_attached_to_internal_function_type.sol,ported,libraries,src/InternalLibraryFunctionAttachedToInternalFunctionType.sol,,`using for` on internal function type
+libraries/internal_library_function_attached_to_internal_function_type_named_selector.sol,ported,libraries,src/InternalLibraryFunctionAttachedToInternalFunctionTypeNamedSelector.sol,,`using for` on internal function type with method named selector
 libraries/internal_library_function_attached_to_literal.sol,ported,libraries,src/InternalLibraryFunctionAttachedToLiteral.sol,,`using for` on literal
-libraries/internal_library_function_attached_to_mapping.sol,pending,,,,
+libraries/internal_library_function_attached_to_mapping.sol,ported,libraries,src/InternalLibraryFunctionAttachedToMapping.sol,,`using for` on mapping type
 libraries/internal_library_function_attached_to_string_accepting_memory.sol,ported,libraries,src/InternalLibraryFunctionAttachedToStringMemory.sol,,`using for` on string (memory)
-libraries/internal_library_function_attached_to_string_accepting_storage.sol,pending,,,,
-libraries/internal_library_function_attached_to_struct.sol,pending,,,,
-libraries/internal_library_function_calling_private.sol,pending,,,,
-libraries/internal_library_function_pointer.sol,pending,,,,
-libraries/internal_library_function_return_var_size.sol,pending,,,,
-libraries/internal_types_in_library.sol,pending,,,,
-libraries/library_address.sol,pending,,,,
-libraries/library_address_homestead.sol,pending,,,,
-libraries/library_address_via_module.sol,pending,,,,
-libraries/library_call_in_homestead.sol,pending,,,,
-libraries/library_delegatecall_guard_pure.sol,pending,,,,
-libraries/library_delegatecall_guard_view_needed.sol,pending,,,,
-libraries/library_delegatecall_guard_view_not_needed.sol,pending,,,,
-libraries/library_delegatecall_guard_view_staticcall.sol,pending,,,,
-libraries/library_enum_as_an_expression.sol,pending,,,,
-libraries/library_function_selectors.sol,pending,,,,
-libraries/library_function_selectors_struct.sol,pending,,,,
-libraries/library_references_preserve.sol,pending,,,,
-libraries/library_return_struct_with_mapping.sol,pending,,,,
-libraries/library_staticcall_delegatecall.sol,pending,,,,
-libraries/library_stray_values.sol,pending,,,,
-libraries/library_struct_as_an_expression.sol,pending,,,,
-libraries/mapping_arguments_in_library.sol,pending,,,,
-libraries/mapping_returns_in_library.sol,pending,,,,
-libraries/mapping_returns_in_library_named.sol,pending,,,,
-libraries/payable_function_calls_library.sol,pending,,,,
-libraries/stub.sol,pending,,,,
-libraries/stub_internal.sol,pending,,,,
-libraries/using_for_by_name.sol,pending,,,,
-libraries/using_for_function_on_int.sol,pending,,,,
-libraries/using_for_overload.sol,pending,,,,
-libraries/using_for_storage_structs.sol,pending,,,,
-libraries/using_library_mappings_public.sol,pending,,,,
-libraries/using_library_mappings_return.sol,pending,,,,
-libraries/using_library_structs.sol,pending,,,,
+libraries/internal_library_function_attached_to_string_accepting_storage.sol,ported,libraries,src/InternalLibraryFunctionAttachedToStringAcceptingStorage.sol,,`using for string` with storage and memory overloads
+libraries/internal_library_function_attached_to_struct.sol,ported,libraries,src/InternalLibraryFunctionAttachedToStruct.sol,,`using for` on library struct type
+libraries/internal_library_function_calling_private.sol,ported,libraries,src/InternalLibraryFunctionCallingPrivate.sol,,Internal library function calling private library function (inlined)
+libraries/internal_library_function_pointer.sol,ported,libraries,src/InternalLibraryFunctionPointer.sol,,Internal library function stored as function pointer
+libraries/internal_library_function_return_var_size.sol,ported,libraries,src/InternalLibraryFunctionReturnVarSize.sol,,Internal library function returning variable-size memory value
+libraries/internal_types_in_library.sol,ported,libraries,src/InternalTypesInLibrary.sol,,External library with storage-ref parameters accessed via mapping
+libraries/library_address.sol,ported,libraries,src/LibraryAddress.sol,,Library address is non-zero; delegatecall/call to library functions
+libraries/library_address_homestead.sol,ported,libraries,src/LibraryAddressHomestead.sol,,Library delegatecall returning success/failure based on assert
+libraries/library_address_via_module.sol,skipped,,,,Source uses multi-file format (==== Source: a.sol ====) not representable in single Foundry file. Do not re-attempt.
+libraries/library_call_in_homestead.sol,skipped,,,,Expected result checks hardcoded msg.sender address (0x1212...0012) specific to solc test harness. Do not re-attempt.
+libraries/library_delegatecall_guard_pure.sol,ported,libraries,src/LibraryDelegatecallGuardPure.sol,,Pure library function accessed via delegatecall/call/direct
+libraries/library_delegatecall_guard_view_needed.sol,ported,libraries,src/LibraryDelegatecallGuardViewNeeded.sol,,"View library function; call returns 0 (reads library storage), delegatecall returns correct"
+libraries/library_delegatecall_guard_view_not_needed.sol,ported,libraries,src/LibraryDelegatecallGuardViewNotNeeded.sol,,View library function returning constant via delegatecall/call/direct
+libraries/library_delegatecall_guard_view_staticcall.sol,ported,libraries,src/LibraryDelegatecallGuardViewStaticcall.sol,,View library function making staticcall; delegatecall/call both succeed
+libraries/library_enum_as_an_expression.sol,ported,libraries,src/LibraryEnumAsAnExpression.sol,,Library enum type used as statement (no-op expression)
+libraries/library_function_selectors.sol,ported,libraries,src/LibraryFunctionSelectors.sol,,Library function selectors for various parameter types
+libraries/library_function_selectors_struct.sol,ported,libraries,src/LibraryFunctionSelectorsStruct.sol,,Library function selectors for struct storage/memory types
+libraries/library_references_preserve.sol,ported,libraries,src/LibraryReferencesPreserve.sol,,Two libraries with same function name used by different contracts
+libraries/library_return_struct_with_mapping.sol,ported,libraries,src/LibraryReturnStructWithMapping.sol,,Library returning storage pointer to struct containing mapping
+libraries/library_staticcall_delegatecall.sol,ported,libraries,src/LibraryStaticcallDelegatecall.sol,,Library view function called via staticcall through view function
+libraries/library_stray_values.sol,ported,libraries,src/LibraryStrayValues.sol,,Library and library function used as no-op statements
+libraries/library_struct_as_an_expression.sol,ported,libraries,src/LibraryStructAsAnExpression.sol,,Library struct type used as statement (no-op expression)
+libraries/mapping_arguments_in_library.sol,ported,libraries,src/MappingArgumentsInLibrary.sol,,Internal library with mapping storage parameters
+libraries/mapping_returns_in_library.sol,ported,libraries,src/MappingReturnsInLibrary.sol,,Internal library returning mapping storage reference
+libraries/mapping_returns_in_library_named.sol,ported,libraries,src/MappingReturnsInLibraryNamed.sol,,Internal library with named mapping storage return variable
+libraries/payable_function_calls_library.sol,ported,libraries,src/PayableFunctionCallsLibrary.sol,,Payable contract function calling external library function
+libraries/stub.sol,ported,libraries,src/Stub.sol,,Basic external library call (square function)
+libraries/stub_internal.sol,ported,libraries,src/StubInternal.sol,,"Basic internal library call (square function, inlined)"
+libraries/using_for_by_name.sol,ported,libraries,src/UsingForByName.sol,,`using for` calling library function with named argument syntax
+libraries/using_for_function_on_int.sol,ported,libraries,src/UsingForFunctionOnInt.sol,,`using for` with public library function on uint type
+libraries/using_for_overload.sol,ported,libraries,src/UsingForOverload.sol,,`using for` with overloaded library functions on struct
+libraries/using_for_storage_structs.sol,ported,libraries,src/UsingForStorageStructs.sol,,`using for` with top-level struct and storage-ref parameter
+libraries/using_library_mappings_public.sol,ported,libraries,src/UsingLibraryMappingsPublic.sol,,External library taking two separate mapping storage args
+libraries/using_library_mappings_return.sol,ported,libraries,src/UsingLibraryMappingsReturn.sol,,External library returning nested mapping storage reference
+libraries/using_library_structs.sol,ported,libraries,src/UsingLibraryStructs.sol,,External library with struct containing dynamic array stored in mapping
 literals/denominations.sol,ported,literals,src/Denominations.sol,,Ether/gwei/wei sums
 literals/denominations_in_array_sizes.sol,pending,,,,
 literals/escape.sol,ported,literals,src/EscapeLiteral.sol,,Escaped string literal bytes
