@@ -3,21 +3,21 @@ abiEncodeDecode/abi_decode_calldata.sol,ported,abi-encode-decode,src/AbiDecodeCa
 abiEncodeDecode/abi_decode_simple.sol,ported,abi-encode-decode,src/AbiDecodeSimple.sol,,ABI decoder parity risk
 abiEncodeDecode/abi_decode_simple_storage.sol,ported,abi-encode-decode,src/AbiDecodeSimpleStorage.sol,,ABI decode from storage
 abiEncodeDecode/abi_encode_call.sol,ported,abi-encode-decode,src/AbiEncodeCall.sol,,abi.encodeCall + UDVT + struct
-abiEncodeDecode/abi_encode_call_declaration.sol,pending,,,,
-abiEncodeDecode/abi_encode_call_is_consistent.sol,pending,,,,
+abiEncodeDecode/abi_encode_call_declaration.sol,ported,abi-encode-decode,src/AbiEncodeCallDeclaration.sol,test/AbiEncodeCallDeclaration.t.sol,abi.encodeCall with inherited/overridden functions
+abiEncodeDecode/abi_encode_call_is_consistent.sol,ported,abi-encode-decode,src/AbiEncodeCallIsConsistent.sol,test/AbiEncodeCallIsConsistent.t.sol,abi.encodeCall consistency with function pointers
 abiEncodeDecode/abi_encode_call_memory.sol,ported,abi-encode-decode,src/AbiEncodeCallMemory.sol,,abi.encodeCall with function pointers
-abiEncodeDecode/abi_encode_call_special_args.sol,pending,,,,
-abiEncodeDecode/abi_encode_call_uint_bytes.sol,pending,,,,
-abiEncodeDecode/abi_encode_empty_string_v1.sol,pending,,,,
+abiEncodeDecode/abi_encode_call_special_args.sol,ported,abi-encode-decode,src/AbiEncodeCallSpecialArgs.sol,test/AbiEncodeCallSpecialArgs.t.sol,"abi.encodeCall with no-args, arrays, and uint args"
+abiEncodeDecode/abi_encode_call_uint_bytes.sol,ported,abi-encode-decode,src/AbiEncodeCallUintBytes.sol,test/AbiEncodeCallUintBytes.t.sol,abi.encodeCall with uint16/bytes2 type coercions
+abiEncodeDecode/abi_encode_empty_string_v1.sol,ported,abi-encode-decode,src/AbiEncodeEmptyString.sol,test/AbiEncodeEmptyString.t.sol,"abi.encode("""") and encodePacked("""") with empty string; ABIEncoderV1Only flag dropped, behavior identical in v2"
 abiEncodeDecode/abi_encode_with_selector.sol,ported,abi-encode-decode,src/AbiEncodeWithSelector.sol,,Checks selector prefix and equivalence
-abiEncodeDecode/abi_encode_with_selectorv2.sol,pending,,,,
+abiEncodeDecode/abi_encode_with_selectorv2.sol,ported,abi-encode-decode,src/AbiEncodeWithSelectorV2.sol,test/AbiEncodeWithSelectorV2.t.sol,abi.encodeWithSelector with structs and primitive types
 abiEncodeDecode/abi_encode_with_signature.sol,ported,abi-encode-decode,src/AbiEncodeWithSignature.sol,,Selector hashing from signature
-abiEncodeDecode/abi_encode_with_signaturev2.sol,pending,,,,
-abiEncodeDecode/contract_array.sol,pending,,,,
-abiEncodeDecode/contract_array_v2.sol,pending,,,,
-abiEncodeDecode/offset_overflow_in_array_decoding.sol,pending,,,,
-abiEncodeDecode/offset_overflow_in_array_decoding_2.sol,pending,,,,
-abiEncodeDecode/offset_overflow_in_array_decoding_3.sol,pending,,,,
+abiEncodeDecode/abi_encode_with_signaturev2.sol,ported,abi-encode-decode,src/AbiEncodeWithSignatureV2.sol,test/AbiEncodeWithSignatureV2.t.sol,abi.encodeWithSignature with various arg types and storage/memory string signatures
+abiEncodeDecode/contract_array.sol,ported,abi-encode-decode,src/ContractArray.sol,test/ContractArray.t.sol,abi.encode/decode with contract[] (address array)
+abiEncodeDecode/contract_array_v2.sol,ported,abi-encode-decode,src/ContractArrayV2.sol,test/ContractArrayV2.t.sol,abi decode contract[] with v2 encoder; invalid address revert
+abiEncodeDecode/offset_overflow_in_array_decoding.sol,ported,abi-encode-decode,src/OffsetOverflowInArrayDecoding.sol,test/OffsetOverflowInArrayDecoding.t.sol,crafted corrupt ABI causes overflow in array decode pointer arithmetic
+abiEncodeDecode/offset_overflow_in_array_decoding_2.sol,ported,abi-encode-decode,src/OffsetOverflowInArrayDecoding2.sol,test/OffsetOverflowInArrayDecoding2.t.sol,within-array pointer overflow via crafted corrupt ABI data
+abiEncodeDecode/offset_overflow_in_array_decoding_3.sol,ported,abi-encode-decode,src/OffsetOverflowInArrayDecoding3.sol,test/OffsetOverflowInArrayDecoding3.t.sol,max-value offset fields in corrupt ABI cause overflow
 abiEncoderV1/abi_decode_dynamic_array.sol,pending,,,,
 abiEncoderV1/abi_decode_fixed_arrays.sol,pending,,,,
 abiEncoderV1/abi_decode_static_array.sol,pending,,,,
@@ -112,18 +112,18 @@ abiEncoderV2/struct/struct_validation.sol,pending,,,,
 abiEncoderV2/struct/validation_function_type_inside_struct.sol,pending,,,,
 accessor/accessor_for_const_state_variable.sol,pending,,,,
 accessor/accessor_for_state_variable.sol,pending,,,,
-arithmetics/addmod_mulmod.sol,pending,,,,
-arithmetics/addmod_mulmod_zero.sol,pending,,,,
-arithmetics/block_inside_unchecked.sol,pending,,,,
-arithmetics/check_var_init.sol,pending,,,,
-arithmetics/checked_add_v1.sol,pending,,,,
+arithmetics/addmod_mulmod.sol,ported,arithmetic,src/AddmodMulmod.sol,test/AddmodMulmod.t.sol,addmod with large values using unbounded literal arithmetic
+arithmetics/addmod_mulmod_zero.sol,ported,arithmetic,src/AddmodMulmodZero.sol,test/AddmodMulmodZero.t.sol,addmod/mulmod with zero modulus panics (0x12)
+arithmetics/block_inside_unchecked.sol,ported,arithmetic,src/BlockInsideUnchecked.sol,test/BlockInsideUnchecked.t.sol,double-braced unchecked block; overflow wraps to 0
+arithmetics/check_var_init.sol,ported,arithmetic,src/CheckVarInit.sol,test/CheckVarInit.t.sol,checked arithmetic in constructor state var init; overflow panic propagation
+arithmetics/checked_add_v1.sol,ported,arithmetic,src/CheckedAddV1.sol,test/CheckedAddV1.t.sol,"checked uint16 addition; ABIEncoderV1Only flag dropped, v2 behavior identical for uint16"
 arithmetics/checked_add_v2.sol,ported,arithmetic,src/CheckedAddV2.sol,,Overflow behavior may differ; confirm Solar semantics before asserting reverts
-arithmetics/checked_called_by_unchecked.sol,pending,,,,
-arithmetics/checked_modifier_called_by_unchecked.sol,pending,,,,
-arithmetics/divisiod_by_zero.sol,pending,,,,
-arithmetics/exp_associativity.sol,pending,,,,
-arithmetics/signed_mod.sol,pending,,,,
-arithmetics/unchecked_called_by_checked.sol,pending,,,,
+arithmetics/checked_called_by_unchecked.sol,ported,arithmetic,src/CheckedCalledByUnchecked.sol,test/CheckedCalledByUnchecked.t.sol,checked inner function called from unchecked outer; overflow still caught in inner
+arithmetics/checked_modifier_called_by_unchecked.sol,ported,arithmetic,src/CheckedModifierCalledByUnchecked.sol,test/CheckedModifierCalledByUnchecked.t.sol,modifier with unchecked arithmetic; checked function body can still overflow
+arithmetics/divisiod_by_zero.sol,ported,arithmetic,src/DivisionByZero.sol,test/DivisionByZero.t.sol,integer division and modulo by zero produce panic 0x12
+arithmetics/exp_associativity.sol,ported,arithmetic,src/ExpAssociativity.sol,test/ExpAssociativity.t.sol,exponentiation is right-associative; a**b**c == a**(b**c)
+arithmetics/signed_mod.sol,ported,arithmetic,src/SignedMod.sol,test/SignedMod.t.sol,signed modulo and checked/unchecked int.min / -1 overflow
+arithmetics/unchecked_called_by_checked.sol,ported,arithmetic,src/UncheckedCalledByChecked.sol,test/UncheckedCalledByChecked.t.sol,"unchecked inner function called from checked outer; wrap in inner, overflow in outer"
 arithmetics/unchecked_div_by_zero.sol,ported,arithmetic,src/UncheckedDivByZero.sol,,Division/mod by zero should revert
 array/arrayMemoryAllocation/array_2d_zeroed_memory_index_access.sol,ported,arrays,src/Array2dZeroedMemoryIndexAccess.sol,,Zeroed 2D memory array bounds
 array/arrayMemoryAllocation/array_array_static.sol,ported,arrays,src/ArrayArrayStatic.sol,,Static subarray access bounds
@@ -1108,29 +1108,29 @@ payable/no_nonpayable_circumvention_by_modifier.sol,ported,payable,src/NoNonpaya
 receive/empty_calldata_calls_receive.sol,ported,receive,src/EmptyCalldataCallsReceive.sol,,Empty calldata hits receive
 receive/ether_and_data.sol,ported,receive,src/EtherAndData.sol,,"Receive accepts ether, rejects data"
 receive/inherited.sol,ported,receive,src/ReceiveInherited.sol,,Inherited receive
-revertStrings/array_slices.sol,pending,,,,
-revertStrings/bubble.sol,pending,,,,
-revertStrings/calldata_array_dynamic_invalid.sol,pending,,,,
-revertStrings/calldata_array_dynamic_static_short_decode.sol,pending,,,,
-revertStrings/calldata_array_dynamic_static_short_reencode.sol,pending,,,,
-revertStrings/calldata_array_invalid_length.sol,pending,,,,
-revertStrings/calldata_arrays_too_large.sol,pending,,,,
-revertStrings/calldata_tail_short.sol,pending,,,,
-revertStrings/calldata_too_short_v1.sol,pending,,,,
-revertStrings/called_contract_has_code.sol,pending,,,,
-revertStrings/empty_v1.sol,pending,,,,
-revertStrings/empty_v2.sol,pending,,,,
-revertStrings/enum_v1.sol,pending,,,,
-revertStrings/enum_v2.sol,pending,,,,
+revertStrings/array_slices.sol,ported,revert-strings,src/ArraySlices.sol,test/ArraySlices.t.sol,calldata slice bounds checking: start>end and end>length
+revertStrings/bubble.sol,ported,revert-strings,src/Bubble.sol,test/Bubble.t.sol,revert reason string bubbles up from inner call
+revertStrings/calldata_array_dynamic_invalid.sol,ported,revert-strings,src/CalldataArrayDynamicInvalid.sol,test/CalldataArrayDynamicInvalid.t.sol,malformed calldata for dynamic array: invalid stride
+revertStrings/calldata_array_dynamic_static_short_decode.sol,ported,revert-strings,src/CalldataArrayDynamicStaticShortDecode.sol,test/CalldataArrayDynamicStaticShortDecode.t.sol,invalid calldata tail offset in statically-sized outer array
+revertStrings/calldata_array_dynamic_static_short_reencode.sol,ported,revert-strings,src/CalldataArrayDynamicStaticShortReencode.sol,test/CalldataArrayDynamicStaticShortReencode.t.sol,invalid calldata access offset during re-encoding via forwarded call
+revertStrings/calldata_array_invalid_length.sol,ported,revert-strings,src/CalldataArrayInvalidLength.sol,test/CalldataArrayInvalidLength.t.sol,inner dynamic array with impossibly large length field
+revertStrings/calldata_arrays_too_large.sol,ported,revert-strings,src/CalldataArraysTooLarge.sol,test/CalldataArraysTooLarge.t.sol,array length field overflows available calldata
+revertStrings/calldata_tail_short.sol,ported,revert-strings,src/CalldataTailShort.sol,test/CalldataTailShort.t.sol,calldata tail shorter than declared array length
+revertStrings/calldata_too_short_v1.sol,ported,revert-strings,src/CalldataTooShort.sol,test/CalldataTooShort.t.sol,"abi.decode with data shorter than type requires; ABIEncoderV1Only dropped, identical behavior in v2"
+revertStrings/called_contract_has_code.sol,ported,revert-strings,src/CalledContractHasCode.sol,test/CalledContractHasCode.t.sol,call to address(0) with no code reverts
+revertStrings/empty_v1.sol,ported,revert-strings,src/EmptyRevert.sol,test/EmptyRevert.t.sol,"revert("""") with empty string; ABIEncoderV1Only dropped, merged with empty_v2"
+revertStrings/empty_v2.sol,ported,revert-strings,src/EmptyRevert.sol,test/EmptyRevert.t.sol,"revert("""") with empty string; merged with empty_v1"
+revertStrings/enum_v1.sol,ported,revert-strings,src/EnumOutOfRange.sol,test/EnumOutOfRange.t.sol,"enum value out of range via raw calldata; ABIEncoderV1Only dropped, merged with enum_v2"
+revertStrings/enum_v2.sol,ported,revert-strings,src/EnumOutOfRange.sol,test/EnumOutOfRange.t.sol,enum value out of range via raw calldata; merged with enum_v1
 revertStrings/ether_non_payable_function.sol,ported,revert-strings,src/EtherNonPayableFunction.sol,,Non-payable revert
-revertStrings/function_entry_checks_v1.sol,pending,,,,
-revertStrings/function_entry_checks_v2.sol,pending,,,,
-revertStrings/invalid_abi_decoding_calldata_v1.sol,pending,,,,
-revertStrings/invalid_abi_decoding_memory_v1.sol,pending,,,,
-revertStrings/library_non_view_call.sol,pending,,,,
-revertStrings/short_input_array.sol,pending,,,,
-revertStrings/short_input_bytes.sol,pending,,,,
-revertStrings/transfer.sol,pending,,,,
+revertStrings/function_entry_checks_v1.sol,ported,revert-strings,src/FunctionEntryChecks.sol,test/FunctionEntryChecks.t.sol,"calldata too short for function arguments; ABIEncoderV1Only dropped, merged with v2"
+revertStrings/function_entry_checks_v2.sol,ported,revert-strings,src/FunctionEntryChecks.sol,test/FunctionEntryChecks.t.sol,calldata too short for function arguments; merged with v1
+revertStrings/invalid_abi_decoding_calldata_v1.sol,ported,revert-strings,src/InvalidAbiDecodingCalldata.sol,test/InvalidAbiDecodingCalldata.t.sol,abi.decode calldata with bad head/data pointer offsets; ABIEncoderV1Only dropped
+revertStrings/invalid_abi_decoding_memory_v1.sol,ported,revert-strings,src/InvalidAbiDecodingMemory.sol,test/InvalidAbiDecodingMemory.t.sol,assembly-crafted invalid return data causes ABI memory decode failure; ABIEncoderV1Only dropped
+revertStrings/library_non_view_call.sol,blocked,revert-strings,,,Do not re-attempt: requires external library deployment and address-of-library linking which is not supported cleanly in Foundry test setup
+revertStrings/short_input_array.sol,ported,revert-strings,src/ShortInputArray.sol,test/ShortInputArray.t.sol,uint[] calldata with length 1 but no element data
+revertStrings/short_input_bytes.sol,ported,revert-strings,src/ShortInputBytes.sol,test/ShortInputBytes.t.sol,bytes calldata with length 7 but no actual byte data
+revertStrings/transfer.sol,ported,revert-strings,src/Transfer.sol,test/Transfer.t.sol,payable.transfer to reverting receive; insufficient balance
 revertStrings/unknown_sig_no_fallback.sol,ported,revert-strings,src/UnknownSigNoFallback.sol,,Unknown signature revert
 reverts/assert_require.sol,ported,reverts,src/AssertRequire.sol,,assert/require behavior
 reverts/eof/revert_return_area.sol,skipped,,,,eof/ category excluded from default porting scope via --exclude-prefix in solc_porting_audit.py. Re-enable only if EOF tests are explicitly brought into scope.
