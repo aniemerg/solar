@@ -356,14 +356,14 @@ array/string_allocation_bug.sol,pending,,,,
 array/string_bytes_conversion.sol,pending,,,,
 array/string_literal_assign_to_storage_bytes.sol,ported,arrays,src/StringLiteralAssignToStorageBytes.sol,,Assign string literal to storage bytes
 array/strings_in_struct.sol,ported,structs,src/StringsInStruct.sol,,String member in struct
-builtinFunctions/assignment_to_const_var_involving_keccak.sol,pending,,,,
-builtinFunctions/blobhash.sol,pending,,,,
-builtinFunctions/blobhash_shadow_resolution.sol,pending,,,,
-builtinFunctions/blockhash.sol,pending,,,,
-builtinFunctions/blockhash_shadow_resolution.sol,pending,,,,
+builtinFunctions/assignment_to_const_var_involving_keccak.sol,ported,builtin-functions,src/AssignmentToConstVarInvolvingKeccak.sol,test/AssignmentToConstVarInvolvingKeccak.t.sol,keccak256 constant assignment
+builtinFunctions/blobhash.sol,skipped,,,,Do not re-attempt. Requires EVMHost-injected blob hashes not available in Foundry.
+builtinFunctions/blobhash_shadow_resolution.sol,ported,builtin-functions,src/BlobhashShadowResolution.sol,test/BlobhashShadowResolution.t.sol,blobhash builtin shadowed by local function
+builtinFunctions/blockhash.sol,skipped,,,,Do not re-attempt. Requires EVMHost-injected block hashes not available in Foundry.
+builtinFunctions/blockhash_shadow_resolution.sol,ported,builtin-functions,src/BlockhashShadowResolution.sol,test/BlockhashShadowResolution.t.sol,blockhash builtin shadowed by local function returning zero
 builtinFunctions/function_types_sig.sol,ported,builtin-functions,src/FunctionTypesSig.sol,,function selector from function types
-builtinFunctions/iterated_keccak256_with_bytes.sol,pending,,,,
-builtinFunctions/keccak256.sol,pending,,,,
+builtinFunctions/iterated_keccak256_with_bytes.sol,ported,builtin-functions,src/IteratedKeccak256WithBytes.sol,test/IteratedKeccak256WithBytes.t.sol,nested keccak256 over dynamic bytes storage
+builtinFunctions/keccak256.sol,ported,builtin-functions,src/Keccak256.sol,test/Keccak256.t.sol,keccak256 of packed bytes32
 builtinFunctions/keccak256_empty.sol,ported,hashing,src/HashBuiltins.sol,,keccak256 empty string
 builtinFunctions/keccak256_multiple_arguments.sol,ported,builtin-functions,src/KeccakMultiple.sol,,keccak256 packed 3 args
 builtinFunctions/keccak256_multiple_arguments_with_numeric_literals.sol,ported,builtin-functions,src/KeccakMultipleNumeric.sol,,keccak256 packed numeric literals
@@ -373,10 +373,10 @@ builtinFunctions/keccak256_packed_complex_types.sol,ported,builtin-functions,src
 builtinFunctions/keccak256_with_bytes.sol,ported,hashing,src/HashBuiltins.sol,,keccak256(bytes) matches literal
 builtinFunctions/msg_sig.sol,ported,builtin-functions,src/MsgSig.sol,,msg.sig selector value
 builtinFunctions/msg_sig_after_internal_call_is_same.sol,ported,builtin-functions,src/MsgSigInternal.sol,,msg.sig preserved across internal call
-builtinFunctions/ripemd160.sol,pending,,,,
+builtinFunctions/ripemd160.sol,ported,builtin-functions,src/Ripemd160.sol,test/Ripemd160.t.sol,ripemd160 of packed bytes32
 builtinFunctions/ripemd160_empty.sol,ported,hashing,src/HashBuiltins.sol,,ripemd160 empty string
 builtinFunctions/ripemd160_packed.sol,ported,builtin-functions,src/Ripemd160Packed.sol,,ripemd160 packed inputs
-builtinFunctions/sha256.sol,pending,,,,
+builtinFunctions/sha256.sol,ported,builtin-functions,src/Sha256.sol,test/Sha256.t.sol,sha256 of packed bytes32
 builtinFunctions/sha256_empty.sol,ported,hashing,src/HashBuiltins.sol,,sha256 empty string
 builtinFunctions/sha256_packed.sol,ported,builtin-functions,src/Sha256Packed.sol,,sha256 packed inputs
 calldata/calldata_array_access.sol,ported,calldata,src/CalldataArrayAccess.sol,,element access + bounds + malformed calldata
@@ -424,17 +424,17 @@ cleanup/indexed_log_topic_during_explicit_downcast.sol,ported,cleanup,src/Indexe
 cleanup/indexed_log_topic_during_explicit_downcast_during_emissions.sol,ported,cleanup,src/IndexedLogTopicDuringExplicitDowncastDuringEmissions.sol,test/IndexedLogTopicDuringExplicitDowncastDuringEmissions.t.sol,indexed event topic properly cleaned during emission
 constantEvaluator/negative_fractional_mod.sol,ported,constant-evaluator,src/NegativeFractionalMod.sol,test/NegativeFractionalMod.t.sol,compile-time rational mod with negative fractional values
 constantEvaluator/rounding.sol,ported,constant-evaluator,src/Rounding.sol,test/Rounding.t.sol,constant integer division rounding (truncation toward zero) used in array sizes
-constants/asm_address_constant_regression.sol,pending,,,,
-constants/asm_constant_file_level.sol,pending,,,,
-constants/assign_type_info.sol,pending,,,,
-constants/constant_string.sol,pending,,,,
-constants/constant_string_at_file_level.sol,pending,,,,
-constants/constant_variables.sol,pending,,,,
-constants/constants_at_file_level_referencing.sol,pending,,,,
-constants/consteval_array_length.sol,pending,,,,
-constants/function_unreferenced.sol,pending,,,,
-constants/same_constants_different_files.sol,pending,,,,
-constants/simple_constant_variables_test.sol,pending,,,,
+constants/asm_address_constant_regression.sol,ported,constants,src/AsmAddressConstantRegression.sol,test/AsmAddressConstantRegression.t.sol,address constant via inline assembly regression
+constants/asm_constant_file_level.sol,ported,constants,src/AsmConstantFileLevel.sol,test/AsmConstantFileLevel.t.sol,file-level address constant accessed via assembly
+constants/assign_type_info.sol,ported,constants,src/AssignTypeInfo.sol,test/AssignTypeInfo.t.sol,type().creationCode and runtimeCode as constant bytes
+constants/constant_string.sol,ported,constants,src/ConstantString.sol,test/ConstantString.t.sol,constant bytes and string literals
+constants/constant_string_at_file_level.sol,ported,constants,src/ConstantStringAtFileLevel.sol,test/ConstantStringAtFileLevel.t.sol,file-level constant bytes/string/enum/bytes32
+constants/constant_variables.sol,ported,constants,src/ConstantVariables.sol,test/ConstantVariables.t.sol,constant uint/enum/bytes32 in contract
+constants/constants_at_file_level_referencing.sol,ported,constants,src/ConstantsAtFileLevelReferencing.sol,test/ConstantsAtFileLevelReferencing.t.sol,cross-file constant references and free functions
+constants/consteval_array_length.sol,ported,constants,src/ConstevalArrayLength.sol,test/ConstevalArrayLength.t.sol,constant-evaluated array length expression
+constants/function_unreferenced.sol,ported,constants,src/FunctionUnreferenced.sol,test/FunctionUnreferenced.t.sol,function selector stored as constant bytes4
+constants/same_constants_different_files.sol,ported,constants,src/SameConstantsDifferentFiles.sol,test/SameConstantsDifferentFiles.t.sol,same-named constants across files with aliased imports
+constants/simple_constant_variables_test.sol,ported,constants,src/SimpleConstantVariablesTest.sol,test/SimpleConstantVariablesTest.t.sol,simple uint constant variable
 constructor/arrays_in_constructors.sol,ported,constructor,src/ArraysInConstructors.sol,,Arrays passed through constructors
 constructor/base_constructor_arguments.sol,ported,constructor,src/BaseConstructorArguments.sol,,Base constructor args in inheritance
 constructor/bytes_in_constructors_packer.sol,ported,constructor,src/BytesInConstructorsPacker.sol,,Bytes passed through constructors with packing
@@ -641,15 +641,15 @@ fallback/fallback_override_multi.sol,ported,fallback,src/FallbackOverrideMulti.s
 fallback/fallback_return_data.sol,ported,fallback,src/FallbackReturnData.sol,,Fallback returns calldata
 fallback/inherited.sol,ported,fallback,src/FallbackInherited.sol,,inherited fallback sets storage
 fallback/short_data_calls_fallback.sol,ported,fallback,src/ShortDataCallsFallback.sol,,Short calldata hits fallback
-freeFunctions/easy.sol,pending,,,,
-freeFunctions/free_namesake_contract_function.sol,pending,,,,
-freeFunctions/free_runtimecode.sol,pending,,,,
-freeFunctions/import.sol,pending,,,,
-freeFunctions/libraries_from_free.sol,pending,,,,
-freeFunctions/new_operator.sol,pending,,,,
-freeFunctions/overloads.sol,pending,,,,
-freeFunctions/recursion.sol,pending,,,,
-freeFunctions/storage_calldata_refs.sol,pending,,,,
+freeFunctions/easy.sol,ported,free-functions,src/Easy.sol,test/Easy.t.sol,basic free function call from contract
+freeFunctions/free_namesake_contract_function.sol,ported,free-functions,src/FreeNamesakeContractFunction.sol,test/FreeNamesakeContractFunction.t.sol,contract method shadows free function causing infinite recursion
+freeFunctions/free_runtimecode.sol,ported,free-functions,src/FreeRuntimecode.sol,test/FreeRuntimecode.t.sol,type().runtimeCode access from free function
+freeFunctions/import.sol,ported,free-functions,src/Import.sol,test/Import.t.sol,free function and struct imported from separate file
+freeFunctions/libraries_from_free.sol,ported,free-functions,src/LibrariesFromFree.sol,test/LibrariesFromFree.t.sol,library public and internal functions called from free function
+freeFunctions/new_operator.sol,ported,free-functions,src/NewOperator.sol,test/NewOperator.t.sol,new operator used in free function
+freeFunctions/overloads.sol,ported,free-functions,src/Overloads.sol,test/Overloads.t.sol,overloaded free functions by parameter type
+freeFunctions/recursion.sol,ported,free-functions,src/Recursion.sol,test/Recursion.t.sol,recursive free function (exponentiation)
+freeFunctions/storage_calldata_refs.sol,ported,free-functions,src/StorageCalldataRefs.sol,test/StorageCalldataRefs.t.sol,free function taking storage and calldata reference params
 functionCall/array_multiple_local_vars.sol,ported,calls,src/ArrayMultipleLocalVars.sol,,Loop with multiple local vars and control flow
 functionCall/bare_call_no_returndatacopy.sol,ported,calls,src/BareCallNoReturndatacopy.sol,,Low-level call without returndata copy
 functionCall/call_attached_library_function_on_function.sol,ported,calls,src/CallAttachedLibraryOnFunction.sol,,Library attached to function type via using-for
@@ -1148,16 +1148,16 @@ saltedCreate/prediction_example.sol,ported,salted-create,src/PredictionExample.s
 saltedCreate/salted_create.sol,ported,salted-create,src/SaltedCreate.sol,test/SaltedCreate.t.sol,CREATE2 different salts produce different addresses; same salt reverts
 saltedCreate/salted_create_with_value.sol,ported,salted-create,src/SaltedCreateWithValue.sol,test/SaltedCreateWithValue.t.sol,CREATE2 with ETH value forwarding
 scoping/c99_scoping_activation.sol,ported,scoping,src/C99ScopingActivation.sol,,C99 scoping/ shadowing
-smoke/alignment.sol,pending,,,,
-smoke/arrays.sol,pending,,,,
-smoke/basic.sol,pending,,,,
-smoke/bytes_and_strings.sol,pending,,,,
-smoke/constructor.sol,pending,,,,
-smoke/failure.sol,pending,,,,
-smoke/fallback.sol,pending,,,,
-smoke/multiline.sol,pending,,,,
-smoke/multiline_comments.sol,pending,,,,
-smoke/structs.sol,pending,,,,
+smoke/alignment.sol,ported,smoke,src/Alignment.sol,test/Alignment.t.sol,bool/uint/bytes32 alignment and ABI encoding
+smoke/arrays.sol,ported,smoke,src/Arrays.sol,test/Arrays.t.sol,fixed and dynamic array return values with structs
+smoke/basic.sol,ported,smoke,src/Basic.sol,test/Basic.t.sol,basic function calls including payable and unchecked arithmetic
+smoke/bytes_and_strings.sol,ported,smoke,src/BytesAndStrings.sol,test/BytesAndStrings.t.sol,bytes and string return values
+smoke/constructor.sol,ported,smoke,src/Constructor.sol,test/Constructor.t.sol,payable constructor with initial state and balance
+smoke/failure.sol,ported,smoke,src/Failure.sol,test/Failure.t.sol,revert/require/assert failure modes
+smoke/fallback.sol,ported,smoke,src/Fallback.sol,test/Fallback.t.sol,payable fallback with data and value tracking
+smoke/multiline.sol,ported,smoke,src/Multiline.sol,test/Multiline.t.sol,multiline test syntax; nonexistent function reverts
+smoke/multiline_comments.sol,ported,smoke,src/MultilineComments.sol,test/MultilineComments.t.sol,multiline test syntax with inline comments
+smoke/structs.sol,ported,smoke,src/Structs.sol,test/Structs.t.sol,struct return values with and without string fields
 specialFunctions/abi_encode_with_signature_from_string.sol,ported,special-functions,src/AbiEncodeWithSignatureFromString.sol,test/AbiEncodeWithSignatureFromString.t.sol,abi.encodeWithSignature with literal and variable string signature produces identical output
 specialFunctions/abi_functions_member_access.sol,ported,special-functions,src/AbiFunctionsMemberAccess.sol,test/AbiFunctionsMemberAccess.t.sol,abi built-in member access as expressions compiles and runs
 specialFunctions/keccak256_optimized.sol,ported,special-functions,src/Keccak256Optimized.sol,test/Keccak256Optimized.t.sol,compile-time keccak256 constant folding on short and long literal strings
