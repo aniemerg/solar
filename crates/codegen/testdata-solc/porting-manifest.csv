@@ -403,25 +403,25 @@ calldata/calldata_struct.sol,ported,calldata,src/CalldataStruct.sol,,Struct call
 calldata/calldata_struct_cleaning.sol,ported,calldata,src/CalldataStructCleaning.sol,,Calldata struct dirty bits cause revert
 calldata/calldata_struct_internal.sol,ported,calldata,src/CalldataStructInternal.sol,,Internal calldata struct forwarding
 calldata/copy_from_calldata_removes_bytes_data.sol,ported,calldata,src/CopyFromCalldataRemovesBytesData.sol,,Assigning empty calldata clears bytes storage
-cleanup/bool_conversion_v1.sol,pending,,,,
-cleanup/bool_conversion_v2.sol,pending,,,,
-cleanup/byte_array_to_storage_cleanup.sol,pending,,,,
-cleanup/cleanup_address_types_shortening.sol,pending,,,,
-cleanup/cleanup_address_types_v1.sol,pending,,,,
-cleanup/cleanup_address_types_v2.sol,pending,,,,
-cleanup/cleanup_bytes_types_shortening_OldCodeGen.sol,pending,,,,
-cleanup/cleanup_bytes_types_shortening_newCodeGen.sol,pending,,,,
-cleanup/cleanup_bytes_types_v1.sol,pending,,,,
-cleanup/cleanup_bytes_types_v2.sol,pending,,,,
-cleanup/cleanup_in_compound_assign.sol,pending,,,,
-cleanup/dirty_calldata_bytes.sol,pending,,,,
-cleanup/dirty_calldata_dynamic_array.sol,pending,,,,
-cleanup/exp_cleanup.sol,pending,,,,
-cleanup/exp_cleanup_direct.sol,pending,,,,
-cleanup/exp_cleanup_nonzero_base.sol,pending,,,,
-cleanup/exp_cleanup_smaller_base.sol,pending,,,,
-cleanup/indexed_log_topic_during_explicit_downcast.sol,pending,,,,
-cleanup/indexed_log_topic_during_explicit_downcast_during_emissions.sol,pending,,,,
+cleanup/bool_conversion_v1.sol,skipped,,,,Do not re-attempt: requires ABIEncoderV1Only=true (old ABI encoder) not available in standard forge/solc 0.8
+cleanup/bool_conversion_v2.sol,ported,cleanup,src/BoolConversionV2.sol,test/BoolConversionV2.t.sol,ABIv2 rejects bool inputs with dirty bits
+cleanup/byte_array_to_storage_cleanup.sol,skipped,,,,Do not re-attempt: tests gas-specific behavior and complex storage cleanup during push; too tied to internal codegen details
+cleanup/cleanup_address_types_shortening.sol,ported,cleanup,src/CleanupAddressTypesShortening.sol,test/CleanupAddressTypesShortening.t.sol,bytes21->bytes20->address truncation cleans properly
+cleanup/cleanup_address_types_v1.sol,skipped,,,,Do not re-attempt: requires ABIEncoderV1Only=true (old ABI encoder) not available in standard forge/solc 0.8
+cleanup/cleanup_address_types_v2.sol,ported,cleanup,src/CleanupAddressTypesV2.sol,test/CleanupAddressTypesV2.t.sol,ABIv2 rejects oversized address inputs
+cleanup/cleanup_bytes_types_shortening_OldCodeGen.sol,skipped,,,,Do not re-attempt: tests old codegen (compileViaYul:false) specific behavior; values differ from new codegen
+cleanup/cleanup_bytes_types_shortening_newCodeGen.sol,ported,cleanup,src/CleanupBytesTypesShortening.sol,test/CleanupBytesTypesShortening.t.sol,bytes4->bytes2 in assembly returns full dirty bytes in std codegen
+cleanup/cleanup_bytes_types_v1.sol,skipped,,,,Do not re-attempt: requires ABIEncoderV1Only=true (old ABI encoder) not available in standard forge/solc 0.8
+cleanup/cleanup_bytes_types_v2.sol,ported,cleanup,src/CleanupBytesTypesV2.sol,test/CleanupBytesTypesV2.t.sol,ABIv2 rejects dirty bytes2/uint16 inputs
+cleanup/cleanup_in_compound_assign.sol,ported,cleanup,src/CleanupInCompoundAssign.sol,test/CleanupInCompoundAssign.t.sol,uint16 compound division cleans result
+cleanup/dirty_calldata_bytes.sol,ported,cleanup,src/DirtyCalldataBytes.sol,test/DirtyCalldataBytes.t.sol,bytes1 from calldata properly left-aligned
+cleanup/dirty_calldata_dynamic_array.sol,ported,cleanup,src/DirtyCalldataDynamicArray.sol,test/DirtyCalldataDynamicArray.t.sol,int16 from calldata array properly cleaned
+cleanup/exp_cleanup.sol,ported,cleanup,src/ExpCleanup.sol,test/ExpCleanup.t.sol,"uint8 exp wraps: 2**8=0, 0**0=1"
+cleanup/exp_cleanup_direct.sol,ported,cleanup,src/ExpCleanupDirect.sol,test/ExpCleanupDirect.t.sol,0**(2**8 mod 256) = 0**0 = 1
+cleanup/exp_cleanup_nonzero_base.sol,ported,cleanup,src/ExpCleanupNonzeroBase.sol,test/ExpCleanupNonzeroBase.t.sol,uint8 base 102**0 = 1 after uint8 exp wraps
+cleanup/exp_cleanup_smaller_base.sol,ported,cleanup,src/ExpCleanupSmallerBase.sol,test/ExpCleanupSmallerBase.t.sol,2**256 truncated to uint16 = 0
+cleanup/indexed_log_topic_during_explicit_downcast.sol,ported,cleanup,src/IndexedLogTopicDuringExplicitDowncast.sol,test/IndexedLogTopicDuringExplicitDowncast.t.sol,downcast cleanup in standard codegen; values differ from Yul codegen
+cleanup/indexed_log_topic_during_explicit_downcast_during_emissions.sol,ported,cleanup,src/IndexedLogTopicDuringExplicitDowncastDuringEmissions.sol,test/IndexedLogTopicDuringExplicitDowncastDuringEmissions.t.sol,indexed event topic properly cleaned during emission
 constantEvaluator/negative_fractional_mod.sol,pending,,,,
 constantEvaluator/rounding.sol,pending,,,,
 constants/asm_address_constant_regression.sol,pending,,,,
@@ -1161,28 +1161,28 @@ smoke/structs.sol,pending,,,,
 specialFunctions/abi_encode_with_signature_from_string.sol,pending,,,,
 specialFunctions/abi_functions_member_access.sol,pending,,,,
 specialFunctions/keccak256_optimized.sol,pending,,,,
-state/blobhash.sol,pending,,,,
-state/block_basefee.sol,pending,,,,
-state/block_blobbasefee.sol,pending,,,,
-state/block_chainid.sol,pending,,,,
-state/block_coinbase.sol,pending,,,,
-state/block_difficulty.sol,pending,,,,
-state/block_difficulty_post_paris.sol,pending,,,,
-state/block_gaslimit.sol,pending,,,,
-state/block_number.sol,pending,,,,
-state/block_prevrandao.sol,pending,,,,
-state/block_prevrandao_pre_paris.sol,pending,,,,
-state/block_timestamp.sol,pending,,,,
-state/blockhash_basic.sol,pending,,,,
-state/gasleft.sol,pending,,,,
-state/msg_data.sol,pending,,,,
-state/msg_sender.sol,pending,,,,
-state/msg_sig.sol,pending,,,,
-state/msg_value.sol,pending,,,,
-state/tx_gasprice.sol,pending,,,,
-state/tx_origin.sol,pending,,,,
-state/uncalled_blobhash.sol,pending,,,,
-state/uncalled_blockhash.sol,pending,,,,
+state/blobhash.sol,skipped,,,,Do not re-attempt: requires cancun blob tx context with specific injected blob hashes
+state/block_basefee.sol,ported,state,src/BlockBasefee.sol,test/BlockBasefee.t.sol,block.basefee and assembly basefee() consistency
+state/block_blobbasefee.sol,skipped,,,,Do not re-attempt: requires cancun EVM version with blob base fee opcode
+state/block_chainid.sol,ported,state,src/BlockChainid.sol,test/BlockChainid.t.sol,block.chainid returns non-zero
+state/block_coinbase.sol,ported,state,src/BlockCoinbase.sol,test/BlockCoinbase.t.sol,block.coinbase returns current coinbase
+state/block_difficulty.sol,skipped,,,,Do not re-attempt: requires pre-paris EVMVersion (<paris) which forge does not support in configuration
+state/block_difficulty_post_paris.sol,ported,state,src/BlockDifficultyPostParis.sol,test/BlockDifficultyPostParis.t.sol,post-paris block.difficulty==block.prevrandao
+state/block_gaslimit.sol,ported,state,src/BlockGaslimit.sol,test/BlockGaslimit.t.sol,block.gaslimit returns positive value
+state/block_number.sol,ported,state,src/BlockNumber.sol,test/BlockNumber.t.sol,block.number returns current block number
+state/block_prevrandao.sol,ported,state,src/BlockPrevrandao.sol,test/BlockPrevrandao.t.sol,block.prevrandao returns consistent value
+state/block_prevrandao_pre_paris.sol,skipped,,,,Do not re-attempt: requires pre-paris EVMVersion (<paris) which forge does not support
+state/block_timestamp.sol,ported,state,src/BlockTimestamp.sol,test/BlockTimestamp.t.sol,block.timestamp returns current timestamp
+state/blockhash_basic.sol,skipped,,,,Do not re-attempt: requires specific block state (block.number==1 at constructor deployment) not available in forge
+state/gasleft.sol,ported,state,src/Gasleft.sol,test/Gasleft.t.sol,gasleft() returns positive value
+state/msg_data.sol,ported,state,src/MsgData.sol,test/MsgData.t.sol,msg.data returns calldata bytes
+state/msg_sender.sol,ported,state,src/MsgSender.sol,test/MsgSender.t.sol,msg.sender returns caller address
+state/msg_sig.sol,ported,state,src/MsgSig.sol,test/MsgSig.t.sol,msg.sig returns function selector
+state/msg_value.sol,ported,state,src/MsgValue.sol,test/MsgValue.t.sol,msg.value returns ether sent
+state/tx_gasprice.sol,ported,state,src/TxGasprice.sol,test/TxGasprice.t.sol,tx.gasprice returns gas price
+state/tx_origin.sol,ported,state,src/TxOrigin.sol,test/TxOrigin.t.sol,tx.origin returns originator
+state/uncalled_blobhash.sol,skipped,,,,Do not re-attempt: requires cancun blob tx context with specific injected blob hashes
+state/uncalled_blockhash.sol,ported,state,src/UncalledBlockhash.sol,test/UncalledBlockhash.t.sol,(blockhash) parenthesized syntax works
 statements/do_while_loop_continue.sol,ported,statements,src/DoWhileLoopContinue.sol,,do/while + continue
 statements/empty_for_loop.sol,ported,statements,src/EmptyForLoop.sol,,Empty for-loop with break
 storage/accessors_mapping_for_array.sol,ported,storage,src/AccessorsMappingForArray.sol,,Mapping getters for arrays
@@ -1443,27 +1443,27 @@ using/using_global_all_the_types.sol,pending,,,,
 using/using_global_for_global.sol,pending,,,,
 using/using_global_invisible.sol,pending,,,,
 using/using_global_library.sol,pending,,,,
-variables/delete_local.sol,pending,,,,
-variables/delete_locals.sol,pending,,,,
-variables/delete_transient_state_variable.sol,pending,,,,
-variables/delete_transient_state_variable_non_zero_offset.sol,pending,,,,
-variables/mapping_local_assignment.sol,pending,,,,
-variables/mapping_local_compound_assignment.sol,pending,,,,
-variables/mapping_local_tuple_assignment.sol,pending,,,,
-variables/public_state_overridding.sol,pending,,,,
-variables/public_state_overridding_dynamic_struct.sol,pending,,,,
-variables/public_state_overridding_mapping_to_dynamic_struct.sol,pending,,,,
-variables/storing_invalid_boolean.sol,pending,,,,
-variables/transient_function_type_state_variable.sol,pending,,,,
-variables/transient_state_address_variable_members.sol,pending,,,,
-variables/transient_state_enum_variable.sol,pending,,,,
-variables/transient_state_variable.sol,pending,,,,
-variables/transient_state_variable_cleanup_assignment.sol,pending,,,,
-variables/transient_state_variable_cleanup_tstore.sol,pending,,,,
-variables/transient_state_variable_slot_inline_assembly.sol,pending,,,,
-variables/transient_state_variable_slots_and_offsets.sol,pending,,,,
-variables/transient_state_variable_tuple_assignment.sol,pending,,,,
-variables/transient_state_variable_udvt.sol,pending,,,,
+variables/delete_local.sol,ported,variables,src/DeleteLocal.sol,test/DeleteLocal.t.sol,delete local variable resets to zero
+variables/delete_locals.sol,ported,variables,src/DeleteLocals.sol,test/DeleteLocals.t.sol,delete does not affect other locals
+variables/delete_transient_state_variable.sol,ported,variables,src/DeleteTransientStateVariable.sol,test/DeleteTransientStateVariable.t.sol,delete transient state variable clears to zero
+variables/delete_transient_state_variable_non_zero_offset.sol,ported,variables,src/DeleteTransientStateVariableNonZeroOffset.sol,test/DeleteTransientStateVariableNonZeroOffset.t.sol,delete packed transient variable at non-zero offset
+variables/mapping_local_assignment.sol,ported,variables,src/MappingLocalAssignment.sol,test/MappingLocalAssignment.t.sol,storage mapping local reference assignment
+variables/mapping_local_compound_assignment.sol,ported,variables,src/MappingLocalCompoundAssignment.sol,test/MappingLocalCompoundAssignment.t.sol,storage mapping local compound assignment
+variables/mapping_local_tuple_assignment.sol,ported,variables,src/MappingLocalTupleAssignment.sol,test/MappingLocalTupleAssignment.t.sol,storage mapping local tuple assignment
+variables/public_state_overridding.sol,ported,variables,src/PublicStateOverridding.sol,test/PublicStateOverridding.t.sol,public state var overrides virtual function
+variables/public_state_overridding_dynamic_struct.sol,ported,variables,src/PublicStateOverriddingDynamicStruct.sol,test/PublicStateOverriddingDynamicStruct.t.sol,public struct state var overrides virtual function
+variables/public_state_overridding_mapping_to_dynamic_struct.sol,ported,variables,src/PublicStateOverriddingMappingToDynamicStruct.sol,test/PublicStateOverriddingMappingToDynamicStruct.t.sol,public mapping-to-struct state var overrides virtual function
+variables/storing_invalid_boolean.sol,ported,variables,src/StoringInvalidBoolean.sol,test/StoringInvalidBoolean.t.sol,assembly bool val>=2 treated as true when stored/returned
+variables/transient_function_type_state_variable.sol,ported,variables,src/TransientFunctionTypeStateVariable.sol,test/TransientFunctionTypeStateVariable.t.sol,function type transient state variable
+variables/transient_state_address_variable_members.sol,ported,variables,src/TransientStateAddressVariableMembers.sol,test/TransientStateAddressVariableMembers.t.sol,address members accessible on transient address var
+variables/transient_state_enum_variable.sol,ported,variables,src/TransientStateEnum.sol,test/TransientStateEnum.t.sol,transient enum state variable across external call
+variables/transient_state_variable.sol,ported,variables,src/TransientStateVariable.sol,test/TransientStateVariable.t.sol,transient uint state variable cross-call visibility
+variables/transient_state_variable_cleanup_assignment.sol,ported,variables,src/TransientStateVariableCleanupAssignment.sol,test/TransientStateVariableCleanupAssignment.t.sol,uint8 truncation on transient assignment
+variables/transient_state_variable_cleanup_tstore.sol,ported,variables,src/TransientStateVariableCleanupTstore.sol,test/TransientStateVariableCleanupTstore.t.sol,uint8 cleanup when reading transient after raw tstore
+variables/transient_state_variable_slot_inline_assembly.sol,ported,variables,src/TransientStateVariableSlotInlineAssembly.sol,test/TransientStateVariableSlotInlineAssembly.t.sol,transient variable slot/offset in inline assembly
+variables/transient_state_variable_slots_and_offsets.sol,ported,variables,src/TransientStateVariableSlotsAndOffsets.sol,test/TransientStateVariableSlotsAndOffsets.t.sol,transient variable packing slots and offsets
+variables/transient_state_variable_tuple_assignment.sol,ported,variables,src/TransientStateVariableTupleAssignment.sol,test/TransientStateVariableTupleAssignment.t.sol,tuple assignment mixing transient and regular state vars
+variables/transient_state_variable_udvt.sol,ported,variables,src/TransientStateVariableUdvt.sol,test/TransientStateVariableUdvt.t.sol,UDVT transient state variable
 various/address_code.sol,pending,,,,
 various/address_code_complex.sol,pending,,,,
 various/assignment_to_const_var_involving_expression.sol,pending,,,,
