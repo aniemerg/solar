@@ -568,23 +568,23 @@ exponentiation/signed_base.sol,ported,arithmetic,src/ExponentiationSignedBase.so
 exponentiation/small_exp.sol,ported,arithmetic,src/ExponentiationSmallExp.sol,,Exponentiation with small exponent
 expressions/bit_operators.sol,ported,expressions,src/BitOperators.sol,,Bitwise ops on mixed widths
 expressions/bytes_comparison.sol,ported,expressions,src/BytesComparison.sol,,Bytes comparison ordering
-expressions/conditional_expression_different_types.sol,pending,,,,
+expressions/conditional_expression_different_types.sol,ported,expressions,src/ConditionalExpressionDifferentTypes.sol,test/ConditionalExpressionDifferentTypes.t.sol,Ternary with mixed uint8/uint16 types
 expressions/conditional_expression_false_literal.sol,ported,expressions,src/ConditionalExpression.sol,,Ternary with false literal
-expressions/conditional_expression_functions.sol,pending,,,,
-expressions/conditional_expression_multiple.sol,pending,,,,
-expressions/conditional_expression_storage_memory_1.sol,pending,,,,
-expressions/conditional_expression_storage_memory_2.sol,pending,,,,
+expressions/conditional_expression_functions.sol,ported,expressions,src/ConditionalExpressionFunctions.sol,test/ConditionalExpressionFunctions.t.sol,Ternary selecting between external function pointers
+expressions/conditional_expression_multiple.sol,ported,expressions,src/ConditionalExpressionMultiple.sol,test/ConditionalExpressionMultiple.t.sol,Nested ternary expressions
+expressions/conditional_expression_storage_memory_1.sol,ported,expressions,src/ConditionalExpressionStorageMemory1.sol,test/ConditionalExpressionStorageMemory1.t.sol,Ternary assigning memory arrays to storage
+expressions/conditional_expression_storage_memory_2.sol,ported,expressions,src/ConditionalExpressionStorageMemory2.sol,test/ConditionalExpressionStorageMemory2.t.sol,Ternary mixing storage and memory operands
 expressions/conditional_expression_true_literal.sol,ported,expressions,src/ConditionalExpression.sol,,Ternary with true literal
-expressions/conditional_expression_tuples.sol,pending,,,,
-expressions/conditional_expression_with_return_values.sol,pending,,,,
-expressions/exp_operator_const.sol,pending,,,,
-expressions/exp_operator_const_signed.sol,pending,,,,
-expressions/exp_zero_literal.sol,pending,,,,
+expressions/conditional_expression_tuples.sol,ported,expressions,src/ConditionalExpressionTuples.sol,test/ConditionalExpressionTuples.t.sol,Ternary returning tuples
+expressions/conditional_expression_with_return_values.sol,ported,expressions,src/ConditionalExpressionWithReturnValues.sol,test/ConditionalExpressionWithReturnValues.t.sol,Ternary as lvalue for named return values
+expressions/exp_operator_const.sol,ported,expressions,src/ExpOperatorConst.sol,test/ExpOperatorConst.t.sol,Compile-time exponentiation 2**3
+expressions/exp_operator_const_signed.sol,ported,expressions,src/ExpOperatorConstSigned.sol,test/ExpOperatorConstSigned.t.sol,Compile-time signed exponentiation (-2)**3
+expressions/exp_zero_literal.sol,ported,expressions,src/ExpZeroLiteral.sol,test/ExpZeroLiteral.t.sol,0**0 == 1
 expressions/inc_dec_operators.sol,ported,expressions,src/IncDecOperators.sol,,Pre/post inc/dec evaluation
-expressions/module_from_ternary_expression.sol,pending,,,,
-expressions/tuple_from_ternary_expression.sol,pending,,,,
-expressions/unary_too_long_literal.sol,pending,,,,
-expressions/uncalled_address_transfer_send.sol,pending,,,,
+expressions/module_from_ternary_expression.sol,ported,expressions,src/ModuleFromTernaryExpression.sol,test/ModuleFromTernaryExpression.t.sol,Ternary module access side effect; multi-source inlined
+expressions/tuple_from_ternary_expression.sol,ported,expressions,src/TupleFromTernaryExpression.sol,test/TupleFromTernaryExpression.t.sol,Ternary discarded tuple evaluates condition
+expressions/unary_too_long_literal.sol,ported,expressions,src/UnaryTooLongLiteral.sol,test/UnaryTooLongLiteral.t.sol,Double bitwise NOT of oversized literal
+expressions/uncalled_address_transfer_send.sol,ported,expressions,src/UncalledAddressTransferSend.sol,test/UncalledAddressTransferSend.t.sol,Uncalled transfer/send member access compiles without ICE
 externalContracts/FixedFeeRegistrar.sol,pending,,,,
 externalContracts/_base64/base64_inline_asm.sol,pending,,,,
 externalContracts/_base64/base64_no_inline_asm.sol,pending,,,,
@@ -712,37 +712,37 @@ functionCall/send_zero_ether.sol,ported,calls,src/SendZeroEther.sol,,send(0) sti
 functionCall/transaction_status.sol,ported,calls,src/TransactionStatus.sol,,Success/revert/assert-failure transaction outcomes
 functionCall/value_test.sol,ported,calls,src/ValueTest.sol,,msg.value in payable function
 functionSelector/function_selector_via_contract_name.sol,pending,,,,
-functionTypes/address_member.sol,pending,,,,
-functionTypes/call_to_zero_initialized_function_type_ir.sol,pending,,,,
-functionTypes/call_to_zero_initialized_function_type_legacy.sol,pending,,,,
-functionTypes/comparison_operator_for_external_function_cleans_dirty_bits.sol,pending,,,,
-functionTypes/comparison_operators_for_external_functions.sol,pending,,,,
-functionTypes/duplicated_function_definition_with_same_id_in_internal_dispatcher.sol,pending,,,,
-functionTypes/external_functions_with_calldata_args_assigned_to_function_pointers_with_memory_type.sol,pending,,,,
-functionTypes/function_delete_stack.sol,pending,,,,
-functionTypes/function_delete_storage.sol,pending,,,,
-functionTypes/function_external_delete_storage.sol,pending,,,,
-functionTypes/function_type_library_internal.sol,pending,,,,
-functionTypes/inline_array_with_value_call_option.sol,pending,,,,
-functionTypes/mapping_of_functions.sol,pending,,,,
-functionTypes/pass_function_types_externally.sol,pending,,,,
-functionTypes/pass_function_types_internally.sol,pending,,,,
-functionTypes/same_function_in_construction_and_runtime.sol,pending,,,,
-functionTypes/same_function_in_construction_and_runtime_equality_check.sol,pending,,,,
+functionTypes/address_member.sol,ported,function-types,src/AddressMember.sol,test/AddressMember.t.sol,External function .address member
+functionTypes/call_to_zero_initialized_function_type_ir.sol,ported,function-types,src/CallToZeroInitializedFunctionType.sol,test/CallToZeroInitializedFunctionType.t.sol,Zero-init internal function pointer call panics; IR and legacy share contract
+functionTypes/call_to_zero_initialized_function_type_legacy.sol,ported,function-types,src/CallToZeroInitializedFunctionType.sol,test/CallToZeroInitializedFunctionType.t.sol,Same as ir variant; merged into shared contract
+functionTypes/comparison_operator_for_external_function_cleans_dirty_bits.sol,ported,function-types,src/ComparisonOperatorForExternalFunctionCleansDirtyBits.sol,test/ComparisonOperatorForExternalFunctionCleansDirtyBits.t.sol,External function pointer comparison cleans dirty bits
+functionTypes/comparison_operators_for_external_functions.sol,ported,function-types,src/ComparisonOperatorsForExternalFunctions.sol,test/ComparisonOperatorsForExternalFunctions.t.sol,External function pointer equality/inequality operators
+functionTypes/duplicated_function_definition_with_same_id_in_internal_dispatcher.sol,ported,function-types,src/DuplicatedFunctionDefinition.sol,test/DuplicatedFunctionDefinition.t.sol,Two internal function pointers pointing to same function
+functionTypes/external_functions_with_calldata_args_assigned_to_function_pointers_with_memory_type.sol,ported,function-types,src/ExternalFunctionsCalldataToMemory.sol,test/ExternalFunctionsCalldataToMemory.t.sol,Calldata external function assigned to memory pointer type
+functionTypes/function_delete_stack.sol,ported,function-types,src/FunctionDeleteStack.sol,test/FunctionDeleteStack.t.sol,Deleted stack function pointer call panics
+functionTypes/function_delete_storage.sol,ported,function-types,src/FunctionDeleteStorage.sol,test/FunctionDeleteStorage.t.sol,Deleted storage function pointer call panics
+functionTypes/function_external_delete_storage.sol,ported,function-types,src/FunctionExternalDeleteStorage.sol,test/FunctionExternalDeleteStorage.t.sol,Delete external storage function pointer resets to zero
+functionTypes/function_type_library_internal.sol,ported,function-types,src/FunctionTypeLibraryInternal.sol,test/FunctionTypeLibraryInternal.t.sol,Internal function pointer passed to library reduce
+functionTypes/inline_array_with_value_call_option.sol,ported,function-types,src/InlineArrayWithValueCallOption.sol,test/InlineArrayWithValueCallOption.t.sol,Inline array of external functions called with {value:}
+functionTypes/mapping_of_functions.sol,ported,function-types,src/MappingOfFunctions.sol,test/MappingOfFunctions.t.sol,Mapping from address to internal function pointer (state machine)
+functionTypes/pass_function_types_externally.sol,ported,function-types,src/PassFunctionTypesExternally.sol,test/PassFunctionTypesExternally.t.sol,External function pointers passed as arguments
+functionTypes/pass_function_types_internally.sol,ported,function-types,src/PassFunctionTypesInternally.sol,test/PassFunctionTypesInternally.t.sol,Internal function pointers passed as arguments
+functionTypes/same_function_in_construction_and_runtime.sol,ported,function-types,src/SameFunctionInConstructionAndRuntime.sol,test/SameFunctionInConstructionAndRuntime.t.sol,Function used in constructor and runtime
+functionTypes/same_function_in_construction_and_runtime_equality_check.sol,ported,function-types,src/SameFunctionEqualityCheck.sol,test/SameFunctionEqualityCheck.t.sol,Function pointer equality between construction and runtime
 functionTypes/selector_1.sol,ported,calls,src/FunctionSelector1.sol,,Function selector constants
 functionTypes/selector_2.sol,ported,calls,src/FunctionSelector2.sol,,Function selector constants
-functionTypes/selector_assignment_expression.sol,pending,,,,
-functionTypes/selector_expression_side_effect.sol,pending,,,,
-functionTypes/selector_ternary.sol,pending,,,,
-functionTypes/selector_ternary_function_pointer_from_function_call.sol,pending,,,,
-functionTypes/stack_height_check_on_adding_gas_variable_to_function.sol,pending,,,,
-functionTypes/store_function.sol,pending,,,,
-functionTypes/struct_with_external_function.sol,pending,,,,
-functionTypes/struct_with_functions.sol,pending,,,,
-functionTypes/ternary_contract_internal_function.sol,pending,,,,
-functionTypes/ternary_contract_library_internal_function.sol,pending,,,,
-functionTypes/ternary_contract_public_function.sol,pending,,,,
-functionTypes/uninitialized_internal_storage_function_call.sol,pending,,,,
+functionTypes/selector_assignment_expression.sol,ported,function-types,src/SelectorAssignmentExpression.sol,test/SelectorAssignmentExpression.t.sol,.selector on ternary with assignment side effect
+functionTypes/selector_expression_side_effect.sol,ported,function-types,src/SelectorExpressionSideEffect.sol,test/SelectorExpressionSideEffect.t.sol,.selector evaluates expression side effects
+functionTypes/selector_ternary.sol,ported,function-types,src/SelectorTernary.sol,test/SelectorTernary.t.sol,Ternary over external function then .selector
+functionTypes/selector_ternary_function_pointer_from_function_call.sol,ported,function-types,src/SelectorTernaryFunctionPointerFromFunctionCall.sol,test/SelectorTernaryFunctionPointerFromFunctionCall.t.sol,Selector ternary with function pointer from call
+functionTypes/stack_height_check_on_adding_gas_variable_to_function.sol,ported,function-types,src/StackHeightCheckOnAddingGasVariableToFunction.sol,test/StackHeightCheckOnAddingGasVariableToFunction.t.sol,Gas/value call options preserve address and selector
+functionTypes/store_function.sol,ported,function-types,src/StoreFunction.sol,test/StoreFunction.t.sol,Higher-order function stored in storage and called
+functionTypes/struct_with_external_function.sol,ported,function-types,src/StructWithExternalFunction.sol,test/StructWithExternalFunction.t.sol,Struct containing external function pointer
+functionTypes/struct_with_functions.sol,ported,function-types,src/StructWithFunctions.sol,test/StructWithFunctions.t.sol,Struct containing internal function pointer
+functionTypes/ternary_contract_internal_function.sol,ported,function-types,src/TernaryContractInternalFunction.sol,test/TernaryContractInternalFunction.t.sol,Ternary over contract-qualified internal functions
+functionTypes/ternary_contract_library_internal_function.sol,ported,function-types,src/TernaryContractLibraryInternalFunction.sol,test/TernaryContractLibraryInternalFunction.t.sol,Ternary between library and contract internal functions
+functionTypes/ternary_contract_public_function.sol,ported,function-types,src/TernaryContractPublicFunction.sol,test/TernaryContractPublicFunction.t.sol,Ternary over contract-qualified public functions called internally
+functionTypes/uninitialized_internal_storage_function_call.sol,ported,function-types,src/UninitializedInternalStorageFunctionCall.sol,test/UninitializedInternalStorageFunctionCall.t.sol,Calling uninitialized internal storage function pointer panics
 getters/array_mapping_struct.sol,ported,getters,src/ArrayMappingStruct.sol,,Auto-getter for array of mappings to struct
 getters/arrays.sol,ported,getters,src/Arrays.sol,,Auto-getter for fixed array of dynamic arrays
 getters/bytes.sol,ported,getters,src/Bytes.sol,,Auto-getter for bytes storage variable
@@ -1398,36 +1398,36 @@ uninitializedFunctionPointer/store2.sol,pending,,,,
 uninitializedFunctionPointer/storeInConstructor.sol,pending,,,,
 uninitializedFunctionPointer/uninitialized_internal_storage_function_legacy.sol,pending,,,,
 uninitializedFunctionPointer/uninitialized_internal_storage_function_via_yul.sol,pending,,,,
-userDefinedValueType/abicodec.sol,pending,,,,
-userDefinedValueType/assembly_access_bytes2_abicoder_v1.sol,pending,,,,
-userDefinedValueType/assembly_access_bytes2_abicoder_v2.sol,pending,,,,
-userDefinedValueType/calldata.sol,pending,,,,
-userDefinedValueType/calldata_to_storage.sol,pending,,,,
-userDefinedValueType/cleanup.sol,pending,,,,
-userDefinedValueType/cleanup_abicoderv1.sol,pending,,,,
-userDefinedValueType/constant.sol,pending,,,,
-userDefinedValueType/conversion.sol,pending,,,,
-userDefinedValueType/conversion_abicoderv1.sol,pending,,,,
-userDefinedValueType/dirty_slot.sol,pending,,,,
-userDefinedValueType/dirty_uint8_read.sol,pending,,,,
-userDefinedValueType/erc20.sol,pending,,,,
-userDefinedValueType/fixedpoint.sol,pending,,,,
-userDefinedValueType/immutable_signed.sol,pending,,,,
-userDefinedValueType/in_parenthesis.sol,pending,,,,
-userDefinedValueType/mapping_key.sol,pending,,,,
-userDefinedValueType/memory_to_storage.sol,pending,,,,
-userDefinedValueType/multisource.sol,pending,,,,
-userDefinedValueType/multisource_module.sol,pending,,,,
-userDefinedValueType/ownable.sol,pending,,,,
-userDefinedValueType/parameter.sol,pending,,,,
-userDefinedValueType/simple.sol,pending,,,,
-userDefinedValueType/storage_layout.sol,pending,,,,
-userDefinedValueType/storage_layout_struct.sol,pending,,,,
-userDefinedValueType/storage_signed.sol,pending,,,,
-userDefinedValueType/wrap_unwrap.sol,pending,,,,
-userDefinedValueType/wrap_unwrap_via_contract_name.sol,pending,,,,
-userDefinedValueType/zero_cost_abstraction_comparison_elementary.sol,pending,,,,
-userDefinedValueType/zero_cost_abstraction_comparison_userdefined.sol,pending,,,,
+userDefinedValueType/abicodec.sol,ported,user-defined-value-type,src/AbiCodec.sol,test/AbiCodec.t.sol,abi.encodeWithSelector and abi.decode with UDVT
+userDefinedValueType/assembly_access_bytes2_abicoder_v1.sol,skipped,,,,Do not re-attempt: compileViaYul: false / abicoder v1 specific; runtime behavior covered by v2 variant
+userDefinedValueType/assembly_access_bytes2_abicoder_v2.sol,ported,user-defined-value-type,src/AssemblyAccessBytes2.sol,test/AssemblyAccessBytes2.t.sol,Assembly access of bytes2 UDVT fields
+userDefinedValueType/calldata.sol,ported,user-defined-value-type,src/Calldata.sol,test/Calldata.t.sol,UDVT in calldata arrays with test_f/test_g self-call
+userDefinedValueType/calldata_to_storage.sol,ported,user-defined-value-type,src/CalldataToStorage.sol,test/CalldataToStorage.t.sol,UDVT calldata struct/array to storage copy
+userDefinedValueType/cleanup.sol,ported,user-defined-value-type,src/Cleanup.sol,test/Cleanup.t.sol,ABI encoder cleans dirty high bits for UDVT uint8 (abicoder v2)
+userDefinedValueType/cleanup_abicoderv1.sol,ported,user-defined-value-type,src/CleanupAbicoderV1.sol,test/CleanupAbicoderV1.t.sol,ABI coder v1: dirty bits not validated on input for UDVT uint8
+userDefinedValueType/constant.sol,ported,user-defined-value-type,src/Constant.sol,test/Constant.t.sol,UDVT constants and constant propagation
+userDefinedValueType/conversion.sol,ported,user-defined-value-type,src/Conversion.sol,test/Conversion.t.sol,UDVT conversions between signed/unsigned types
+userDefinedValueType/conversion_abicoderv1.sol,skipped,,,,Do not re-attempt: abicoder v1 variant of conversion.sol; behavior differences (dirty-bit bypass) not testable without v1 encoder
+userDefinedValueType/dirty_slot.sol,ported,user-defined-value-type,src/DirtySlot.sol,test/DirtySlot.t.sol,UDVT reads clean dirty storage slot bits
+userDefinedValueType/dirty_uint8_read.sol,ported,user-defined-value-type,src/DirtyUint8Read.sol,test/DirtyUint8Read.t.sol,UDVT int8 read with dirty MSB in slot
+userDefinedValueType/erc20.sol,ported,user-defined-value-type,src/Erc20.sol,test/Erc20.t.sol,ERC20 implementation using UDVT
+userDefinedValueType/fixedpoint.sol,ported,user-defined-value-type,src/Fixedpoint.sol,test/Fixedpoint.t.sol,Fixed-point arithmetic library using UDVT
+userDefinedValueType/immutable_signed.sol,ported,user-defined-value-type,src/ImmutableSigned.sol,test/ImmutableSigned.t.sol,UDVT immutable signed and bytes types
+userDefinedValueType/in_parenthesis.sol,ported,user-defined-value-type,src/InParenthesis.sol,test/InParenthesis.t.sol,UDVT wrap/unwrap accessed via parenthesized type
+userDefinedValueType/mapping_key.sol,ported,user-defined-value-type,src/MappingKey.sol,test/MappingKey.t.sol,UDVT as mapping key
+userDefinedValueType/memory_to_storage.sol,ported,user-defined-value-type,src/MemoryToStorage.sol,test/MemoryToStorage.t.sol,UDVT memory struct/array to storage copy
+userDefinedValueType/multisource.sol,ported,user-defined-value-type,src/Multisource.sol,test/Multisource.t.sol,UDVT imported from separate source; inlined for Foundry
+userDefinedValueType/multisource_module.sol,ported,user-defined-value-type,src/MultisourceModule.sol,test/MultisourceModule.t.sol,UDVT accessed via module alias; inlined for Foundry
+userDefinedValueType/ownable.sol,ported,user-defined-value-type,src/Ownable.sol,test/Ownable.t.sol,Ownable pattern using UDVT for owner address
+userDefinedValueType/parameter.sol,ported,user-defined-value-type,src/Parameter.sol,test/Parameter.t.sol,UDVT as function parameter and return; assembly access
+userDefinedValueType/simple.sol,ported,user-defined-value-type,src/Simple.sol,test/Simple.t.sol,Basic UDVT wrap/unwrap and default value
+userDefinedValueType/storage_layout.sol,ported,user-defined-value-type,src/StorageLayout.sol,test/StorageLayout.t.sol,UDVT storage slot and offset packing
+userDefinedValueType/storage_layout_struct.sol,ported,user-defined-value-type,src/StorageLayoutStruct.sol,test/StorageLayoutStruct.t.sol,UDVT in struct storage layout and assembly access
+userDefinedValueType/storage_signed.sol,ported,user-defined-value-type,src/StorageSigned.sol,test/StorageSigned.t.sol,UDVT signed int16 in storage and memory
+userDefinedValueType/wrap_unwrap.sol,ported,user-defined-value-type,src/WrapUnwrap.sol,test/WrapUnwrap.t.sol,UDVT wrap/unwrap accessors are callable
+userDefinedValueType/wrap_unwrap_via_contract_name.sol,ported,user-defined-value-type,src/WrapUnwrapViaContractName.sol,test/WrapUnwrapViaContractName.t.sol,UDVT wrap/unwrap via contract-qualified name
+userDefinedValueType/zero_cost_abstraction_comparison_elementary.sol,ported,user-defined-value-type,src/ZeroCostAbstractionComparisonElementary.sol,test/ZeroCostAbstractionComparisonElementary.t.sol,Elementary type baseline for zero-cost abstraction comparison
+userDefinedValueType/zero_cost_abstraction_comparison_userdefined.sol,ported,user-defined-value-type,src/ZeroCostAbstractionComparisonUserdefined.sol,test/ZeroCostAbstractionComparisonUserdefined.t.sol,UDVT zero-cost abstraction comparison with elementary type
 using/calldata_memory_copy.sol,ported,using,src/CalldataMemoryCopy.sol,,using for with calldata->memory copy via free function
 using/free_function_braces.sol,ported,using,src/FreeFunctionBraces.sol,,"using {fn1, fn2} for type syntax inside contract"
 using/free_function_multi.sol,ported,using,src/FreeFunctionMulti.sol,,using with multiple free functions for same type
