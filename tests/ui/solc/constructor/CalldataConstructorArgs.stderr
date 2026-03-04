@@ -1,0 +1,10 @@
+error: invalid data location `calldata`
+   ╭▸ ROOT/tests/ui/solc/constructor/CalldataConstructorArgs.sol:LL:CC
+   │
+LL │     constructor(uint[] calldata) public {}
+   │                 ━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory` or `storage` for function parameter, but got `calldata`
+
+error: aborting due to 1 previous error
+

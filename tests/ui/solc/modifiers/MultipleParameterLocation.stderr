@@ -1,0 +1,92 @@
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/modifiers/MultipleParameterLocation.sol:LL:CC
+   │
+LL │     modifier mod1(string storage storage a) { _; }
+   ╰╴                                 ━━━━━━━
+
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/modifiers/MultipleParameterLocation.sol:LL:CC
+   │
+LL │     modifier mod2(string storage memory a) { _; }
+   ╰╴                                 ━━━━━━
+
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/modifiers/MultipleParameterLocation.sol:LL:CC
+   │
+LL │     modifier mod3(string storage calldata a) { _; }
+   ╰╴                                 ━━━━━━━━
+
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/modifiers/MultipleParameterLocation.sol:LL:CC
+   │
+LL │     modifier mod4(string memory storage a) { _; }
+   ╰╴                                ━━━━━━━
+
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/modifiers/MultipleParameterLocation.sol:LL:CC
+   │
+LL │     modifier mod5(string memory memory a) { _; }
+   ╰╴                                ━━━━━━
+
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/modifiers/MultipleParameterLocation.sol:LL:CC
+   │
+LL │     modifier mod6(string memory calldata a) { _; }
+   ╰╴                                ━━━━━━━━
+
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/modifiers/MultipleParameterLocation.sol:LL:CC
+   │
+LL │     modifier mod7(string calldata storage a) { _; }
+   ╰╴                                  ━━━━━━━
+
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/modifiers/MultipleParameterLocation.sol:LL:CC
+   │
+LL │     modifier mod8(string calldata memory a) { _; }
+   ╰╴                                  ━━━━━━
+
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/modifiers/MultipleParameterLocation.sol:LL:CC
+   │
+LL │     modifier mod9(string calldata calldata a) { _; }
+   ╰╴                                  ━━━━━━━━
+
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/modifiers/MultipleParameterLocation.sol:LL:CC
+   │
+LL │     modifier modA(string transient storage a) { _; }
+   ╰╴                                   ━━━━━━━
+
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/modifiers/MultipleParameterLocation.sol:LL:CC
+   │
+LL │     modifier modB(string transient memory a) { _; }
+   ╰╴                                   ━━━━━━
+
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/modifiers/MultipleParameterLocation.sol:LL:CC
+   │
+LL │     modifier modC(string transient calldata a) { _; }
+   ╰╴                                   ━━━━━━━━
+
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/modifiers/MultipleParameterLocation.sol:LL:CC
+   │
+LL │     modifier modD(string storage transient a) { _; }
+   ╰╴                                 ━━━━━━━━━
+
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/modifiers/MultipleParameterLocation.sol:LL:CC
+   │
+LL │     modifier modE(string memory transient a) { _; }
+   ╰╴                                ━━━━━━━━━
+
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/modifiers/MultipleParameterLocation.sol:LL:CC
+   │
+LL │     modifier modF(string calldata transient a) { _; }
+   ╰╴                                  ━━━━━━━━━
+
+error: aborting due to 15 previous errors
+

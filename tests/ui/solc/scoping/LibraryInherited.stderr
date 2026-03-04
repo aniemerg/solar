@@ -1,0 +1,8 @@
+error: member `foo` not found on type `uint256`
+   ╭▸ ROOT/tests/ui/solc/scoping/LibraryInherited.sol:LL:CC
+   │
+LL │         return value.foo(); // Usage of Lib
+   ╰╴                     ━━━
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,8 @@
+error: unresolved symbol `x`
+   ╭▸ ROOT/tests/ui/solc/scoping/Scoping.sol:LL:CC
+   │
+LL │         x = 2;
+   ╰╴        ━
+
+error: aborting due to 1 previous error
+

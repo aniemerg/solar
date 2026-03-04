@@ -1,0 +1,8 @@
+error: immutable variables cannot have a non-value type
+   ╭▸ ROOT/tests/ui/solc/immutable/NonValueTypeStruct.sol:LL:CC
+   │
+LL │     S immutable s;
+   ╰╴    ━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

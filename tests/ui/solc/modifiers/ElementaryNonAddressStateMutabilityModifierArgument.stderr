@@ -1,0 +1,470 @@
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier a(bool payable) {}
+   ╰╴               ━━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier b(string payable) {}
+   ╰╴               ━━━━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier c(int payable) {}
+   ╰╴               ━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier d(int256 payable) {}
+   ╰╴               ━━━━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier e(uint payable) {}
+   ╰╴               ━━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier f(uint256 payable) {}
+   ╰╴               ━━━━━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier g(bytes1 payable) {}
+   ╰╴               ━━━━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier h(bytes payable) {}
+   ╰╴               ━━━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier i(bytes32 payable) {}
+   ╰╴               ━━━━━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier j(fixed payable) {}
+   ╰╴               ━━━━━━━━━━━━━
+
+error: expected identifier, found keyword `payable`
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier k(fixed80x80 payable) {}
+   ╰╴                          ━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier l(ufixed payable) {}
+   ╰╴               ━━━━━━━━━━━━━━
+
+error: expected identifier, found keyword `payable`
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier m(ufixed80x80 payable) {}
+   ╰╴                           ━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier a(bool view) {}
+   ╰╴               ━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier b(string view) {}
+   ╰╴               ━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier c(int view) {}
+   ╰╴               ━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier d(int256 view) {}
+   ╰╴               ━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier e(uint view) {}
+   ╰╴               ━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier f(uint256 view) {}
+   ╰╴               ━━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier g(bytes1 view) {}
+   ╰╴               ━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier h(bytes view) {}
+   ╰╴               ━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier i(bytes32 view) {}
+   ╰╴               ━━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier j(fixed view) {}
+   ╰╴               ━━━━━━━━━━
+
+error: expected identifier, found keyword `view`
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier k(fixed80x80 view) {}
+   ╰╴                          ━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier l(ufixed view) {}
+   ╰╴               ━━━━━━━━━━━
+
+error: expected identifier, found keyword `view`
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier m(ufixed80x80 view) {}
+   ╰╴                           ━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier a(bool pure) {}
+   ╰╴               ━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier b(string pure) {}
+   ╰╴               ━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier c(int pure) {}
+   ╰╴               ━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier d(int256 pure) {}
+   ╰╴               ━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier e(uint pure) {}
+   ╰╴               ━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier f(uint256 pure) {}
+   ╰╴               ━━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier g(bytes1 pure) {}
+   ╰╴               ━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier h(bytes pure) {}
+   ╰╴               ━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier i(bytes32 pure) {}
+   ╰╴               ━━━━━━━━━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier j(fixed pure) {}
+   ╰╴               ━━━━━━━━━━
+
+error: expected identifier, found keyword `pure`
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier k(fixed80x80 pure) {}
+   ╰╴                          ━━━━
+
+error: only address types can have state mutability
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier l(ufixed pure) {}
+   ╰╴               ━━━━━━━━━━━
+
+error: expected identifier, found keyword `pure`
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier m(ufixed80x80 pure) {}
+   ╰╴                           ━━━━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier a(bool payable) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier b(string payable) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier c(int payable) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier d(int256 payable) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier e(uint payable) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier f(uint256 payable) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier g(bytes1 payable) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier h(bytes payable) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier i(bytes32 payable) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier j(fixed payable) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier k(fixed80x80 payable) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier l(ufixed payable) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier m(ufixed80x80 payable) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier a(bool view) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier b(string view) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier c(int view) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier d(int256 view) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier e(uint view) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier f(uint256 view) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier g(bytes1 view) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier h(bytes view) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier i(bytes32 view) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier j(fixed view) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier k(fixed80x80 view) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier l(ufixed view) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier m(ufixed80x80 view) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier a(bool pure) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier b(string pure) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier c(int pure) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier d(int256 pure) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier e(uint pure) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier f(uint256 pure) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier g(bytes1 pure) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier h(bytes pure) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier i(bytes32 pure) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier j(fixed pure) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier k(fixed80x80 pure) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier l(ufixed pure) {}
+   ╰╴             ━
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ElementaryNonAddressStateMutabilityModifierArgument.sol:LL:CC
+   │
+LL │     modifier m(ufixed80x80 pure) {}
+   ╰╴             ━
+
+error: aborting due to 78 previous errors
+

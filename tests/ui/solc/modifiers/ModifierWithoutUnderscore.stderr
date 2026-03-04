@@ -1,0 +1,8 @@
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/modifiers/ModifierWithoutUnderscore.sol:LL:CC
+   │
+LL │     modifier m() {}
+   ╰╴             ━
+
+error: aborting due to 1 previous error
+

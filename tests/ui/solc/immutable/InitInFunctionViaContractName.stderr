@@ -1,0 +1,14 @@
+error: member `x` not found on type `type(contract B)`
+   ╭▸ ROOT/tests/ui/solc/immutable/InitInFunctionViaContractName.sol:LL:CC
+   │
+LL │         B.x = 42;
+   ╰╴          ━
+
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/immutable/InitInFunctionViaContractName.sol:LL:CC
+   │
+LL │         B.x = 42;
+   ╰╴        ━━━
+
+error: aborting due to 2 previous errors
+

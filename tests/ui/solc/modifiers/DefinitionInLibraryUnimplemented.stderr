@@ -1,0 +1,14 @@
+error[9231]: library functions must be implemented if declared
+   ╭▸ ROOT/tests/ui/solc/modifiers/DefinitionInLibraryUnimplemented.sol:LL:CC
+   │
+LL │     modifier mu;
+   ╰╴    ━━━━━━━━━━━━
+
+error[9231]: library functions must be implemented if declared
+   ╭▸ ROOT/tests/ui/solc/modifiers/DefinitionInLibraryUnimplemented.sol:LL:CC
+   │
+LL │     modifier muv virtual;
+   ╰╴    ━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 2 previous errors
+

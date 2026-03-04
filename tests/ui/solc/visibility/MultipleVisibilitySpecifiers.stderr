@@ -1,0 +1,184 @@
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     uint private internal a;
+   ╰╴                 ━━━━━━━━
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     uint private public b;
+   ╰╴                 ━━━━━━
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     uint private private c;
+   ╰╴                 ━━━━━━━
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     uint internal internal e;
+   ╰╴                  ━━━━━━━━
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     uint internal public f;
+   ╰╴                  ━━━━━━
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     uint internal private g;
+   ╰╴                  ━━━━━━━
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     uint public internal h;
+   ╰╴                ━━━━━━━━
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     uint public public i;
+   ╰╴                ━━━━━━
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     uint public private j;
+   ╰╴                ━━━━━━━
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     function f1() private external {}
+   │                   ┬────── ━━━━━━━━
+   │                   │
+   ╰╴                  previous definition
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     function f2() private internal {}
+   │                   ┬────── ━━━━━━━━
+   │                   │
+   ╰╴                  previous definition
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     function f3() private public {}
+   │                   ┬────── ━━━━━━
+   │                   │
+   ╰╴                  previous definition
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     function f4() private private {}
+   │                   ┬────── ━━━━━━━
+   │                   │
+   ╰╴                  previous definition
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     function f5() external external {}
+   │                   ┬─────── ━━━━━━━━
+   │                   │
+   ╰╴                  previous definition
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     function f6() external internal {}
+   │                   ┬─────── ━━━━━━━━
+   │                   │
+   ╰╴                  previous definition
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     function f7() external public {}
+   │                   ┬─────── ━━━━━━
+   │                   │
+   ╰╴                  previous definition
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     function f8() external private {}
+   │                   ┬─────── ━━━━━━━
+   │                   │
+   ╰╴                  previous definition
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     function f9() internal external {}
+   │                   ┬─────── ━━━━━━━━
+   │                   │
+   ╰╴                  previous definition
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     function f10() internal internal {}
+   │                    ┬─────── ━━━━━━━━
+   │                    │
+   ╰╴                   previous definition
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     function f11() internal public {}
+   │                    ┬─────── ━━━━━━
+   │                    │
+   ╰╴                   previous definition
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     function f12() internal private {}
+   │                    ┬─────── ━━━━━━━
+   │                    │
+   ╰╴                   previous definition
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     function f13() public external {}
+   │                    ┬───── ━━━━━━━━
+   │                    │
+   ╰╴                   previous definition
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     function f14() public internal {}
+   │                    ┬───── ━━━━━━━━
+   │                    │
+   ╰╴                   previous definition
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     function f15() public public {}
+   │                    ┬───── ━━━━━━
+   │                    │
+   ╰╴                   previous definition
+
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/visibility/MultipleVisibilitySpecifiers.sol:LL:CC
+   │
+LL │     function f16() public private {}
+   │                    ┬───── ━━━━━━━
+   │                    │
+   ╰╴                   previous definition
+
+error: aborting due to 25 previous errors
+

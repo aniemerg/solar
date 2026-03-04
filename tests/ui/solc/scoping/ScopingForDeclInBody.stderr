@@ -1,0 +1,8 @@
+error: unresolved symbol `y`
+   ╭▸ ROOT/tests/ui/solc/scoping/ScopingForDeclInBody.sol:LL:CC
+   │
+LL │         for (;; y++){
+   ╰╴                ━
+
+error: aborting due to 1 previous error
+

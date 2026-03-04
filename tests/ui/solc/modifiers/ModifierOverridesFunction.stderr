@@ -1,0 +1,14 @@
+error: identifier `mod` already declared
+   ╭▸ ROOT/tests/ui/solc/modifiers/ModifierOverridesFunction.sol:LL:CC
+   │
+LL │ contract B is A { function mod(uint a) public { } }
+   │                            ━━━
+   ╰╴
+note: previous declaration declared here
+   ╭▸ ROOT/tests/ui/solc/modifiers/ModifierOverridesFunction.sol:LL:CC
+   │
+LL │ contract A { modifier mod(uint a) { _; } }
+   ╰╴                      ━━━
+
+error: aborting due to 1 previous error
+

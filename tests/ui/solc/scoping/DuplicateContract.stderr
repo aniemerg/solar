@@ -1,0 +1,14 @@
+error: identifier `X` already declared
+   ╭▸ ROOT/tests/ui/solc/scoping/DuplicateContract.sol:LL:CC
+   │
+LL │ contract X {}
+   │          ━
+   ╰╴
+note: previous declaration declared here
+   ╭▸ ROOT/tests/ui/solc/scoping/DuplicateContract.sol:LL:CC
+   │
+LL │ contract X {}
+   ╰╴         ━
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,16 @@
+error: expected identifier, found keyword `constructor`
+   ╭▸ ROOT/tests/ui/solc/constructor/FunctionNamedConstructor.sol:LL:CC
+   │
+LL │     function constructor();
+   ╰╴             ━━━━━━━━━━━
+
+error: no visibility specified
+   ╭▸ ROOT/tests/ui/solc/constructor/FunctionNamedConstructor.sol:LL:CC
+   │
+LL │     function constructor();
+   │     ━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: add `public` to the declaration
+
+error: aborting due to 2 previous errors
+

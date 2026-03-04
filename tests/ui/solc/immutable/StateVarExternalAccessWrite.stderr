@@ -1,0 +1,14 @@
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/immutable/StateVarExternalAccessWrite.sol:LL:CC
+   │
+LL │         this.x = this.g;
+   ╰╴        ━━━━━━
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/immutable/StateVarExternalAccessWrite.sol:LL:CC
+   │
+LL │         this.x = this.g;
+   ╰╴                 ━━━━━━ expected `function () view external returns (uint256)`, found `function () view external returns (uint256)`
+
+error: aborting due to 2 previous errors
+

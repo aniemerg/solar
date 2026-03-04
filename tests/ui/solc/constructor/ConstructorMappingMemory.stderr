@@ -1,0 +1,8 @@
+error: type `mapping(uint256 => uint256)` is only valid in storage because it contains a (nested) mapping
+   ╭▸ ROOT/tests/ui/solc/constructor/ConstructorMappingMemory.sol:LL:CC
+   │
+LL │     constructor(mapping(uint => uint) memory a) {}
+   ╰╴                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

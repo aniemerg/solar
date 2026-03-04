@@ -1,0 +1,8 @@
+error: expected base class or modifier, found contract
+   ╭▸ ROOT/tests/ui/solc/modifiers/ConstructorAsModifier.sol:LL:CC
+   │
+LL │     constructor() C() {}
+   ╰╴                  ━
+
+error: aborting due to 1 previous error
+

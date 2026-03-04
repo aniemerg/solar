@@ -1,0 +1,8 @@
+error: expected `contract`, found `A`
+   ╭▸ ROOT/tests/ui/solc/abstract/AbstractWithoutContract.sol:LL:CC
+   │
+LL │ abstract A { }
+   ╰╴         ━ expected `contract`
+
+error: aborting due to 1 previous error
+

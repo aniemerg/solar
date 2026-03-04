@@ -1,0 +1,8 @@
+error: name has to refer to a valid user-defined type
+   ╭▸ ROOT/tests/ui/solc/scoping/NameShadowingFunctionParameterVsStructEnum.sol:LL:CC
+   │
+LL │     function h(EnumType StructType, StructType memory EnumType) external {}
+   ╰╴                                    ━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

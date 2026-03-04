@@ -1,0 +1,14 @@
+error: identifier `balance` already declared
+   ╭▸ ROOT/tests/ui/solc/scoping/StateVariableFunctionConflictFormerCrash.sol:LL:CC
+   │
+LL │   function balance(uint number) public {}
+   │            ━━━━━━━
+   ╰╴
+note: previous declaration declared here
+   ╭▸ ROOT/tests/ui/solc/scoping/StateVariableFunctionConflictFormerCrash.sol:LL:CC
+   │
+LL │   uint public balance = 0;
+   ╰╴              ━━━━━━━
+
+error: aborting due to 1 previous error
+

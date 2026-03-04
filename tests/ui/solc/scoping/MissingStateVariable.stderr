@@ -1,0 +1,8 @@
+error: member `stateVar` not found on type `type(contract Scope)`
+   ╭▸ ROOT/tests/ui/solc/scoping/MissingStateVariable.sol:LL:CC
+   │
+LL │         stateVar = Scope.stateVar; // should fail.
+   ╰╴                         ━━━━━━━━
+
+error: aborting due to 1 previous error
+

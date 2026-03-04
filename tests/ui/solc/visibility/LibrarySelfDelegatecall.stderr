@@ -1,0 +1,14 @@
+error: member `g` not found on type `uint256`
+   ╭▸ ROOT/tests/ui/solc/visibility/LibrarySelfDelegatecall.sol:LL:CC
+   │
+LL │     function f() public pure returns (uint r) { return r.g(); }
+   ╰╴                                                         ━
+
+error: member `g` not found on type `uint256`
+   ╭▸ ROOT/tests/ui/solc/visibility/LibrarySelfDelegatecall.sol:LL:CC
+   │
+LL │     function f() public pure returns (uint r) { return r.g(); }
+   ╰╴                                                         ━
+
+error: aborting due to 2 previous errors
+

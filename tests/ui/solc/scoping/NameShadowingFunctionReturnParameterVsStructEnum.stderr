@@ -1,0 +1,14 @@
+error: name has to refer to a valid user-defined type
+   ╭▸ ROOT/tests/ui/solc/scoping/NameShadowingFunctionReturnParameterVsStructEnum.sol:LL:CC
+   │
+LL │     function h() external returns (EnumType StructType, StructType memory EnumType) {}
+   ╰╴                                                        ━━━━━━━━━━
+
+error: name has to refer to a valid user-defined type
+   ╭▸ ROOT/tests/ui/solc/scoping/NameShadowingFunctionReturnParameterVsStructEnum.sol:LL:CC
+   │
+LL │     function z(uint EnumType) external returns (EnumType e) {}
+   ╰╴                                                ━━━━━━━━
+
+error: aborting due to 2 previous errors
+

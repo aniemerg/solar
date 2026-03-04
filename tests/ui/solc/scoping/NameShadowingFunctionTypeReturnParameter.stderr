@@ -1,0 +1,58 @@
+warning[6162]: named function type parameters are deprecated
+   ╭▸ ROOT/tests/ui/solc/scoping/NameShadowingFunctionTypeReturnParameter.sol:LL:CC
+   │
+LL │     function () external returns (StructType memory StructType) ext1;
+   ╰╴                                                    ━━━━━━━━━━
+
+warning[6162]: named function type parameters are deprecated
+   ╭▸ ROOT/tests/ui/solc/scoping/NameShadowingFunctionTypeReturnParameter.sol:LL:CC
+   │
+LL │     function () external returns (EnumType EnumType) ext2;
+   ╰╴                                           ━━━━━━━━
+
+warning[6162]: named function type parameters are deprecated
+   ╭▸ ROOT/tests/ui/solc/scoping/NameShadowingFunctionTypeReturnParameter.sol:LL:CC
+   │
+LL │     function () external returns (EnumType StructType, StructType memory EnumType) ext3;
+   ╰╴                                           ━━━━━━━━━━
+
+warning[6162]: named function type parameters are deprecated
+   ╭▸ ROOT/tests/ui/solc/scoping/NameShadowingFunctionTypeReturnParameter.sol:LL:CC
+   │
+LL │     function () external returns (EnumType StructType, StructType memory EnumType) ext3;
+   ╰╴                                                                         ━━━━━━━━
+
+error: return parameters in function types may not be named
+   ╭▸ ROOT/tests/ui/solc/scoping/NameShadowingFunctionTypeReturnParameter.sol:LL:CC
+   │
+LL │     function () external returns (StructType memory StructType) ext1;
+   │                                   ━━━━━━━━━━┬─────────────────
+   │                                             │
+   ╰╴                                            help: remove `StructType`
+
+error: return parameters in function types may not be named
+   ╭▸ ROOT/tests/ui/solc/scoping/NameShadowingFunctionTypeReturnParameter.sol:LL:CC
+   │
+LL │     function () external returns (EnumType EnumType) ext2;
+   │                                   ━━━━━━━━┬────────
+   │                                           │
+   ╰╴                                          help: remove `EnumType`
+
+error: return parameters in function types may not be named
+   ╭▸ ROOT/tests/ui/solc/scoping/NameShadowingFunctionTypeReturnParameter.sol:LL:CC
+   │
+LL │     function () external returns (EnumType StructType, StructType memory EnumType) ext3;
+   │                                   ━━━━━━━━┬──────────
+   │                                           │
+   ╰╴                                          help: remove `StructType`
+
+error: return parameters in function types may not be named
+   ╭▸ ROOT/tests/ui/solc/scoping/NameShadowingFunctionTypeReturnParameter.sol:LL:CC
+   │
+LL │     function () external returns (EnumType StructType, StructType memory EnumType) ext3;
+   │                                                        ━━━━━━━━━━┬───────────────
+   │                                                                  │
+   ╰╴                                                                 help: remove `EnumType`
+
+error: aborting due to 4 previous errors; 4 warnings emitted
+

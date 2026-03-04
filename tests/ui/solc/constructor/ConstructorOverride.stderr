@@ -1,0 +1,8 @@
+error: `override` is not allowed here
+   ╭▸ ROOT/tests/ui/solc/constructor/ConstructorOverride.sol:LL:CC
+   │
+LL │     constructor() override {}
+   ╰╴                  ━━━━━━━━
+
+error: aborting due to 1 previous error
+

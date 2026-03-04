@@ -1,0 +1,50 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/constructor/ConstructorFunctionParameterDisallowedConversion.sol:LL:CC
+   │
+LL │         new D(this.testPure);
+   ╰╴              ━━━━━━━━━━━━━ expected `function () pure external returns (uint256)`, found `function () pure returns (uint256)`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/constructor/ConstructorFunctionParameterDisallowedConversion.sol:LL:CC
+   │
+LL │         new D(this.testView);
+   ╰╴              ━━━━━━━━━━━━━ expected `function () pure external returns (uint256)`, found `function () view returns (uint256)`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/constructor/ConstructorFunctionParameterDisallowedConversion.sol:LL:CC
+   │
+LL │         new D(this.testDefault);
+   ╰╴              ━━━━━━━━━━━━━━━━ expected `function () pure external returns (uint256)`, found `function () returns (uint256)`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/constructor/ConstructorFunctionParameterDisallowedConversion.sol:LL:CC
+   │
+LL │         new D(this.testDifferentSignature);
+   ╰╴              ━━━━━━━━━━━━━━━━━━━━━━━━━━━ expected `function () pure external returns (uint256)`, found `function (uint256) pure returns (uint256)`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/constructor/ConstructorFunctionParameterDisallowedConversion.sol:LL:CC
+   │
+LL │         new D(gasleft);
+   ╰╴              ━━━━━━━ expected `function () pure external returns (uint256)`, found `function () view returns (uint256)`
+
+error: member `f` not found on type `type(library L)`
+   ╭▸ ROOT/tests/ui/solc/constructor/ConstructorFunctionParameterDisallowedConversion.sol:LL:CC
+   │
+LL │         new D(L.f);
+   ╰╴                ━
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/constructor/ConstructorFunctionParameterDisallowedConversion.sol:LL:CC
+   │
+LL │         new D(testInternalFunction);
+   ╰╴              ━━━━━━━━━━━━━━━━━━━━ expected `function () pure external returns (uint256)`, found `function () pure returns (uint256)`
+
+error: member `testInternalFunction` not found on type `contract C`
+   ╭▸ ROOT/tests/ui/solc/constructor/ConstructorFunctionParameterDisallowedConversion.sol:LL:CC
+   │
+LL │         new D(this.testInternalFunction);
+   ╰╴                   ━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 8 previous errors
+

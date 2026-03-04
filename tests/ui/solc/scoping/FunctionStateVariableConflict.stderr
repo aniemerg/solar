@@ -1,0 +1,14 @@
+error: identifier `f` already declared
+   ╭▸ ROOT/tests/ui/solc/scoping/FunctionStateVariableConflict.sol:LL:CC
+   │
+LL │     uint public f = 0;
+   │                 ━
+   ╰╴
+note: previous declaration declared here
+   ╭▸ ROOT/tests/ui/solc/scoping/FunctionStateVariableConflict.sol:LL:CC
+   │
+LL │     function f(uint) public pure {}
+   ╰╴             ━
+
+error: aborting due to 1 previous error
+

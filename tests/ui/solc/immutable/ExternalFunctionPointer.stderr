@@ -1,0 +1,8 @@
+error: immutable variables of external function type are not yet supported
+   ╭▸ ROOT/tests/ui/solc/immutable/ExternalFunctionPointer.sol:LL:CC
+   │
+LL │     function() external immutable f;
+   ╰╴    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

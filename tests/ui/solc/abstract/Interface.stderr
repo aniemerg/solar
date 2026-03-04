@@ -1,0 +1,8 @@
+error: expected `contract`, found keyword `interface`
+   ╭▸ ROOT/tests/ui/solc/abstract/Interface.sol:LL:CC
+   │
+LL │ abstract interface A { }
+   ╰╴         ━━━━━━━━━ expected `contract`
+
+error: aborting due to 1 previous error
+
