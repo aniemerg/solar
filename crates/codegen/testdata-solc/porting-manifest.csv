@@ -1217,40 +1217,40 @@ storage/storage_boundary_struct_array_multislot.sol,ported,storage,src/StorageBo
 storage/storage_boundary_struct_array_packed.sol,ported,storage,src/StorageBoundaryStructArrayPacked.sol,,Packed struct array at storage boundary; requires solc ^0.8.32
 storage/storage_packed_array_copy.sol,ported,storage,src/StoragePackedArrayCopy.sol,,Copy packed bytes8 array into wider bytes17 array
 storage/struct_accessor.sol,ported,storage,src/StructAccessor.sol,,Public getter for struct mapping
-storageLayoutSpecifier/base_slot_max_value.sol,pending,,,,
-storageLayoutSpecifier/constructor.sol,pending,,,,
-storageLayoutSpecifier/delete.sol,pending,,,,
-storageLayoutSpecifier/delete_transient_storage.sol,pending,,,,
-storageLayoutSpecifier/dynamic_array_storage_end.sol,pending,,,,
-storageLayoutSpecifier/function_from_base_contract.sol,pending,,,,
-storageLayoutSpecifier/getters.sol,pending,,,,
-storageLayoutSpecifier/inheritance_from_abstract_contract.sol,pending,,,,
-storageLayoutSpecifier/inheritance_from_interface.sol,pending,,,,
-storageLayoutSpecifier/inheritance_from_same_base_state_var_slots.sol,pending,,,,
-storageLayoutSpecifier/inheritance_simple.sol,pending,,,,
-storageLayoutSpecifier/inheritance_state_variable_slot_offset.sol,pending,,,,
-storageLayoutSpecifier/inline_assembly_direct_load.sol,pending,,,,
-storageLayoutSpecifier/inline_assembly_direct_store.sol,pending,,,,
-storageLayoutSpecifier/last_allowed_storage_slot.sol,pending,,,,
-storageLayoutSpecifier/mapping_storage_end.sol,pending,,,,
-storageLayoutSpecifier/multiple_inheritance.sol,pending,,,,
-storageLayoutSpecifier/multiple_inheritance_state_var_slots.sol,pending,,,,
-storageLayoutSpecifier/state_variable_arithmetic_expression.sol,pending,,,,
-storageLayoutSpecifier/state_variable_constant_and_immutable.sol,pending,,,,
-storageLayoutSpecifier/state_variable_dynamic_array.sol,pending,,,,
-storageLayoutSpecifier/state_variable_enum.sol,pending,,,,
-storageLayoutSpecifier/state_variable_mapping.sol,pending,,,,
-storageLayoutSpecifier/state_variable_reference_types_slot_offset.sol,pending,,,,
-storageLayoutSpecifier/state_variable_slot_offset.sol,pending,,,,
-storageLayoutSpecifier/state_variable_struct.sol,pending,,,,
-storageLayoutSpecifier/state_variables_transient.sol,pending,,,,
-storageLayoutSpecifier/storage_reference_array.sol,pending,,,,
-storageLayoutSpecifier/storage_reference_inheritance.sol,pending,,,,
-storageLayoutSpecifier/storage_reference_library_function.sol,pending,,,,
-storageLayoutSpecifier/transient_state_variable_slot_offset.sol,pending,,,,
-storageLayoutSpecifier/variable_cleanup.sol,pending,,,,
-storageLayoutSpecifier/variable_cleanup_sstore.sol,pending,,,,
-storageLayoutSpecifier/virtual_functions.sol,pending,,,,
+storageLayoutSpecifier/base_slot_max_value.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/constructor.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/delete.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/delete_transient_storage.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/dynamic_array_storage_end.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/function_from_base_contract.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/getters.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/inheritance_from_abstract_contract.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/inheritance_from_interface.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/inheritance_from_same_base_state_var_slots.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/inheritance_simple.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/inheritance_state_variable_slot_offset.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/inline_assembly_direct_load.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/inline_assembly_direct_store.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/last_allowed_storage_slot.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/mapping_storage_end.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/multiple_inheritance.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/multiple_inheritance_state_var_slots.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/state_variable_arithmetic_expression.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/state_variable_constant_and_immutable.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/state_variable_dynamic_array.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/state_variable_enum.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/state_variable_mapping.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/state_variable_reference_types_slot_offset.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/state_variable_slot_offset.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/state_variable_struct.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/state_variables_transient.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/storage_reference_array.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/storage_reference_inheritance.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/storage_reference_library_function.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/transient_state_variable_slot_offset.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/variable_cleanup.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/variable_cleanup_sstore.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
+storageLayoutSpecifier/virtual_functions.sol,skipped,storage-layout-specifier,,,Do not re-attempt: requires non-standard `layout at` Solidity syntax not supported by standard solc/Foundry
 strings/concat/string_concat_2_args.sol,ported,strings,src/StringConcat2Args.sol,,string.concat with two string args
 strings/concat/string_concat_different_types.sol,ported,strings,src/StringConcatDifferentTypes.sol,,string.concat with memory/calldata/storage/literal args
 strings/concat/string_concat_empty_argument_list.sol,ported,strings,src/StringConcatEmptyArgumentList.sol,,string.concat() with no args returns empty
