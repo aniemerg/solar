@@ -1011,4 +1011,168 @@ mod tests {
     fn test_ported_try_catch() {
         test_project_solar_ported("ported_try_catch", "testdata-solc/try-catch");
     }
+
+    #[test]
+    fn test_ported_abi_encoder_v1() {
+        test_project_solar_ported("ported_abi_encoder_v1", "testdata-solc/abi-encoder-v1");
+    }
+
+    #[test]
+    fn test_ported_abi_encoder_v2() {
+        test_project_solar_ported("ported_abi_encoder_v2", "testdata-solc/abi-encoder-v2");
+    }
+
+    #[test]
+    fn test_ported_accessor() {
+        test_project_solar_ported("ported_accessor", "testdata-solc/accessor");
+    }
+
+    #[test]
+    fn test_ported_cleanup() {
+        test_project_solar_ported("ported_cleanup", "testdata-solc/cleanup");
+    }
+
+    #[test]
+    fn test_ported_constant_evaluator() {
+        test_project_solar_ported("ported_constant_evaluator", "testdata-solc/constant-evaluator");
+    }
+
+    #[test]
+    fn test_ported_constants() {
+        test_project_solar_ported("ported_constants", "testdata-solc/constants");
+    }
+
+    #[test]
+    fn test_ported_deployed_code_exclusion() {
+        test_project_solar_ported(
+            "ported_deployed_code_exclusion",
+            "testdata-solc/deployed-code-exclusion",
+        );
+    }
+
+    #[test]
+    fn test_ported_ecrecover() {
+        test_project_solar_ported("ported_ecrecover", "testdata-solc/ecrecover");
+    }
+
+    #[test]
+    fn test_ported_external_contracts() {
+        test_project_solar_ported("ported_external_contracts", "testdata-solc/external-contracts");
+    }
+
+    #[test]
+    fn test_ported_external_source() {
+        test_project_solar_ported("ported_external_source", "testdata-solc/external-source");
+    }
+
+    #[test]
+    fn test_ported_free_functions() {
+        test_project_solar_ported("ported_free_functions", "testdata-solc/free-functions");
+    }
+
+    #[test]
+    fn test_ported_function_selector() {
+        test_project_solar_ported("ported_function_selector", "testdata-solc/function-selector");
+    }
+
+    #[test]
+    fn test_ported_function_types() {
+        test_project_solar_ported("ported_function_types", "testdata-solc/function-types");
+    }
+
+    #[test]
+    fn test_ported_getters() {
+        test_project_solar_ported("ported_getters", "testdata-solc/getters");
+    }
+
+    #[test]
+    fn test_ported_inline_assembly() {
+        test_project_solar_ported("ported_inline_assembly", "testdata-solc/inline-assembly");
+    }
+
+    #[test]
+    fn test_ported_integer() {
+        test_project_solar_ported("ported_integer", "testdata-solc/integer");
+    }
+
+    #[test]
+    fn test_ported_interface_id() {
+        test_project_solar_ported("ported_interface_id", "testdata-solc/interface-id");
+    }
+
+    #[test]
+    fn test_ported_isoltest_testing() {
+        test_project_solar_ported("ported_isoltest_testing", "testdata-solc/isoltest-testing");
+    }
+
+    #[test]
+    fn test_ported_meta_types() {
+        test_project_solar_ported("ported_meta_types", "testdata-solc/meta-types");
+    }
+
+    #[test]
+    fn test_ported_multi_source() {
+        test_project_solar_ported("ported_multi_source", "testdata-solc/multi-source");
+    }
+
+    #[test]
+    fn test_ported_salted_create() {
+        test_project_solar_ported("ported_salted_create", "testdata-solc/salted-create");
+    }
+
+    #[test]
+    fn test_ported_smoke() {
+        test_project_solar_ported("ported_smoke", "testdata-solc/smoke");
+    }
+
+    #[test]
+    fn test_ported_special_functions() {
+        test_project_solar_ported("ported_special_functions", "testdata-solc/special-functions");
+    }
+
+    #[test]
+    fn test_ported_types() {
+        test_project_solar_ported("ported_types", "testdata-solc/types");
+    }
+
+    #[test]
+    fn test_ported_underscore() {
+        test_project_solar_ported("ported_underscore", "testdata-solc/underscore");
+    }
+
+    #[test]
+    fn test_ported_uninitialized_function_pointer() {
+        test_project_solar_ported(
+            "ported_uninitialized_function_pointer",
+            "testdata-solc/uninitialized-function-pointer",
+        );
+    }
+
+    #[test]
+    fn test_ported_user_defined_value_type() {
+        test_project_solar_ported(
+            "ported_user_defined_value_type",
+            "testdata-solc/user-defined-value-type",
+        );
+    }
+
+    #[test]
+    fn test_ported_using() {
+        test_project_solar_ported("ported_using", "testdata-solc/using");
+    }
+
+    #[test]
+    fn test_ported_variables() {
+        test_project_solar_ported("ported_variables", "testdata-solc/variables");
+    }
+
+    #[test]
+    fn test_ported_various() {
+        test_project_solar_ported("ported_various", "testdata-solc/various");
+    }
+
+    #[test]
+    fn test_ported_virtual_functions() {
+        test_project_solar_ported("ported_virtual_functions", "testdata-solc/virtual-functions");
+    }
 }
