@@ -1,0 +1,8 @@
+error: cannot apply unary operator `~` to `bytes_string_literal[3]`
+   ╭▸ ROOT/tests/ui/solc/types/HexLiteralBitnot.sol:LL:CC
+   │
+LL │     bytes32 b = ~hex"00ff11";
+   ╰╴                 ━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

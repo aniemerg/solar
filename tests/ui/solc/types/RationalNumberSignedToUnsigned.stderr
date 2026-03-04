@@ -1,0 +1,14 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/RationalNumberSignedToUnsigned.sol:LL:CC
+   │
+LL │         uint a = -1;
+   ╰╴                 ━━ expected `uint256`, found `int_literal[1]`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/RationalNumberSignedToUnsigned.sol:LL:CC
+   │
+LL │         uint b = uint(-1);
+   ╰╴                 ━━━━━━━━ cannot convert `int_literal[1]` to `uint256`
+
+error: aborting due to 2 previous errors
+

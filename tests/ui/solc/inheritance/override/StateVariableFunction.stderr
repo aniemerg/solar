@@ -1,0 +1,14 @@
+error: identifier `x` already declared
+   ╭▸ ROOT/tests/ui/solc/inheritance/override/StateVariableFunction.sol:LL:CC
+   │
+LL │     function x() public returns (uint) {}
+   │              ━
+   ╰╴
+note: previous declaration declared here
+   ╭▸ ROOT/tests/ui/solc/inheritance/override/StateVariableFunction.sol:LL:CC
+   │
+LL │     uint public x;
+   ╰╴                ━
+
+error: aborting due to 1 previous error
+

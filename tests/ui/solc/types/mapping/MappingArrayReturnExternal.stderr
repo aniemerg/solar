@@ -1,0 +1,16 @@
+error: invalid data location `storage`
+   ╭▸ ROOT/tests/ui/solc/types/mapping/MappingArrayReturnExternal.sol:LL:CC
+   │
+LL │     function f() external pure returns (mapping(uint=>uint)[] storage m) {
+   │                                         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory` or `calldata` for external function return parameter, but got `storage`
+
+error: types containing mappings cannot be parameter or return types of public functions
+   ╭▸ ROOT/tests/ui/solc/types/mapping/MappingArrayReturnExternal.sol:LL:CC
+   │
+LL │     function f() external pure returns (mapping(uint=>uint)[] storage m) {
+   ╰╴                                        ━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 2 previous errors
+

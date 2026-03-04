@@ -1,0 +1,8 @@
+error: member `g` not found on type `type(contract B)`
+   ╭▸ ROOT/tests/ui/solc/types/functionTypes/selector/StateVariableSelectorNotPure.sol:LL:CC
+   │
+LL │     bytes4 constant s2 = B.g.selector;
+   ╰╴                           ━
+
+error: aborting due to 1 previous error
+

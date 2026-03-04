@@ -1,0 +1,14 @@
+error[9914]: function overload clash during conversion to external types for arguments
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressPayableExternalOverload.sol:LL:CC
+   │
+LL │     function f(address) external pure {}
+   │     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ╰╴
+help: other declaration is here
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressPayableExternalOverload.sol:LL:CC
+   │
+LL │     function f(address payable) external pure {}
+   ╰╴    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

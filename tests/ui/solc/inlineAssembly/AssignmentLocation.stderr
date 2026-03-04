@@ -1,0 +1,8 @@
+error: only function calls are allowed in multi-assignment
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/AssignmentLocation.sol:LL:CC
+   │
+LL │         assembly { x, y := 7 }
+   ╰╴                           ━
+
+error: aborting due to 1 previous error
+

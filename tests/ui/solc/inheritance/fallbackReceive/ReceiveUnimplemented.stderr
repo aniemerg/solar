@@ -1,0 +1,8 @@
+error: receive ether function cannot take parameters
+   ╭▸ ROOT/tests/ui/solc/inheritance/fallbackReceive/ReceiveUnimplemented.sol:LL:CC
+   │
+LL │     receive(bytes2) external payable;
+   ╰╴    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

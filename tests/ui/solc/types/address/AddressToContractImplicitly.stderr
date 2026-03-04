@@ -1,0 +1,8 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressToContractImplicitly.sol:LL:CC
+   │
+LL │     C c = address(2);
+   ╰╴          ━━━━━━━━━━ cannot convert `int_literal[2]` to `address`
+
+error: aborting due to 1 previous error
+

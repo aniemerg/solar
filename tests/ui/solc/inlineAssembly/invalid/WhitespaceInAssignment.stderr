@@ -1,0 +1,8 @@
+error: expected one of `,`, `:=`, `break`, `continue`, `for`, `function`, `if`, `leave`, `let`, `switch`, `{`, `}`, or identifier, found `:`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/invalid/WhitespaceInAssignment.sol:LL:CC
+   │
+LL │       let x : = mload(0)
+   ╰╴            ━ expected one of 13 possible tokens
+
+error: aborting due to 1 previous error
+

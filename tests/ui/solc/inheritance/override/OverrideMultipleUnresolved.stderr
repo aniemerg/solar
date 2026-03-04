@@ -1,0 +1,14 @@
+error: unresolved symbol `N`
+   ╭▸ ROOT/tests/ui/solc/inheritance/override/OverrideMultipleUnresolved.sol:LL:CC
+   │
+LL │     function foo() internal override(N, Z) returns (uint256);
+   ╰╴                                     ━
+
+error: unresolved symbol `Z`
+   ╭▸ ROOT/tests/ui/solc/inheritance/override/OverrideMultipleUnresolved.sol:LL:CC
+   │
+LL │     function foo() internal override(N, Z) returns (uint256);
+   ╰╴                                        ━
+
+error: aborting due to 2 previous errors
+

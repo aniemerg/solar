@@ -1,0 +1,8 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/BytesnnWithOversizedHexString.sol:LL:CC
+   │
+LL │         return bytes2(hex"123456");
+   ╰╴               ━━━━━━━━━━━━━━━━━━━ cannot convert `utf8_string_literal[3]` to `bytes2`
+
+error: aborting due to 1 previous error
+

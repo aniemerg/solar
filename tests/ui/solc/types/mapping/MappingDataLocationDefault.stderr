@@ -1,0 +1,10 @@
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/types/mapping/MappingDataLocationDefault.sol:LL:CC
+   │
+LL │         mapping(uint => uint) x = y;
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for variable
+
+error: aborting due to 1 previous error
+

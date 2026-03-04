@@ -1,0 +1,18 @@
+error: cannot apply builtin operator `==` to `function () pure returns (bool)` and `function () pure returns (bool)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOfFunctionTypesInternalEq1.sol:LL:CC
+   │
+LL │ …     return f == f;
+   │              ┬ ━━ ─ function () pure returns (bool)
+   │              │
+   ╰╴             function () pure returns (bool)
+
+error: cannot apply builtin operator `!=` to `function () pure returns (bool)` and `function () pure returns (bool)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOfFunctionTypesInternalEq1.sol:LL:CC
+   │
+LL │ …     return f != f;
+   │              ┬ ━━ ─ function () pure returns (bool)
+   │              │
+   ╰╴             function () pure returns (bool)
+
+error: aborting due to 2 previous errors
+

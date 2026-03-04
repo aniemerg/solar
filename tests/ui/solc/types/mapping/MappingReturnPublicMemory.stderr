@@ -1,0 +1,8 @@
+error: types containing mappings cannot be parameter or return types of public functions
+   ╭▸ ROOT/tests/ui/solc/types/mapping/MappingReturnPublicMemory.sol:LL:CC
+   │
+LL │     function f() public pure returns (mapping(uint=>uint) memory m) {
+   ╰╴                                      ━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

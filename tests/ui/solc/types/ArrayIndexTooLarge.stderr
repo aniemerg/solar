@@ -1,0 +1,8 @@
+error: integer part too large
+   ╭▸ ROOT/tests/ui/solc/types/ArrayIndexTooLarge.sol:LL:CC
+   │
+LL │ …     return (["zeppelin"][123456789012345678901234567890123456789012345678901234567890123456789012345678]);
+   ╰╴                           ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

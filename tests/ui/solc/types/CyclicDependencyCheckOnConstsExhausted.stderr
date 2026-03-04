@@ -1,0 +1,8 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/CyclicDependencyCheckOnConstsExhausted.sol:LL:CC
+   │
+LL │     A constant JX = A(address(0x00));
+   ╰╴                      ━━━━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
+
+error: aborting due to 1 previous error
+

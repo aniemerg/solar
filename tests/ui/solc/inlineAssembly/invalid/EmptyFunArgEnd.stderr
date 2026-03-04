@@ -1,0 +1,8 @@
+error: trailing `,` separator is not allowed
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/invalid/EmptyFunArgEnd.sol:LL:CC
+   │
+LL │       f(1,)
+   ╰╴         ━
+
+error: aborting due to 1 previous error
+

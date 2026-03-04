@@ -1,0 +1,14 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/mapping/EnumMappingInvalid.sol:LL:CC
+   │
+LL │         return (e[a], e[b]);
+   ╰╴                  ━ expected `enum E`, found `uint256`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/mapping/EnumMappingInvalid.sol:LL:CC
+   │
+LL │         return (e[a], e[b]);
+   ╰╴                        ━ expected `enum E`, found `uint8`
+
+error: aborting due to 2 previous errors
+

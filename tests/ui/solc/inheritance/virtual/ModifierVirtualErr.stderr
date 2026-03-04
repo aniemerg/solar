@@ -1,0 +1,8 @@
+error[9231]: library functions must be implemented if declared
+   ╭▸ ROOT/tests/ui/solc/inheritance/virtual/ModifierVirtualErr.sol:LL:CC
+   │
+LL │     modifier m virtual;
+   ╰╴    ━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

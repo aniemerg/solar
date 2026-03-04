@@ -1,0 +1,14 @@
+error: expected contract, found struct
+   ╭▸ ROOT/tests/ui/solc/inheritance/override/OverrideTypeMismatch.sol:LL:CC
+   │
+LL │     function foo() internal override(MyStruct, ENUM, A, B, C, D) virtual returns (uint256);
+   ╰╴                                     ━━━━━━━━
+
+error: expected contract, found enum
+   ╭▸ ROOT/tests/ui/solc/inheritance/override/OverrideTypeMismatch.sol:LL:CC
+   │
+LL │     function foo() internal override(MyStruct, ENUM, A, B, C, D) virtual returns (uint256);
+   ╰╴                                               ━━━━
+
+error: aborting due to 2 previous errors
+

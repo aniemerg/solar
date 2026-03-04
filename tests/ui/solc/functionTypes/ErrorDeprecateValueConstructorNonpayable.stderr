@@ -1,0 +1,8 @@
+error: member `value` not found on type `function () returns (contract C)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ErrorDeprecateValueConstructorNonpayable.sol:LL:CC
+   │
+LL │         C c = (new C).value(2)();
+   ╰╴                      ━━━━━
+
+error: aborting due to 1 previous error
+

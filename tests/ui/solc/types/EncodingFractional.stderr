@@ -1,0 +1,16 @@
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/types/EncodingFractional.sol:LL:CC
+   │
+LL │        return abi.encode(0.1, 1);
+   │               ━━━━━━━━━━┬───────
+   │                         │
+   ╰╴                        expected 0 arguments, found 2
+
+error: rational literals are not supported
+   ╭▸ ROOT/tests/ui/solc/types/EncodingFractional.sol:LL:CC
+   │
+LL │        return abi.encode(0.1, 1);
+   ╰╴                         ━━━
+
+error: aborting due to 2 previous errors
+

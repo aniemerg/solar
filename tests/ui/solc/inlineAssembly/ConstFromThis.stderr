@@ -1,0 +1,8 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/ConstFromThis.sol:LL:CC
+   │
+LL │   bool constant c = this;
+   ╰╴                    ━━━━ expected `bool`, found `contract C`
+
+error: aborting due to 1 previous error
+

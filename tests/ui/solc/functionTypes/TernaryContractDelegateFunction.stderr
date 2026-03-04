@@ -1,0 +1,14 @@
+error: member `f` not found on type `type(library L)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/TernaryContractDelegateFunction.sol:LL:CC
+   │
+LL │         (true ? L.f : L.f).selector;
+   ╰╴                  ━
+
+error: member `f` not found on type `type(library L)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/TernaryContractDelegateFunction.sol:LL:CC
+   │
+LL │         (true ? L.f : L.f).selector;
+   ╰╴                        ━
+
+error: aborting due to 2 previous errors
+

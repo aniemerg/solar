@@ -1,0 +1,38 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/ContractTypeToAddress.sol:LL:CC
+   │
+LL │         address(C);
+   ╰╴        ━━━━━━━━━━ cannot convert `type(contract C)` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/ContractTypeToAddress.sol:LL:CC
+   │
+LL │         address(I);
+   ╰╴        ━━━━━━━━━━ cannot convert `type(contract I)` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/ContractTypeToAddress.sol:LL:CC
+   │
+LL │         address(L); // This one is allowed
+   ╰╴        ━━━━━━━━━━ cannot convert `type(library L)` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/ContractTypeToAddress.sol:LL:CC
+   │
+LL │         address(type(C));
+   ╰╴        ━━━━━━━━━━━━━━━━ cannot convert `type(contract C)` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/ContractTypeToAddress.sol:LL:CC
+   │
+LL │         address(type(I));
+   ╰╴        ━━━━━━━━━━━━━━━━ cannot convert `type(contract I)` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/ContractTypeToAddress.sol:LL:CC
+   │
+LL │         address(type(L));
+   ╰╴        ━━━━━━━━━━━━━━━━ cannot convert `type(library L)` to `address`
+
+error: aborting due to 6 previous errors
+

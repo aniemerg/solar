@@ -1,0 +1,8 @@
+error[3942]: "virtual" and "private" cannot be used together
+   ╭▸ ROOT/tests/ui/solc/inheritance/override/ImplementPrivateFunctionByPublicVariable.sol:LL:CC
+   │
+LL │ abstract contract X { function test() private virtual returns (uint256); }
+   ╰╴                      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

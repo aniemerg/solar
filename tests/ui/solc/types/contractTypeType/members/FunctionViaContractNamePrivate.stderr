@@ -1,0 +1,8 @@
+error: member `f` not found on type `type(contract A)`
+   ╭▸ ROOT/tests/ui/solc/types/contractTypeType/members/FunctionViaContractNamePrivate.sol:LL:CC
+   │
+LL │         A.f;
+   ╰╴          ━
+
+error: aborting due to 1 previous error
+

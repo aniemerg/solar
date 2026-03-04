@@ -1,0 +1,8 @@
+error: expected identifier, found Yul EVM builtin keyword `returndatasize`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/ReturndatasizeAsVariableReadPostByzantium.sol.sol:LL:CC
+   │
+LL │             let x := returndatasize
+   ╰╴                     ━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

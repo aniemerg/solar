@@ -1,0 +1,10 @@
+error: cannot apply builtin operator `<` to `function () returns (bool)` and `function () returns (bool)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOfFunctionTypesLt2.sol:LL:CC
+   │
+LL │         return f < f;
+   │                ┬ ━ ─ function () returns (bool)
+   │                │
+   ╰╴               function () returns (bool)
+
+error: aborting due to 1 previous error
+

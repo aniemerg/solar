@@ -1,0 +1,8 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/functionTypes/AssignBuiltin.sol:LL:CC
+   │
+LL │      function (uint) view returns (bytes32) _blockhash = blockhash;
+   ╰╴                                                         ━━━━━━━━━ expected `function (uint256) view returns (bytes32)`, found `function (uint256) view returns (bytes32)`
+
+error: aborting due to 1 previous error
+

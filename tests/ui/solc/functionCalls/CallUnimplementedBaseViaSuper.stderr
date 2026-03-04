@@ -1,0 +1,14 @@
+error: member `a` not found on type `type(contract I)`
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CallUnimplementedBaseViaSuper.sol:LL:CC
+   │
+LL │         return I.a();
+   ╰╴                 ━
+
+error: member `a` not found on type `contract D`
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CallUnimplementedBaseViaSuper.sol:LL:CC
+   │
+LL │         return super.a();
+   ╰╴                     ━
+
+error: aborting due to 2 previous errors
+

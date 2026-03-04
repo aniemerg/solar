@@ -1,0 +1,14 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/NonpayableAddressToContractReceive.sol:LL:CC
+   │
+LL │     address a = address(2);
+   ╰╴                ━━━━━━━━━━ cannot convert `int_literal[2]` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/NonpayableAddressToContractReceive.sol:LL:CC
+   │
+LL │     c = C(a);
+   ╰╴        ━━━━ cannot convert non-payable `address` to `contract C` because it has a receive function or payable fallback
+
+error: aborting due to 2 previous errors
+

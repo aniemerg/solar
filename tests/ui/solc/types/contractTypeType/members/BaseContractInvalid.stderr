@@ -1,0 +1,14 @@
+error: member `f` not found on type `type(contract B)`
+   ╭▸ ROOT/tests/ui/solc/types/contractTypeType/members/BaseContractInvalid.sol:LL:CC
+   │
+LL │         B.f();
+   ╰╴          ━
+
+error: member `g` not found on type `type(contract B)`
+   ╭▸ ROOT/tests/ui/solc/types/contractTypeType/members/BaseContractInvalid.sol:LL:CC
+   │
+LL │         B.g.selector;
+   ╰╴          ━
+
+error: aborting due to 2 previous errors
+

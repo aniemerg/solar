@@ -1,0 +1,8 @@
+error: expected string literal, found `)`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/AssemblyEmptyOptionList.sol:LL:CC
+   │
+LL │     assembly () {}
+   ╰╴              ━ expected string literal
+
+error: aborting due to 1 previous error
+

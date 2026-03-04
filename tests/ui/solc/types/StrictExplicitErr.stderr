@@ -1,0 +1,74 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/StrictExplicitErr.sol:LL:CC
+   │
+LL │         uint16 a = uint16(int8(-1));
+   ╰╴                   ━━━━━━━━━━━━━━━━ cannot convert `int8` to `uint16`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/StrictExplicitErr.sol:LL:CC
+   │
+LL │         uint16 c = uint16(b);
+   ╰╴                   ━━━━━━━━━ cannot convert `int8` to `uint16`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/StrictExplicitErr.sol:LL:CC
+   │
+LL │         int8 d = int8(uint16(type(uint16).max));
+   ╰╴                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ cannot convert `uint16` to `int8`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/StrictExplicitErr.sol:LL:CC
+   │
+LL │         int8 g = int8(e);
+   ╰╴                 ━━━━━━━ cannot convert `uint16` to `int8`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/StrictExplicitErr.sol:LL:CC
+   │
+LL │         address h = address(uint(type(uint).max));
+   ╰╴                    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ cannot convert `uint256` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/StrictExplicitErr.sol:LL:CC
+   │
+LL │         uint i = uint(address(0));
+   ╰╴                      ━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/StrictExplicitErr.sol:LL:CC
+   │
+LL │         address k = address(j);
+   ╰╴                    ━━━━━━━━━━ cannot convert `uint256` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/StrictExplicitErr.sol:LL:CC
+   │
+LL │         int80 l = int80(bytes10("h"));
+   ╰╴                  ━━━━━━━━━━━━━━━━━━━ cannot convert `bytes10` to `int80`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/StrictExplicitErr.sol:LL:CC
+   │
+LL │         bytes10 m = bytes10(int80(-1));
+   ╰╴                    ━━━━━━━━━━━━━━━━━━ cannot convert `int80` to `bytes10`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/StrictExplicitErr.sol:LL:CC
+   │
+LL │         B n = B(int(100));
+   ╰╴              ━━━━━━━━━━━ cannot convert `int256` to `contract B`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/StrictExplicitErr.sol:LL:CC
+   │
+LL │         int o = int(new B());
+   ╰╴                ━━━━━━━━━━━━ cannot convert `contract B` to `int256`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/StrictExplicitErr.sol:LL:CC
+   │
+LL │         B p = B(0x00);
+   ╰╴              ━━━━━━━ cannot convert `int_literal[1]` to `contract B`
+
+error: aborting due to 12 previous errors
+

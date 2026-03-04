@@ -1,0 +1,38 @@
+error: types in storage containing (nested) mappings cannot be assigned to
+   ╭▸ ROOT/tests/ui/solc/types/mapping/AssignmentMap.sol:LL:CC
+   │
+LL │     mapping (uint => address payable [ ]) public a = a ;
+   ╰╴    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: types in storage containing (nested) mappings cannot be assigned to
+   ╭▸ ROOT/tests/ui/solc/types/mapping/AssignmentMap.sol:LL:CC
+   │
+LL │     mapping (uint => uint) b = a;
+   ╰╴    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: types in storage containing (nested) mappings cannot be assigned to
+   ╭▸ ROOT/tests/ui/solc/types/mapping/AssignmentMap.sol:LL:CC
+   │
+LL │         a = b;
+   ╰╴        ━
+
+error: types in storage containing (nested) mappings cannot be assigned to
+   ╭▸ ROOT/tests/ui/solc/types/mapping/AssignmentMap.sol:LL:CC
+   │
+LL │     mapping (uint => uint) b = x;
+   ╰╴    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: types in storage containing (nested) mappings cannot be assigned to
+   ╭▸ ROOT/tests/ui/solc/types/mapping/AssignmentMap.sol:LL:CC
+   │
+LL │     S y = x;
+   ╰╴    ━━━━━━━━
+
+error: types in storage containing (nested) mappings cannot be assigned to
+   ╭▸ ROOT/tests/ui/solc/types/mapping/AssignmentMap.sol:LL:CC
+   │
+LL │     S z = z;
+   ╰╴    ━━━━━━━━
+
+error: aborting due to 6 previous errors
+

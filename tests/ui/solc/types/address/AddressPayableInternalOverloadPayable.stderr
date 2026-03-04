@@ -1,0 +1,14 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressPayableInternalOverloadPayable.sol:LL:CC
+   │
+LL │         address payable a = payable(0);
+   ╰╴                                    ━ cannot convert `int_literal[1]` to `address payable`
+
+error: no matching declarations found
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressPayableInternalOverloadPayable.sol:LL:CC
+   │
+LL │         f(a);
+   ╰╴        ━
+
+error: aborting due to 2 previous errors
+

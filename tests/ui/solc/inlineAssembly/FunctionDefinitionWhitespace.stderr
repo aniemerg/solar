@@ -1,0 +1,8 @@
+error: expected one of `->` or `{`, found `-`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/FunctionDefinitionWhitespace.sol:LL:CC
+   │
+LL │       function f (a, b  , c ) -     >    y,x,z {
+   ╰╴                              ━ expected one of `->` or `{`
+
+error: aborting due to 1 previous error
+

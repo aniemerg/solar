@@ -1,0 +1,8 @@
+error: leading zeros are not allowed in integers
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/invalid/InvalidNumber.sol:LL:CC
+   │
+LL │       let x := 0100
+   ╰╴               ━━━━
+
+error: aborting due to 1 previous error
+

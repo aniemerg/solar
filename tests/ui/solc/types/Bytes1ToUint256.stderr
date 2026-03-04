@@ -1,0 +1,8 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/Bytes1ToUint256.sol:LL:CC
+   │
+LL │         return uint256(bytes1(''));
+   ╰╴                       ━━━━━━━━━━ cannot convert `utf8_string_literal[32]` to `bytes1`
+
+error: aborting due to 1 previous error
+

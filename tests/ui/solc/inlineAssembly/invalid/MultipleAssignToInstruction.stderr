@@ -1,0 +1,8 @@
+error: expected identifier, found Yul EVM builtin keyword `sub`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/invalid/MultipleAssignToInstruction.sol:LL:CC
+   │
+LL │       let a, sub, mov := g()
+   ╰╴             ━━━
+
+error: aborting due to 1 previous error
+

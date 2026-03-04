@@ -1,0 +1,8 @@
+error: types containing mappings cannot be parameter or return types of public functions
+   ╭▸ ROOT/tests/ui/solc/types/mapping/MappingStructDataLocationMemory.sol:LL:CC
+   │
+LL │     function f(S memory) public {}
+   ╰╴               ━
+
+error: aborting due to 1 previous error
+

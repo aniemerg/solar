@@ -1,0 +1,14 @@
+error: expected version number
+   ╭▸ ROOT/tests/ui/solc/pragma/InvalidRangeConjunctionRangeSecond.sol:LL:CC
+   │
+LL │ pragma solidity 0.8.17 0.4.1 - 0.6.2;
+   ╰╴                             ━
+
+error: unexpected trailing characters
+   ╭▸ ROOT/tests/ui/solc/pragma/InvalidRangeConjunctionRangeSecond.sol:LL:CC
+   │
+LL │ pragma solidity 0.8.17 0.4.1 - 0.6.2;
+   ╰╴                             ━
+
+error: aborting due to 2 previous errors
+

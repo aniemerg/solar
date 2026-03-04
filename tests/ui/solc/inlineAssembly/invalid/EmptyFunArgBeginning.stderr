@@ -1,0 +1,8 @@
+error: expected one of `)`, literal, or path, found `,`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/invalid/EmptyFunArgBeginning.sol:LL:CC
+   │
+LL │       f(,1)
+   ╰╴        ━ expected one of `)`, literal, or path
+
+error: aborting due to 1 previous error
+

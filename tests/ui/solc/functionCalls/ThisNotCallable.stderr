@@ -1,0 +1,14 @@
+error: expected function, found `contract C`
+   ╭▸ ROOT/tests/ui/solc/functionCalls/ThisNotCallable.sol:LL:CC
+   │
+LL │         try this() {
+   │             ━━━━
+   ╰╴
+note: call expression requires function
+   ╭▸ ROOT/tests/ui/solc/functionCalls/ThisNotCallable.sol:LL:CC
+   │
+LL │         try this() {
+   ╰╴            ━━━━━━
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,38 @@
+error: unresolved symbol `ufixed8x2`
+   ╭▸ ROOT/tests/ui/solc/types/RationalNumberLiteralToFixedImplicit.sol:LL:CC
+   │
+LL │         ufixed8x2 a = 0.10;
+   ╰╴        ━━━━━━━━━
+
+error: unresolved symbol `ufixed8x2`
+   ╭▸ ROOT/tests/ui/solc/types/RationalNumberLiteralToFixedImplicit.sol:LL:CC
+   │
+LL │         ufixed8x2 b = 0.00;
+   ╰╴        ━━━━━━━━━
+
+error: unresolved symbol `ufixed8x2`
+   ╭▸ ROOT/tests/ui/solc/types/RationalNumberLiteralToFixedImplicit.sol:LL:CC
+   │
+LL │         ufixed8x2 c = 2.55;
+   ╰╴        ━━━━━━━━━
+
+error: unresolved symbol `fixed8x1`
+   ╭▸ ROOT/tests/ui/solc/types/RationalNumberLiteralToFixedImplicit.sol:LL:CC
+   │
+LL │         fixed8x1 a =   0.1;
+   ╰╴        ━━━━━━━━
+
+error: unresolved symbol `fixed8x1`
+   ╭▸ ROOT/tests/ui/solc/types/RationalNumberLiteralToFixedImplicit.sol:LL:CC
+   │
+LL │         fixed8x1 b =  12.7;
+   ╰╴        ━━━━━━━━
+
+error: unresolved symbol `fixed8x1`
+   ╭▸ ROOT/tests/ui/solc/types/RationalNumberLiteralToFixedImplicit.sol:LL:CC
+   │
+LL │         fixed8x1 c = -12.8;
+   ╰╴        ━━━━━━━━
+
+error: aborting due to 6 previous errors
+

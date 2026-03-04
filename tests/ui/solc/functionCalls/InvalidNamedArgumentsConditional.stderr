@@ -1,0 +1,14 @@
+error: incompatible conditional types
+   ╭▸ ROOT/tests/ui/solc/functionCalls/InvalidNamedArgumentsConditional.sol:LL:CC
+   │
+LL │         (true ? g : h)({x : 1, y : 2});
+   ╰╴         ━━━━━━━━━━━━
+
+error: cannot infer array element type
+   ╭▸ ROOT/tests/ui/solc/functionCalls/InvalidNamedArgumentsConditional.sol:LL:CC
+   │
+LL │         [g, h][1]({x : 1, y : 2});
+   ╰╴        ━━━━━━
+
+error: aborting due to 2 previous errors
+

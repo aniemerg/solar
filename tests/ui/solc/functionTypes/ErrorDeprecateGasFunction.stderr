@@ -1,0 +1,8 @@
+error: member `gas` not found on type `function (uint256) payable external returns (uint256)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ErrorDeprecateGasFunction.sol:LL:CC
+   │
+LL │         x.gas(2)(1);
+   ╰╴          ━━━
+
+error: aborting due to 1 previous error
+

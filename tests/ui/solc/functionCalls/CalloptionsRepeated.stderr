@@ -1,0 +1,110 @@
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         this.foo{value:2, gas: 5}{gas:2};
+   │                 ━━━━━━━━━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         this.foo{value:2, gas: 5}{gas:2};
+   ╰╴        ━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         this.foo{value:2, gas: 5}{gas:2};
+   │                                  ━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         this.foo{value:2, gas: 5}{gas:2};
+   ╰╴        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         (this.foo{value:2, gas: 5}){gas:2};
+   │                  ━━━━━━━━━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         (this.foo{value:2, gas: 5}){gas:2};
+   ╰╴         ━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         (this.foo{value:2, gas: 5}){gas:2};
+   │                                    ━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         (this.foo{value:2, gas: 5}){gas:2};
+   ╰╴        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         this.foo{value:2, gas: 5}{value:6};
+   │                 ━━━━━━━━━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         this.foo{value:2, gas: 5}{value:6};
+   ╰╴        ━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         this.foo{value:2, gas: 5}{value:6};
+   │                                  ━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         this.foo{value:2, gas: 5}{value:6};
+   ╰╴        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         this.foo{gas:2, value: 5}{value:2, gas:5};
+   │                 ━━━━━━━━━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         this.foo{gas:2, value: 5}{value:2, gas:5};
+   ╰╴        ━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         this.foo{gas:2, value: 5}{value:2, gas:5};
+   │                                  ━━━━━━━━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         this.foo{gas:2, value: 5}{value:2, gas:5};
+   ╰╴        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         new D{salt:"abc"}{salt:"a"}();
+   │              ━━━━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsRepeated.sol:LL:CC
+   │
+LL │         new D{salt:"abc"}{salt:"a"}();
+   ╰╴        ━━━━━━━━━━━━━━━━━
+
+error: aborting due to 9 previous errors
+

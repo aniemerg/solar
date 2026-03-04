@@ -1,0 +1,26 @@
+error: base contracts already specified
+   ╭▸ ROOT/tests/ui/solc/inheritance/RepeatedInheritanceDefinition.sol:LL:CC
+   │
+LL │ contract C is A is B is B is A{ }
+   │               ┬    ━
+   │               │
+   ╰╴              previous definition
+
+error: base contracts already specified
+   ╭▸ ROOT/tests/ui/solc/inheritance/RepeatedInheritanceDefinition.sol:LL:CC
+   │
+LL │ contract C is A is B is B is A{ }
+   │               ┬         ━
+   │               │
+   ╰╴              previous definition
+
+error: base contracts already specified
+   ╭▸ ROOT/tests/ui/solc/inheritance/RepeatedInheritanceDefinition.sol:LL:CC
+   │
+LL │ contract C is A is B is B is A{ }
+   │               ┬              ━
+   │               │
+   ╰╴              previous definition
+
+error: aborting due to 3 previous errors
+

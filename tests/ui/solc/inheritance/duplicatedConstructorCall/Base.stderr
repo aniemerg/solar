@@ -1,0 +1,14 @@
+error: base constructor arguments given twice
+   ╭▸ ROOT/tests/ui/solc/inheritance/duplicatedConstructorCall/Base.sol:LL:CC
+   │
+LL │ contract B is A(2) { constructor() A(3) {  } }
+   │                                    ━━━━
+   ╰╴
+help: previous declaration
+   ╭▸ ROOT/tests/ui/solc/inheritance/duplicatedConstructorCall/Base.sol:LL:CC
+   │
+LL │ contract B is A(2) { constructor() A(3) {  } }
+   ╰╴              ━━━━
+
+error: aborting due to 1 previous error
+

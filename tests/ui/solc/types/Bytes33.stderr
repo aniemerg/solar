@@ -1,0 +1,8 @@
+error: unresolved symbol `bytes33`
+   ╭▸ ROOT/tests/ui/solc/types/Bytes33.sol:LL:CC
+   │
+LL │   bytes33 b33 = 1;
+   ╰╴  ━━━━━━━
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,8 @@
+error: expected identifier, found Yul EVM builtin keyword `blobhash`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/BlobhashReservedCancun.sol:LL:CC
+   │
+LL │             function blobhash() -> r {
+   ╰╴                     ━━━━━━━━
+
+error: aborting due to 1 previous error
+

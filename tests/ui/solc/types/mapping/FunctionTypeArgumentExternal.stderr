@@ -1,0 +1,10 @@
+error: invalid data location `storage`
+   ╭▸ ROOT/tests/ui/solc/types/mapping/FunctionTypeArgumentExternal.sol:LL:CC
+   │
+LL │     function f(function(mapping(uint=>uint) storage) external) public pure {
+   │                         ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory` or `calldata` for public function parameter, but got `storage`
+
+error: aborting due to 1 previous error
+

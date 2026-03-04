@@ -1,0 +1,56 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnExplicit.sol:LL:CC
+   │
+LL │      bytes1 b1 = bytes1(1);
+   ╰╴                 ━━━━━━━━━ cannot convert `int_literal[1]` to `bytes1`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnExplicit.sol:LL:CC
+   │
+LL │      bytes2 b2 = bytes2(1);
+   ╰╴                 ━━━━━━━━━ cannot convert `int_literal[1]` to `bytes2`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnExplicit.sol:LL:CC
+   │
+LL │      bytes2 b3 = bytes2(256);
+   ╰╴                 ━━━━━━━━━━━ cannot convert `int_literal[9]` to `bytes2`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnExplicit.sol:LL:CC
+   │
+LL │      bytes3 b4 = bytes3(1);
+   ╰╴                 ━━━━━━━━━ cannot convert `int_literal[1]` to `bytes3`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnExplicit.sol:LL:CC
+   │
+LL │      bytes3 b5 = bytes3(65536);
+   ╰╴                 ━━━━━━━━━━━━━ cannot convert `int_literal[17]` to `bytes3`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnExplicit.sol:LL:CC
+   │
+LL │      bytes4 b6 = bytes4(1);
+   ╰╴                 ━━━━━━━━━ cannot convert `int_literal[1]` to `bytes4`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnExplicit.sol:LL:CC
+   │
+LL │      bytes4 b7 = bytes4(16777216);
+   ╰╴                 ━━━━━━━━━━━━━━━━ cannot convert `int_literal[25]` to `bytes4`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnExplicit.sol:LL:CC
+   │
+LL │      bytes16 b8 = bytes16(1);
+   ╰╴                  ━━━━━━━━━━ cannot convert `int_literal[1]` to `bytes16`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnExplicit.sol:LL:CC
+   │
+LL │      bytes32 b9 = bytes32(1);
+   ╰╴                  ━━━━━━━━━━ cannot convert `int_literal[1]` to `bytes32`
+
+error: aborting due to 9 previous errors
+

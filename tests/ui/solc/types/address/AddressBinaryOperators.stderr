@@ -1,0 +1,62 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressBinaryOperators.sol:LL:CC
+   │
+LL │         a = address(0) + address(0);
+   ╰╴            ━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressBinaryOperators.sol:LL:CC
+   │
+LL │         a = address(0) + address(0);
+   ╰╴                         ━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressBinaryOperators.sol:LL:CC
+   │
+LL │         a = address(0) - address(0);
+   ╰╴            ━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressBinaryOperators.sol:LL:CC
+   │
+LL │         a = address(0) - address(0);
+   ╰╴                         ━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressBinaryOperators.sol:LL:CC
+   │
+LL │         a = address(0) * address(0);
+   ╰╴            ━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressBinaryOperators.sol:LL:CC
+   │
+LL │         a = address(0) * address(0);
+   ╰╴                         ━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressBinaryOperators.sol:LL:CC
+   │
+LL │         a = address(0) / address(0);
+   ╰╴            ━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressBinaryOperators.sol:LL:CC
+   │
+LL │         a = address(0) / address(0);
+   ╰╴                         ━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressBinaryOperators.sol:LL:CC
+   │
+LL │         return address(0) == address(0);
+   ╰╴               ━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressBinaryOperators.sol:LL:CC
+   │
+LL │         return address(0) == address(0);
+   ╰╴                             ━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
+
+error: aborting due to 10 previous errors
+

@@ -1,0 +1,8 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressPayableStorageArrayConversion.sol:LL:CC
+   │
+LL │         d = c; // TODO: this could be allowed in the future
+   ╰╴            ━ expected `address[] storage`, found `address payable[] storage`
+
+error: aborting due to 1 previous error
+

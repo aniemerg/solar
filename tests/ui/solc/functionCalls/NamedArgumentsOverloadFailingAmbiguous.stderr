@@ -1,0 +1,8 @@
+error: no matching declarations found
+   ╭▸ ROOT/tests/ui/solc/functionCalls/NamedArgumentsOverloadFailingAmbiguous.sol:LL:CC
+   │
+LL │         f({x: 1, y: "abc", z: true});
+   ╰╴        ━
+
+error: aborting due to 1 previous error
+

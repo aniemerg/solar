@@ -1,0 +1,26 @@
+error: member `ext` not found on type `type(contract B)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/Selectors.sol:LL:CC
+   │
+LL │         B.ext.selector;
+   ╰╴          ━━━
+
+error: member `pub` not found on type `type(contract B)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/Selectors.sol:LL:CC
+   │
+LL │         B.pub.selector;
+   ╰╴          ━━━
+
+error: member `ext` not found on type `type(contract B)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/Selectors.sol:LL:CC
+   │
+LL │         B.ext.selector;
+   ╰╴          ━━━
+
+error: member `pub` not found on type `type(contract B)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/Selectors.sol:LL:CC
+   │
+LL │         B.pub.selector;
+   ╰╴          ━━━
+
+error: aborting due to 4 previous errors
+

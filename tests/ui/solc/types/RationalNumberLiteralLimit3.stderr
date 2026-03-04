@@ -1,0 +1,20 @@
+error: rational part too large
+   ╭▸ ROOT/tests/ui/solc/types/RationalNumberLiteralLimit3.sol:LL:CC
+   │
+LL │         a = 134562324532464.234452335168163517E1200 / 134562324532464.234452335168163517E1200; // still fine
+   ╰╴            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: rational part too large
+   ╭▸ ROOT/tests/ui/solc/types/RationalNumberLiteralLimit3.sol:LL:CC
+   │
+LL │         a = 134562324532464.234452335168163517E1200 / 134562324532464.234452335168163517E1200; // still fine
+   ╰╴                                                      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: exponent too large
+   ╭▸ ROOT/tests/ui/solc/types/RationalNumberLiteralLimit3.sol:LL:CC
+   │
+LL │         a = 134562324532464.2344523351681635177E1200; // too large
+   ╰╴            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 3 previous errors
+

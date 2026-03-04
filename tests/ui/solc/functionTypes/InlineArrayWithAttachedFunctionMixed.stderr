@@ -1,0 +1,20 @@
+error: member `f` not found on type `uint256`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/InlineArrayWithAttachedFunctionMixed.sol:LL:CC
+   │
+LL │         [t.f, x][0]({a: 8});
+   ╰╴           ━
+
+error: expected function, found `<error>[2]`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/InlineArrayWithAttachedFunctionMixed.sol:LL:CC
+   │
+LL │         [t.f, x][0]({a: 8});
+   │         ━━━━━━━━━━━
+   ╰╴
+note: call expression requires function
+   ╭▸ ROOT/tests/ui/solc/functionTypes/InlineArrayWithAttachedFunctionMixed.sol:LL:CC
+   │
+LL │         [t.f, x][0]({a: 8});
+   ╰╴        ━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 2 previous errors
+

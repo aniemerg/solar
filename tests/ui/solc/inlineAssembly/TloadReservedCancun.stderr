@@ -1,0 +1,14 @@
+error: expected identifier, found Yul EVM builtin keyword `tload`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/TloadReservedCancun.sol:LL:CC
+   │
+LL │             let tload := sload(0)
+   ╰╴                ━━━━━
+
+error: expected identifier, found Yul EVM builtin keyword `tload`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/TloadReservedCancun.sol:LL:CC
+   │
+LL │             ret := tload
+   ╰╴                   ━━━━━
+
+error: aborting due to 2 previous errors
+

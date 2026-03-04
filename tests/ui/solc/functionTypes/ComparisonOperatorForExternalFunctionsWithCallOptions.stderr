@@ -1,0 +1,38 @@
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOperatorForExternalFunctionsWithCallOptions.sol:LL:CC
+   │
+LL │ …     (this.external_test_function{value: 4} == this.external_test_function) &&
+   │                                   ━━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOperatorForExternalFunctionsWithCallOptions.sol:LL:CC
+   │
+LL │ …     (this.external_test_function{value: 4} == this.external_test_function) &&
+   ╰╴       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOperatorForExternalFunctionsWithCallOptions.sol:LL:CC
+   │
+LL │ …     (this.external_test_function{value: 4} == this.external_test_function{value: 4})
+   │                                   ━━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOperatorForExternalFunctionsWithCallOptions.sol:LL:CC
+   │
+LL │ …     (this.external_test_function{value: 4} == this.external_test_function{value: 4})
+   ╰╴       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOperatorForExternalFunctionsWithCallOptions.sol:LL:CC
+   │
+LL │ …     (this.external_test_function{value: 4} == this.external_test_function{value: 4})
+   │                                                                            ━━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOperatorForExternalFunctionsWithCallOptions.sol:LL:CC
+   │
+LL │ …     (this.external_test_function{value: 4} == this.external_test_function{value: 4})
+   ╰╴                                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 3 previous errors
+

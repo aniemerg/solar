@@ -1,0 +1,46 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOperatorsExternalFunctionsWithDifferentParameters.sol:LL:CC
+   │
+LL │         function () external external_function_pointer_local1 = this.external_test_function1;
+   ╰╴                                                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ expected `function () external`, found `function (uint256) external`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOperatorsExternalFunctionsWithDifferentParameters.sol:LL:CC
+   │
+LL │         function () external external_function_pointer_local2 = this.external_test_function2;
+   ╰╴                                                                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ expected `function () external`, found `function (bool) external`
+
+error: cannot apply builtin operator `==` to `function (uint256) external` and `function () external`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOperatorsExternalFunctionsWithDifferentParameters.sol:LL:CC
+   │
+LL │ …     this.external_test_function1 == external_function_pointer_local1 &&
+   │       ┬─────────────────────────── ━━ ──────────────────────────────── function () external
+   │       │
+   ╰╴      function (uint256) external
+
+error: cannot apply builtin operator `==` to `function (bool) external` and `function () external`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOperatorsExternalFunctionsWithDifferentParameters.sol:LL:CC
+   │
+LL │ …     this.external_test_function2 == external_function_pointer_local2
+   │       ┬─────────────────────────── ━━ ──────────────────────────────── function () external
+   │       │
+   ╰╴      function (bool) external
+
+error: cannot apply builtin operator `!=` to `function () external` and `function () external`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOperatorsExternalFunctionsWithDifferentParameters.sol:LL:CC
+   │
+LL │ …     external_function_pointer_local2 != external_function_pointer_local1 &&
+   │       ┬─────────────────────────────── ━━ ──────────────────────────────── function () external
+   │       │
+   ╰╴      function () external
+
+error: cannot apply builtin operator `!=` to `function (bool) external` and `function (uint256) external`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOperatorsExternalFunctionsWithDifferentParameters.sol:LL:CC
+   │
+LL │ …     this.external_test_function2 != this.external_test_function1
+   │       ┬─────────────────────────── ━━ ──────────────────────────── function (uint256) external
+   │       │
+   ╰╴      function (bool) external
+
+error: aborting due to 6 previous errors
+

@@ -1,0 +1,20 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/mapping/ContractMappingInvalid.sol:LL:CC
+   │
+LL │         return (i[y], j[x], i[z]);
+   ╰╴                  ━ contract `contract J` does not inherit from `contract I`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/mapping/ContractMappingInvalid.sol:LL:CC
+   │
+LL │         return (i[y], j[x], i[z]);
+   ╰╴                        ━ contract `contract I` does not inherit from `contract J`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/mapping/ContractMappingInvalid.sol:LL:CC
+   │
+LL │         return (i[y], j[x], i[z]);
+   ╰╴                              ━ expected `contract I`, found `address`
+
+error: aborting due to 3 previous errors
+

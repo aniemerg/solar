@@ -1,0 +1,8 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/Uint32ToBytes32.sol:LL:CC
+   │
+LL │         return bytes32(uint32(0));
+   ╰╴               ━━━━━━━━━━━━━━━━━━ cannot convert `uint32` to `bytes32`
+
+error: aborting due to 1 previous error
+

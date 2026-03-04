@@ -1,0 +1,38 @@
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsDuplicated.sol:LL:CC
+   │
+LL │         this.foo{gas:2, gas: 5};
+   │                 ━━━━━━━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsDuplicated.sol:LL:CC
+   │
+LL │         this.foo{gas:2, gas: 5};
+   ╰╴        ━━━━━━━━━━━━━━━━━━━━━━━
+
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsDuplicated.sol:LL:CC
+   │
+LL │         this.foo{value:2, value: 5};
+   │                 ━━━━━━━━━━━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsDuplicated.sol:LL:CC
+   │
+LL │         this.foo{value:2, value: 5};
+   ╰╴        ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsDuplicated.sol:LL:CC
+   │
+LL │         this.foo{gas:2, value: 5, gas:2, value:3};
+   │                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsDuplicated.sol:LL:CC
+   │
+LL │         this.foo{gas:2, value: 5, gas:2, value:3};
+   ╰╴        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 3 previous errors
+

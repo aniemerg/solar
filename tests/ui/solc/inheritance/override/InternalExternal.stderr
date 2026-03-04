@@ -1,0 +1,14 @@
+error: function with same name and parameter types declared twice
+   ╭▸ ROOT/tests/ui/solc/inheritance/override/InternalExternal.sol:LL:CC
+   │
+LL │     function f(uint[] calldata) external pure {}
+   │              ━
+   ╰╴
+note: other declaration
+   ╭▸ ROOT/tests/ui/solc/inheritance/override/InternalExternal.sol:LL:CC
+   │
+LL │     function f(uint[] memory) internal pure {}
+   ╰╴             ━
+
+error: aborting due to 1 previous error
+

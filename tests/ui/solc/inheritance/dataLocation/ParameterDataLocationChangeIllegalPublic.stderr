@@ -1,0 +1,8 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/inheritance/dataLocation/ParameterDataLocationChangeIllegalPublic.sol:LL:CC
+   │
+LL │         return f(t);
+   ╰╴                 ━ expected `uint256[1] memory`, found `uint256[1] memory`
+
+error: aborting due to 1 previous error
+

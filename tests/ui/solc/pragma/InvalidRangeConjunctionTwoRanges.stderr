@@ -1,0 +1,8 @@
+error: ranges can only be combined using the || operator
+   ╭▸ ROOT/tests/ui/solc/pragma/InvalidRangeConjunctionTwoRanges.sol:LL:CC
+   │
+LL │ pragma solidity 0.4.0 - 0.4.1 0.4.1 - 0.6.2;
+   ╰╴━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

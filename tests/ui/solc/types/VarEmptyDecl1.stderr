@@ -1,0 +1,10 @@
+error: expected one of `(`, `+`, `[`, `_`, `assembly`, `break`, `continue`, `delete`, `do`, `emit`, `for`, `if`, `new`, `payable`, `return`, `revert`, `throw`, `try`, `type`, `unchecked`, `while`, `{`, `}`, elementary type name, identifier, or literal, found reserved keyword `var`
+   ╭▸ ROOT/tests/ui/solc/types/VarEmptyDecl1.sol:LL:CC
+   │
+LL │     function f() public pure {
+   │                               ─ expected one of 26 possible tokens
+LL │         var a;
+   ╰╴        ━━━ unexpected token
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,20 @@
+error: rational part too large
+   ╭▸ ROOT/tests/ui/solc/types/RationalNumberLiteralLimit1.sol:LL:CC
+   │
+LL │         a = 1e1233 / 1e1233; // 1e1233 is still fine
+   ╰╴            ━━━━━━
+
+error: rational part too large
+   ╭▸ ROOT/tests/ui/solc/types/RationalNumberLiteralLimit1.sol:LL:CC
+   │
+LL │         a = 1e1233 / 1e1233; // 1e1233 is still fine
+   ╰╴                     ━━━━━━
+
+error: exponent too large
+   ╭▸ ROOT/tests/ui/solc/types/RationalNumberLiteralLimit1.sol:LL:CC
+   │
+LL │         a = 1e1234; // 1e1234 is too big
+   ╰╴            ━━━━━━
+
+error: aborting due to 3 previous errors
+

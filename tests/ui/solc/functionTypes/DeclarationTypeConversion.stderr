@@ -1,0 +1,14 @@
+error: member `f` not found on type `type(contract D)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/DeclarationTypeConversion.sol:LL:CC
+   │
+LL │         (c ? D.f : D.g);
+   ╰╴               ━
+
+error: member `g` not found on type `type(contract D)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/DeclarationTypeConversion.sol:LL:CC
+   │
+LL │         (c ? D.f : D.g);
+   ╰╴                     ━
+
+error: aborting due to 2 previous errors
+

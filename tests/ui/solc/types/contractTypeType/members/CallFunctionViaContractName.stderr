@@ -1,0 +1,20 @@
+error: member `f` not found on type `type(contract A)`
+   ╭▸ ROOT/tests/ui/solc/types/contractTypeType/members/CallFunctionViaContractName.sol:LL:CC
+   │
+LL │         A.f();
+   ╰╴          ━
+
+error: member `g` not found on type `type(contract A)`
+   ╭▸ ROOT/tests/ui/solc/types/contractTypeType/members/CallFunctionViaContractName.sol:LL:CC
+   │
+LL │         A.g();
+   ╰╴          ━
+
+error: member `h` not found on type `type(contract A)`
+   ╭▸ ROOT/tests/ui/solc/types/contractTypeType/members/CallFunctionViaContractName.sol:LL:CC
+   │
+LL │         A.h(); // might be allowed in the future
+   ╰╴          ━
+
+error: aborting due to 3 previous errors
+

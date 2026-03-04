@@ -1,0 +1,14 @@
+error: no matching declarations found
+   ╭▸ ROOT/tests/ui/solc/functionCalls/NamedArgumentsOverloadFailing2.sol:LL:CC
+   │
+LL │         f({x:1, y: 2});
+   ╰╴        ━
+
+error: no matching declarations found
+   ╭▸ ROOT/tests/ui/solc/functionCalls/NamedArgumentsOverloadFailing2.sol:LL:CC
+   │
+LL │         f({x:1, z: 3});
+   ╰╴        ━
+
+error: aborting due to 2 previous errors
+

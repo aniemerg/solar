@@ -1,0 +1,8 @@
+error: index expression cannot be omitted
+   ╭▸ ROOT/tests/ui/solc/types/mapping/AccessIndexOmitted.sol:LL:CC
+   │
+LL │         m[] = 3;
+   ╰╴        ━━━
+
+error: aborting due to 1 previous error
+

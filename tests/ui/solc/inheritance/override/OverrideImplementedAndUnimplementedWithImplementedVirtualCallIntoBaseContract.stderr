@@ -1,0 +1,8 @@
+error: no matching declarations found
+   ╭▸ ROOT/tests/ui/solc/inheritance/override/OverrideImplementedAndUnimplementedWithImplementedVirtualCallIntoBaseContract.sol:LL:CC
+   │
+LL │         f(); // Would call B.f() if we did not require an override in C.
+   ╰╴        ━
+
+error: aborting due to 1 previous error
+

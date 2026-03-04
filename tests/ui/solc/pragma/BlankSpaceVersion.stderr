@@ -1,0 +1,8 @@
+error: empty version requirement
+   ╭▸ ROOT/tests/ui/solc/pragma/BlankSpaceVersion.sol:LL:CC
+   │
+LL │ pragma solidity ;
+   ╰╴       ━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

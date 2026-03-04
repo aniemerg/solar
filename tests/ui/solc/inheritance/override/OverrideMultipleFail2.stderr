@@ -1,0 +1,8 @@
+error: expected identifier, found `,`
+   ╭▸ ROOT/tests/ui/solc/inheritance/override/OverrideMultipleFail2.sol:LL:CC
+   │
+LL │     function test() internal override(,) returns (uint256);
+   ╰╴                                      ━
+
+error: aborting due to 1 previous error
+

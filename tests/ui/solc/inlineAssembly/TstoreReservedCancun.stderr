@@ -1,0 +1,14 @@
+error: expected identifier, found Yul EVM builtin keyword `tstore`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/TstoreReservedCancun.sol:LL:CC
+   │
+LL │             let tstore := sload(0)
+   ╰╴                ━━━━━━
+
+error: expected identifier, found Yul EVM builtin keyword `tstore`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/TstoreReservedCancun.sol:LL:CC
+   │
+LL │             ret := tstore
+   ╰╴                   ━━━━━━
+
+error: aborting due to 2 previous errors
+

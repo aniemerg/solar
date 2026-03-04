@@ -1,0 +1,8 @@
+error: expected base class or modifier, found contract
+   ╭▸ ROOT/tests/ui/solc/inheritance/ReferenceNonBaseCtor.sol:LL:CC
+   │
+LL │     constructor() X(5) {}
+   ╰╴                  ━
+
+error: aborting due to 1 previous error
+

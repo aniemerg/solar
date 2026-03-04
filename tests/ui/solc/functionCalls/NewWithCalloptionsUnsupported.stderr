@@ -1,0 +1,50 @@
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/NewWithCalloptionsUnsupported.sol:LL:CC
+   │
+LL │         new D{salt:"abc", value:3};
+   │              ━━━━━━━━━━━━━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/NewWithCalloptionsUnsupported.sol:LL:CC
+   │
+LL │         new D{salt:"abc", value:3};
+   ╰╴        ━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/NewWithCalloptionsUnsupported.sol:LL:CC
+   │
+LL │         new D{salt:"abc"};
+   │              ━━━━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/NewWithCalloptionsUnsupported.sol:LL:CC
+   │
+LL │         new D{salt:"abc"};
+   ╰╴        ━━━━━━━━━━━━━━━━━
+
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/NewWithCalloptionsUnsupported.sol:LL:CC
+   │
+LL │         new D{value:5+5};
+   │              ━━━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/NewWithCalloptionsUnsupported.sol:LL:CC
+   │
+LL │         new D{value:5+5};
+   ╰╴        ━━━━━━━━━━━━━━━━
+
+error: call options must be part of a call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/NewWithCalloptionsUnsupported.sol:LL:CC
+   │
+LL │         new D{salt:"aabbcc"};
+   │              ━━━━━━━━━━━━━━━
+   ╰╴
+note: this expression is not a function call expression
+   ╭▸ ROOT/tests/ui/solc/functionCalls/NewWithCalloptionsUnsupported.sol:LL:CC
+   │
+LL │         new D{salt:"aabbcc"};
+   ╰╴        ━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 4 previous errors
+

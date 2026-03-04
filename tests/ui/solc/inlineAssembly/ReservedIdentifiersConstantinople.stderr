@@ -1,0 +1,8 @@
+error: expected identifier, found Yul EVM builtin keyword `shl`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/ReservedIdentifiersConstantinople.sol:LL:CC
+   │
+LL │       let shl := 1
+   ╰╴          ━━━
+
+error: aborting due to 1 previous error
+

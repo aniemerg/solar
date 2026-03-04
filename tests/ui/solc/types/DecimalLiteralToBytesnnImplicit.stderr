@@ -1,0 +1,56 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnImplicit.sol:LL:CC
+   │
+LL │      bytes1 b1 = 1;
+   ╰╴                 ━ expected `bytes1`, found `int_literal[1]`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnImplicit.sol:LL:CC
+   │
+LL │      bytes2 b2 = 1;
+   ╰╴                 ━ expected `bytes2`, found `int_literal[1]`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnImplicit.sol:LL:CC
+   │
+LL │      bytes2 b3 = 256;
+   ╰╴                 ━━━ expected `bytes2`, found `int_literal[9]`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnImplicit.sol:LL:CC
+   │
+LL │      bytes3 b4 = 1;
+   ╰╴                 ━ expected `bytes3`, found `int_literal[1]`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnImplicit.sol:LL:CC
+   │
+LL │      bytes3 b5 = 65536;
+   ╰╴                 ━━━━━ expected `bytes3`, found `int_literal[17]`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnImplicit.sol:LL:CC
+   │
+LL │      bytes4 b6 = 1;
+   ╰╴                 ━ expected `bytes4`, found `int_literal[1]`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnImplicit.sol:LL:CC
+   │
+LL │      bytes4 b7 = 16777216;
+   ╰╴                 ━━━━━━━━ expected `bytes4`, found `int_literal[25]`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnImplicit.sol:LL:CC
+   │
+LL │      bytes16 b8 = 1;
+   ╰╴                  ━ expected `bytes16`, found `int_literal[1]`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/DecimalLiteralToBytesnnImplicit.sol:LL:CC
+   │
+LL │      bytes32 b9 = 1;
+   ╰╴                  ━ expected `bytes32`, found `int_literal[1]`
+
+error: aborting due to 9 previous errors
+

@@ -1,0 +1,14 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressTupleFail.sol:LL:CC
+   │
+LL │         (address c, address payable d) = (address(this), payable(0));
+   ╰╴                                                                 ━ cannot convert `int_literal[1]` to `address payable`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/address/AddressTupleFail.sol:LL:CC
+   │
+LL │         (a,b) = (c,d);
+   ╰╴                ━━━━━ expected `tuple(address payable,address)`, found `tuple(address,address payable)`
+
+error: aborting due to 2 previous errors
+

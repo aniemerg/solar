@@ -1,0 +1,20 @@
+error: expected identifier, found Yul EVM builtin keyword `difficulty`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/DifficultyDisallowedFunctionPreParis.sol:LL:CC
+   │
+LL │             let difficulty := sload(0)
+   ╰╴                ━━━━━━━━━━
+
+error: expected identifier, found Yul EVM builtin keyword `difficulty`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/DifficultyDisallowedFunctionPreParis.sol:LL:CC
+   │
+LL │             ret := difficulty
+   ╰╴                   ━━━━━━━━━━
+
+error: expected identifier, found Yul EVM builtin keyword `difficulty`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/DifficultyDisallowedFunctionPreParis.sol:LL:CC
+   │
+LL │             function difficulty() -> r {
+   ╰╴                     ━━━━━━━━━━
+
+error: aborting due to 3 previous errors
+

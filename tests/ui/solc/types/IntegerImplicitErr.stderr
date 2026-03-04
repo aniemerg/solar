@@ -1,0 +1,14 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/IntegerImplicitErr.sol:LL:CC
+   │
+LL │         int32 b = a;
+   ╰╴                  ━ expected `int32`, found `uint16`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/IntegerImplicitErr.sol:LL:CC
+   │
+LL │         int8 d = c;
+   ╰╴                 ━ expected `int8`, found `uint256`
+
+error: aborting due to 2 previous errors
+

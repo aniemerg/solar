@@ -1,0 +1,8 @@
+error: member `value` not found on type `function () view returns (contract C)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/CallValueOnNonConstructor.sol:LL:CC
+   │
+LL │   function g() public { this.f.value(); }
+   ╰╴                               ━━━━━
+
+error: aborting due to 1 previous error
+

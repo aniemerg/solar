@@ -1,0 +1,38 @@
+error: expected version number
+   ╭▸ ROOT/tests/ui/solc/pragma/BrokenVersion6.sol:LL:CC
+   │
+LL │ pragma solidity v1.2.3;
+   ╰╴                ━━
+
+error: unexpected trailing characters
+   ╭▸ ROOT/tests/ui/solc/pragma/BrokenVersion6.sol:LL:CC
+   │
+LL │ pragma solidity v1.2.3;
+   ╰╴                 ━
+
+error: expected version number
+   ╭▸ ROOT/tests/ui/solc/pragma/BrokenVersion6.sol:LL:CC
+   │
+LL │ pragma solidity v1.2.3;
+   ╰╴                  ━━
+
+error: unexpected trailing characters
+   ╭▸ ROOT/tests/ui/solc/pragma/BrokenVersion6.sol:LL:CC
+   │
+LL │ pragma solidity v1.2.3;
+   ╰╴                   ━
+
+error: expected version number
+   ╭▸ ROOT/tests/ui/solc/pragma/BrokenVersion6.sol:LL:CC
+   │
+LL │ pragma solidity v1.2.3;
+   ╰╴                    ━━
+
+error: unexpected trailing characters
+   ╭▸ ROOT/tests/ui/solc/pragma/BrokenVersion6.sol:LL:CC
+   │
+LL │ pragma solidity v1.2.3;
+   ╰╴                     ━
+
+error: aborting due to 6 previous errors
+

@@ -1,0 +1,10 @@
+error: invalid data location `storage`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/AssignAttachedLibraryFunctionStorageArg.sol:LL:CC
+   │
+LL │         function (D.s storage, uint) returns (uint) g = x.mul;
+   │                   ━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory` or `calldata` for public function parameter, but got `storage`
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,14 @@
+error: member `f` not found on type `type(library L)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ExternalLibraryFunctionToExternalFunctionType.sol:LL:CC
+   │
+LL │         run(L.f);
+   ╰╴              ━
+
+error: member `f` not found on type `type(library L)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ExternalLibraryFunctionToExternalFunctionType.sol:LL:CC
+   │
+LL │         function(uint256) external returns (uint256) _operation = L.f;
+   ╰╴                                                                    ━
+
+error: aborting due to 2 previous errors
+

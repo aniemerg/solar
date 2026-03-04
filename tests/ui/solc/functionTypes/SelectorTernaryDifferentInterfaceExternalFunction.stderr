@@ -1,0 +1,14 @@
+error: member `f` not found on type `type(contract I1)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/SelectorTernaryDifferentInterfaceExternalFunction.sol:LL:CC
+   │
+LL │         (b ? I1.f : I2.g).selector;
+   ╰╴                ━
+
+error: member `g` not found on type `type(contract I2)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/SelectorTernaryDifferentInterfaceExternalFunction.sol:LL:CC
+   │
+LL │         (b ? I1.f : I2.g).selector;
+   ╰╴                       ━
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,10 @@
+error: expected one of `(`, `,`, or `:=`, found `}`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/FunctionWithoutCall.sol:LL:CC
+   │
+LL │       k
+   │        ─ expected one of `(`, `,`, or `:=`
+LL │     }
+   ╰╴    ━ unexpected token
+
+error: aborting due to 1 previous error
+

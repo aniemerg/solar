@@ -1,0 +1,14 @@
+error: expected identifier, found keyword `payable`
+   ╭▸ ROOT/tests/ui/solc/types/address/StateVariableAddressTransientPayable.sol:LL:CC
+   │
+LL │     address transient payable a;
+   ╰╴                      ━━━━━━━
+
+error: expected one of `;` or `=`, found `a`
+   ╭▸ ROOT/tests/ui/solc/types/address/StateVariableAddressTransientPayable.sol:LL:CC
+   │
+LL │     address transient payable a;
+   ╰╴                              ━ expected one of `;` or `=`
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,17 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/types/address/ContractPayableFallbackToPayableAddressImplicitly.sol:LL:CC
+   │
+LL │     address payable a = this;
+   ╰╴                        ━━━━ expected `address payable`, found `contract C`
+
+warning[3628]: contract has a payable fallback function, but no receive ether function
+   ╭▸ ROOT/tests/ui/solc/types/address/ContractPayableFallbackToPayableAddressImplicitly.sol:LL:CC
+   │
+LL │ contract C {
+   │          ━
+   ‡
+LL │   fallback() external payable {
+   ╰╴  ──────── help: consider changing to: `receive`
+
+error: aborting due to 1 previous error; 1 warning emitted
+

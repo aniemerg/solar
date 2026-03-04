@@ -1,0 +1,14 @@
+error: expected version number
+   ╭▸ ROOT/tests/ui/solc/pragma/BrokenVersion2.sol:LL:CC
+   │
+LL │ pragma solidity pragma;
+   ╰╴                ━━━━━━
+
+error: unexpected trailing characters
+   ╭▸ ROOT/tests/ui/solc/pragma/BrokenVersion2.sol:LL:CC
+   │
+LL │ pragma solidity pragma;
+   ╰╴                 ━━━━━
+
+error: aborting due to 2 previous errors
+

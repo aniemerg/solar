@@ -1,0 +1,14 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/invalid/InternalFunctionPointerSelector.sol:LL:CC
+   │
+LL │         return uint32(bytes4(bytes32(selectorValue)));
+   ╰╴                             ━━━━━━━━━━━━━━━━━━━━━━ cannot convert `uint256` to `bytes32`
+
+error: member `selector` not found on type `function ()`
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/invalid/InternalFunctionPointerSelector.sol:LL:CC
+   │
+LL │         return uint32(testFunction.selector);
+   ╰╴                                   ━━━━━━━━
+
+error: aborting due to 2 previous errors
+

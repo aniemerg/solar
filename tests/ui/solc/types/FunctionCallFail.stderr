@@ -1,0 +1,20 @@
+error: expected function, found `int_literal[3]`
+   ╭▸ ROOT/tests/ui/solc/types/FunctionCallFail.sol:LL:CC
+   │
+LL │         (4(y)) = 2;
+   │          ━
+   ╰╴
+note: call expression requires function
+   ╭▸ ROOT/tests/ui/solc/types/FunctionCallFail.sol:LL:CC
+   │
+LL │         (4(y)) = 2;
+   ╰╴         ━━━━
+
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/types/FunctionCallFail.sol:LL:CC
+   │
+LL │         (4(y)) = 2;
+   ╰╴         ━━━━
+
+error: aborting due to 2 previous errors
+

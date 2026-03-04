@@ -1,0 +1,8 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/functionTypes/InternalFunctionTypeToAddress.sol:LL:CC
+   │
+LL │         return address(f);
+   ╰╴               ━━━━━━━━━━ cannot convert `function () returns (address)` to `address`
+
+error: aborting due to 1 previous error
+

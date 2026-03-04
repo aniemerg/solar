@@ -1,0 +1,14 @@
+error: identifier `f` already declared
+   ╭▸ ROOT/tests/ui/solc/inheritance/override/DiamondInterfaceIntermediatePublicStateVariableAndFunction.sol:LL:CC
+   │
+LL │     function f() external virtual returns (uint);
+   │              ━
+   ╰╴
+note: previous declaration declared here
+   ╭▸ ROOT/tests/ui/solc/inheritance/override/DiamondInterfaceIntermediatePublicStateVariableAndFunction.sol:LL:CC
+   │
+LL │     uint public f;
+   ╰╴                ━
+
+error: aborting due to 1 previous error
+

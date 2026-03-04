@@ -1,0 +1,8 @@
+error: types containing internal function pointers cannot be parameter or return types of public functions
+   ╭▸ ROOT/tests/ui/solc/functionTypes/InternalFunctionReturnedFromPublicFunction.sol:LL:CC
+   │
+LL │     function f() public returns (function(uint) internal returns (uint) x) {
+   ╰╴                                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

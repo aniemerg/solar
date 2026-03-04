@@ -1,0 +1,14 @@
+error: member `f` not found on type `type(contract C)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOfFunctionTypesInternalEq2.sol:LL:CC
+   │
+LL │         function () internal ptr = C.f;
+   ╰╴                                     ━
+
+error: member `g` not found on type `type(contract C)`
+   ╭▸ ROOT/tests/ui/solc/functionTypes/ComparisonOfFunctionTypesInternalEq2.sol:LL:CC
+   │
+LL │         return ptr == C.g;
+   ╰╴                        ━
+
+error: aborting due to 2 previous errors
+

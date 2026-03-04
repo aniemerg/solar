@@ -1,0 +1,8 @@
+error: expected contract, found function
+   ╭▸ ROOT/tests/ui/solc/inheritance/BaseNotContract.sol:LL:CC
+   │
+LL │ contract C is fun {}
+   ╰╴              ━━━
+
+error: aborting due to 1 previous error
+

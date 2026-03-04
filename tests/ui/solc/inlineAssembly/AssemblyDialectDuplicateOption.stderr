@@ -1,0 +1,8 @@
+error: inline assembly marked memory-safe multiple times
+   ╭▸ ROOT/tests/ui/solc/inlineAssembly/AssemblyDialectDuplicateOption.sol:LL:CC
+   │
+LL │     assembly "evmasm" ("memory-safe", "memory-safe") {}
+   ╰╴                                      ━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+
