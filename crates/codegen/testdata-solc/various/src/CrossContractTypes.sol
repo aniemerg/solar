@@ -1,0 +1,16 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+library Lib {
+    struct S {
+        uint256 a;
+        uint256 b;
+    }
+}
+
+contract CrossContractTypes {
+    function f() public returns (uint256 r) {
+        Lib.S memory x = Lib.S({a: 2, b: 3});
+        r = x.b;
+    }
+}
