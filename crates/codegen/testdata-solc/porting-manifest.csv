@@ -650,67 +650,67 @@ freeFunctions/new_operator.sol,pending,,,,
 freeFunctions/overloads.sol,pending,,,,
 freeFunctions/recursion.sol,pending,,,,
 freeFunctions/storage_calldata_refs.sol,pending,,,,
-functionCall/array_multiple_local_vars.sol,pending,,,,
-functionCall/bare_call_no_returndatacopy.sol,pending,,,,
-functionCall/call_attached_library_function_on_function.sol,pending,,,,
-functionCall/call_attached_library_function_on_storage_variable.sol,pending,,,,
-functionCall/call_attached_library_function_on_string.sol,pending,,,,
-functionCall/call_function_returning_function.sol,pending,,,,
-functionCall/call_function_returning_nothing_via_pointer.sol,pending,,,,
-functionCall/call_internal_function_via_expression.sol,pending,,,,
-functionCall/call_internal_function_with_multislot_arguments_via_pointer.sol,pending,,,,
+functionCall/array_multiple_local_vars.sol,ported,calls,src/ArrayMultipleLocalVars.sol,,Loop with multiple local vars and control flow
+functionCall/bare_call_no_returndatacopy.sol,ported,calls,src/BareCallNoReturndatacopy.sol,,Low-level call without returndata copy
+functionCall/call_attached_library_function_on_function.sol,ported,calls,src/CallAttachedLibraryOnFunction.sol,,Library attached to function type via using-for
+functionCall/call_attached_library_function_on_storage_variable.sol,ported,calls,src/CallAttachedLibraryOnStorageVariable.sol,,Library attached to storage struct via using-for
+functionCall/call_attached_library_function_on_string.sol,ported,calls,src/CallAttachedLibraryOnString.sol,,Library attached to string type via using-for
+functionCall/call_function_returning_function.sol,ported,calls,src/CallFunctionReturningFunction.sol,,Chain of function pointers returning function pointers
+functionCall/call_function_returning_nothing_via_pointer.sol,ported,calls,src/CallFunctionReturningNothingViaPointer.sol,,Void function called via internal pointer
+functionCall/call_internal_function_via_expression.sol,ported,calls,src/CallInternalFunctionViaExpression.sol,,Internal function called directly and via pointer expression
+functionCall/call_internal_function_with_multislot_arguments_via_pointer.sol,ported,calls,src/CallInternalFunctionWithMultislotArgsViaPointer.sol,,Function pointer with multi-slot external function type args
 functionCall/call_options_overload.sol,ported,calls,src/CallOptionsOverload.sol,,Call options + overloads
-functionCall/calling_nonexisting_contract_throws.sol,pending,,,,
+functionCall/calling_nonexisting_contract_throws.sol,ported,calls,src/CallingNonexistingContractThrows.sol,,High-level call to nonexistent contract reverts; low-level does not
 functionCall/calling_other_functions.sol,ported,control-flow,src/CollatzCalls.sol,,Internal calls + loops
-functionCall/calling_uninitialized_function.sol,pending,,,,
-functionCall/calling_uninitialized_function_in_detail.sol,pending,,,,
-functionCall/calling_uninitialized_function_through_array.sol,pending,,,,
+functionCall/calling_uninitialized_function.sol,ported,calls,src/CallingUninitializedFunction.sol,,Calling uninitialized internal/external function pointer reverts
+functionCall/calling_uninitialized_function_in_detail.sol,ported,calls,src/CallingUninitializedFunctionInDetail.sol,,Uninitialized storage function pointer call reverts
+functionCall/calling_uninitialized_function_through_array.sol,ported,calls,src/CallingUninitializedFunctionThroughArray.sol,,Uninitialized function pointer in array reverts on call
 functionCall/conditional_with_arguments.sol,ported,calls,src/ConditionalWithArguments.sol,,Ternary function selection
 functionCall/creation_function_call_no_args.sol,ported,calls,src/CreationFunctionCallNoArgs.sol,,Contract creation in call
 functionCall/creation_function_call_with_args.sol,ported,calls,src/CreationFunctionCallWithArgs.sol,,Contract creation with args
-functionCall/creation_function_call_with_salt.sol,pending,,,,
-functionCall/delegatecall_return_value.sol,pending,,,,
-functionCall/delegatecall_return_value_pre_byzantium.sol,pending,,,,
-functionCall/disordered_named_args.sol,pending,,,,
-functionCall/eof/call_options_overload.sol,pending,,,,
-functionCall/eof/calling_nonexisting_contract.sol,pending,,,,
-functionCall/eof/external_call_at_construction_time.sol,pending,,,,
-functionCall/eof/external_call_to_nonexisting.sol,pending,,,,
+functionCall/creation_function_call_with_salt.sol,ported,calls,src/CreationFunctionCallWithSalt.sol,,CREATE2 with salt bytes literal
+functionCall/delegatecall_return_value.sol,ported,calls,src/DelegatecallReturnValue.sol,,delegatecall returns success/data; assert failure via delegatecall
+functionCall/delegatecall_return_value_pre_byzantium.sol,skipped,,,,Requires EVMVersion <byzantium (pre-byzantium semantics). Do not re-attempt: ancient EVM target not supported by Solar or Forge.
+functionCall/disordered_named_args.sol,ported,calls,src/DisorderedNamedArgs.sol,,Named arguments passed in non-declaration order
+functionCall/eof/call_options_overload.sol,skipped,,,,Requires bytecodeFormat >=EOFv1. Do not re-attempt: EOF is experimental and not supported by Forge/Solar.
+functionCall/eof/calling_nonexisting_contract.sol,skipped,,,,Requires bytecodeFormat >=EOFv1. Do not re-attempt: EOF is experimental and not supported by Forge/Solar.
+functionCall/eof/external_call_at_construction_time.sol,skipped,,,,Requires bytecodeFormat >=EOFv1. Do not re-attempt: EOF is experimental and not supported by Forge/Solar.
+functionCall/eof/external_call_to_nonexisting.sol,skipped,,,,Requires bytecodeFormat >=EOFv1. Do not re-attempt: EOF is experimental and not supported by Forge/Solar.
 functionCall/external_call.sol,ported,calls,src/ExternalCall.sol,,Requires external call support
-functionCall/external_call_at_construction_time.sol,pending,,,,
+functionCall/external_call_at_construction_time.sol,ported,calls,src/ExternalCallAtConstructionTime.sol,,External call to self during construction fails extcodesize check
 functionCall/external_call_dynamic_returndata.sol,ported,calls,src/ExternalCallDynamicReturndata.sol,,External call returns dynamic data
-functionCall/external_call_to_nonexisting.sol,pending,,,,
-functionCall/external_call_to_nonexisting_debugstrings.sol,pending,,,,
+functionCall/external_call_to_nonexisting.sol,ported,calls,src/ExternalCallToNonexisting.sol,,High-level calls to nonexistent contract revert via extcodesize check
+functionCall/external_call_to_nonexisting_debugstrings.sol,ported,calls,src/ExternalCallToNonexistingDebugstrings.sol,,Same as external_call_to_nonexisting; debug strings do not change observable revert behavior
 functionCall/external_call_value.sol,ported,calls,src/ExternalCallValue.sol,,External call with value
 functionCall/external_function.sol,ported,calls,src/ExternalFunction.sol,,External function call
-functionCall/external_public_override.sol,pending,,,,
-functionCall/failed_create.sol,pending,,,,
-functionCall/file_level_call_via_module.sol,pending,,,,
-functionCall/gas_and_value_basic.sol,pending,,,,
-functionCall/inheritance/base_base_overload.sol,pending,,,,
-functionCall/inheritance/base_overload.sol,pending,,,,
-functionCall/inheritance/call_base.sol,pending,,,,
-functionCall/inheritance/call_base_base.sol,pending,,,,
-functionCall/inheritance/call_base_base_explicit.sol,pending,,,,
-functionCall/inheritance/call_base_explicit.sol,pending,,,,
-functionCall/inheritance/call_unimplemented_base.sol,pending,,,,
-functionCall/inheritance/super_skip_unimplemented_in_abstract_contract.sol,pending,,,,
-functionCall/inheritance/super_skip_unimplemented_in_interface.sol,pending,,,,
-functionCall/mapping_array_internal_argument.sol,pending,,,,
-functionCall/mapping_internal_argument.sol,pending,,,,
-functionCall/mapping_internal_return.sol,pending,,,,
-functionCall/member_accessors.sol,pending,,,,
+functionCall/external_public_override.sol,ported,calls,src/ExternalPublicOverride.sol,,external virtual overridden by public in derived contract
+functionCall/failed_create.sol,ported,calls,src/FailedCreate.sol,,CREATE2 fails when same salt reused or stack overflows
+functionCall/file_level_call_via_module.sol,ported,calls,src/FileLevelCallViaModule.sol,,Free function overloads inlined from two-file module import
+functionCall/gas_and_value_basic.sol,ported,calls,src/GasAndValueBasic.sol,,Call with gas stipend and value; OOG on low gas
+functionCall/inheritance/base_base_overload.sol,ported,calls,src/InheritanceBaseBaseOverload.sol,,Explicit base-base function call with overloads
+functionCall/inheritance/base_overload.sol,ported,calls,src/InheritanceBaseOverload.sol,,Explicit base call with overloads
+functionCall/inheritance/call_base.sol,ported,calls,src/InheritanceCallBase.sol,,Child calls inherited base function
+functionCall/inheritance/call_base_base.sol,ported,calls,src/InheritanceCallBaseBase.sol,,Child calls virtual function from multi-level inheritance
+functionCall/inheritance/call_base_base_explicit.sol,ported,calls,src/InheritanceCallBaseBaseExplicit.sol,,Explicitly calling grandparent function bypasses intermediate override
+functionCall/inheritance/call_base_explicit.sol,ported,calls,src/InheritanceCallBaseExplicit.sol,,Explicit Base.f() call from child
+functionCall/inheritance/call_unimplemented_base.sol,ported,calls,src/InheritanceCallUnimplementedBase.sol,,Abstract chain with multiple unimplemented bases; concrete leaf implements
+functionCall/inheritance/super_skip_unimplemented_in_abstract_contract.sol,ported,calls,src/InheritanceSuperSkipUnimplementedInAbstractContract.sol,,super skips abstract contract with no implementation in C3 chain
+functionCall/inheritance/super_skip_unimplemented_in_interface.sol,ported,calls,src/InheritanceSuperSkipUnimplementedInInterface.sol,,super skips interface with no implementation in C3 chain
+functionCall/mapping_array_internal_argument.sol,ported,calls,src/MappingArrayInternalArgument.sol,,Array of mappings passed as storage reference to internal function
+functionCall/mapping_internal_argument.sol,ported,calls,src/MappingInternalArgument.sol,,Mapping passed as storage reference to internal function
+functionCall/mapping_internal_return.sol,ported,calls,src/MappingInternalReturn.sol,,Internal function returns mapping storage reference
+functionCall/member_accessors.sol,ported,calls,src/MemberAccessors.sol,,Auto-generated getters; private state has no getter
 functionCall/multiple_functions.sol,ported,calls,src/MultipleFunctions.sol,,Multiple selectors + missing selector
 functionCall/multiple_return_values.sol,ported,calls,src/MultipleReturnValues.sol,,Multiple returns
 functionCall/named_args.sol,ported,calls,src/NamedArgs.sol,,Named arguments in call
 functionCall/named_args_overload.sol,ported,calls,src/NamedArgsOverload.sol,,Named args with overloads
-functionCall/precompile_extcodesize_check.sol,pending,,,,
-functionCall/return_size_bigger_than_expected.sol,pending,,,,
-functionCall/return_size_shorter_than_expected.sol,pending,,,,
-functionCall/return_size_shorter_than_expected_evm_version_after_homestead.sol,pending,,,,
-functionCall/send_zero_ether.sol,pending,,,,
-functionCall/transaction_status.sol,pending,,,,
-functionCall/value_test.sol,pending,,,,
+functionCall/precompile_extcodesize_check.sol,ported,calls,src/PrecompileExtcodesizeCheck.sol,,High-level call to precompile skips extcodesize; short return fails ABI decode
+functionCall/return_size_bigger_than_expected.sol,ported,calls,src/ReturnSizeBiggerThanExpected.sol,,Callee returns more data than caller interface expects; memory advances
+functionCall/return_size_shorter_than_expected.sol,skipped,,,,Requires EVMVersion <=homestead (pre-byzantium ABI behavior). Do not re-attempt: ancient EVM semantics not applicable.
+functionCall/return_size_shorter_than_expected_evm_version_after_homestead.sol,ported,calls,src/ReturnSizeShorterThanExpectedAfterHomestead.sol,,Short return from callee causes ABI decode revert on post-homestead EVM
+functionCall/send_zero_ether.sol,ported,calls,src/SendZeroEther.sol,,send(0) still invokes receive() with gas stipend
+functionCall/transaction_status.sol,ported,calls,src/TransactionStatus.sol,,Success/revert/assert-failure transaction outcomes
+functionCall/value_test.sol,ported,calls,src/ValueTest.sol,,msg.value in payable function
 functionSelector/function_selector_via_contract_name.sol,pending,,,,
 functionTypes/address_member.sol,pending,,,,
 functionTypes/call_to_zero_initialized_function_type_ir.sol,pending,,,,
