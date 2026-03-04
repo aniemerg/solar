@@ -18,36 +18,36 @@ abiEncodeDecode/contract_array_v2.sol,ported,abi-encode-decode,src/ContractArray
 abiEncodeDecode/offset_overflow_in_array_decoding.sol,ported,abi-encode-decode,src/OffsetOverflowInArrayDecoding.sol,test/OffsetOverflowInArrayDecoding.t.sol,crafted corrupt ABI causes overflow in array decode pointer arithmetic
 abiEncodeDecode/offset_overflow_in_array_decoding_2.sol,ported,abi-encode-decode,src/OffsetOverflowInArrayDecoding2.sol,test/OffsetOverflowInArrayDecoding2.t.sol,within-array pointer overflow via crafted corrupt ABI data
 abiEncodeDecode/offset_overflow_in_array_decoding_3.sol,ported,abi-encode-decode,src/OffsetOverflowInArrayDecoding3.sol,test/OffsetOverflowInArrayDecoding3.t.sol,max-value offset fields in corrupt ABI cause overflow
-abiEncoderV1/abi_decode_dynamic_array.sol,pending,,,,
-abiEncoderV1/abi_decode_fixed_arrays.sol,pending,,,,
-abiEncoderV1/abi_decode_static_array.sol,pending,,,,
-abiEncoderV1/abi_decode_static_array_v2.sol,pending,,,,
-abiEncoderV1/abi_decode_trivial.sol,pending,,,,
-abiEncoderV1/abi_decode_v2.sol,pending,,,,
-abiEncoderV1/abi_decode_v2_calldata.sol,pending,,,,
-abiEncoderV1/abi_decode_v2_storage.sol,pending,,,,
-abiEncoderV1/abi_encode.sol,pending,,,,
-abiEncoderV1/abi_encode_call.sol,pending,,,,
-abiEncoderV1/abi_encode_calldata_slice.sol,pending,,,,
-abiEncoderV1/abi_encode_decode_simple.sol,pending,,,,
-abiEncoderV1/abi_encode_empty_string.sol,pending,,,,
-abiEncoderV1/abi_encode_rational.sol,pending,,,,
-abiEncoderV1/bool_out_of_bounds.sol,pending,,,,
-abiEncoderV1/byte_arrays.sol,pending,,,,
-abiEncoderV1/calldata_arrays_too_large.sol,pending,,,,
-abiEncoderV1/calldata_bytes_bytes32_arrays.sol,pending,,,,
-abiEncoderV1/cleanup/cleanup.sol,pending,,,,
-abiEncoderV1/decode_slice.sol,pending,,,,
-abiEncoderV1/dynamic_arrays.sol,pending,,,,
-abiEncoderV1/dynamic_memory_copy.sol,pending,,,,
-abiEncoderV1/enums.sol,pending,,,,
-abiEncoderV1/memory_dynamic_array_and_calldata_bytes.sol,pending,,,,
-abiEncoderV1/memory_params_in_external_function.sol,pending,,,,
-abiEncoderV1/return_dynamic_types_cross_call_advanced.sol,pending,,,,
-abiEncoderV1/return_dynamic_types_cross_call_out_of_range_1.sol,pending,,,,
-abiEncoderV1/return_dynamic_types_cross_call_out_of_range_2.sol,pending,,,,
-abiEncoderV1/return_dynamic_types_cross_call_simple.sol,pending,,,,
-abiEncoderV1/struct/struct_storage_ptr.sol,pending,,,,
+abiEncoderV1/abi_decode_dynamic_array.sol,ported,abi-encoder-v1,src/AbiDecodeDynamicArray.sol,test/AbiDecodeDynamicArray.t.sol,
+abiEncoderV1/abi_decode_fixed_arrays.sol,ported,abi-encoder-v1,src/AbiDecodeFixedArrays.sol,test/AbiDecodeFixedArrays.t.sol,
+abiEncoderV1/abi_decode_static_array.sol,ported,abi-encoder-v1,src/AbiDecodeStaticArray.sol,test/AbiDecodeStaticArray.t.sol,
+abiEncoderV1/abi_decode_static_array_v2.sol,ported,abi-encoder-v1,src/AbiDecodeStaticArrayV2.sol,test/AbiDecodeStaticArrayV2.t.sol,
+abiEncoderV1/abi_decode_trivial.sol,ported,abi-encoder-v1,src/AbiDecodeTrivial.sol,test/AbiDecodeTrivial.t.sol,
+abiEncoderV1/abi_decode_v2.sol,ported,abi-encoder-v1,src/AbiDecodeV2.sol,test/AbiDecodeV2.t.sol,
+abiEncoderV1/abi_decode_v2_calldata.sol,ported,abi-encoder-v1,src/AbiDecodeV2Calldata.sol,test/AbiDecodeV2Calldata.t.sol,
+abiEncoderV1/abi_decode_v2_storage.sol,ported,abi-encoder-v1,src/AbiDecodeV2Storage.sol,test/AbiDecodeV2Storage.t.sol,
+abiEncoderV1/abi_encode.sol,ported,abi-encoder-v1,src/AbiEncode.sol,test/AbiEncode.t.sol,
+abiEncoderV1/abi_encode_call.sol,ported,abi-encoder-v1,src/AbiEncodeCall.sol,test/AbiEncodeCall.t.sol,
+abiEncoderV1/abi_encode_calldata_slice.sol,ported,abi-encoder-v1,src/AbiEncodeCalldataSlice.sol,test/AbiEncodeCalldataSlice.t.sol,
+abiEncoderV1/abi_encode_decode_simple.sol,ported,abi-encoder-v1,src/AbiEncodeDecodeSimple.sol,test/AbiEncodeDecodeSimple.t.sol,
+abiEncoderV1/abi_encode_empty_string.sol,skipped,,,,Do not re-attempt: ABIEncoderV1Only=true and compileViaYul=false; tests V1-specific empty string encoding that differs in V2 default
+abiEncoderV1/abi_encode_rational.sol,ported,abi-encoder-v1,src/AbiEncodeRational.sol,test/AbiEncodeRational.t.sol,
+abiEncoderV1/bool_out_of_bounds.sol,skipped,,,,Do not re-attempt: ABIEncoderV1Only=true and compileViaYul=false; tests non-canonical bool encoding which V1 allows but V2 rejects
+abiEncoderV1/byte_arrays.sol,ported,abi-encoder-v1,src/ByteArrays.sol,test/ByteArrays.t.sol,
+abiEncoderV1/calldata_arrays_too_large.sol,ported,abi-encoder-v1,src/CalldataArraysTooLarge.sol,test/CalldataArraysTooLarge.t.sol,
+abiEncoderV1/calldata_bytes_bytes32_arrays.sol,ported,abi-encoder-v1,src/CalldataBytesByte32Arrays.sol,test/CalldataBytesByte32Arrays.t.sol,compileViaYul: false in original; adapted signature to use memory return instead of calldata
+abiEncoderV1/cleanup/cleanup.sol,skipped,,,,Do not re-attempt: ABIEncoderV1Only=true and compileViaYul=false; tests V1 cleanup behavior for over-padded calldata inputs
+abiEncoderV1/decode_slice.sol,ported,abi-encoder-v1,src/DecodeSlice.sol,test/DecodeSlice.t.sol,
+abiEncoderV1/dynamic_arrays.sol,ported,abi-encoder-v1,src/DynamicArrays.sol,test/DynamicArrays.t.sol,
+abiEncoderV1/dynamic_memory_copy.sol,ported,abi-encoder-v1,src/DynamicMemoryCopy.sol,test/DynamicMemoryCopy.t.sol,
+abiEncoderV1/enums.sol,skipped,,,,Do not re-attempt: ABIEncoderV1Only=true and compileViaYul=false; tests V1 enum out-of-range encoding (V2 encoder would revert)
+abiEncoderV1/memory_dynamic_array_and_calldata_bytes.sol,ported,abi-encoder-v1,src/MemoryDynamicArrayAndCalldataBytes.sol,test/MemoryDynamicArrayAndCalldataBytes.t.sol,
+abiEncoderV1/memory_params_in_external_function.sol,ported,abi-encoder-v1,src/MemoryParamsInExternalFunction.sol,test/MemoryParamsInExternalFunction.t.sol,
+abiEncoderV1/return_dynamic_types_cross_call_advanced.sol,ported,abi-encoder-v1,src/ReturnDynamicTypesCrossCallAdvanced.sol,test/ReturnDynamicTypesCrossCallAdvanced.t.sol,
+abiEncoderV1/return_dynamic_types_cross_call_out_of_range_1.sol,skipped,,,,Do not re-attempt: EVMVersion=homestead only; tests pre-Byzantium behavior not applicable to modern EVM
+abiEncoderV1/return_dynamic_types_cross_call_out_of_range_2.sol,ported,abi-encoder-v1,src/ReturnDynamicTypesCrossCallOutOfRange2.sol,test/ReturnDynamicTypesCrossCallOutOfRange2.t.sol,
+abiEncoderV1/return_dynamic_types_cross_call_simple.sol,ported,abi-encoder-v1,src/ReturnDynamicTypesCrossCallSimple.sol,test/ReturnDynamicTypesCrossCallSimple.t.sol,
+abiEncoderV1/struct/struct_storage_ptr.sol,ported,abi-encoder-v1,src/StructStoragePtr.sol,test/StructStoragePtr.t.sol,
 abiEncoderV2/abi_encode_calldata_slice.sol,pending,,,,
 abiEncoderV2/abi_encode_empty_string_v2.sol,pending,,,,
 abiEncoderV2/abi_encode_rational_v2.sol,pending,,,,
@@ -599,37 +599,37 @@ externalContracts/prbmath_unsigned.sol,ported,external-contracts,src/PrbmathUnsi
 externalContracts/ramanujan_pi.sol,ported,external-contracts,src/RamanujanPi.sol,test/RamanujanPi.t.sol,Ramanujan pi approximation using PRBMathSD59x18
 externalContracts/snark.sol,skipped,external-contracts,,,Do not re-attempt: uses isoltest library: linking directive which is not expressible in Foundry test setup
 externalContracts/strings.sol,ported,external-contracts,src/Strings.sol,test/Strings.t.sol,"String slice library: roundtrip, utf8len, multiconcat, benchmark (toSlice skipped: returns memory pointer)"
-externalSource/_external/external.sol,pending,,,,
-externalSource/_external/import.sol,pending,,,,
-externalSource/_external/import_with_subdir.sol,pending,,,,
-externalSource/_external/other_external.sol,pending,,,,
-externalSource/_external/subdir/import.sol,pending,,,,
-externalSource/_external/subdir/sub_external.sol,pending,,,,
-externalSource/_nonNormalizedPaths/a.sol,pending,,,,
-externalSource/_nonNormalizedPaths/c.sol,pending,,,,
-externalSource/_nonNormalizedPaths/d.sol,pending,,,,
-externalSource/_relativeImports/D/d.sol,pending,,,,
-externalSource/_relativeImports/c.sol,pending,,,,
-externalSource/_relativeImports/dir/B/b.sol,pending,,,,
-externalSource/_relativeImports/dir/G/g.sol,pending,,,,
-externalSource/_relativeImports/dir/a.sol,pending,,,,
-externalSource/_relativeImports/dir/contract.sol,pending,,,,
-externalSource/_relativeImports/h.sol,pending,,,,
-externalSource/_sourceNameStartingWithDots/b.sol,pending,,,,
-externalSource/_sourceNameStartingWithDots/dir/a.sol,pending,,,,
-externalSource/_sourceNameStartingWithDots/dir/contract.sol,pending,,,,
-externalSource/_sourceNameStartingWithDots/dot_a.sol,pending,,,,
-externalSource/_sourceNameStartingWithDots/dot_dot_b.sol,pending,,,,
-externalSource/multiple_equals_signs.sol,pending,,,,
-externalSource/multiple_external_source.sol,pending,,,,
-externalSource/multisource.sol,pending,,,,
-externalSource/non_normalized_paths.sol,pending,,,,
-externalSource/relative_imports.sol,pending,,,,
-externalSource/source.sol,pending,,,,
-externalSource/source_import.sol,pending,,,,
-externalSource/source_import_subdir.sol,pending,,,,
-externalSource/source_name_starting_with_dots.sol,pending,,,,
-externalSource/source_remapping.sol,pending,,,,
+externalSource/_external/external.sol,skipped,,,,"Do not re-attempt: helper file for ExternalSource tests, not a standalone test"
+externalSource/_external/import.sol,skipped,,,,Do not re-attempt: helper file for ExternalSource tests
+externalSource/_external/import_with_subdir.sol,skipped,,,,Do not re-attempt: helper file for ExternalSource tests
+externalSource/_external/other_external.sol,skipped,,,,Do not re-attempt: helper file for ExternalSource tests
+externalSource/_external/subdir/import.sol,skipped,,,,Do not re-attempt: helper file for ExternalSource tests
+externalSource/_external/subdir/sub_external.sol,skipped,,,,Do not re-attempt: helper file for ExternalSource tests
+externalSource/_nonNormalizedPaths/a.sol,skipped,,,,Do not re-attempt: path normalization specifics tied to solc virtual filesystem
+externalSource/_nonNormalizedPaths/c.sol,skipped,,,,Do not re-attempt: path normalization specifics tied to solc virtual filesystem
+externalSource/_nonNormalizedPaths/d.sol,skipped,,,,Do not re-attempt: path normalization specifics tied to solc virtual filesystem
+externalSource/_relativeImports/D/d.sol,skipped,,,,Do not re-attempt: relative import resolution tied to solc virtual filesystem
+externalSource/_relativeImports/c.sol,skipped,,,,Do not re-attempt: relative import resolution tied to solc virtual filesystem
+externalSource/_relativeImports/dir/B/b.sol,skipped,,,,Do not re-attempt: relative import resolution tied to solc virtual filesystem
+externalSource/_relativeImports/dir/G/g.sol,skipped,,,,Do not re-attempt: relative import resolution tied to solc virtual filesystem
+externalSource/_relativeImports/dir/a.sol,skipped,,,,Do not re-attempt: relative import resolution tied to solc virtual filesystem
+externalSource/_relativeImports/dir/contract.sol,skipped,,,,Do not re-attempt: relative import resolution tied to solc virtual filesystem
+externalSource/_relativeImports/h.sol,skipped,,,,Do not re-attempt: relative import resolution tied to solc virtual filesystem
+externalSource/_sourceNameStartingWithDots/b.sol,skipped,,,,Do not re-attempt: dot-starting source names tied to solc virtual filesystem
+externalSource/_sourceNameStartingWithDots/dir/a.sol,skipped,,,,Do not re-attempt: dot-starting source names tied to solc virtual filesystem
+externalSource/_sourceNameStartingWithDots/dir/contract.sol,skipped,,,,Do not re-attempt: dot-starting source names tied to solc virtual filesystem
+externalSource/_sourceNameStartingWithDots/dot_a.sol,skipped,,,,Do not re-attempt: dot-starting source names tied to solc virtual filesystem
+externalSource/_sourceNameStartingWithDots/dot_dot_b.sol,skipped,,,,Do not re-attempt: dot-starting source names tied to solc virtual filesystem
+externalSource/multiple_equals_signs.sol,skipped,,,,Do not re-attempt: uses solc-specific source name remapping with = syntax
+externalSource/multiple_external_source.sol,ported,external-source,src/MultipleExternalSource.sol,test/MultipleExternalSource.t.sol,Multiple ExternalSource declarations
+externalSource/multisource.sol,ported,external-source,src/MultisourceS2.sol,test/Multisource.t.sol,ExternalSource with multi-source
+externalSource/non_normalized_paths.sol,skipped,,,,Do not re-attempt: tests path normalization behavior specific to solc import resolution
+externalSource/relative_imports.sol,skipped,,,,Do not re-attempt: relative import path resolution tied to solc virtual filesystem
+externalSource/source.sol,ported,external-source,src/Source.sol,test/Source.t.sol,Basic ExternalSource import
+externalSource/source_import.sol,ported,external-source,src/SourceImport.sol,test/SourceImport.t.sol,ExternalSource with multiple external imports
+externalSource/source_import_subdir.sol,ported,external-source,src/SourceImportSubdir.sol,test/SourceImportSubdir.t.sol,ExternalSource with subdir remapping
+externalSource/source_name_starting_with_dots.sol,skipped,,,,Do not re-attempt: dot-starting source name resolution tied to solc virtual filesystem
+externalSource/source_remapping.sol,skipped,,,,Do not re-attempt: uses solc source remapping with = syntax and absolute paths
 fallback/call_forward_bytes.sol,ported,fallback,src/CallForwardBytes.sol,,fallback saves calldata and forwards to nested contract
 fallback/falback_return.sol,ported,fallback,src/FallbackReturn.sol,,Fallback early return
 fallback/fallback_argument.sol,ported,fallback,src/FallbackArgument.sol,,Fallback with calldata argument
@@ -1026,21 +1026,21 @@ modifiers/return_does_not_skip_modifier.sol,ported,modifiers,src/ReturnDoesNotSk
 modifiers/return_in_modifier.sol,ported,modifiers,src/ReturnInModifier.sol,,Modifier early return
 modifiers/stacked_return_with_modifiers.sol,ported,modifiers,src/StackedReturnWithModifiers.sol,test/StackedReturnWithModifiers.t.sol,Triple stacked modifier with early return; x incremented 4 times
 modifiers/transient_state_variable_value_type.sol,ported,modifiers,src/TransientStateVariableValueType.sol,test/TransientStateVariableValueType.t.sol,Transient state variable used in modifier argument (Cancun)
-multiSource/circular_import.sol,pending,,,,
-multiSource/circular_import_2.sol,pending,,,,
-multiSource/circular_reimport.sol,pending,,,,
-multiSource/circular_reimport_2.sol,pending,,,,
-multiSource/free_different_interger_types.sol,pending,,,,
-multiSource/free_function_resolution_base_contract.sol,pending,,,,
-multiSource/free_function_resolution_override_virtual.sol,pending,,,,
-multiSource/free_function_resolution_override_virtual_super.sol,pending,,,,
-multiSource/free_function_resolution_override_virtual_transitive.sol,pending,,,,
-multiSource/free_function_transitive_import.sol,pending,,,,
-multiSource/import.sol,pending,,,,
-multiSource/import_overloaded_function.sol,pending,,,,
-multiSource/imported_free_function_via_alias.sol,pending,,,,
-multiSource/imported_free_function_via_alias_direct_call.sol,pending,,,,
-multiSource/reimport_imported_function.sol,pending,,,,
+multiSource/circular_import.sol,ported,multi-source,src/CircularImportS2.sol,test/CircularImport.t.sol,Circular free function import aliases
+multiSource/circular_import_2.sol,ported,multi-source,src/CircularImport2S2.sol,test/CircularImport2.t.sol,Circular import with multiple aliases
+multiSource/circular_reimport.sol,ported,multi-source,src/CircularReimportS3.sol,test/CircularReimport.t.sol,Circular reimport via alias
+multiSource/circular_reimport_2.sol,ported,multi-source,src/CircularReimport2S3.sol,test/CircularReimport2.t.sol,Circular reimport 2 via alias
+multiSource/free_different_interger_types.sol,ported,multi-source,src/FreeDifferentIntegerTypesS2.sol,test/FreeDifferentIntegerTypes.t.sol,Overloaded free functions via alias (different param types)
+multiSource/free_function_resolution_base_contract.sol,ported,multi-source,src/FreeFunctionResolutionBaseContractS2.sol,test/FreeFunctionResolutionBaseContract.t.sol,Free function resolution in base contract
+multiSource/free_function_resolution_override_virtual.sol,ported,multi-source,src/FreeFunctionResolutionOverrideVirtualS2.sol,test/FreeFunctionResolutionOverrideVirtual.t.sol,Free function resolution with virtual override
+multiSource/free_function_resolution_override_virtual_super.sol,ported,multi-source,src/FreeFunctionResolutionOverrideVirtualSuperS2.sol,test/FreeFunctionResolutionOverrideVirtualSuper.t.sol,Free function resolution with super call
+multiSource/free_function_resolution_override_virtual_transitive.sol,ported,multi-source,src/FreeFunctionResolutionOverrideVirtualTransitiveS3.sol,test/FreeFunctionResolutionOverrideVirtualTransitive.t.sol,Free function resolution transitive virtual override
+multiSource/free_function_transitive_import.sol,ported,multi-source,src/FreeFunctionTransitiveImportS3.sol,test/FreeFunctionTransitiveImport.t.sol,Free function transitive import
+multiSource/import.sol,ported,multi-source,src/ImportB.sol,test/Import.t.sol,Basic multi-source import
+multiSource/import_overloaded_function.sol,ported,multi-source,src/ImportOverloadedFunctionB.sol,test/ImportOverloadedFunction.t.sol,Import overloaded free functions
+multiSource/imported_free_function_via_alias.sol,ported,multi-source,src/ImportedFreeFunctionViaAliasS2.sol,test/ImportedFreeFunctionViaAlias.t.sol,Free function via alias with module import
+multiSource/imported_free_function_via_alias_direct_call.sol,ported,multi-source,src/ImportedFreeFunctionViaAliasDirectCallS2.sol,test/ImportedFreeFunctionViaAliasDirectCall.t.sol,Free function via alias direct call
+multiSource/reimport_imported_function.sol,ported,multi-source,src/ReimportImportedFunctionS3.sol,test/ReimportImportedFunction.t.sol,Reimport chained free function alias
 operators/compound_assign.sol,ported,operators,src/CompoundAssign.sol,,Compound assignment operators with state
 operators/compound_assign_transient_storage.sol,blocked,,,,Requires separate EVM transactions to reset transient storage between 8 calls; Forge runs all calls in one transaction.
 operators/shifts/bitwise_shifting_constantinople.sol,ported,operators,src/BitwiseShiftingConstantinople.sol,,Bitwise shl/shr/sar via assembly
