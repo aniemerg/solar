@@ -1,0 +1,14 @@
+error: expected identifier, found keyword `payable`
+   ╭▸ ROOT/tests/ui/solc/parsing/AddressPublicPayableError.sol:LL:CC
+   │
+LL │     address public payable a;
+   ╰╴                   ━━━━━━━
+
+error: expected one of `;` or `=`, found `a`
+   ╭▸ ROOT/tests/ui/solc/parsing/AddressPublicPayableError.sol:LL:CC
+   │
+LL │     address public payable a;
+   ╰╴                           ━ expected one of `;` or `=`
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,10 @@
+error: expected contract item (function, variable, struct, or modifier definition), found reserved keyword `var`
+   ╭▸ ROOT/tests/ui/solc/parsing/VarStorageVar.sol:LL:CC
+   │
+LL │     var a;
+   │     ━━━
+   │
+   ╰ note: for a full list of valid contract items, see <https://docs.soliditylang.org/en/latest/grammar.html#a4.SolidityParser.contractBodyElement>
+
+error: aborting due to 1 previous error
+

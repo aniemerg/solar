@@ -1,0 +1,8 @@
+error: expected string literal, found keyword `function`
+   ╭▸ ROOT/tests/ui/solc/parsing/ImportComplexInvalidFrom.sol:LL:CC
+   │
+LL │ import {hello, world} from function;
+   ╰╴                           ━━━━━━━━ expected string literal
+
+error: aborting due to 1 previous error
+

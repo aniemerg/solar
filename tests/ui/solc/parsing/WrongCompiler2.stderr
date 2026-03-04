@@ -1,0 +1,14 @@
+error: expected identifier, found keyword `is`
+   ╭▸ ROOT/tests/ui/solc/parsing/WrongCompiler2.sol:LL:CC
+   │
+LL │ this is surely invalid
+   ╰╴     ━━
+
+error: expected one of `;` or `=`, found `surely`
+   ╭▸ ROOT/tests/ui/solc/parsing/WrongCompiler2.sol:LL:CC
+   │
+LL │ this is surely invalid
+   ╰╴        ━━━━━━ expected one of `;` or `=`
+
+error: aborting due to 2 previous errors
+

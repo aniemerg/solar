@@ -1,0 +1,8 @@
+error: `address payable` cannot be used in an expression
+   ╭▸ ROOT/tests/ui/solc/parsing/AddressPayableConversion.sol:LL:CC
+   │
+LL │         address payable a = address payable(this);
+   ╰╴                            ━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

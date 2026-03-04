@@ -1,0 +1,10 @@
+error: visibility already specified
+   ╭▸ ROOT/tests/ui/solc/parsing/ConstructorInternalPublic.sol:LL:CC
+   │
+LL │   constructor() internal public {}
+   │                 ┬─────── ━━━━━━
+   │                 │
+   ╰╴                previous definition
+
+error: aborting due to 1 previous error
+

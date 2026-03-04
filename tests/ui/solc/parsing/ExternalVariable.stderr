@@ -1,0 +1,8 @@
+error: `external` not allowed here; allowed values: private, internal, public
+   ╭▸ ROOT/tests/ui/solc/parsing/ExternalVariable.sol:LL:CC
+   │
+LL │     uint external x;
+   ╰╴         ━━━━━━━━
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,8 @@
+error: expected `from`, found `;`
+   ╭▸ ROOT/tests/ui/solc/parsing/ImportComplexWithoutFrom.sol:LL:CC
+   │
+LL │ import {hello, world};
+   ╰╴                     ━ expected `from`
+
+error: aborting due to 1 previous error
+

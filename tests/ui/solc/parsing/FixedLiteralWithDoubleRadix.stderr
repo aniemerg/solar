@@ -1,0 +1,8 @@
+error: expected one of `(`, `.`, `;`, `?`, `[`, or `{`, found `<rational>`
+   ╭▸ ROOT/tests/ui/solc/parsing/FixedLiteralWithDoubleRadix.sol:LL:CC
+   │
+LL │     fixed40x40 pi = 3.14.15;
+   ╰╴                        ━━━ expected one of `(`, `.`, `;`, `?`, `[`, or `{`
+
+error: aborting due to 1 previous error
+

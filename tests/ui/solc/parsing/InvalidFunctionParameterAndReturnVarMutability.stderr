@@ -1,0 +1,26 @@
+error: mutability is not allowed here
+   ╭▸ ROOT/tests/ui/solc/parsing/InvalidFunctionParameterAndReturnVarMutability.sol:LL:CC
+   │
+LL │     function f1(uint immutable a) public returns (uint immutable) { }
+   ╰╴                     ━━━━━━━━━
+
+error: mutability is not allowed here
+   ╭▸ ROOT/tests/ui/solc/parsing/InvalidFunctionParameterAndReturnVarMutability.sol:LL:CC
+   │
+LL │     function f1(uint immutable a) public returns (uint immutable) { }
+   ╰╴                                                       ━━━━━━━━━
+
+error: mutability is not allowed here
+   ╭▸ ROOT/tests/ui/solc/parsing/InvalidFunctionParameterAndReturnVarMutability.sol:LL:CC
+   │
+LL │     function f2(uint constant a) public returns (uint constant) { }
+   ╰╴                     ━━━━━━━━
+
+error: mutability is not allowed here
+   ╭▸ ROOT/tests/ui/solc/parsing/InvalidFunctionParameterAndReturnVarMutability.sol:LL:CC
+   │
+LL │     function f2(uint constant a) public returns (uint constant) { }
+   ╰╴                                                      ━━━━━━━━
+
+error: aborting due to 4 previous errors
+

@@ -1,0 +1,8 @@
+error: only elementary types, user defined value types, contract types or enums are allowed as mapping keys.
+   ╭▸ ROOT/tests/ui/solc/parsing/MappingNonelementaryKey4.sol:LL:CC
+   │
+LL │     mapping(string[] => uint) data;
+   ╰╴            ━━━━━━━━
+
+error: aborting due to 1 previous error
+

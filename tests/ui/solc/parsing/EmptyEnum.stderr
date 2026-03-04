@@ -1,0 +1,8 @@
+error: enum must have at least one variant
+   ╭▸ ROOT/tests/ui/solc/parsing/EmptyEnum.sol:LL:CC
+   │
+LL │     enum foo { }
+   ╰╴         ━━━
+
+error: aborting due to 1 previous error
+

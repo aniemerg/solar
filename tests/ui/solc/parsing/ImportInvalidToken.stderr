@@ -1,0 +1,8 @@
+error: expected one of `*`, `{`, or string literal, found keyword `function`
+   ╭▸ ROOT/tests/ui/solc/parsing/ImportInvalidToken.sol:LL:CC
+   │
+LL │ import function;
+   ╰╴       ━━━━━━━━ expected one of `*`, `{`, or string literal
+
+error: aborting due to 1 previous error
+

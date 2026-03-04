@@ -1,0 +1,26 @@
+error: expected array length, got range expression
+   ╭▸ ROOT/tests/ui/solc/parsing/ArrayTypeRange.sol:LL:CC
+   │
+LL │         uint[][1:] memory x;
+   ╰╴              ━━━━
+
+error: expected array length, got range expression
+   ╭▸ ROOT/tests/ui/solc/parsing/ArrayTypeRange.sol:LL:CC
+   │
+LL │         uint[][1:2] memory x;
+   ╰╴              ━━━━━
+
+error: expected array length, got range expression
+   ╭▸ ROOT/tests/ui/solc/parsing/ArrayTypeRange.sol:LL:CC
+   │
+LL │         uint[1:] memory x;
+   ╰╴            ━━━━
+
+error: expected array length, got range expression
+   ╭▸ ROOT/tests/ui/solc/parsing/ArrayTypeRange.sol:LL:CC
+   │
+LL │         uint[1:2] memory x;
+   ╰╴            ━━━━━
+
+error: aborting due to 4 previous errors
+

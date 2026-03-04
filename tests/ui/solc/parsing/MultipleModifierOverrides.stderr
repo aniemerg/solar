@@ -1,0 +1,16 @@
+error: override already specified
+   ╭▸ ROOT/tests/ui/solc/parsing/MultipleModifierOverrides.sol:LL:CC
+   │
+LL │     modifier f() override override {}
+   │                  ┬─────── ━━━━━━━━
+   │                  │
+   ╰╴                 previous definition
+
+error: modifier must have a `_;` placeholder statement
+   ╭▸ ROOT/tests/ui/solc/parsing/MultipleModifierOverrides.sol:LL:CC
+   │
+LL │     modifier f() override override {}
+   ╰╴             ━
+
+error: aborting due to 2 previous errors
+

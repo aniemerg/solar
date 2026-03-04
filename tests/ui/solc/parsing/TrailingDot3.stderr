@@ -1,0 +1,14 @@
+error: empty rational
+   ╭▸ ROOT/tests/ui/solc/parsing/TrailingDot3.sol:LL:CC
+   │
+LL │     uint a = 2.
+   ╰╴             ━━
+
+error: expected one of `(`, `.`, `;`, `?`, `[`, or `{`, found `<eof>`
+   ╭▸ ROOT/tests/ui/solc/parsing/TrailingDot3.sol:LL:CC
+   │
+LL │     uint a = 2.
+   ╰╴             ━━ expected one of `(`, `.`, `;`, `?`, `[`, or `{`
+
+error: aborting due to 2 previous errors
+

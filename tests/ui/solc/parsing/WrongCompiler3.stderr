@@ -1,0 +1,8 @@
+error: expected identifier, found `;`
+   ╭▸ ROOT/tests/ui/solc/parsing/WrongCompiler3.sol:LL:CC
+   │
+LL │     uint ;
+   ╰╴         ━
+
+error: aborting due to 1 previous error
+

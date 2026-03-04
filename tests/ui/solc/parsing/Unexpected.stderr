@@ -1,0 +1,8 @@
+error: expected identifier, found `<eof>`
+   ╭▸ ROOT/tests/ui/solc/parsing/Unexpected.sol:LL:CC
+   │
+LL │ unexpected
+   ╰╴━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,27 @@
+error: unknown start of token: `
+   ╭▸ ROOT/tests/ui/solc/parsing/PragmaIllegal.sol:LL:CC
+   │
+LL │ pragma ``;
+   │        ━━
+   ╰╴
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+   ╭▸ ROOT/tests/ui/solc/parsing/PragmaIllegal.sol:LL:CC
+   │
+LL │ pragma ``;
+   │        ━━
+   ╰ note: character repeats once more
+
+error: expected at least one token in pragma directive
+   ╭▸ ROOT/tests/ui/solc/parsing/PragmaIllegal.sol:LL:CC
+   │
+LL │ pragma ``;
+   ╰╴━━━━━━
+
+error: unknown pragma
+   ╭▸ ROOT/tests/ui/solc/parsing/PragmaIllegal.sol:LL:CC
+   │
+LL │ pragma ``;
+   ╰╴━━━━━━━━━━
+
+error: aborting due to 3 previous errors
+

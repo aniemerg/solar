@@ -1,0 +1,8 @@
+error: expected `=`, found `;`
+   ╭▸ ROOT/tests/ui/solc/parsing/TuplesDeclWithoutRhs.sol:LL:CC
+   │
+LL │         (uint a, uint b, uint c);
+   ╰╴                                ━ expected `=`
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,20 @@
+error: mutability is not allowed here
+   ╭▸ ROOT/tests/ui/solc/parsing/LocalConstVariable.sol:LL:CC
+   │
+LL │         uint constant local = 4;
+   ╰╴             ━━━━━━━━
+
+error: no visibility specified
+   ╭▸ ROOT/tests/ui/solc/parsing/LocalConstVariable.sol:LL:CC
+   │
+LL │ ┏     function localConst() returns (uint ret)
+LL │ ┃     {
+LL │ ┃         uint constant local = 4;
+LL │ ┃         return local;
+LL │ ┃     }
+   │ ┗━━━━━┛
+   │
+   ╰ help: add `public` to the declaration
+
+error: aborting due to 2 previous errors
+

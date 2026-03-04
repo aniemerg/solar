@@ -1,0 +1,8 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/parsing/FunctionTypeInExpression.sol:LL:CC
+   │
+LL │         function (uint, uint) internal returns (uint) f1 = f;
+   ╰╴                                                           ━ expected `function (uint256,uint256) returns (uint256)`, found `function (uint256,uint256) returns (uint256)`
+
+error: aborting due to 1 previous error
+

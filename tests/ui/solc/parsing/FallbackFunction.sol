@@ -1,0 +1,3 @@
+contract c {
+    fallback() external { }
+}

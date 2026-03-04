@@ -1,0 +1,10 @@
+error: invalid data location `memory`
+   ╭▸ ROOT/tests/ui/solc/parsing/LocationSpecifiersForStateVariables.sol:LL:CC
+   │
+LL │     uint[] memory x;
+   │     ━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `none` or `transient` for state variable, but got `memory`
+
+error: aborting due to 1 previous error
+

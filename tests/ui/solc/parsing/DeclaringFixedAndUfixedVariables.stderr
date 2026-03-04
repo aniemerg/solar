@@ -1,0 +1,20 @@
+error: unresolved symbol `fixed40x40`
+   ╭▸ ROOT/tests/ui/solc/parsing/DeclaringFixedAndUfixedVariables.sol:LL:CC
+   │
+LL │     fixed40x40 storeMe;
+   ╰╴    ━━━━━━━━━━
+
+error: unresolved symbol `fixed32x32`
+   ╭▸ ROOT/tests/ui/solc/parsing/DeclaringFixedAndUfixedVariables.sol:LL:CC
+   │
+LL │     function f(ufixed x, fixed32x32 y) public {
+   ╰╴                         ━━━━━━━━━━
+
+error: unresolved symbol `ufixed8x8`
+   ╭▸ ROOT/tests/ui/solc/parsing/DeclaringFixedAndUfixedVariables.sol:LL:CC
+   │
+LL │         ufixed8x8 a;
+   ╰╴        ━━━━━━━━━
+
+error: aborting due to 3 previous errors
+

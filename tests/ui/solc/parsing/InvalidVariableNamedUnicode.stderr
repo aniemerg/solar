@@ -1,0 +1,8 @@
+error: expected identifier, found keyword `unicode`
+   ╭▸ ROOT/tests/ui/solc/parsing/InvalidVariableNamedUnicode.sol:LL:CC
+   │
+LL │     string unicode = "abc";
+   ╰╴           ━━━━━━━
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,18 @@
+error: expected identifier, found reserved keyword `var`
+   ╭▸ ROOT/tests/ui/solc/parsing/VariableDefinitionInMapping.sol:LL:CC
+   │
+LL │         mapping(var=>bytes32) d;
+   ╰╴                ━━━
+
+error: no visibility specified
+   ╭▸ ROOT/tests/ui/solc/parsing/VariableDefinitionInMapping.sol:LL:CC
+   │
+LL │ ┏     function fun() {
+LL │ ┃         mapping(var=>bytes32) d;
+LL │ ┃     }
+   │ ┗━━━━━┛
+   │
+   ╰ help: add `public` to the declaration
+
+error: aborting due to 2 previous errors
+

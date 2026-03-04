@@ -1,0 +1,38 @@
+error: address types can only be payable or non-payable
+   ╭▸ ROOT/tests/ui/solc/parsing/AddressInvalidStateMutability.sol:LL:CC
+   │
+LL │     address view m_a;
+   ╰╴    ━━━━━━━━━━━━
+
+error: address types can only be payable or non-payable
+   ╭▸ ROOT/tests/ui/solc/parsing/AddressInvalidStateMutability.sol:LL:CC
+   │
+LL │     address pure m_b;
+   ╰╴    ━━━━━━━━━━━━
+
+error: address types can only be payable or non-payable
+   ╭▸ ROOT/tests/ui/solc/parsing/AddressInvalidStateMutability.sol:LL:CC
+   │
+LL │     address view[] m_c;
+   ╰╴    ━━━━━━━━━━━━
+
+error: address types can only be payable or non-payable
+   ╭▸ ROOT/tests/ui/solc/parsing/AddressInvalidStateMutability.sol:LL:CC
+   │
+LL │     mapping(uint => address view) m_d;
+   ╰╴                    ━━━━━━━━━━━━
+
+error: address types can only be payable or non-payable
+   ╭▸ ROOT/tests/ui/solc/parsing/AddressInvalidStateMutability.sol:LL:CC
+   │
+LL │         address view a;
+   ╰╴        ━━━━━━━━━━━━
+
+error: expected one of `(`, `.`, `;`, `?`, `[`, or `{`, found `a`
+   ╭▸ ROOT/tests/ui/solc/parsing/AddressInvalidStateMutability.sol:LL:CC
+   │
+LL │         address view a;
+   ╰╴                     ━ expected one of `(`, `.`, `;`, `?`, `[`, or `{`
+
+error: aborting due to 6 previous errors
+

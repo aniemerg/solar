@@ -1,0 +1,8 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/parsing/ArraysInExpressions.sol:LL:CC
+   │
+LL │     function f() public { c[10] storage a = 7; uint8[10 * 2] storage x; }
+   ╰╴                                            ━ expected `contract c[10] storage`, found `int_literal[3]`
+
+error: aborting due to 1 previous error
+

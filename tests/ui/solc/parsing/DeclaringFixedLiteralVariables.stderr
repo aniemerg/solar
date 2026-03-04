@@ -1,0 +1,8 @@
+error: unresolved symbol `fixed40x40`
+   ╭▸ ROOT/tests/ui/solc/parsing/DeclaringFixedLiteralVariables.sol:LL:CC
+   │
+LL │     fixed40x40 pi = 3.14;
+   ╰╴    ━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

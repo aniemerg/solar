@@ -1,0 +1,34 @@
+error: invalid use of underscores in number literal
+   ╭▸ ROOT/tests/ui/solc/parsing/LexerNumbersWithUnderscoresDecimalFail.sol:LL:CC
+   │
+LL │     uint D1 = 1234_;
+   │               ━━━━━
+   │
+   ╰ help: remove trailing underscores
+
+error: invalid use of underscores in number literal
+   ╭▸ ROOT/tests/ui/solc/parsing/LexerNumbersWithUnderscoresDecimalFail.sol:LL:CC
+   │
+LL │     uint D2 = 12__34;
+   │               ━━━━━━
+   │
+   ╰ help: only 1 consecutive underscore `_` is allowed between digits
+
+error: invalid use of underscores in number literal
+   ╭▸ ROOT/tests/ui/solc/parsing/LexerNumbersWithUnderscoresDecimalFail.sol:LL:CC
+   │
+LL │     uint D3 = 12_e34;
+   │               ━━━━━━
+   │
+   ╰ help: remove underscores at the end of the mantissa
+
+error: invalid use of underscores in number literal
+   ╭▸ ROOT/tests/ui/solc/parsing/LexerNumbersWithUnderscoresDecimalFail.sol:LL:CC
+   │
+LL │     uint D4 = 12e_34;
+   │               ━━━━━━
+   │
+   ╰ help: remove underscores in front of the exponent
+
+error: aborting due to 4 previous errors
+

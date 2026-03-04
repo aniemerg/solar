@@ -1,0 +1,24 @@
+error: trailing `,` separator is not allowed
+   ╭▸ ROOT/tests/ui/solc/parsing/TrailingCommaInNamedArgs.sol:LL:CC
+   │
+LL │     function b() returns (uint r) { r = a({a: 1, b: 2, c: 3, }); }
+   ╰╴                                                           ━
+
+error: no visibility specified
+   ╭▸ ROOT/tests/ui/solc/parsing/TrailingCommaInNamedArgs.sol:LL:CC
+   │
+LL │     function a(uint a, uint b, uint c) returns (uint r) { r = a * 100 + b * 10 + c * 1; }
+   │     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: add `public` to the declaration
+
+error: no visibility specified
+   ╭▸ ROOT/tests/ui/solc/parsing/TrailingCommaInNamedArgs.sol:LL:CC
+   │
+LL │     function b() returns (uint r) { r = a({a: 1, b: 2, c: 3, }); }
+   │     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: add `public` to the declaration
+
+error: aborting due to 3 previous errors
+
