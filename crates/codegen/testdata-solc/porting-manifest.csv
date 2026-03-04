@@ -110,8 +110,8 @@ abiEncoderV2/struct/struct_short.sol,pending,,,,
 abiEncoderV2/struct/struct_simple.sol,pending,,,,
 abiEncoderV2/struct/struct_validation.sol,pending,,,,
 abiEncoderV2/struct/validation_function_type_inside_struct.sol,pending,,,,
-accessor/accessor_for_const_state_variable.sol,pending,,,,
-accessor/accessor_for_state_variable.sol,pending,,,,
+accessor/accessor_for_const_state_variable.sol,ported,accessor,src/AccessorForConstStateVariable.sol,test/AccessorForConstStateVariable.t.sol,auto-generated public constant accessor
+accessor/accessor_for_state_variable.sol,ported,accessor,src/AccessorForStateVariable.sol,test/AccessorForStateVariable.t.sol,auto-generated public state variable accessor
 arithmetics/addmod_mulmod.sol,ported,arithmetic,src/AddmodMulmod.sol,test/AddmodMulmod.t.sol,addmod with large values using unbounded literal arithmetic
 arithmetics/addmod_mulmod_zero.sol,ported,arithmetic,src/AddmodMulmodZero.sol,test/AddmodMulmodZero.t.sol,addmod/mulmod with zero modulus panics (0x12)
 arithmetics/block_inside_unchecked.sol,ported,arithmetic,src/BlockInsideUnchecked.sol,test/BlockInsideUnchecked.t.sol,double-braced unchecked block; overflow wraps to 0
@@ -422,8 +422,8 @@ cleanup/exp_cleanup_nonzero_base.sol,ported,cleanup,src/ExpCleanupNonzeroBase.so
 cleanup/exp_cleanup_smaller_base.sol,ported,cleanup,src/ExpCleanupSmallerBase.sol,test/ExpCleanupSmallerBase.t.sol,2**256 truncated to uint16 = 0
 cleanup/indexed_log_topic_during_explicit_downcast.sol,ported,cleanup,src/IndexedLogTopicDuringExplicitDowncast.sol,test/IndexedLogTopicDuringExplicitDowncast.t.sol,downcast cleanup in standard codegen; values differ from Yul codegen
 cleanup/indexed_log_topic_during_explicit_downcast_during_emissions.sol,ported,cleanup,src/IndexedLogTopicDuringExplicitDowncastDuringEmissions.sol,test/IndexedLogTopicDuringExplicitDowncastDuringEmissions.t.sol,indexed event topic properly cleaned during emission
-constantEvaluator/negative_fractional_mod.sol,pending,,,,
-constantEvaluator/rounding.sol,pending,,,,
+constantEvaluator/negative_fractional_mod.sol,ported,constant-evaluator,src/NegativeFractionalMod.sol,test/NegativeFractionalMod.t.sol,compile-time rational mod with negative fractional values
+constantEvaluator/rounding.sol,ported,constant-evaluator,src/Rounding.sol,test/Rounding.t.sol,constant integer division rounding (truncation toward zero) used in array sizes
 constants/asm_address_constant_regression.sol,pending,,,,
 constants/asm_constant_file_level.sol,pending,,,,
 constants/assign_type_info.sol,pending,,,,
@@ -459,7 +459,7 @@ constructor/store_function_in_constructor_packed.sol,ported,constructor,src/Stor
 constructor/store_internal_unused_function_in_constructor.sol,ported,constructor,src/StoreInternalUnusedFunctionInConstructor.sol,,Unused internal function stored in constructor
 constructor/store_internal_unused_library_function_in_constructor.sol,ported,constructor,src/StoreInternalUnusedLibraryFunctionInConstructor.sol,,Library internal function stored in constructor
 constructor/transient_state_variable_initialization.sol,ported,constructor,src/TransientStateVariableInitialization.sol,,Transient storage variable initialized in constructor
-conversions/function_type_array_to_storage.sol,pending,,,,
+conversions/function_type_array_to_storage.sol,ported,conversions,src/FunctionTypeArrayToStorage.sol,test/FunctionTypeArrayToStorage.t.sol,implicit conversion of function types (view/pure) to less restrictive types in fixed arrays
 conversions/string_to_bytes.sol,ported,conversions,src/StringToBytes.sol,,string -> bytes conversion
 deployedCodeExclusion/bound_function.sol,pending,,,,
 deployedCodeExclusion/library_function.sol,pending,,,,
@@ -561,8 +561,8 @@ events/events_with_same_name.sol,ported,events,src/EventsWithSameName.sol,test/E
 events/events_with_same_name_file_level.sol,ported,events,src/EventsWithSameNameFileLevel.sol,test/EventsWithSameNameFileLevel.t.sol,File-level overloaded events with same name
 events/events_with_same_name_inherited_emit.sol,ported,events,src/EventsWithSameNameInheritedEmit.sol,test/EventsWithSameNameInheritedEmit.t.sol,Inherited events with same name emitted by override contract
 events/simple.sol,ported,events,src/Simple.sol,test/Simple.t.sol,Emit base and derived events with same name from one function
-experimental/stub.sol,pending,,,,
-experimental/type_class.sol,pending,,,,
+experimental/stub.sol,skipped,experimental,,,Do not re-attempt: uses pragma experimental solidity (experimental language mode not supported by standard Foundry/solc)
+experimental/type_class.sol,skipped,experimental,,,Do not re-attempt: uses pragma experimental solidity (experimental language mode not supported by standard Foundry/solc)
 exponentiation/literal_base.sol,ported,arithmetic,src/ExponentiationLiteralBase.sol,,Exponentiation with negative literal base
 exponentiation/signed_base.sol,ported,arithmetic,src/ExponentiationSignedBase.sol,,Signed base exponentiation
 exponentiation/small_exp.sol,ported,arithmetic,src/ExponentiationSmallExp.sol,,Exponentiation with small exponent
@@ -711,7 +711,7 @@ functionCall/return_size_shorter_than_expected_evm_version_after_homestead.sol,p
 functionCall/send_zero_ether.sol,ported,calls,src/SendZeroEther.sol,,send(0) still invokes receive() with gas stipend
 functionCall/transaction_status.sol,ported,calls,src/TransactionStatus.sol,,Success/revert/assert-failure transaction outcomes
 functionCall/value_test.sol,ported,calls,src/ValueTest.sol,,msg.value in payable function
-functionSelector/function_selector_via_contract_name.sol,pending,,,,
+functionSelector/function_selector_via_contract_name.sol,ported,function-selector,src/FunctionSelectorViaContractName.sol,test/FunctionSelectorViaContractName.t.sol,function selector access via contract type name and instance variable
 functionTypes/address_member.sol,ported,function-types,src/AddressMember.sol,test/AddressMember.t.sol,External function .address member
 functionTypes/call_to_zero_initialized_function_type_ir.sol,ported,function-types,src/CallToZeroInitializedFunctionType.sol,test/CallToZeroInitializedFunctionType.t.sol,Zero-init internal function pointer call panics; IR and legacy share contract
 functionTypes/call_to_zero_initialized_function_type_legacy.sol,ported,function-types,src/CallToZeroInitializedFunctionType.sol,test/CallToZeroInitializedFunctionType.t.sol,Same as ir variant; merged into shared contract
@@ -979,7 +979,7 @@ libraries/using_library_mappings_public.sol,ported,libraries,src/UsingLibraryMap
 libraries/using_library_mappings_return.sol,ported,libraries,src/UsingLibraryMappingsReturn.sol,,External library returning nested mapping storage reference
 libraries/using_library_structs.sol,ported,libraries,src/UsingLibraryStructs.sol,,External library with struct containing dynamic array stored in mapping
 literals/denominations.sol,ported,literals,src/Denominations.sol,,Ether/gwei/wei sums
-literals/denominations_in_array_sizes.sol,pending,,,,
+literals/denominations_in_array_sizes.sol,ported,literals,src/DenominationsInArraySizes.sol,test/DenominationsInArraySizes.t.sol,ether/time denomination literals used as fixed array sizes
 literals/escape.sol,ported,literals,src/EscapeLiteral.sol,,Escaped string literal bytes
 literals/ether.sol,ported,literals,src/EtherLiteral.sol,,Ether denomination
 literals/fractional_denominations.sol,ported,literals,src/FractionalDenominations.sol,,Fractional time/ether units
@@ -987,14 +987,14 @@ literals/gwei.sol,ported,literals,src/GweiLiteral.sol,,Gwei denomination
 literals/hex_string_with_non_printable_characters.sol,ported,literals,src/HexStringWithNonPrintableCharacters.sol,,Hex literal non-printable bytes
 literals/hex_string_with_underscore.sol,ported,literals,src/HexStringWithUnderscore.sol,,Hex literal underscores
 literals/scientific_notation.sol,ported,literals,src/ScientificNotation.sol,,Scientific notation (int/uint)
-literals/ternary_operator_with_literal_types_overflow.sol,pending,,,,
+literals/ternary_operator_with_literal_types_overflow.sol,ported,literals,src/TernaryOperatorWithLiteralTypesOverflow.sol,test/TernaryOperatorWithLiteralTypesOverflow.t.sol,ternary with literal branches typed as uint8; sum overflows uint8 at runtime causing Panic 0x11
 literals/wei.sol,ported,literals,src/WeiLiteral.sol,,Wei denomination
 memoryManagement/assembly_access.sol,pending,,,,
 memoryManagement/memory_types_initialisation.sol,ported,memory-management,src/MemoryTypesInitialization.sol,,Zero-initialization of memory returns
 memoryManagement/return_variable.sol,pending,,,,
 memoryManagement/static_memory_array_allocation.sol,pending,,,,
 memoryManagement/struct_allocation.sol,pending,,,,
-metaTypes/name_other_contract.sol,pending,,,,
+metaTypes/name_other_contract.sol,ported,meta-types,src/NameOtherContract.sol,test/NameOtherContract.t.sol,"type(C).name for contract, abstract contract, and interface"
 modifiers/access_through_contract_name.sol,ported,modifiers,src/AccessThroughContractName.sol,test/AccessThroughContractName.t.sol,Access modifier via qualified A.m vs override m
 modifiers/access_through_module_name.sol,skipped,,,,"Do not re-attempt: self-import via module alias (import ""a"" as M) not reproducible in Foundry"
 modifiers/break_in_modifier.sol,ported,modifiers,src/BreakInModifier.sol,test/BreakInModifier.t.sol,Break statement inside modifier loop body
@@ -1158,9 +1158,9 @@ smoke/fallback.sol,pending,,,,
 smoke/multiline.sol,pending,,,,
 smoke/multiline_comments.sol,pending,,,,
 smoke/structs.sol,pending,,,,
-specialFunctions/abi_encode_with_signature_from_string.sol,pending,,,,
-specialFunctions/abi_functions_member_access.sol,pending,,,,
-specialFunctions/keccak256_optimized.sol,pending,,,,
+specialFunctions/abi_encode_with_signature_from_string.sol,ported,special-functions,src/AbiEncodeWithSignatureFromString.sol,test/AbiEncodeWithSignatureFromString.t.sol,abi.encodeWithSignature with literal and variable string signature produces identical output
+specialFunctions/abi_functions_member_access.sol,ported,special-functions,src/AbiFunctionsMemberAccess.sol,test/AbiFunctionsMemberAccess.t.sol,abi built-in member access as expressions compiles and runs
+specialFunctions/keccak256_optimized.sol,ported,special-functions,src/Keccak256Optimized.sol,test/Keccak256Optimized.t.sol,compile-time keccak256 constant folding on short and long literal strings
 state/blobhash.sol,skipped,,,,Do not re-attempt: requires cancun blob tx context with specific injected blob hashes
 state/block_basefee.sol,ported,state,src/BlockBasefee.sol,test/BlockBasefee.t.sol,block.basefee and assembly basefee() consistency
 state/block_blobbasefee.sol,skipped,,,,Do not re-attempt: requires cancun EVM version with blob base fee opcode
@@ -1391,7 +1391,7 @@ types/strings.sol,ported,types,src/Strings.sol,,Fixed bytes string literals and 
 types/struct_mapping_abstract_constructor_param.sol,ported,types,src/StructMappingAbstractConstructorParam.sol,,Struct with mapping passed as storage ref to abstract constructor
 types/tuple_assign_multi_slot_grow.sol,ported,types,src/TupleAssignMultiSlotGrow.sol,,Nested tuple assignment with multi-slot bytes types
 types/type_conversion_cleanup.sol,ported,types,src/TypeConversionCleanup.sol,,Type conversion chain cleanup - uint200->uint128->uint160->uint
-underscore/as_function.sol,pending,,,,
+underscore/as_function.sol,ported,underscore,src/AsFunction.sol,test/AsFunction.t.sol,underscore as function name and as no-op expression statement in function body
 uninitializedFunctionPointer/invalidInConstructor.sol,pending,,,,
 uninitializedFunctionPointer/invalidStoredInConstructor.sol,pending,,,,
 uninitializedFunctionPointer/store2.sol,pending,,,,
