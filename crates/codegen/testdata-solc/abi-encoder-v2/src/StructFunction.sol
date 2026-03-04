@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract StructFunction {
+    struct S { function () external returns (uint) f; uint b; }
+    function f(S memory s) public returns (uint, uint) {
+        return (s.f(), s.b);
+    }
+    function test() public returns (uint, uint) {
+        return this.f(S(this.g, 3));
+    }
+    function g() public returns (uint) { return 7; }
+}
