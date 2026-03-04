@@ -130,13 +130,13 @@ array/arrayMemoryAllocation/array_array_static.sol,ported,arrays,src/ArrayArrayS
 array/arrayMemoryAllocation/array_static_return_param_zeroed_memory_index_access.sol,ported,arrays,src/ArrayStaticReturnParamZeroedMemory.sol,,Zeroed return params for arrays
 array/arrayMemoryAllocation/array_static_zeroed_memory_index_access.sol,ported,arrays,src/ArrayStaticZeroedMemoryIndexAccess.sol,,Zeroed static memory array reads
 array/arrayMemoryAllocation/array_zeroed_memory_index_access.sol,ported,arrays,src/ArrayZeroedMemoryIndexAccess.sol,,Zeroed memory array reads + bounds
-array/array_2d_assignment.sol,pending,,,,
-array/array_2d_new.sol,pending,,,,
-array/array_3d_assignment.sol,pending,,,,
-array/array_3d_new.sol,pending,,,,
-array/array_function_pointers.sol,pending,,,,
-array/array_memory_as_parameter.sol,pending,,,,
-array/array_memory_create.sol,pending,,,,
+array/array_2d_assignment.sol,ported,arrays,src/Array2dAssignment.sol,test/Array2dAssignment.t.sol,2D dynamic array assignment and reference
+array/array_2d_new.sol,ported,arrays,src/Array2dNew.sol,test/Array2dNew.t.sol,2D dynamic array creation and assignment
+array/array_3d_assignment.sol,ported,arrays,src/Array3dAssignment.sol,test/Array3dAssignment.t.sol,3D dynamic array assignment and reference
+array/array_3d_new.sol,ported,arrays,src/Array3dNew.sol,test/Array3dNew.t.sol,3D dynamic array creation and assignment
+array/array_function_pointers.sol,ported,arrays,src/ArrayFunctionPointers.sol,test/ArrayFunctionPointers.t.sol,Arrays of function pointers - all reverts
+array/array_memory_as_parameter.sol,ported,arrays,src/ArrayMemoryAsParameter.sol,test/ArrayMemoryAsParameter.t.sol,Memory array passed and modified through call
+array/array_memory_create.sol,ported,arrays,src/ArrayMemoryCreate.sol,test/ArrayMemoryCreate.t.sol,new uint[](len) returns correct length
 array/array_memory_index_access.sol,ported,arrays,src/ArrayMemoryIndexAccess.sol,,Memory array access + bounds
 array/array_push_return_reference.sol,ported,arrays,src/ArrayPushReturnReference.sol,,Push returns reference
 array/array_push_with_arg.sol,ported,arrays,src/ArrayPushWithArg.sol,,Push with argument + bounds
@@ -150,20 +150,20 @@ array/array_storage_push_empty_length_address.sol,ported,arrays,src/ArrayStorage
 array/array_storage_push_pop.sol,ported,arrays,src/ArrayStoragePushPop.sol,,Dynamic array push/pop
 array/arrays_complex_from_and_to_storage.sol,ported,arrays,src/ArraysComplexFromAndToStorage.sol,,Nested fixed-size arrays to/from storage
 array/byte_array_storage_layout.sol,ported,arrays,src/ByteArrayStorageLayout.sol,,Bytes storage layout via assembly
-array/byte_array_transitional_2.sol,pending,,,,
-array/bytes_length_member.sol,pending,,,,
-array/bytes_to_fixed_bytes_cleanup.sol,pending,,,,
-array/bytes_to_fixed_bytes_simple.sol,pending,,,,
-array/bytes_to_fixed_bytes_too_long.sol,pending,,,,
+array/byte_array_transitional_2.sol,ported,arrays,src/ByteArrayTransitional2.sol,test/ByteArrayTransitional2.t.sol,Bytes push/pop transitions between short and long encoding
+array/bytes_length_member.sol,ported,arrays,src/BytesLengthMember.sol,test/BytesLengthMember.t.sol,bytes storage via msg.data and length check
+array/bytes_to_fixed_bytes_cleanup.sol,skipped,,,,"Do not re-attempt: uses // ==== compile config section"
+array/bytes_to_fixed_bytes_simple.sol,ported,arrays,src/BytesToFixedBytesSimple.sol,test/BytesToFixedBytesSimple.t.sol,bytes to fixed bytes conversions from various sources
+array/bytes_to_fixed_bytes_too_long.sol,ported,arrays,src/BytesToFixedBytesTooLong.sol,test/BytesToFixedBytesTooLong.t.sol,bytes to fixed bytes truncation when too long
 array/calldata_array.sol,ported,arrays,src/ArrayCalldataFixed.sol,,Fixed-size calldata array
 array/calldata_array_as_argument_internal_function.sol,ported,arrays,src/CalldataArraySlice.sol,,Calldata array slice and pass-through
-array/calldata_array_dynamic_invalid.sol,pending,,,,
-array/calldata_array_dynamic_invalid_static_middle.sol,pending,,,,
-array/calldata_array_of_struct.sol,pending,,,,
-array/calldata_array_two_dimensional.sol,pending,,,,
-array/calldata_array_two_dimensional_1.sol,pending,,,,
-array/calldata_bytes_array_bounds.sol,pending,,,,
-array/calldata_slice_access.sol,pending,,,,
+array/calldata_array_dynamic_invalid.sol,ported,arrays,src/CalldataArrayDynamicInvalid.sol,test/CalldataArrayDynamicInvalid.t.sol,Malformed ABI calldata for dynamic arrays
+array/calldata_array_dynamic_invalid_static_middle.sol,ported,arrays,src/CalldataArrayDynamicInvalidStaticMiddle.sol,test/CalldataArrayDynamicInvalidStaticMiddle.t.sol,Malformed ABI calldata with static middle dimension
+array/calldata_array_of_struct.sol,ported,arrays,src/CalldataArrayOfStruct.sol,test/CalldataArrayOfStruct.t.sol,Calldata array of structs access
+array/calldata_array_two_dimensional.sol,ported,arrays,src/CalldataArrayTwoDimensional.sol,test/CalldataArrayTwoDimensional.t.sol,2D calldata fixed-outer array access and out-of-bounds
+array/calldata_array_two_dimensional_1.sol,ported,arrays,src/CalldataArrayTwoDimensional1.sol,test/CalldataArrayTwoDimensional1.t.sol,2D calldata dynamic array access and out-of-bounds
+array/calldata_bytes_array_bounds.sol,ported,arrays,src/CalldataBytesArrayBounds.sol,test/CalldataBytesArrayBounds.t.sol,Calldata bytes[] index access and bounds check
+array/calldata_slice_access.sol,ported,arrays,src/CalldataSliceAccess.sol,test/CalldataSliceAccess.t.sol,Calldata array slicing and nested slice operations
 array/concat/bytes_concat_2_args.sol,ported,arrays,src/BytesConcat2Args.sol,test/BytesConcat2Args.t.sol,bytes.concat with 2 args
 array/concat/bytes_concat_3_args.sol,ported,arrays,src/BytesConcat3Args.sol,test/BytesConcat3Args.t.sol,bytes.concat with 3 args
 array/concat/bytes_concat_as_argument.sol,ported,arrays,src/BytesConcatAsArgument.sol,test/BytesConcatAsArgument.t.sol,bytes.concat used as argument
@@ -171,7 +171,7 @@ array/concat/bytes_concat_different_types.sol,ported,arrays,src/BytesConcatDiffe
 array/concat/bytes_concat_empty_argument_list.sol,ported,arrays,src/BytesConcatEmptyArgumentList.sol,test/BytesConcatEmptyArgumentList.t.sol,bytes.concat with empty argument list
 array/concat/bytes_concat_empty_strings.sol,ported,arrays,src/BytesConcatEmptyStrings.sol,test/BytesConcatEmptyStrings.t.sol,bytes.concat with empty byte strings
 array/concat/bytes_concat_nested.sol,ported,arrays,src/BytesConcatNested.sol,test/BytesConcatNested.t.sol,Nested bytes.concat calls
-array/constant_var_as_array_length.sol,pending,,,,
+array/constant_var_as_array_length.sol,ported,arrays,src/ConstantVarAsArrayLength.sol,test/ConstantVarAsArrayLength.t.sol,Constant used as fixed array length
 array/copying/array_copy_calldata_storage.sol,pending,,,,
 array/copying/array_copy_cleanup_uint128.sol,pending,,,,
 array/copying/array_copy_cleanup_uint40.sol,pending,,,,
@@ -267,9 +267,9 @@ array/copying/storage_memory_packed_dyn.sol,pending,,,,
 array/copying/string_calldata_to_bytes_calldata.sol,pending,,,,
 array/create_dynamic_array_with_zero_length.sol,ported,arrays,src/CreateDynamicArrayZeroLength.sol,,Create empty nested dynamic array
 array/create_memory_array.sol,ported,arrays,src/CreateMemoryArray.sol,,Memory allocation of arrays/structs
-array/create_memory_array_too_large.sol,pending,,,,
-array/create_memory_byte_array.sol,pending,,,,
-array/create_multiple_dynamic_arrays.sol,pending,,,,
+array/create_memory_array_too_large.sol,ported,arrays,src/CreateMemoryArrayTooLarge.sol,test/CreateMemoryArrayTooLarge.t.sol,Oversized new array panics with 0x41
+array/create_memory_byte_array.sol,ported,arrays,src/CreateMemoryByteArray.sol,test/CreateMemoryByteArray.t.sol,new bytes(35) and write/read element
+array/create_multiple_dynamic_arrays.sol,ported,arrays,src/CreateMultipleDynamicArrays.sol,test/CreateMultipleDynamicArrays.t.sol,Multiple dynamic arrays independently allocated
 array/delete/bytes_delete_element.sol,ported,arrays,src/BytesDeleteElement.sol,test/BytesDeleteElement.t.sol,Delete individual bytes elements
 array/delete/delete_bytes_array.sol,ported,arrays,src/DeleteBytesArray.sol,test/DeleteBytesArray.t.sol,Delete full bytes storage array
 array/delete/delete_memory_array.sol,ported,arrays,src/DeleteMemoryArray.sol,test/DeleteMemoryArray.t.sol,Delete memory array zeroes length
@@ -278,20 +278,20 @@ array/delete/delete_removes_bytes_data.sol,ported,arrays,src/DeleteRemovesBytesD
 array/delete/delete_storage_array.sol,ported,arrays,src/DeleteStorageArray.sol,test/DeleteStorageArray.t.sol,Delete uint[] storage array
 array/delete/delete_storage_array_packed.sol,ported,arrays,src/DeleteStorageArrayPacked.sol,test/DeleteStorageArrayPacked.t.sol,Delete packed uint120 storage array
 array/delete/memory_arrays_delete.sol,ported,arrays,src/MemoryArraysDelete.sol,test/MemoryArraysDelete.t.sol,Delete elements of memory 2D fixed array
-array/dynamic_array_cleanup.sol,pending,,,,
-array/dynamic_arrays_in_storage.sol,pending,,,,
-array/dynamic_multi_array_cleanup.sol,pending,,,,
-array/dynamic_out_of_bounds_array_access.sol,pending,,,,
-array/evm_exceptions_out_of_band_access.sol,pending,,,,
-array/external_array_args.sol,pending,,,,
-array/fixed_array_cleanup.sol,pending,,,,
-array/fixed_arrays_as_return_type.sol,pending,,,,
-array/fixed_arrays_in_constructors.sol,pending,,,,
-array/fixed_arrays_in_storage.sol,pending,,,,
-array/fixed_bytes_length_access.sol,pending,,,,
-array/fixed_out_of_bounds_array_access.sol,pending,,,,
-array/function_array_cross_calls.sol,pending,,,,
-array/function_memory_array.sol,pending,,,,
+array/dynamic_array_cleanup.sol,ported,arrays,src/DynamicArrayCleanup.sol,test/DynamicArrayCleanup.t.sol,Dynamic array fill/halfClear/fullClear
+array/dynamic_arrays_in_storage.sol,ported,arrays,src/DynamicArraysInStorage.sol,test/DynamicArraysInStorage.t.sol,Dynamic arrays of structs in storage
+array/dynamic_multi_array_cleanup.sol,ported,arrays,src/DynamicMultiArrayCleanup.sol,test/DynamicMultiArrayCleanup.t.sol,Nested dynamic arrays fill and delete
+array/dynamic_out_of_bounds_array_access.sol,ported,arrays,src/DynamicOutOfBoundsArrayAccess.sol,test/DynamicOutOfBoundsArrayAccess.t.sol,Dynamic array OOB access reverts
+array/evm_exceptions_out_of_band_access.sol,ported,arrays,src/EvmExceptionsOutOfBandAccess.sol,test/EvmExceptionsOutOfBandAccess.t.sol,Fixed array OOB reverts and state unchanged
+array/external_array_args.sol,ported,arrays,src/ExternalArrayArgs.sol,test/ExternalArrayArgs.t.sol,External function with fixed and dynamic calldata arrays
+array/fixed_array_cleanup.sol,ported,arrays,src/FixedArrayCleanup.sol,test/FixedArrayCleanup.t.sol,Fixed array fill/delete clears storage
+array/fixed_arrays_as_return_type.sol,ported,arrays,src/FixedArraysAsReturnType.sol,test/FixedArraysAsReturnType.t.sol,Fixed array return type across cross-contract calls
+array/fixed_arrays_in_constructors.sol,ported,arrays,src/FixedArraysInConstructors.sol,test/FixedArraysInConstructors.t.sol,Fixed array in constructor arguments
+array/fixed_arrays_in_storage.sol,ported,arrays,src/FixedArraysInStorage.sol,test/FixedArraysInStorage.t.sol,Large fixed arrays in storage with struct data
+array/fixed_bytes_length_access.sol,ported,arrays,src/FixedBytesLengthAccess.sol,test/FixedBytesLengthAccess.t.sol,Fixed bytes types have .length member
+array/fixed_out_of_bounds_array_access.sol,ported,arrays,src/FixedOutOfBoundsArrayAccess.sol,test/FixedOutOfBoundsArrayAccess.t.sol,Fixed array OOB access reverts
+array/function_array_cross_calls.sol,ported,arrays,src/FunctionArrayCrossCalls.sol,test/FunctionArrayCrossCalls.t.sol,Arrays of external function pointers across contracts
+array/function_memory_array.sol,ported,arrays,src/FunctionMemoryArray.sol,test/FunctionMemoryArray.t.sol,Array of internal function pointers in memory
 array/indexAccess/arrays_complex_memory_index_access.sol,ported,arrays,src/ArraysComplexMemoryIndexAccess.sol,,Nested memory array index access
 array/indexAccess/bytes_index_access.sol,ported,arrays,src/BytesIndexAccess.sol,,Bytes calldata/storage index access
 array/indexAccess/bytes_index_access_memory.sol,ported,arrays,src/BytesIndexAccessMemory.sol,,Bytes memory index access via internal calls
@@ -302,18 +302,18 @@ array/indexAccess/inline_array_index_access_ints.sol,ported,arrays,src/InlineArr
 array/indexAccess/inline_array_index_access_strings.sol,ported,arrays,src/InlineArrayIndexAccessStrings.sol,,Inline array index access (strings)
 array/indexAccess/memory_arrays_dynamic_index_access_write.sol,ported,arrays,src/MemoryArraysDynamicIndexAccessWrite.sol,,Storage to memory dynamic index writes
 array/indexAccess/memory_arrays_index_access_write.sol,ported,arrays,src/MemoryArraysIndexAccessWrite.sol,,Nested memory array index writes
-array/inline_array_return.sol,pending,,,,
+array/inline_array_return.sol,ported,arrays,src/InlineArrayReturn.sol,test/InlineArrayReturn.t.sol,Inline fixed array literal as return value
 array/inline_array_singleton.sol,ported,arrays,src/InlineArraySingleton.sol,,Inline array literal singleton
-array/inline_array_storage_to_memory_conversion_ints.sol,pending,,,,
-array/inline_array_storage_to_memory_conversion_strings.sol,pending,,,,
-array/inline_array_strings_from_document.sol,pending,,,,
-array/invalid_encoding_for_storage_byte_array.sol,pending,,,,
-array/long_byte_array_cleanup_after_delete.sol,pending,,,,
-array/long_byte_array_cleanup_after_overwrite_with_long.sol,pending,,,,
-array/memory.sol,pending,,,,
-array/memory_arrays_of_various_sizes.sol,pending,,,,
-array/nested_calldata_storage.sol,pending,,,,
-array/nested_calldata_storage2.sol,pending,,,,
+array/inline_array_storage_to_memory_conversion_ints.sol,ported,arrays,src/InlineArrayStorageToMemoryConversionInts.sol,test/InlineArrayStorageToMemoryConversionInts.t.sol,Inline array with variables converts to memory
+array/inline_array_storage_to_memory_conversion_strings.sol,ported,arrays,src/InlineArrayStorageToMemoryConversionStrings.sol,test/InlineArrayStorageToMemoryConversionStrings.t.sol,Inline string array with storage and memory refs
+array/inline_array_strings_from_document.sol,ported,arrays,src/InlineArrayStringsFromDocument.sol,test/InlineArrayStringsFromDocument.t.sol,Inline string array indexing
+array/invalid_encoding_for_storage_byte_array.sol,ported,arrays,src/InvalidEncodingForStorageByteArray.sol,test/InvalidEncodingForStorageByteArray.t.sol,Assembly-corrupted bytes storage panics on all operations
+array/long_byte_array_cleanup_after_delete.sol,ported,arrays,src/LongByteArrayCleanupAfterDelete.sol,test/LongByteArrayCleanupAfterDelete.t.sol,Delete bytes array clears data slots without touching canary
+array/long_byte_array_cleanup_after_overwrite_with_long.sol,skipped,,,,"Do not re-attempt: uses // ==== with EVMVersion constraint"
+array/memory.sol,ported,arrays,src/Memory.sol,test/Memory.t.sol,Fixed uint array passed to functions
+array/memory_arrays_of_various_sizes.sol,ported,arrays,src/MemoryArraysOfVariousSizes.sol,test/MemoryArraysOfVariousSizes.t.sol,Binomial coefficients via jagged memory arrays
+array/nested_calldata_storage.sol,skipped,,,,"Do not re-attempt: uses // ==== compileViaYul: true"
+array/nested_calldata_storage2.sol,skipped,,,,"Do not re-attempt: uses // ==== compileViaYul: true"
 array/pop/array_pop.sol,ported,arrays,src/ArrayPop.sol,test/ArrayPop.t.sol,Basic pop from uint256 array
 array/pop/array_pop_array_transition.sol,ported,arrays,src/ArrayPopArrayTransition.sol,test/ArrayPopArrayTransition.t.sol,Pop from 2D array transitions
 array/pop/array_pop_empty_exception.sol,ported,arrays,src/ArrayPopEmptyException.sol,test/ArrayPopEmptyException.t.sol,Pop from empty array panics
@@ -344,16 +344,16 @@ array/push/push_no_args_1d.sol,ported,arrays,src/PushNoArgs1d.sol,test/PushNoArg
 array/push/push_no_args_2d.sol,ported,arrays,src/PushNoArgs2d.sol,test/PushNoArgs2d.t.sol,push() returns reference for 2D array
 array/push/push_no_args_bytes.sol,ported,arrays,src/PushNoArgsBytes.sol,test/PushNoArgsBytes.t.sol,push() returns reference for bytes
 array/push/push_no_args_struct.sol,ported,arrays,src/PushNoArgsStruct.sol,test/PushNoArgsStruct.t.sol,push() returns storage reference for struct
-array/reusing_memory.sol,pending,,,,
-array/short_fixed_array_cleanup.sol,pending,,,,
+array/reusing_memory.sol,ported,arrays,src/ReusingMemory.sol,test/ReusingMemory.t.sol,Memory reuse across keccak/new Helper/external calls
+array/short_fixed_array_cleanup.sol,ported,arrays,src/ShortFixedArrayCleanup.sol,test/ShortFixedArrayCleanup.t.sol,Short fixed array fill/delete clears storage
 array/slices/array_calldata_assignment.sol,ported,arrays,src/ArrayCalldataAssignment.sol,test/ArrayCalldataAssignment.t.sol,Calldata array reassignment
 array/slices/array_slice_calldata_as_argument_of_external_calls.sol,ported,arrays,src/ArraySliceCalldataAsArgumentOfExternalCalls.sol,test/ArraySliceCalldataAsArgumentOfExternalCalls.t.sol,Calldata slice passed to external functions
 array/slices/array_slice_calldata_to_calldata.sol,ported,arrays,src/ArraySliceCalldataToCalldata.sol,test/ArraySliceCalldataToCalldata.t.sol,Calldata slice passed to calldata parameter
 array/slices/array_slice_calldata_to_memory.sol,ported,arrays,src/ArraySliceCalldataToMemory.sol,test/ArraySliceCalldataToMemory.t.sol,Calldata slice assigned to memory
 array/slices/array_slice_calldata_to_storage.sol,ported,arrays,src/ArraySliceCalldataToStorage.sol,test/ArraySliceCalldataToStorage.t.sol,Calldata slice assigned to storage
 array/storage_array_ref.sol,ported,arrays,src/StorageArrayRef.sol,,Storage array reference in internal call
-array/string_allocation_bug.sol,pending,,,,
-array/string_bytes_conversion.sol,pending,,,,
+array/string_allocation_bug.sol,ported,arrays,src/StringAllocationBug.sol,test/StringAllocationBug.t.sol,Struct with strings in fixed storage array
+array/string_bytes_conversion.sol,ported,arrays,src/StringBytesConversion.sol,test/StringBytesConversion.t.sol,bytes/string conversion round-trip
 array/string_literal_assign_to_storage_bytes.sol,ported,arrays,src/StringLiteralAssignToStorageBytes.sol,,Assign string literal to storage bytes
 array/strings_in_struct.sol,ported,structs,src/StringsInStruct.sol,,String member in struct
 builtinFunctions/assignment_to_const_var_involving_keccak.sol,ported,builtin-functions,src/AssignmentToConstVarInvolvingKeccak.sol,test/AssignmentToConstVarInvolvingKeccak.t.sol,keccak256 constant assignment
@@ -814,84 +814,84 @@ inheritance/super_overload.sol,ported,inheritance,src/SuperOverload.sol,test/Sup
 inheritance/transient_storage_state_variable.sol,ported,inheritance,src/TransientStorageStateVariable.sol,test/TransientStorageStateVariable.t.sol,Inherited transient and regular state vars; Cancun EVM
 inheritance/transient_storage_state_variable_abstract_contract.sol,ported,inheritance,src/TransientStorageStateVariableAbstractContract.sol,test/TransientStorageStateVariableAbstractContract.t.sol,Abstract base with transient vars; concrete impl calls g() helper
 inheritance/value_for_constructor.sol,ported,inheritance,src/ValueForConstructor.sol,test/ValueForConstructor.t.sol,Payable constructor; child contract deployed with ETH value
-inlineAssembly/basefee_berlin_function.sol,pending,,,,
-inlineAssembly/blobbasefee_shanghai_function.sol,pending,,,,
-inlineAssembly/blobhash.sol,pending,,,,
-inlineAssembly/blobhash_index_exceeding_blob_count.sol,pending,,,,
-inlineAssembly/blobhash_pre_cancun.sol,pending,,,,
-inlineAssembly/calldata_array_assign_dynamic.sol,pending,,,,
-inlineAssembly/calldata_array_assign_static.sol,pending,,,,
-inlineAssembly/calldata_array_read.sol,pending,,,,
-inlineAssembly/calldata_assign.sol,pending,,,,
-inlineAssembly/calldata_assign_from_nowhere.sol,pending,,,,
-inlineAssembly/calldata_length_read.sol,pending,,,,
-inlineAssembly/calldata_offset_read.sol,pending,,,,
-inlineAssembly/calldata_offset_read_write.sol,pending,,,,
-inlineAssembly/calldata_struct_assign.sol,pending,,,,
-inlineAssembly/calldata_struct_assign_and_return.sol,pending,,,,
-inlineAssembly/chainid.sol,pending,,,,
-inlineAssembly/clz.sol,pending,,,,
-inlineAssembly/clz_pre_osaka.sol,pending,,,,
-inlineAssembly/constant_access.sol,pending,,,,
-inlineAssembly/constant_access_referencing.sol,pending,,,,
-inlineAssembly/difficulty.sol,pending,,,,
-inlineAssembly/external_function_pointer_address.sol,pending,,,,
-inlineAssembly/external_function_pointer_address_assignment.sol,pending,,,,
-inlineAssembly/external_function_pointer_selector.sol,pending,,,,
-inlineAssembly/external_function_pointer_selector_assignment.sol,pending,,,,
-inlineAssembly/external_identifier_access_shadowing.sol,pending,,,,
-inlineAssembly/for_loop_break.sol,pending,,,,
-inlineAssembly/for_loop_continue.sol,pending,,,,
-inlineAssembly/for_loop_nested.sol,pending,,,,
-inlineAssembly/function_name_clash.sol,pending,,,,
-inlineAssembly/inline_assembly_embedded_function_call.sol,pending,,,,
-inlineAssembly/inline_assembly_for.sol,pending,,,,
-inlineAssembly/inline_assembly_for2.sol,pending,,,,
-inlineAssembly/inline_assembly_function_call.sol,pending,,,,
-inlineAssembly/inline_assembly_function_call2.sol,pending,,,,
-inlineAssembly/inline_assembly_function_call_assignment.sol,pending,,,,
-inlineAssembly/inline_assembly_if.sol,pending,,,,
-inlineAssembly/inline_assembly_in_modifiers.sol,pending,,,,
-inlineAssembly/inline_assembly_memory_access.sol,pending,,,,
-inlineAssembly/inline_assembly_read_and_write_stack.sol,pending,,,,
-inlineAssembly/inline_assembly_recursion.sol,pending,,,,
-inlineAssembly/inline_assembly_storage_access.sol,pending,,,,
-inlineAssembly/inline_assembly_storage_access_inside_function.sol,pending,,,,
-inlineAssembly/inline_assembly_storage_access_local_var.sol,pending,,,,
-inlineAssembly/inline_assembly_storage_access_via_pointer.sol,pending,,,,
-inlineAssembly/inline_assembly_switch.sol,pending,,,,
-inlineAssembly/inline_assembly_transient_storage_access_inside_function.sol,pending,,,,
-inlineAssembly/inline_assembly_write_to_stack.sol,pending,,,,
-inlineAssembly/inlineasm_empty_let.sol,pending,,,,
-inlineAssembly/keccak256_assembly.sol,pending,,,,
-inlineAssembly/keccak256_optimization.sol,pending,,,,
-inlineAssembly/keccak256_optimizer_bug_different_memory_location.sol,pending,,,,
-inlineAssembly/keccak256_optimizer_cache_bug.sol,pending,,,,
-inlineAssembly/keccak_optimization_bug_string.sol,pending,,,,
-inlineAssembly/keccak_yul_optimization.sol,pending,,,,
-inlineAssembly/leave.sol,pending,,,,
-inlineAssembly/mcopy.sol,pending,,,,
-inlineAssembly/mcopy_as_identifier_pre_cancun.sol,pending,,,,
-inlineAssembly/mcopy_empty.sol,pending,,,,
-inlineAssembly/mcopy_overlap.sol,pending,,,,
-inlineAssembly/optimize_memory_store_multi_block.sol,pending,,,,
-inlineAssembly/optimize_memory_store_multi_block_bugreport.sol,pending,,,,
-inlineAssembly/prevrandao.sol,pending,,,,
-inlineAssembly/selfbalance.sol,pending,,,,
-inlineAssembly/shadowing_local_function_opcode.sol,pending,,,,
-inlineAssembly/slot_access.sol,pending,,,,
-inlineAssembly/slot_access_via_mapping_pointer.sol,pending,,,,
-inlineAssembly/tload_tstore_not_reserved_before_cancun.sol,pending,,,,
-inlineAssembly/transient_storage_creation.sol,pending,,,,
-inlineAssembly/transient_storage_low_level_calls.sol,pending,,,,
-inlineAssembly/transient_storage_multiple_calls_different_transactions.sol,pending,,,,
-inlineAssembly/transient_storage_multiple_transactions.sol,pending,,,,
-inlineAssembly/transient_storage_reset_between_creation_runtime.sol,pending,,,,
-inlineAssembly/transient_storage_sanity_checks.sol,pending,,,,
-inlineAssembly/transient_storage_selfdestruct.sol,pending,,,,
-inlineAssembly/transient_storage_simple_reentrancy_lock.sol,pending,,,,
-inlineAssembly/truefalse.sol,pending,,,,
-inlineAssembly/tstore_hidden_staticcall.sol,pending,,,,
+inlineAssembly/basefee_berlin_function.sol,skipped,inline-assembly,,,Do not re-attempt: EVMVersion: <=berlin required; test behavior specific to pre-EIP-3198 EVM
+inlineAssembly/blobbasefee_shanghai_function.sol,skipped,inline-assembly,,,Do not re-attempt: EVMVersion: <=shanghai required; blobbasefee not a reserved opcode until Cancun
+inlineAssembly/blobhash.sol,skipped,inline-assembly,,,Do not re-attempt: expects specific injected blob hash value (0x0100...0001) not available in Foundry test environment
+inlineAssembly/blobhash_index_exceeding_blob_count.sol,ported,inline-assembly,src/BlobhashIndexExceedingBlobCount.sol,test/BlobhashIndexExceedingBlobCount.t.sol,
+inlineAssembly/blobhash_pre_cancun.sol,skipped,inline-assembly,,,Do not re-attempt: EVMVersion: <cancun required; blobhash not reserved before Cancun
+inlineAssembly/calldata_array_assign_dynamic.sol,ported,inline-assembly,src/CalldataArrayAssignDynamic.sol,test/CalldataArrayAssignDynamic.t.sol,
+inlineAssembly/calldata_array_assign_static.sol,ported,inline-assembly,src/CalldataArrayAssignStatic.sol,test/CalldataArrayAssignStatic.t.sol,
+inlineAssembly/calldata_array_read.sol,ported,inline-assembly,src/CalldataArrayRead.sol,test/CalldataArrayRead.t.sol,
+inlineAssembly/calldata_assign.sol,ported,inline-assembly,src/CalldataAssign.sol,test/CalldataAssign.t.sol,
+inlineAssembly/calldata_assign_from_nowhere.sol,ported,inline-assembly,src/CalldataAssignFromNowhere.sol,test/CalldataAssignFromNowhere.t.sol,
+inlineAssembly/calldata_length_read.sol,ported,inline-assembly,src/CalldataLengthRead.sol,test/CalldataLengthRead.t.sol,
+inlineAssembly/calldata_offset_read.sol,ported,inline-assembly,src/CalldataOffsetRead.sol,test/CalldataOffsetRead.t.sol,
+inlineAssembly/calldata_offset_read_write.sol,ported,inline-assembly,src/CalldataOffsetReadWrite.sol,test/CalldataOffsetReadWrite.t.sol,
+inlineAssembly/calldata_struct_assign.sol,ported,inline-assembly,src/CalldataStructAssign.sol,test/CalldataStructAssign.t.sol,
+inlineAssembly/calldata_struct_assign_and_return.sol,ported,inline-assembly,src/CalldataStructAssignAndReturn.sol,test/CalldataStructAssignAndReturn.t.sol,
+inlineAssembly/chainid.sol,ported,inline-assembly,src/Chainid.sol,test/Chainid.t.sol,
+inlineAssembly/clz.sol,skipped,inline-assembly,,,Do not re-attempt: EVMVersion: >=osaka required; clz opcode not yet available in Foundry (future EVM)
+inlineAssembly/clz_pre_osaka.sol,skipped,inline-assembly,,,Do not re-attempt: EVMVersion: <osaka required; test relies on clz being unreserved before Osaka
+inlineAssembly/constant_access.sol,ported,inline-assembly,src/ConstantAccess.sol,test/ConstantAccess.t.sol,
+inlineAssembly/constant_access_referencing.sol,ported,inline-assembly,src/ConstantAccessReferencing.sol,test/ConstantAccessReferencing.t.sol,
+inlineAssembly/difficulty.sol,skipped,inline-assembly,,,Do not re-attempt: EVMVersion: <paris required; difficulty opcode not available post-merge
+inlineAssembly/external_function_pointer_address.sol,ported,inline-assembly,src/ExternalFunctionPointerAddress.sol,test/ExternalFunctionPointerAddress.t.sol,
+inlineAssembly/external_function_pointer_address_assignment.sol,ported,inline-assembly,src/ExternalFunctionPointerAddressAssignment.sol,test/ExternalFunctionPointerAddressAssignment.t.sol,
+inlineAssembly/external_function_pointer_selector.sol,ported,inline-assembly,src/ExternalFunctionPointerSelector.sol,test/ExternalFunctionPointerSelector.t.sol,
+inlineAssembly/external_function_pointer_selector_assignment.sol,ported,inline-assembly,src/ExternalFunctionPointerSelectorAssignment.sol,test/ExternalFunctionPointerSelectorAssignment.t.sol,
+inlineAssembly/external_identifier_access_shadowing.sol,ported,inline-assembly,src/ExternalIdentifierAccessShadowing.sol,test/ExternalIdentifierAccessShadowing.t.sol,
+inlineAssembly/for_loop_break.sol,ported,inline-assembly,src/ForLoopBreak.sol,test/ForLoopBreak.t.sol,
+inlineAssembly/for_loop_continue.sol,ported,inline-assembly,src/ForLoopContinue.sol,test/ForLoopContinue.t.sol,
+inlineAssembly/for_loop_nested.sol,ported,inline-assembly,src/ForLoopNested.sol,test/ForLoopNested.t.sol,
+inlineAssembly/function_name_clash.sol,ported,inline-assembly,src/FunctionNameClash.sol,test/FunctionNameClash.t.sol,
+inlineAssembly/inline_assembly_embedded_function_call.sol,ported,inline-assembly,src/InlineAssemblyEmbeddedFunctionCall.sol,test/InlineAssemblyEmbeddedFunctionCall.t.sol,
+inlineAssembly/inline_assembly_for.sol,ported,inline-assembly,src/InlineAssemblyFor.sol,test/InlineAssemblyFor.t.sol,
+inlineAssembly/inline_assembly_for2.sol,ported,inline-assembly,src/InlineAssemblyFor2.sol,test/InlineAssemblyFor2.t.sol,
+inlineAssembly/inline_assembly_function_call.sol,ported,inline-assembly,src/InlineAssemblyFunctionCall.sol,test/InlineAssemblyFunctionCall.t.sol,
+inlineAssembly/inline_assembly_function_call2.sol,ported,inline-assembly,src/InlineAssemblyFunctionCall2.sol,test/InlineAssemblyFunctionCall2.t.sol,
+inlineAssembly/inline_assembly_function_call_assignment.sol,ported,inline-assembly,src/InlineAssemblyFunctionCallAssignment.sol,test/InlineAssemblyFunctionCallAssignment.t.sol,
+inlineAssembly/inline_assembly_if.sol,ported,inline-assembly,src/InlineAssemblyIf.sol,test/InlineAssemblyIf.t.sol,
+inlineAssembly/inline_assembly_in_modifiers.sol,ported,inline-assembly,src/InlineAssemblyInModifiers.sol,test/InlineAssemblyInModifiers.t.sol,
+inlineAssembly/inline_assembly_memory_access.sol,ported,inline-assembly,src/InlineAssemblyMemoryAccess.sol,test/InlineAssemblyMemoryAccess.t.sol,
+inlineAssembly/inline_assembly_read_and_write_stack.sol,ported,inline-assembly,src/InlineAssemblyReadAndWriteStack.sol,test/InlineAssemblyReadAndWriteStack.t.sol,
+inlineAssembly/inline_assembly_recursion.sol,ported,inline-assembly,src/InlineAssemblyRecursion.sol,test/InlineAssemblyRecursion.t.sol,
+inlineAssembly/inline_assembly_storage_access.sol,ported,inline-assembly,src/InlineAssemblyStorageAccess.sol,test/InlineAssemblyStorageAccess.t.sol,
+inlineAssembly/inline_assembly_storage_access_inside_function.sol,ported,inline-assembly,src/InlineAssemblyStorageAccessInsideFunction.sol,test/InlineAssemblyStorageAccessInsideFunction.t.sol,
+inlineAssembly/inline_assembly_storage_access_local_var.sol,ported,inline-assembly,src/InlineAssemblyStorageAccessLocalVar.sol,test/InlineAssemblyStorageAccessLocalVar.t.sol,
+inlineAssembly/inline_assembly_storage_access_via_pointer.sol,ported,inline-assembly,src/InlineAssemblyStorageAccessViaPointer.sol,test/InlineAssemblyStorageAccessViaPointer.t.sol,
+inlineAssembly/inline_assembly_switch.sol,ported,inline-assembly,src/InlineAssemblySwitch.sol,test/InlineAssemblySwitch.t.sol,
+inlineAssembly/inline_assembly_transient_storage_access_inside_function.sol,ported,inline-assembly,src/InlineAssemblyTransientStorageAccessInsideFunction.sol,test/InlineAssemblyTransientStorageAccessInsideFunction.t.sol,
+inlineAssembly/inline_assembly_write_to_stack.sol,ported,inline-assembly,src/InlineAssemblyWriteToStack.sol,test/InlineAssemblyWriteToStack.t.sol,
+inlineAssembly/inlineasm_empty_let.sol,ported,inline-assembly,src/InlineasmEmptyLet.sol,test/InlineasmEmptyLet.t.sol,
+inlineAssembly/keccak256_assembly.sol,ported,inline-assembly,src/Keccak256Assembly.sol,test/Keccak256Assembly.t.sol,
+inlineAssembly/keccak256_optimization.sol,ported,inline-assembly,src/Keccak256Optimization.sol,test/Keccak256Optimization.t.sol,
+inlineAssembly/keccak256_optimizer_bug_different_memory_location.sol,ported,inline-assembly,src/Keccak256OptimizerBugDifferentMemoryLocation.sol,test/Keccak256OptimizerBugDifferentMemoryLocation.t.sol,
+inlineAssembly/keccak256_optimizer_cache_bug.sol,ported,inline-assembly,src/Keccak256OptimizerCacheBug.sol,test/Keccak256OptimizerCacheBug.t.sol,
+inlineAssembly/keccak_optimization_bug_string.sol,ported,inline-assembly,src/KeccakOptimizationBugString.sol,test/KeccakOptimizationBugString.t.sol,
+inlineAssembly/keccak_yul_optimization.sol,ported,inline-assembly,src/KeccakYulOptimization.sol,test/KeccakYulOptimization.t.sol,
+inlineAssembly/leave.sol,ported,inline-assembly,src/Leave.sol,test/Leave.t.sol,
+inlineAssembly/mcopy.sol,ported,inline-assembly,src/Mcopy.sol,test/Mcopy.t.sol,
+inlineAssembly/mcopy_as_identifier_pre_cancun.sol,skipped,inline-assembly,,,Do not re-attempt: EVMVersion: <cancun required; mcopy not reserved before Cancun
+inlineAssembly/mcopy_empty.sol,ported,inline-assembly,src/McopyEmpty.sol,test/McopyEmpty.t.sol,
+inlineAssembly/mcopy_overlap.sol,ported,inline-assembly,src/McopyOverlap.sol,test/McopyOverlap.t.sol,
+inlineAssembly/optimize_memory_store_multi_block.sol,ported,inline-assembly,src/OptimizeMemoryStoreMultiBlock.sol,test/OptimizeMemoryStoreMultiBlock.t.sol,
+inlineAssembly/optimize_memory_store_multi_block_bugreport.sol,ported,inline-assembly,src/OptimizeMemoryStoreMultiBlockBugreport.sol,test/OptimizeMemoryStoreMultiBlockBugreport.t.sol,
+inlineAssembly/prevrandao.sol,skipped,inline-assembly,,,Do not re-attempt: expects specific hardcoded prevrandao value (0xa86c2e...) not deterministic in Foundry
+inlineAssembly/selfbalance.sol,ported,inline-assembly,src/Selfbalance.sol,test/Selfbalance.t.sol,
+inlineAssembly/shadowing_local_function_opcode.sol,ported,inline-assembly,src/ShadowingLocalFunctionOpcode.sol,test/ShadowingLocalFunctionOpcode.t.sol,
+inlineAssembly/slot_access.sol,ported,inline-assembly,src/SlotAccess.sol,test/SlotAccess.t.sol,
+inlineAssembly/slot_access_via_mapping_pointer.sol,ported,inline-assembly,src/SlotAccessViaMappingPointer.sol,test/SlotAccessViaMappingPointer.t.sol,
+inlineAssembly/tload_tstore_not_reserved_before_cancun.sol,skipped,inline-assembly,,,Do not re-attempt: EVMVersion: <cancun required; tload/tstore not reserved before Cancun
+inlineAssembly/transient_storage_creation.sol,ported,inline-assembly,src/TransientStorageCreation.sol,test/TransientStorageCreation.t.sol,
+inlineAssembly/transient_storage_low_level_calls.sol,ported,inline-assembly,src/TransientStorageLowLevelCalls.sol,test/TransientStorageLowLevelCalls.t.sol,
+inlineAssembly/transient_storage_multiple_calls_different_transactions.sol,ported,inline-assembly,src/TransientStorageMultipleCallsDifferentTransactions.sol,test/TransientStorageMultipleCallsDifferentTransactions.t.sol,
+inlineAssembly/transient_storage_multiple_transactions.sol,ported,inline-assembly,src/TransientStorageMultipleTransactions.sol,test/TransientStorageMultipleTransactions.t.sol,
+inlineAssembly/transient_storage_reset_between_creation_runtime.sol,ported,inline-assembly,src/TransientStorageResetBetweenCreationRuntime.sol,test/TransientStorageResetBetweenCreationRuntime.t.sol,
+inlineAssembly/transient_storage_sanity_checks.sol,ported,inline-assembly,src/TransientStorageSanityChecks.sol,test/TransientStorageSanityChecks.t.sol,
+inlineAssembly/transient_storage_selfdestruct.sol,skipped,inline-assembly,,,Do not re-attempt: bytecodeFormat: legacy only; test relies on legacy code generation behavior
+inlineAssembly/transient_storage_simple_reentrancy_lock.sol,ported,inline-assembly,src/TransientStorageSimpleReentrancyLock.sol,test/TransientStorageSimpleReentrancyLock.t.sol,
+inlineAssembly/truefalse.sol,ported,inline-assembly,src/Truefalse.sol,test/Truefalse.t.sol,
+inlineAssembly/tstore_hidden_staticcall.sol,ported,inline-assembly,src/TstoreHiddenStaticcall.sol,test/TstoreHiddenStaticcall.t.sol,
 integer/basic.sol,ported,arithmetic,src/IntegerBasic.sol,,Integer min/max constants
 integer/int.sol,ported,integer,src/Int.sol,test/Int.t.sol,type(intN).min and .max for all signed integer sizes
 integer/many_local_variables.sol,ported,integer,src/ManyLocalVariables.sol,test/ManyLocalVariables.t.sol,many local variables including small uint types
