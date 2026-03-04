@@ -461,18 +461,18 @@ constructor/store_internal_unused_library_function_in_constructor.sol,ported,con
 constructor/transient_state_variable_initialization.sol,ported,constructor,src/TransientStateVariableInitialization.sol,,Transient storage variable initialized in constructor
 conversions/function_type_array_to_storage.sol,ported,conversions,src/FunctionTypeArrayToStorage.sol,test/FunctionTypeArrayToStorage.t.sol,implicit conversion of function types (view/pure) to less restrictive types in fixed arrays
 conversions/string_to_bytes.sol,ported,conversions,src/StringToBytes.sol,,string -> bytes conversion
-deployedCodeExclusion/bound_function.sol,pending,,,,
-deployedCodeExclusion/library_function.sol,pending,,,,
-deployedCodeExclusion/library_function_deployed.sol,pending,,,,
-deployedCodeExclusion/module_function.sol,pending,,,,
-deployedCodeExclusion/module_function_deployed.sol,pending,,,,
-deployedCodeExclusion/static_base_function.sol,pending,,,,
-deployedCodeExclusion/static_base_function_deployed.sol,pending,,,,
-deployedCodeExclusion/subassembly_deduplication.sol,pending,,,,
-deployedCodeExclusion/super_function.sol,pending,,,,
-deployedCodeExclusion/super_function_deployed.sol,pending,,,,
-deployedCodeExclusion/virtual_function.sol,pending,,,,
-deployedCodeExclusion/virtual_function_deployed.sol,pending,,,,
+deployedCodeExclusion/bound_function.sol,skipped,deployed-code-exclusion,,,"Do not re-attempt: tests compiler bytecode optimization (codesize < data.length with bytecodeFormat:legacy), not portable Solidity runtime semantics"
+deployedCodeExclusion/library_function.sol,skipped,deployed-code-exclusion,,,"Do not re-attempt: tests compiler bytecode optimization (codesize < data.length with bytecodeFormat:legacy), not portable Solidity runtime semantics"
+deployedCodeExclusion/library_function_deployed.sol,ported,deployed-code-exclusion,src/LibraryFunctionDeployed.sol,test/LibraryFunctionDeployed.t.sol,keccak256 comparison of data vs function pointer call result
+deployedCodeExclusion/module_function.sol,skipped,deployed-code-exclusion,,,"Do not re-attempt: tests compiler bytecode optimization (codesize < data.length with bytecodeFormat:legacy), not portable Solidity runtime semantics"
+deployedCodeExclusion/module_function_deployed.sol,ported,deployed-code-exclusion,src/ModuleFunctionDeployed.sol,test/ModuleFunctionDeployed.t.sol,module function inlined; keccak256 comparison of data vs function pointer call result
+deployedCodeExclusion/static_base_function.sol,skipped,deployed-code-exclusion,,,"Do not re-attempt: tests compiler bytecode optimization (codesize < data.length with bytecodeFormat:legacy), not portable Solidity runtime semantics"
+deployedCodeExclusion/static_base_function_deployed.sol,ported,deployed-code-exclusion,src/StaticBaseFunctionDeployed.sol,test/StaticBaseFunctionDeployed.t.sol,keccak256 comparison of data vs function pointer call result
+deployedCodeExclusion/subassembly_deduplication.sol,skipped,deployed-code-exclusion,,,"Do not re-attempt: tests compiler bytecode optimization (subassembly deduplication via codesize comparison with bytecodeFormat:legacy), not portable Solidity runtime semantics"
+deployedCodeExclusion/super_function.sol,skipped,deployed-code-exclusion,,,"Do not re-attempt: tests compiler bytecode optimization (codesize < data.length with bytecodeFormat:legacy), not portable Solidity runtime semantics"
+deployedCodeExclusion/super_function_deployed.sol,ported,deployed-code-exclusion,src/SuperFunctionDeployed.sol,test/SuperFunctionDeployed.t.sol,keccak256 comparison of data vs function pointer call result
+deployedCodeExclusion/virtual_function.sol,skipped,deployed-code-exclusion,,,"Do not re-attempt: tests compiler bytecode optimization (codesize < data.length with bytecodeFormat:legacy), not portable Solidity runtime semantics"
+deployedCodeExclusion/virtual_function_deployed.sol,ported,deployed-code-exclusion,src/VirtualFunctionDeployed.sol,test/VirtualFunctionDeployed.t.sol,keccak256 comparison of data vs function pointer call result
 ecrecover/ecrecover.sol,pending,,,,
 ecrecover/ecrecover_abiV2.sol,pending,,,,
 ecrecover/failing_ecrecover_invalid_input.sol,pending,,,,
@@ -585,20 +585,20 @@ expressions/module_from_ternary_expression.sol,ported,expressions,src/ModuleFrom
 expressions/tuple_from_ternary_expression.sol,ported,expressions,src/TupleFromTernaryExpression.sol,test/TupleFromTernaryExpression.t.sol,Ternary discarded tuple evaluates condition
 expressions/unary_too_long_literal.sol,ported,expressions,src/UnaryTooLongLiteral.sol,test/UnaryTooLongLiteral.t.sol,Double bitwise NOT of oversized literal
 expressions/uncalled_address_transfer_send.sol,ported,expressions,src/UncalledAddressTransferSend.sol,test/UncalledAddressTransferSend.t.sol,Uncalled transfer/send member access compiles without ICE
-externalContracts/FixedFeeRegistrar.sol,pending,,,,
-externalContracts/_base64/base64_inline_asm.sol,pending,,,,
-externalContracts/_base64/base64_no_inline_asm.sol,pending,,,,
-externalContracts/_prbmath/PRBMathCommon.sol,pending,,,,
-externalContracts/_prbmath/PRBMathSD59x18.sol,pending,,,,
-externalContracts/_prbmath/PRBMathUD60x18.sol,pending,,,,
-externalContracts/_stringutils/stringutils.sol,pending,,,,
-externalContracts/base64.sol,pending,,,,
-externalContracts/deposit_contract.sol,pending,,,,
-externalContracts/prbmath_signed.sol,pending,,,,
-externalContracts/prbmath_unsigned.sol,pending,,,,
-externalContracts/ramanujan_pi.sol,pending,,,,
-externalContracts/snark.sol,pending,,,,
-externalContracts/strings.sol,pending,,,,
+externalContracts/FixedFeeRegistrar.sol,skipped,external-contracts,,,"Do not re-attempt: tests isoltest framework internals (account: directives for caller switching), not expressible as pure Solidity runtime semantics"
+externalContracts/_base64/base64_inline_asm.sol,skipped,external-contracts,,,"Do not re-attempt: helper library file only, no standalone test expectations; covered via externalContracts/base64.sol"
+externalContracts/_base64/base64_no_inline_asm.sol,skipped,external-contracts,,,"Do not re-attempt: helper library file only, no standalone test expectations; covered via externalContracts/base64.sol"
+externalContracts/_prbmath/PRBMathCommon.sol,skipped,external-contracts,,,"Do not re-attempt: helper library file only, no standalone test expectations; covered via externalContracts/prbmath_signed.sol and prbmath_unsigned.sol"
+externalContracts/_prbmath/PRBMathSD59x18.sol,skipped,external-contracts,,,"Do not re-attempt: helper library file only, no standalone test expectations; covered via externalContracts/prbmath_signed.sol"
+externalContracts/_prbmath/PRBMathUD60x18.sol,skipped,external-contracts,,,"Do not re-attempt: helper library file only, no standalone test expectations; covered via externalContracts/prbmath_unsigned.sol"
+externalContracts/_stringutils/stringutils.sol,skipped,external-contracts,,,"Do not re-attempt: helper library file only, no standalone test expectations; covered via externalContracts/strings.sol"
+externalContracts/base64.sol,ported,external-contracts,src/Base64.sol,test/Base64.t.sol,Base64 RFC4648 test vectors; both inline-asm and pure-Solidity implementations
+externalContracts/deposit_contract.sol,skipped,external-contracts,,,"Do not re-attempt: tests isoltest framework internals (balance: directives and multi-step account state), not expressible as pure Solidity runtime semantics"
+externalContracts/prbmath_signed.sol,ported,external-contracts,src/PrbmathSigned.sol,test/PrbmathSigned.t.sol,"PRBMathSD59x18 fixed-point math: div, exp, exp2, gm, log10, log2, mul, pow, sqrt, benchmark"
+externalContracts/prbmath_unsigned.sol,ported,external-contracts,src/PrbmathUnsigned.sol,test/PrbmathUnsigned.t.sol,"PRBMathUD60x18 fixed-point math: div, exp, exp2, gm, log10, log2, mul, pow, sqrt, benchmark"
+externalContracts/ramanujan_pi.sol,ported,external-contracts,src/RamanujanPi.sol,test/RamanujanPi.t.sol,Ramanujan pi approximation using PRBMathSD59x18
+externalContracts/snark.sol,skipped,external-contracts,,,Do not re-attempt: uses isoltest library: linking directive which is not expressible in Foundry test setup
+externalContracts/strings.sol,ported,external-contracts,src/Strings.sol,test/Strings.t.sol,"String slice library: roundtrip, utf8len, multiconcat, benchmark (toSlice skipped: returns memory pointer)"
 externalSource/_external/external.sol,pending,,,,
 externalSource/_external/import.sol,pending,,,,
 externalSource/_external/import_with_subdir.sol,pending,,,,
@@ -903,19 +903,19 @@ interfaceID/interfaceId_events.sol,pending,,,,
 interfaceID/interfaces.sol,pending,,,,
 interfaceID/lisa.sol,pending,,,,
 interfaceID/lisa_interfaceId.sol,pending,,,,
-isoltestTesting/account.sol,pending,,,,
-isoltestTesting/balance_other_contract.sol,pending,,,,
-isoltestTesting/balance_with_balance.sol,pending,,,,
-isoltestTesting/balance_with_balance2.sol,pending,,,,
-isoltestTesting/balance_without_balance.sol,pending,,,,
-isoltestTesting/builtins.sol,pending,,,,
-isoltestTesting/effects.sol,pending,,,,
-isoltestTesting/empty_contract.sol,pending,,,,
-isoltestTesting/format_raw_string_with_control_chars.sol,pending,,,,
-isoltestTesting/isoltestFormatting.sol,pending,,,,
-isoltestTesting/precompiles_ignoring_trailing_input.sol,pending,,,,
-isoltestTesting/storage/storage_empty.sol,pending,,,,
-isoltestTesting/storage/storage_nonempty.sol,pending,,,,
+isoltestTesting/account.sol,skipped,isoltest-testing,,,"Do not re-attempt: tests isoltest framework internals (account: caller-switching directive), not expressible as Solidity runtime semantics"
+isoltestTesting/balance_other_contract.sol,skipped,isoltest-testing,,,"Do not re-attempt: tests isoltest framework internals (balance: directive for checking account ETH balance), not expressible as Solidity runtime semantics"
+isoltestTesting/balance_with_balance.sol,skipped,isoltest-testing,,,"Do not re-attempt: tests isoltest framework internals (balance -> directive), not expressible as Solidity runtime semantics"
+isoltestTesting/balance_with_balance2.sol,skipped,isoltest-testing,,,"Do not re-attempt: tests isoltest framework internals (balance -> directive with ether), not expressible as Solidity runtime semantics"
+isoltestTesting/balance_without_balance.sol,skipped,isoltest-testing,,,"Do not re-attempt: tests isoltest framework internals (balance: directive), not expressible as Solidity runtime semantics"
+isoltestTesting/builtins.sol,skipped,isoltest-testing,,,"Do not re-attempt: tests isoltest framework internals (isoltest_builtin_test builtin function), not expressible as Solidity runtime semantics"
+isoltestTesting/effects.sol,skipped,isoltest-testing,,,"Do not re-attempt: tests isoltest framework internals (isoltest_side_effects_test builtin and ~ side-effect lines), not expressible as Solidity runtime semantics"
+isoltestTesting/empty_contract.sol,skipped,isoltest-testing,,,"Do not re-attempt: tests isoltest framework internals (allowNonExistingFunctions option), not expressible as Solidity runtime semantics"
+isoltestTesting/format_raw_string_with_control_chars.sol,ported,isoltest-testing,src/FormatRawStringWithControlChars.sol,test/FormatRawStringWithControlChars.t.sol,string passthrough roundtrip with multi-byte UTF-8 emoji characters
+isoltestTesting/isoltestFormatting.sol,ported,isoltest-testing,src/IsoltestFormatting.sol,test/IsoltestFormatting.t.sol,fixed-size uint array return values with various hex/decimal formats
+isoltestTesting/precompiles_ignoring_trailing_input.sol,skipped,isoltest-testing,,,"Do not re-attempt: tests isoltest framework behavior of passing extra bytes to fixed-arity Solidity functions, not expressible as a standalone Foundry test"
+isoltestTesting/storage/storage_empty.sol,skipped,isoltest-testing,,,"Do not re-attempt: tests isoltest framework internals (storageEmpty directive for inspecting EVM storage state), not expressible as Solidity runtime semantics"
+isoltestTesting/storage/storage_nonempty.sol,skipped,isoltest-testing,,,"Do not re-attempt: tests isoltest framework internals (storageEmpty directive for inspecting EVM storage state), not expressible as Solidity runtime semantics"
 libraries/attached_internal_library_function_accepting_calldata.sol,ported,libraries,src/AttachedInternalLibraryFunctionAcceptingCalldata.sol,,`using for bytes` with internal calldata/memory overloads
 libraries/attached_internal_library_function_returning_calldata.sol,ported,libraries,src/AttachedInternalLibraryFunctionReturningCalldata.sol,,`using for bytes` with internal calldata-returning overloads
 libraries/attached_public_library_function_accepting_calldata.sol.sol,ported,libraries,src/AttachedPublicLibraryFunctionAcceptingCalldata.sol,,`using for bytes` with public calldata/memory overloads (external lib)
