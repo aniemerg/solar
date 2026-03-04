@@ -1,0 +1,14 @@
+error: `virtual` is not allowed here
+   ╭▸ ROOT/tests/ui/solc/constants/ConstantVirtual.sol:LL:CC
+   │
+LL │ uint constant virtual x;
+   ╰╴              ━━━━━━━
+
+error: constant variable must be initialized
+   ╭▸ ROOT/tests/ui/solc/constants/ConstantVirtual.sol:LL:CC
+   │
+LL │ uint constant virtual x;
+   ╰╴━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,18 @@
+error: wrong argument count for function call: 1 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/metaTypes/Codeisnolvalue.sol:LL:CC
+   │
+LL │         type(C).creationCode = new bytes(6);
+   │                                ━━━━━━━━━┬──
+   │                                         │
+   ╰╴                                        expected 0 arguments, found 1
+
+error: wrong argument count for function call: 1 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/metaTypes/Codeisnolvalue.sol:LL:CC
+   │
+LL │         type(C).runtimeCode = new bytes(6);
+   │                               ━━━━━━━━━┬──
+   │                                        │
+   ╰╴                                       expected 0 arguments, found 1
+
+error: aborting due to 2 previous errors
+

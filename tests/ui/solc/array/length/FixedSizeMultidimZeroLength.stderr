@@ -1,0 +1,38 @@
+error: array length must be greater than zero
+   ╭▸ ROOT/tests/ui/solc/array/length/FixedSizeMultidimZeroLength.sol:LL:CC
+   │
+LL │   function a() public pure returns(int[0][500] memory) {}
+   ╰╴                                       ━
+
+error: array length must be greater than zero
+   ╭▸ ROOT/tests/ui/solc/array/length/FixedSizeMultidimZeroLength.sol:LL:CC
+   │
+LL │   function b() public pure returns(uint[0][500] memory) {}
+   ╰╴                                        ━
+
+error: array length must be greater than zero
+   ╭▸ ROOT/tests/ui/solc/array/length/FixedSizeMultidimZeroLength.sol:LL:CC
+   │
+LL │   function c() public pure returns(bytes1[0][500] memory) {}
+   ╰╴                                          ━
+
+error: array length must be greater than zero
+   ╭▸ ROOT/tests/ui/solc/array/length/FixedSizeMultidimZeroLength.sol:LL:CC
+   │
+LL │   function d() public pure returns(bytes32[0][500] memory) {}
+   ╰╴                                           ━
+
+error: array length must be greater than zero
+   ╭▸ ROOT/tests/ui/solc/array/length/FixedSizeMultidimZeroLength.sol:LL:CC
+   │
+LL │   function e() public pure returns(bytes[0][500] memory) {}
+   ╰╴                                         ━
+
+error: array length must be greater than zero
+   ╭▸ ROOT/tests/ui/solc/array/length/FixedSizeMultidimZeroLength.sol:LL:CC
+   │
+LL │   function e() public pure returns(string[0][500] memory) {}
+   ╰╴                                          ━
+
+error: aborting due to 6 previous errors
+

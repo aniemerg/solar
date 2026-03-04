@@ -1,0 +1,66 @@
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryPrivateFunctionNoDataLocation.sol:LL:CC
+   │
+LL │     function g() private pure returns (uint[2]) {}
+   │                                        ━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for private function return parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryPrivateFunctionNoDataLocation.sol:LL:CC
+   │
+LL │     function h() private pure returns (uint[]) {}
+   │                                        ━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for private function return parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryPrivateFunctionNoDataLocation.sol:LL:CC
+   │
+LL │     function i() private pure returns (S) {}
+   │                                        ━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for private function return parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryPrivateFunctionNoDataLocation.sol:LL:CC
+   │
+LL │     function j() private pure returns (mapping(uint => uint)) {}
+   │                                        ━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for private function return parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryPrivateFunctionNoDataLocation.sol:LL:CC
+   │
+LL │     function gp(uint[2]) private pure {}
+   │                 ━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for private function parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryPrivateFunctionNoDataLocation.sol:LL:CC
+   │
+LL │     function hp(uint[]) private pure {}
+   │                 ━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for private function parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryPrivateFunctionNoDataLocation.sol:LL:CC
+   │
+LL │     function ip(S) private pure {}
+   │                 ━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for private function parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryPrivateFunctionNoDataLocation.sol:LL:CC
+   │
+LL │     function jp(mapping(uint => uint)) private pure {}
+   │                 ━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for private function parameter
+
+error: aborting due to 8 previous errors
+

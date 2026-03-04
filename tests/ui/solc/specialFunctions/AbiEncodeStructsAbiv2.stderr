@@ -1,0 +1,26 @@
+error: wrong argument count for function call: 1 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/AbiEncodeStructsAbiv2.sol:LL:CC
+   │
+LL │         abi.encodePacked(st);
+   │         ━━━━━━━━━━━━━━━━┬───
+   │                         │
+   ╰╴                        expected 0 arguments, found 1
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/AbiEncodeStructsAbiv2.sol:LL:CC
+   │
+LL │         abi.encode(s, t);
+   │         ━━━━━━━━━━┬─────
+   │                   │
+   ╰╴                  expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/AbiEncodeStructsAbiv2.sol:LL:CC
+   │
+LL │         abi.encodePacked(s, t);
+   │         ━━━━━━━━━━━━━━━━┬─────
+   │                         │
+   ╰╴                        expected 0 arguments, found 2
+
+error: aborting due to 3 previous errors
+

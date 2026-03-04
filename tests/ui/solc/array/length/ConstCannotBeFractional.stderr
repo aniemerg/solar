@@ -1,0 +1,10 @@
+error: failed to evaluate constant: unsupported literal
+   ╭▸ ROOT/tests/ui/solc/array/length/ConstCannotBeFractional.sol:LL:CC
+   │
+LL │     fixed constant L = 10.5;
+   │                        ──── evaluation of constant value failed here
+LL │     uint[L] ids;
+   ╰╴         ━
+
+error: aborting due to 1 previous error
+

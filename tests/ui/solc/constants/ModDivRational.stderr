@@ -1,0 +1,38 @@
+error: rational literals are not supported
+   ╭▸ ROOT/tests/ui/solc/constants/ModDivRational.sol:LL:CC
+   │
+LL │     fixed a1 = 0.1 % -0.4271087646484375;
+   ╰╴               ━━━
+
+error: rational literals are not supported
+   ╭▸ ROOT/tests/ui/solc/constants/ModDivRational.sol:LL:CC
+   │
+LL │     fixed a1 = 0.1 % -0.4271087646484375;
+   ╰╴                      ━━━━━━━━━━━━━━━━━━
+
+error: rational literals are not supported
+   ╭▸ ROOT/tests/ui/solc/constants/ModDivRational.sol:LL:CC
+   │
+LL │     fixed a2 = 0.1 % 0.4271087646484375;
+   ╰╴               ━━━
+
+error: rational literals are not supported
+   ╭▸ ROOT/tests/ui/solc/constants/ModDivRational.sol:LL:CC
+   │
+LL │     fixed a2 = 0.1 % 0.4271087646484375;
+   ╰╴                     ━━━━━━━━━━━━━━━━━━
+
+error: rational literals are not supported
+   ╭▸ ROOT/tests/ui/solc/constants/ModDivRational.sol:LL:CC
+   │
+LL │     fixed a3 = 0 / 0.123;
+   ╰╴                   ━━━━━
+
+error: rational literals are not supported
+   ╭▸ ROOT/tests/ui/solc/constants/ModDivRational.sol:LL:CC
+   │
+LL │     fixed a4 = 0 / -0.123;
+   ╰╴                    ━━━━━
+
+error: aborting due to 6 previous errors
+

@@ -1,0 +1,8 @@
+error: expected one of `)` or `[`, found `?`
+   ╭▸ ROOT/tests/ui/solc/metaTypes/TypeExpressionNestedTernaryMaxKeyword.sol:LL:CC
+   │
+LL │         return type(b ? uint : uint).max;
+   ╰╴                      ━ expected one of `)` or `[`
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,8 @@
+error: data location can only be specified for array, struct or mapping types
+   ╭▸ ROOT/tests/ui/solc/dataLocations/StateVariableStorageNamedTransient.sol:LL:CC
+   │
+LL │     uint storage transient;
+   ╰╴    ━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

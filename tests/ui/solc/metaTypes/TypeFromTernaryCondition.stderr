@@ -1,0 +1,8 @@
+error: expected one of `)` or `[`, found `?`
+   ╭▸ ROOT/tests/ui/solc/metaTypes/TypeFromTernaryCondition.sol:LL:CC
+   │
+LL │         type(c ? uint : uint);
+   ╰╴               ━ expected one of `)` or `[`
+
+error: aborting due to 1 previous error
+

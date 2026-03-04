@@ -1,0 +1,8 @@
+error: expected one of `;` or `=`, found `layout`
+   ╭▸ ROOT/tests/ui/solc/storageLayoutSpecifier/StateVariableLayoutSpecifier.sol:LL:CC
+   │
+LL │     uint x layout at 0xF;
+   ╰╴           ━━━━━━ expected one of `;` or `=`
+
+error: aborting due to 1 previous error
+

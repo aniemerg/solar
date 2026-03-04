@@ -1,0 +1,10 @@
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/privateFunction/PrivateFunctionParametersLocationTransient.sol:LL:CC
+   │
+LL │     function f(uint[] transient) private pure {}
+   │                ━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for private function parameter
+
+error: aborting due to 1 previous error
+

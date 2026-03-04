@@ -1,0 +1,46 @@
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/errors/ErrorIncompatibleOperatorForType.sol:LL:CC
+   │
+LL │         MyCustomError += 1;
+   ╰╴        ━━━━━━━━━━━━━
+
+error: cannot apply builtin operator `+` to `error MyCustomError(uint256,bool)` and `int_literal[1]`
+   ╭▸ ROOT/tests/ui/solc/errors/ErrorIncompatibleOperatorForType.sol:LL:CC
+   │
+LL │         MyCustomError += 1;
+   │         ┬──────────── ━━ ─ int_literal[1]
+   │         │
+   ╰╴        error MyCustomError(uint256,bool)
+
+error: expression has to be an lvalue
+   ╭▸ ROOT/tests/ui/solc/errors/ErrorIncompatibleOperatorForType.sol:LL:CC
+   │
+LL │         MyCustomError -= 1;
+   ╰╴        ━━━━━━━━━━━━━
+
+error: cannot apply builtin operator `-` to `error MyCustomError(uint256,bool)` and `int_literal[1]`
+   ╭▸ ROOT/tests/ui/solc/errors/ErrorIncompatibleOperatorForType.sol:LL:CC
+   │
+LL │         MyCustomError -= 1;
+   │         ┬──────────── ━━ ─ int_literal[1]
+   │         │
+   ╰╴        error MyCustomError(uint256,bool)
+
+error: cannot apply builtin operator `+` to `uint256` and `error MyCustomError(uint256,bool)`
+   ╭▸ ROOT/tests/ui/solc/errors/ErrorIncompatibleOperatorForType.sol:LL:CC
+   │
+LL │         a += MyCustomError;
+   │         ┬ ━━ ───────────── error MyCustomError(uint256,bool)
+   │         │
+   ╰╴        uint256
+
+error: cannot apply builtin operator `-` to `uint256` and `error MyCustomError(uint256,bool)`
+   ╭▸ ROOT/tests/ui/solc/errors/ErrorIncompatibleOperatorForType.sol:LL:CC
+   │
+LL │         a -= MyCustomError;
+   │         ┬ ━━ ───────────── error MyCustomError(uint256,bool)
+   │         │
+   ╰╴        uint256
+
+error: aborting due to 6 previous errors
+

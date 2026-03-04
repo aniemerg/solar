@@ -1,0 +1,18 @@
+error: wrong argument count for function call: 1 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/EncodepackedDynamicStringArrayV2.sol:LL:CC
+   │
+LL │         abi.encodePacked(m);
+   │         ━━━━━━━━━━━━━━━━┬──
+   │                         │
+   ╰╴                        expected 0 arguments, found 1
+
+error: wrong argument count for function call: 1 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/EncodepackedDynamicStringArrayV2.sol:LL:CC
+   │
+LL │         abi.encodePacked(s);
+   │         ━━━━━━━━━━━━━━━━┬──
+   │                         │
+   ╰╴                        expected 0 arguments, found 1
+
+error: aborting due to 2 previous errors
+

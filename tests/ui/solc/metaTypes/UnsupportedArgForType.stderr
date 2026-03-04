@@ -1,0 +1,8 @@
+error: invalid type
+   ╭▸ ROOT/tests/ui/solc/metaTypes/UnsupportedArgForType.sol:LL:CC
+   │
+LL │         type(S);
+   ╰╴             ━
+
+error: aborting due to 1 previous error
+

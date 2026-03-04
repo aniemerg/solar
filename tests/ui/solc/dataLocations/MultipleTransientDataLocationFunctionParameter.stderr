@@ -1,0 +1,8 @@
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/dataLocations/MultipleTransientDataLocationFunctionParameter.sol:LL:CC
+   │
+LL │     function f(uint[] transient transient x) public pure { }
+   ╰╴                                ━━━━━━━━━
+
+error: aborting due to 1 previous error
+

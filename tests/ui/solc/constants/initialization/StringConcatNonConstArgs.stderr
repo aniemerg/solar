@@ -1,0 +1,24 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/constants/initialization/StringConcatNonConstArgs.sol:LL:CC
+   │
+LL │     string name = "name";
+   ╰╴                  ━━━━━━ expected `string storage`, found `utf8_string_literal[4]`
+
+error: wrong argument count for function call: 3 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/constants/initialization/StringConcatNonConstArgs.sol:LL:CC
+   │
+LL │     string public constant abName = string.concat("aaaa", "bbbb", name);
+   │                                     ━━━━━━━━━━━━━┬─────────────────────
+   │                                                  │
+   ╰╴                                                 expected 0 arguments, found 3
+
+error: wrong argument count for function call: 3 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/constants/initialization/StringConcatNonConstArgs.sol:LL:CC
+   │
+LL │     string public constant abgetName = string.concat("aaaa", "bbbb",getName());
+   │                                        ━━━━━━━━━━━━━┬─────────────────────────
+   │                                                     │
+   ╰╴                                                    expected 0 arguments, found 3
+
+error: aborting due to 3 previous errors
+

@@ -1,0 +1,26 @@
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/AbiEncodewithselectorTupleReturnedFromFunction.sol:LL:CC
+   │
+LL │ …     abi.encodeWithSelector(this.f0.selector, g0());
+   │       ━━━━━━━━━━━━━━━━━━━━━━┬───────────────────────
+   │                             │
+   ╰╴                            expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/AbiEncodewithselectorTupleReturnedFromFunction.sol:LL:CC
+   │
+LL │ …     abi.encodeWithSelector(this.f0.selector, g2());
+   │       ━━━━━━━━━━━━━━━━━━━━━━┬───────────────────────
+   │                             │
+   ╰╴                            expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/AbiEncodewithselectorTupleReturnedFromFunction.sol:LL:CC
+   │
+LL │ …     abi.encodeWithSelector(this.f0.selector, (g1(), g1()));
+   │       ━━━━━━━━━━━━━━━━━━━━━━┬───────────────────────────────
+   │                             │
+   ╰╴                            expected 0 arguments, found 2
+
+error: aborting due to 3 previous errors
+

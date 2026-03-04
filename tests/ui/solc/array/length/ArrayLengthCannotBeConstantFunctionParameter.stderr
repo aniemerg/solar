@@ -1,0 +1,8 @@
+error: mutability is not allowed here
+   ╭▸ ROOT/tests/ui/solc/array/length/ArrayLengthCannotBeConstantFunctionParameter.sol:LL:CC
+   │
+LL │     function f(uint constant LEN) public {
+   ╰╴                    ━━━━━━━━
+
+error: aborting due to 1 previous error
+

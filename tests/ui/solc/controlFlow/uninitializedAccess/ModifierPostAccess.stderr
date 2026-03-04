@@ -1,0 +1,8 @@
+error: unresolved symbol `a`
+   ╭▸ ROOT/tests/ui/solc/controlFlow/uninitializedAccess/ModifierPostAccess.sol:LL:CC
+   │
+LL │     function f() mod(a) internal returns (uint[] storage a)
+   ╰╴                     ━
+
+error: aborting due to 1 previous error
+

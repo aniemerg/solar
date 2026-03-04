@@ -1,0 +1,10 @@
+error: invalid data location `storage`
+   ╭▸ ROOT/tests/ui/solc/dataLocations/publicFunction/FunctionArgumentLocationSpecifierTestPublicStorage.sol:LL:CC
+   │
+LL │     function f(bytes storage) public;
+   │                ━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory` or `calldata` for public function parameter, but got `storage`
+
+error: aborting due to 1 previous error
+

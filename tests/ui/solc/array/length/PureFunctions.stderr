@@ -1,0 +1,10 @@
+error: failed to evaluate constant: unsupported expression
+   ╭▸ ROOT/tests/ui/solc/array/length/PureFunctions.sol:LL:CC
+   │
+LL │     uint constant LEN = keccak256(ripemd160(33));
+   │                         ──────────────────────── evaluation of constant value failed here
+LL │     uint[LEN] ids;
+   ╰╴         ━━━
+
+error: aborting due to 1 previous error
+

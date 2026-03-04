@@ -1,0 +1,14 @@
+error: expected identifier, found keyword `type`
+   ╭▸ ROOT/tests/ui/solc/metaTypes/Typerecursive.sol:LL:CC
+   │
+LL │         type(type(type(Test)));
+   ╰╴             ━━━━
+
+error: expected one of `)` or `[`, found `(`
+   ╭▸ ROOT/tests/ui/solc/metaTypes/Typerecursive.sol:LL:CC
+   │
+LL │         type(type(type(Test)));
+   ╰╴                 ━ expected one of `)` or `[`
+
+error: aborting due to 2 previous errors
+

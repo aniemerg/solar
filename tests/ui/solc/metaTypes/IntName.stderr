@@ -1,0 +1,8 @@
+error: member `name` not found on type `type(int256)`
+   ╭▸ ROOT/tests/ui/solc/metaTypes/IntName.sol:LL:CC
+   │
+LL │         type(int).name;
+   ╰╴                  ━━━━
+
+error: aborting due to 1 previous error
+

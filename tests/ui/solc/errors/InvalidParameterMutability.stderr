@@ -1,0 +1,14 @@
+error: mutability is not allowed here
+   ╭▸ ROOT/tests/ui/solc/errors/InvalidParameterMutability.sol:LL:CC
+   │
+LL │     error e1(uint constant x);
+   ╰╴                  ━━━━━━━━
+
+error: mutability is not allowed here
+   ╭▸ ROOT/tests/ui/solc/errors/InvalidParameterMutability.sol:LL:CC
+   │
+LL │     error e2(uint immutable x);
+   ╰╴                  ━━━━━━━━━
+
+error: aborting due to 2 previous errors
+

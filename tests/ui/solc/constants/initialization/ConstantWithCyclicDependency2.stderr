@@ -1,0 +1,16 @@
+error: wrong argument count for function call: 1 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/constants/initialization/ConstantWithCyclicDependency2.sol:LL:CC
+   │
+LL │     uint constant c = b + uint(keccak256(abi.encodePacked(d)));
+   │                                          ━━━━━━━━━━━━━━━━┬──
+   │                                                          │
+   ╰╴                                                         expected 0 arguments, found 1
+
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/constants/initialization/ConstantWithCyclicDependency2.sol:LL:CC
+   │
+LL │     uint constant c = b + uint(keccak256(abi.encodePacked(d)));
+   ╰╴                          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ cannot convert `bytes32` to `uint256`
+
+error: aborting due to 2 previous errors
+

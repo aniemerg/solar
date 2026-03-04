@@ -1,0 +1,14 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/structs/MemoryToCalldata.sol:LL:CC
+   │
+LL │     function f(S calldata s) external { s = S(2); }
+   ╰╴                                            ━━━━ expected `struct Test.S calldata`, found `struct Test.S memory`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/structs/MemoryToCalldata.sol:LL:CC
+   │
+LL │     function g(S calldata s) external { S memory m; s = m; }
+   ╰╴                                                        ━ expected `struct Test.S calldata`, found `struct Test.S memory`
+
+error: aborting due to 2 previous errors
+

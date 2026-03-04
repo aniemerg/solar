@@ -1,0 +1,20 @@
+error: file ~~~some-long-unlikely-file-name-12 not found
+   ╭▸ ROOT/tests/ui/solc/imports/MultipleNonExistentFileNames.sol:LL:CC
+   │
+LL │ import "~~~some-long-unlikely-file-name-12";
+   ╰╴       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: file ~~~some-long-unlikely-file-name-456 not found
+   ╭▸ ROOT/tests/ui/solc/imports/MultipleNonExistentFileNames.sol:LL:CC
+   │
+LL │ import "~~~some-long-unlikely-file-name-456";
+   ╰╴       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: file ~~~some-long-unlikely-file-name-7890 not found
+   ╭▸ ROOT/tests/ui/solc/imports/MultipleNonExistentFileNames.sol:LL:CC
+   │
+LL │ import "~~~some-long-unlikely-file-name-7890";
+   ╰╴       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 3 previous errors
+

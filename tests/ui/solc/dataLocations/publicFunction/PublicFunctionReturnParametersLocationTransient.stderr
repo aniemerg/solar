@@ -1,0 +1,10 @@
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/publicFunction/PublicFunctionReturnParametersLocationTransient.sol:LL:CC
+   │
+LL │     function h() public pure returns(uint[] transient) {}
+   │                                      ━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory` or `calldata` for public function return parameter
+
+error: aborting due to 1 previous error
+

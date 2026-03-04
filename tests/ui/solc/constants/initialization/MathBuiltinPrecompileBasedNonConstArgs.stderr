@@ -1,0 +1,22 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/constants/initialization/MathBuiltinPrecompileBasedNonConstArgs.sol:LL:CC
+   │
+LL │     bytes data = hex"ffff";
+   ╰╴                 ━━━━━━━━━ expected `bytes storage`, found `bytes_string_literal[2]`
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/constants/initialization/MathBuiltinPrecompileBasedNonConstArgs.sol:LL:CC
+   │
+LL │     address constant addr = ecrecover("1234", 1, "0", abi.decode(data, (bytes2)));
+   │                                                       ━━━━━━━━━━┬───────────────
+   │                                                                 │
+   ╰╴                                                                expected 0 arguments, found 2
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/constants/initialization/MathBuiltinPrecompileBasedNonConstArgs.sol:LL:CC
+   │
+LL │     address constant addr = ecrecover("1234", 1, "0", abi.decode(data, (bytes2)));
+   ╰╴                                                      ━━━━━━━━━━━━━━━━━━━━━━━━━━ expected `bytes32`, found `tuple()`
+
+error: aborting due to 3 previous errors
+

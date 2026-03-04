@@ -1,0 +1,14 @@
+error: transient cannot be used as data location for constant or immutable variables
+   ╭▸ ROOT/tests/ui/solc/constants/ConstantTransientStateVariable.sol:LL:CC
+   │
+LL │     int constant public transient x = 0;
+   ╰╴    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: initialization of transient storage state variables is not supported
+   ╭▸ ROOT/tests/ui/solc/constants/ConstantTransientStateVariable.sol:LL:CC
+   │
+LL │     int constant public transient x = 0;
+   ╰╴    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 2 previous errors
+

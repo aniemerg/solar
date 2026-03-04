@@ -1,0 +1,8 @@
+error: expected one of `(`, `)`, `,`, `.`, `?`, `[`, `payable`, `pure`, `view`, or `{`, found keyword `storage`
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/abidecode/AbiDecodeStorage.sol:LL:CC
+   │
+LL │     abi.decode("abc", (bytes storage));
+   ╰╴                             ━━━━━━━ expected one of 10 possible tokens
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,66 @@
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryInternalFunctionNoDataLocation.sol:LL:CC
+   │
+LL │     function g() internal pure returns (uint[2]) {}
+   │                                         ━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for internal function return parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryInternalFunctionNoDataLocation.sol:LL:CC
+   │
+LL │     function h() internal pure returns (uint[]) {}
+   │                                         ━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for internal function return parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryInternalFunctionNoDataLocation.sol:LL:CC
+   │
+LL │     function i() internal pure returns (S) {}
+   │                                         ━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for internal function return parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryInternalFunctionNoDataLocation.sol:LL:CC
+   │
+LL │     function j() internal pure returns (mapping(uint => uint)) {}
+   │                                         ━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for internal function return parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryInternalFunctionNoDataLocation.sol:LL:CC
+   │
+LL │     function gp(uint[2]) internal pure {}
+   │                 ━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for internal function parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryInternalFunctionNoDataLocation.sol:LL:CC
+   │
+LL │     function hp(uint[]) internal pure {}
+   │                 ━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for internal function parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryInternalFunctionNoDataLocation.sol:LL:CC
+   │
+LL │     function ip(S) internal pure {}
+   │                 ━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for internal function parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryInternalFunctionNoDataLocation.sol:LL:CC
+   │
+LL │     function jp(mapping(uint => uint)) internal pure {}
+   │                 ━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for internal function parameter
+
+error: aborting due to 8 previous errors
+

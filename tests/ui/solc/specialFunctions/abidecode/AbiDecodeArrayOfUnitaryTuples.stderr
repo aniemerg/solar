@@ -1,0 +1,50 @@
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/abidecode/AbiDecodeArrayOfUnitaryTuples.sol:LL:CC
+   │
+LL │         abi.decode("", ((uint)[2]));
+   │         ━━━━━━━━━━┬────────────────
+   │                   │
+   ╰╴                  expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/abidecode/AbiDecodeArrayOfUnitaryTuples.sol:LL:CC
+   │
+LL │         abi.decode("", ((uint)[]));
+   │         ━━━━━━━━━━┬───────────────
+   │                   │
+   ╰╴                  expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/abidecode/AbiDecodeArrayOfUnitaryTuples.sol:LL:CC
+   │
+LL │         abi.decode("", ((uint)[][3]));
+   │         ━━━━━━━━━━┬──────────────────
+   │                   │
+   ╰╴                  expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/abidecode/AbiDecodeArrayOfUnitaryTuples.sol:LL:CC
+   │
+LL │         abi.decode("", ((uint)[4][]));
+   │         ━━━━━━━━━━┬──────────────────
+   │                   │
+   ╰╴                  expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/abidecode/AbiDecodeArrayOfUnitaryTuples.sol:LL:CC
+   │
+LL │         abi.decode("", ((uint)[5][6]));
+   │         ━━━━━━━━━━┬───────────────────
+   │                   │
+   ╰╴                  expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/abidecode/AbiDecodeArrayOfUnitaryTuples.sol:LL:CC
+   │
+LL │         abi.decode("", (((uint))[5][6]));
+   │         ━━━━━━━━━━┬─────────────────────
+   │                   │
+   ╰╴                  expected 0 arguments, found 2
+
+error: aborting due to 6 previous errors
+

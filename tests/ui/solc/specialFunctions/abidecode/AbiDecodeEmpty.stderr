@@ -1,0 +1,10 @@
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/abidecode/AbiDecodeEmpty.sol:LL:CC
+   │
+LL │         abi.decode("abc", ());
+   │         ━━━━━━━━━━┬──────────
+   │                   │
+   ╰╴                  expected 0 arguments, found 2
+
+error: aborting due to 1 previous error
+

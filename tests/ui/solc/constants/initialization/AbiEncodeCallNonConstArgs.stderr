@@ -1,0 +1,16 @@
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/constants/initialization/AbiEncodeCallNonConstArgs.sol:LL:CC
+   │
+LL │     bytes constant fCallA = abi.encodeCall(A.f, (getA()));
+   │                             ━━━━━━━━━━━━━━┬──────────────
+   │                                           │
+   ╰╴                                          expected 0 arguments, found 2
+
+error: member `f` not found on type `type(contract A)`
+   ╭▸ ROOT/tests/ui/solc/constants/initialization/AbiEncodeCallNonConstArgs.sol:LL:CC
+   │
+LL │     bytes constant fCallA = abi.encodeCall(A.f, (getA()));
+   ╰╴                                             ━
+
+error: aborting due to 2 previous errors
+

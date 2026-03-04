@@ -1,0 +1,14 @@
+error: errors can only be used with revert statements
+   ╭▸ ROOT/tests/ui/solc/errors/SelectorOnInstance.sol:LL:CC
+   │
+LL │     bytes4 t = E().selector;
+   ╰╴               ━━━
+
+error: member `selector` not found on type `tuple()`
+   ╭▸ ROOT/tests/ui/solc/errors/SelectorOnInstance.sol:LL:CC
+   │
+LL │     bytes4 t = E().selector;
+   ╰╴                   ━━━━━━━━
+
+error: aborting due to 2 previous errors
+

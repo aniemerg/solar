@@ -1,0 +1,34 @@
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryExternalFunctionReturnNoDataLocation.sol:LL:CC
+   │
+LL │     function g() external pure returns (uint[2]) {}
+   │                                         ━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for external function return parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryExternalFunctionReturnNoDataLocation.sol:LL:CC
+   │
+LL │     function h() external pure returns (uint[]) {}
+   │                                         ━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for external function return parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryExternalFunctionReturnNoDataLocation.sol:LL:CC
+   │
+LL │     function i() external pure returns (S) {}
+   │                                         ━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for external function return parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryExternalFunctionReturnNoDataLocation.sol:LL:CC
+   │
+LL │     function j() external pure returns (mapping(uint => uint)) {}
+   │                                         ━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for external function return parameter
+
+error: aborting due to 4 previous errors
+

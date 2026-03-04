@@ -1,0 +1,8 @@
+error: calldata structs are read-only
+   ╭▸ ROOT/tests/ui/solc/structs/CalldataAssign.sol:LL:CC
+   │
+LL │     function f(S calldata s) external { s.a = 4; }
+   ╰╴                                        ━━━
+
+error: aborting due to 1 previous error
+

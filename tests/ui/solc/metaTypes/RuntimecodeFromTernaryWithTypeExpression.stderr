@@ -1,0 +1,8 @@
+error: incompatible conditional types
+   ╭▸ ROOT/tests/ui/solc/metaTypes/RuntimecodeFromTernaryWithTypeExpression.sol:LL:CC
+   │
+LL │         return (getA ? type(A) : type(B)).runtimeCode;
+   ╰╴                ━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

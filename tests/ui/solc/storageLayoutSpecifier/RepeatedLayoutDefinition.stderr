@@ -1,0 +1,24 @@
+error: storage layout already specified
+   ╭▸ ROOT/tests/ui/solc/storageLayoutSpecifier/RepeatedLayoutDefinition.sol:LL:CC
+   │
+LL │ contract C layout at 0x1234 layout at 0xABC layout at 0x4321 layout at 0xCBA { }
+   │            ┬─────────────── ━━━━━━━━━━━━━━━
+   │            │
+   ╰╴           previous definition
+
+error: storage layout already specified
+   ╭▸ ROOT/tests/ui/solc/storageLayoutSpecifier/RepeatedLayoutDefinition.sol:LL:CC
+   │
+LL │ contract C layout at 0x1234 layout at 0xABC layout at 0x4321 layout at 0xCBA { }
+   │            ┬───────────────                 ━━━━━━━━━━━━━━━━
+   │            │
+   ╰╴           previous definition
+
+error: storage layout already specified
+   ╭▸ ROOT/tests/ui/solc/storageLayoutSpecifier/RepeatedLayoutDefinition.sol:LL:CC
+   │
+LL │ contract C layout at 0x1234 layout at 0xABC layout at 0x4321 layout at 0xCBA { }
+   ╰╴           ──────────────── previous definition              ━━━━━━━━━━━━━━━
+
+error: aborting due to 3 previous errors
+

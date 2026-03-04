@@ -1,0 +1,8 @@
+error: expected one of `(`, `+`, `[`, `delete`, `new`, `payable`, `type`, elementary type name, identifier, or literal, found `{`
+   ╭▸ ROOT/tests/ui/solc/storageLayoutSpecifier/LayoutSpecificationNoExpression.sol:LL:CC
+   │
+LL │ contract C layout at { }
+   ╰╴                     ━ expected one of 10 possible tokens
+
+error: aborting due to 1 previous error
+

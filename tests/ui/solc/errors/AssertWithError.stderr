@@ -1,0 +1,14 @@
+error: errors can only be used with revert statements
+   ╭▸ ROOT/tests/ui/solc/errors/AssertWithError.sol:LL:CC
+   │
+LL │     assert(E());
+   ╰╴           ━━━
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/errors/AssertWithError.sol:LL:CC
+   │
+LL │     assert(E());
+   ╰╴           ━━━ expected `bool`, found `tuple()`
+
+error: aborting due to 2 previous errors
+

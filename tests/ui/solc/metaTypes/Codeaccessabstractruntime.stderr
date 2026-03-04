@@ -1,0 +1,14 @@
+error: member `runtimeCode` not found on type `type(contract Other)`
+   ╭▸ ROOT/tests/ui/solc/metaTypes/Codeaccessabstractruntime.sol:LL:CC
+   │
+LL │         return type(Other).runtimeCode;
+   ╰╴                           ━━━━━━━━━━━
+
+error[5424]: functions without implementation must be marked virtual
+   ╭▸ ROOT/tests/ui/solc/metaTypes/Codeaccessabstractruntime.sol:LL:CC
+   │
+LL │     function f(uint) public returns (uint);
+   ╰╴    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,16 @@
+error: wrong argument count for function call: 2 arguments given but expected 1
+   ╭▸ ROOT/tests/ui/solc/errors/AssertWithCondAndError.sol:LL:CC
+   │
+LL │     assert(x, E());
+   │     ━━━━━━┬───────
+   │           │
+   ╰╴          expected 1 argument, found 2
+
+error: errors can only be used with revert statements
+   ╭▸ ROOT/tests/ui/solc/errors/AssertWithCondAndError.sol:LL:CC
+   │
+LL │     assert(x, E());
+   ╰╴              ━━━
+
+error: aborting due to 2 previous errors
+

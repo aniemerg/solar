@@ -1,0 +1,26 @@
+error: wrong argument count for function call: 1 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/AbiEncodeTupleReturnedFromFunction.sol:LL:CC
+   │
+LL │         abi.encode(g0());
+   │         ━━━━━━━━━━┬─────
+   │                   │
+   ╰╴                  expected 0 arguments, found 1
+
+error: wrong argument count for function call: 1 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/AbiEncodeTupleReturnedFromFunction.sol:LL:CC
+   │
+LL │         abi.encode(g2());
+   │         ━━━━━━━━━━┬─────
+   │                   │
+   ╰╴                  expected 0 arguments, found 1
+
+error: wrong argument count for function call: 1 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/AbiEncodeTupleReturnedFromFunction.sol:LL:CC
+   │
+LL │         abi.encode((g1(), g1()));
+   │         ━━━━━━━━━━┬─────────────
+   │                   │
+   ╰╴                  expected 0 arguments, found 1
+
+error: aborting due to 3 previous errors
+

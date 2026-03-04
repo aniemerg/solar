@@ -1,0 +1,18 @@
+error: cannot apply builtin operator `+` to `Type` and `Type`
+   ╭▸ ROOT/tests/ui/solc/constants/ConstantCyclicViaUserOperators.sol:LL:CC
+   │
+LL │ Type constant u = v + t;
+   │                   ┬ ━ ─ Type
+   │                   │
+   ╰╴                  Type
+
+error: cannot apply builtin operator `+` to `Type` and `Type`
+   ╭▸ ROOT/tests/ui/solc/constants/ConstantCyclicViaUserOperators.sol:LL:CC
+   │
+LL │ Type constant v = u + t;
+   │                   ┬ ━ ─ Type
+   │                   │
+   ╰╴                  Type
+
+error: aborting due to 2 previous errors
+

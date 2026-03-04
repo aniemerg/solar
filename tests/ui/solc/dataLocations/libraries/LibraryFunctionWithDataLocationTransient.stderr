@@ -1,0 +1,66 @@
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryFunctionWithDataLocationTransient.sol:LL:CC
+   │
+LL │     function h1(uint[] transient) public pure { }
+   │                 ━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for public function parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryFunctionWithDataLocationTransient.sol:LL:CC
+   │
+LL │     function h2() public pure returns (uint[] transient) { }
+   │                                        ━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for public function return parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryFunctionWithDataLocationTransient.sol:LL:CC
+   │
+LL │     function i1(uint[] transient) external pure { }
+   │                 ━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for external function parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryFunctionWithDataLocationTransient.sol:LL:CC
+   │
+LL │     function i2() external pure returns (uint[] transient) { }
+   │                                          ━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for external function return parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryFunctionWithDataLocationTransient.sol:LL:CC
+   │
+LL │     function f1(uint[] transient) private pure { }
+   │                 ━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for private function parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryFunctionWithDataLocationTransient.sol:LL:CC
+   │
+LL │     function f2() private pure returns (uint[] transient) { }
+   │                                         ━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for private function return parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryFunctionWithDataLocationTransient.sol:LL:CC
+   │
+LL │     function g1(uint[] transient) internal pure { }
+   │                 ━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for internal function parameter
+
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/dataLocations/libraries/LibraryFunctionWithDataLocationTransient.sol:LL:CC
+   │
+LL │     function g2() internal pure returns (uint[] transient) { }
+   │                                          ━━━━━━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for internal function return parameter
+
+error: aborting due to 8 previous errors
+

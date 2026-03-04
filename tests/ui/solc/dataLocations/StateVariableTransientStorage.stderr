@@ -1,0 +1,8 @@
+error: data location already specified
+   ╭▸ ROOT/tests/ui/solc/dataLocations/StateVariableTransientStorage.sol:LL:CC
+   │
+LL │     uint transient storage x;
+   ╰╴                   ━━━━━━━
+
+error: aborting due to 1 previous error
+

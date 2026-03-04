@@ -1,0 +1,14 @@
+error: identifier `Err` already declared
+   ╭▸ ROOT/tests/ui/solc/errors/ClashFunctionError.sol:LL:CC
+   │
+LL │ error Err();
+   │       ━━━
+   ╰╴
+note: previous declaration declared here
+   ╭▸ ROOT/tests/ui/solc/errors/ClashFunctionError.sol:LL:CC
+   │
+LL │ function Err() pure {}
+   ╰╴         ━━━
+
+error: aborting due to 1 previous error
+

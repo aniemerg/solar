@@ -1,0 +1,14 @@
+error: identifier `S` already declared
+   ╭▸ ROOT/tests/ui/solc/structs/GlobalStructContractNameClash.sol:LL:CC
+   │
+LL │ contract S {}
+   │          ━
+   ╰╴
+note: previous declaration declared here
+   ╭▸ ROOT/tests/ui/solc/structs/GlobalStructContractNameClash.sol:LL:CC
+   │
+LL │ struct S { uint256 a; }
+   ╰╴       ━
+
+error: aborting due to 1 previous error
+

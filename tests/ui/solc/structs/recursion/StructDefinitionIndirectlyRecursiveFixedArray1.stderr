@@ -1,0 +1,20 @@
+error: recursive struct definition
+   ╭▸ ROOT/tests/ui/solc/structs/recursion/StructDefinitionIndirectlyRecursiveFixedArray1.sol:LL:CC
+   │
+LL │ ┏     struct MyStructName2 {
+LL │ ┃         MyStructName1 x;
+LL │ ┃     }
+   ╰╴┗━━━━━┛
+
+error: recursive struct definition
+   ╭▸ ROOT/tests/ui/solc/structs/recursion/StructDefinitionIndirectlyRecursiveFixedArray1.sol:LL:CC
+   │
+LL │ ┏     struct MyStructName1 {
+LL │ ┃         address addr;
+LL │ ┃         uint256 count;
+LL │ ┃         MyStructName2[1] x;
+LL │ ┃     }
+   ╰╴┗━━━━━┛
+
+error: aborting due to 2 previous errors
+

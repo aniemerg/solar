@@ -1,0 +1,82 @@
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/EncodecallFailArgsInternalStructForUint.sol:LL:CC
+   │
+LL │         abi.encodeCall(this.f1, (s));
+   │         ━━━━━━━━━━━━━━┬─────────────
+   │                       │
+   ╰╴                      expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/EncodecallFailArgsInternalStructForUint.sol:LL:CC
+   │
+LL │         abi.encodeCall(this.f2, (s));
+   │         ━━━━━━━━━━━━━━┬─────────────
+   │                       │
+   ╰╴                      expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/EncodecallFailArgsInternalStructForUint.sol:LL:CC
+   │
+LL │         abi.encodeCall(this.f3, (s));
+   │         ━━━━━━━━━━━━━━┬─────────────
+   │                       │
+   ╰╴                      expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/EncodecallFailArgsInternalStructForUint.sol:LL:CC
+   │
+LL │         abi.encodeCall(this.g1, (s));
+   │         ━━━━━━━━━━━━━━┬─────────────
+   │                       │
+   ╰╴                      expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/EncodecallFailArgsInternalStructForUint.sol:LL:CC
+   │
+LL │         abi.encodeCall(this.g2, (s));
+   │         ━━━━━━━━━━━━━━┬─────────────
+   │                       │
+   ╰╴                      expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/EncodecallFailArgsInternalStructForUint.sol:LL:CC
+   │
+LL │         abi.encodeCall(this.h, (s));
+   │         ━━━━━━━━━━━━━━┬────────────
+   │                       │
+   ╰╴                      expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/EncodecallFailArgsInternalStructForUint.sol:LL:CC
+   │
+LL │         abi.encodeCall(this.i, (s));
+   │         ━━━━━━━━━━━━━━┬────────────
+   │                       │
+   ╰╴                      expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/EncodecallFailArgsInternalStructForUint.sol:LL:CC
+   │
+LL │         abi.encodeCall(this.j, (s));
+   │         ━━━━━━━━━━━━━━┬────────────
+   │                       │
+   ╰╴                      expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/EncodecallFailArgsInternalStructForUint.sol:LL:CC
+   │
+LL │         abi.encodeCall(this.k, (s));
+   │         ━━━━━━━━━━━━━━┬────────────
+   │                       │
+   ╰╴                      expected 0 arguments, found 2
+
+error: wrong argument count for function call: 2 arguments given but expected 0
+   ╭▸ ROOT/tests/ui/solc/specialFunctions/EncodecallFailArgsInternalStructForUint.sol:LL:CC
+   │
+LL │         abi.encodeCall(this.l, (s));
+   │         ━━━━━━━━━━━━━━┬────────────
+   │                       │
+   ╰╴                      expected 0 arguments, found 2
+
+error: aborting due to 10 previous errors
+

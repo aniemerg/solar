@@ -1,0 +1,38 @@
+error: failed to evaluate constant: unsupported expression
+   ╭▸ ROOT/tests/ui/solc/array/length/LiteralConversion.sol:LL:CC
+   │
+LL │     uint[uint(1)] valid_size_invalid_expr1;
+   ╰╴         ━━━━━━━ evaluation of constant value failed here
+
+error: failed to evaluate constant: unsupported expression
+   ╭▸ ROOT/tests/ui/solc/array/length/LiteralConversion.sol:LL:CC
+   │
+LL │     uint[uint(2**256-1)] valid_size_invalid_expr2;
+   ╰╴         ━━━━━━━━━━━━━━ evaluation of constant value failed here
+
+error: failed to evaluate constant: unsupported expression
+   ╭▸ ROOT/tests/ui/solc/array/length/LiteralConversion.sol:LL:CC
+   │
+LL │     uint[uint(2**256)] invalid_size_invalid_expr3;
+   ╰╴         ━━━━━━━━━━━━ evaluation of constant value failed here
+
+error: failed to evaluate constant: unsupported expression
+   ╭▸ ROOT/tests/ui/solc/array/length/LiteralConversion.sol:LL:CC
+   │
+LL │     uint[int(1)] valid_size_invalid_expr4;
+   ╰╴         ━━━━━━ evaluation of constant value failed here
+
+error: failed to evaluate constant: unsupported expression
+   ╭▸ ROOT/tests/ui/solc/array/length/LiteralConversion.sol:LL:CC
+   │
+LL │     uint[int(2**256-1)] valid_size_invalid_expr5;
+   ╰╴         ━━━━━━━━━━━━━ evaluation of constant value failed here
+
+error: failed to evaluate constant: unsupported expression
+   ╭▸ ROOT/tests/ui/solc/array/length/LiteralConversion.sol:LL:CC
+   │
+LL │     uint[int(2**256)] invalid_size_invalid_expr6;
+   ╰╴         ━━━━━━━━━━━ evaluation of constant value failed here
+
+error: aborting due to 6 previous errors
+
