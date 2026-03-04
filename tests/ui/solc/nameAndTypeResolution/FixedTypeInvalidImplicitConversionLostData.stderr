@@ -1,0 +1,8 @@
+error: unresolved symbol `ufixed256x1`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/FixedTypeInvalidImplicitConversionLostData.sol:LL:CC
+   │
+LL │         ufixed256x1 a = 1/3; a;
+   ╰╴        ━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,10 @@
+error: uninitialized mapping
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/UninitializedMappingVariable.sol:LL:CC
+   │
+LL │         mapping(uint => uint) storage x;
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ note: mappings cannot be created dynamically, you have to assign them from a state variable
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,10 @@
+error: expected data location
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ArrayWithNegativeLength.sol:LL:CC
+   │
+LL │     function f(uint a) public { uint8[-1] x; }
+   │                                 ━━━━━━━━━━━
+   │
+   ╰ note: data location must be `memory`, `storage`, or `calldata` for variable
+
+error: aborting due to 1 previous error
+

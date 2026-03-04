@@ -1,0 +1,8 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/EnumImplicitConversionIsNotOkay256.sol:LL:CC
+   │
+LL │         a = ActionChoices.GoStraight;
+   ╰╴            ━━━━━━━━━━━━━━━━━━━━━━━━ expected `uint256`, found `enum test.ActionChoices`
+
+error: aborting due to 1 previous error
+

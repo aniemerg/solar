@@ -1,0 +1,8 @@
+error: unresolved symbol `fixed99999999999999999999999999999999999999x7`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/InvalidFixedTypesLongInvalidIdentifier.sol:LL:CC
+   │
+LL │     fixed99999999999999999999999999999999999999x7 b = 9.5;
+   ╰╴    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

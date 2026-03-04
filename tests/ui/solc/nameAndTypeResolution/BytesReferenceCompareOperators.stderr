@@ -1,0 +1,10 @@
+error: cannot apply builtin operator `==` to `bytes storage` and `bytes storage`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/BytesReferenceCompareOperators.sol:LL:CC
+   │
+LL │ contract test { bytes a; bytes b; fallback() external { a == b; } }
+   │                                                         ┬ ━━ ─ bytes storage
+   │                                                         │
+   ╰╴                                                        bytes storage
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,8 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ErrorIndexAccess.sol:LL:CC
+   │
+LL │         a[MyCustomError];
+   ╰╴          ━━━━━━━━━━━━━ expected `uint256`, found `error MyCustomError(uint256,bool)`
+
+error: aborting due to 1 previous error
+

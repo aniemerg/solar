@@ -1,0 +1,8 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ArrayCopyWithDifferentTypes2.sol:LL:CC
+   │
+LL │     function f() public { b = a; }
+   ╰╴                              ━ expected `uint8[] storage`, found `uint32[] storage`
+
+error: aborting due to 1 previous error
+

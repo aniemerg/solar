@@ -1,0 +1,14 @@
+error: rational literals are not supported
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/FixedToBytesImplicitConversion.sol:LL:CC
+   │
+LL │         fixed a = 3.25;
+   ╰╴                  ━━━━
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/FixedToBytesImplicitConversion.sol:LL:CC
+   │
+LL │         bytes32 c = a; c;
+   ╰╴                    ━ expected `bytes32`, found `fixed256x0`
+
+error: aborting due to 2 previous errors
+

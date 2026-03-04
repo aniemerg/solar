@@ -1,0 +1,6 @@
+//@ compile-flags: -Ztypeck
+contract C {
+    function f() pure public returns (uint) {
+        return 1;
+    }
+}

@@ -1,0 +1,14 @@
+error: integer part too large
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/InvalidMobileType.sol:LL:CC
+   │
+LL │ …     78901234567890123456789012345678901234567890123456789345678901234567890012345678012345678901234567;
+   ╰╴      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: integer part too large
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/InvalidMobileType.sol:LL:CC
+   │
+LL │ …     [1, 78901234567890123456789012345678901234567890123456789345678901234567890012345678012345678901234567];
+   ╰╴          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+error: aborting due to 2 previous errors
+

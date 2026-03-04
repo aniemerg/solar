@@ -1,0 +1,8 @@
+error: member `a` not found on type `contract B`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/PrivateMemberGetterCallWithoutParentheses.sol:LL:CC
+   │
+LL │         b.a.f();
+   ╰╴          ━
+
+error: aborting due to 1 previous error
+

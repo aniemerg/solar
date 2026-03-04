@@ -1,0 +1,14 @@
+error: expected library, found builtin
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/shadowsBuiltin/IllegalNamesLibraryUsingFor.sol:LL:CC
+   │
+LL │     using super for uint;
+   ╰╴          ━━━━━
+
+error: expected library, found builtin
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/shadowsBuiltin/IllegalNamesLibraryUsingFor.sol:LL:CC
+   │
+LL │     using this for uint16;
+   ╰╴          ━━━━
+
+error: aborting due to 2 previous errors
+

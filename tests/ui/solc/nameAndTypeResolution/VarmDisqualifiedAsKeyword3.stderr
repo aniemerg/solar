@@ -1,0 +1,8 @@
+error: unresolved symbol `bytesM`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/VarmDisqualifiedAsKeyword3.sol:LL:CC
+   │
+LL │         bytesM fail = "now";
+   ╰╴        ━━━━━━
+
+error: aborting due to 1 previous error
+

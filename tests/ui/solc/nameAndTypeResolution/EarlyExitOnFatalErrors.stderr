@@ -1,0 +1,26 @@
+error: identifier `s` already declared
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/EarlyExitOnFatalErrors.sol:LL:CC
+   │
+LL │     function s() public s {
+   │              ━
+   ╰╴
+note: previous declaration declared here
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/EarlyExitOnFatalErrors.sol:LL:CC
+   │
+LL │     S public s;
+   ╰╴             ━
+
+error: unresolved symbol `ftring`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/EarlyExitOnFatalErrors.sol:LL:CC
+   │
+LL │         ftring a;
+   ╰╴        ━━━━━━
+
+error: symbol `s` resolved to multiple declarations
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/EarlyExitOnFatalErrors.sol:LL:CC
+   │
+LL │     function s() public s {
+   ╰╴                        ━
+
+error: aborting due to 3 previous errors
+

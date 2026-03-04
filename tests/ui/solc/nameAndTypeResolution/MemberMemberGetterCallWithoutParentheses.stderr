@@ -1,0 +1,8 @@
+error: member `a` not found on type `function () view external returns (contract B)`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/MemberMemberGetterCallWithoutParentheses.sol:LL:CC
+   │
+LL │         c.b.a.f();
+   ╰╴            ━
+
+error: aborting due to 1 previous error
+

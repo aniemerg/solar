@@ -1,0 +1,56 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/invalidTypes/ConditionalExpression.sol:LL:CC
+   │
+LL │         o(true ? 99**99 : 99);
+   ╰╴                 ━━━━━━ expected `bytes1`, found `int_literal[7]`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/invalidTypes/ConditionalExpression.sol:LL:CC
+   │
+LL │         o(true ? 99**99 : 99);
+   ╰╴                          ━━ expected `bytes1`, found `int_literal[7]`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/invalidTypes/ConditionalExpression.sol:LL:CC
+   │
+LL │         o(true ? 99**99 : 99);
+   ╰╴          ━━━━━━━━━━━━━━━━━━ expected `bytes1`, found `uint8`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/invalidTypes/ConditionalExpression.sol:LL:CC
+   │
+LL │         o(true ? 99 : 99**99);
+   ╰╴                 ━━ expected `bytes1`, found `int_literal[7]`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/invalidTypes/ConditionalExpression.sol:LL:CC
+   │
+LL │         o(true ? 99 : 99**99);
+   ╰╴                      ━━━━━━ expected `bytes1`, found `int_literal[7]`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/invalidTypes/ConditionalExpression.sol:LL:CC
+   │
+LL │         o(true ? 99 : 99**99);
+   ╰╴          ━━━━━━━━━━━━━━━━━━ expected `bytes1`, found `uint8`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/invalidTypes/ConditionalExpression.sol:LL:CC
+   │
+LL │         o(true ? 99**99 : 99**99);
+   ╰╴                 ━━━━━━ expected `bytes1`, found `int_literal[7]`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/invalidTypes/ConditionalExpression.sol:LL:CC
+   │
+LL │         o(true ? 99**99 : 99**99);
+   ╰╴                          ━━━━━━ expected `bytes1`, found `int_literal[7]`
+
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/invalidTypes/ConditionalExpression.sol:LL:CC
+   │
+LL │         o(true ? 99**99 : 99**99);
+   ╰╴          ━━━━━━━━━━━━━━━━━━━━━━ expected `bytes1`, found `uint8`
+
+error: aborting due to 9 previous errors
+

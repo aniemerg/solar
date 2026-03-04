@@ -1,0 +1,16 @@
+error: rational literals are not supported
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/FixedPointCastingExponents15.sol:LL:CC
+   │
+LL │         ufixed a = 3 ** ufixed(1.5);
+   ╰╴                               ━━━
+
+error: cannot apply builtin operator `**` to `int_literal[2]` and `ufixed256x0`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/FixedPointCastingExponents15.sol:LL:CC
+   │
+LL │         ufixed a = 3 ** ufixed(1.5);
+   │                    ┬ ━━ ─────────── ufixed256x0
+   │                    │
+   ╰╴                   int_literal[2]
+
+error: aborting due to 2 previous errors
+

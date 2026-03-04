@@ -1,0 +1,8 @@
+error: member `b` not found on type `bytes memory`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/UsingDirectiveForMissingSelftype.sol:LL:CC
+   │
+LL │         x.b();
+   ╰╴          ━
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,20 @@
+error: function signature hash collision
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/HashCollisionInAbstractContract.sol:LL:CC
+   │
+LL │ abstract contract D {
+   │                   ━
+   ╰╴
+note: first function
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/HashCollisionInAbstractContract.sol:LL:CC
+   │
+LL │     function tgeo() public {}
+   ╰╴    ━━━━━━━━━━━━━━━━━━━━━━━━━
+note: second function
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/HashCollisionInAbstractContract.sol:LL:CC
+   │
+LL │     function gsf() public {}
+   │     ━━━━━━━━━━━━━━━━━━━━━━━━
+   ╰ note: the function signatures `tgeo()` and `gsf()` produce the same 4-byte selector `0x67e43e43`
+
+error: aborting due to 1 previous error
+

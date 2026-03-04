@@ -1,0 +1,10 @@
+error: cannot apply builtin operator `**` to `int_literal[6]` and `int8`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/RationalAsExponentValueNegQuarter.sol:LL:CC
+   │
+LL │         42 ** (-1/4);
+   │         ┬─ ━━ ────── int8
+   │         │
+   ╰╴        int_literal[6]
+
+error: aborting due to 1 previous error
+

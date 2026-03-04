@@ -1,0 +1,8 @@
+error: member `length` not found on type `string storage`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/StringLength.sol:LL:CC
+   │
+LL │     function f() public { uint a = s.length; }
+   ╰╴                                     ━━━━━━
+
+error: aborting due to 1 previous error
+

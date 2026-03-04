@@ -1,0 +1,8 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/UnusedReturnValueSend.sol:LL:CC
+   │
+LL │         payable(address(0x12)).send(1);
+   ╰╴                ━━━━━━━━━━━━━ cannot convert `int_literal[5]` to `address`
+
+error: aborting due to 1 previous error
+

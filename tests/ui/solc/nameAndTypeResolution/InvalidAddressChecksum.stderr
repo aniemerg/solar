@@ -1,0 +1,11 @@
+error: invalid checksummed address
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/InvalidAddressChecksum.sol:LL:CC
+   │
+LL │         address x = 0xFA0bFc97E48458494Ccd857e1A85DC91F7F0046E;
+   │                     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ├ help: correct checksummed address: "0xfA0bFc97E48458494Ccd857e1A85DC91F7F0046E"
+   ╰ note: if this is not used as an address, please prepend "00"
+
+error: aborting due to 1 previous error
+

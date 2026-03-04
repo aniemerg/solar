@@ -1,0 +1,8 @@
+error: unary plus is not supported
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/RationalUnaryPlusOperation.sol:LL:CC
+   │
+LL │         ufixed16x2 a = +3.25;
+   ╰╴                       ━
+
+error: aborting due to 1 previous error
+

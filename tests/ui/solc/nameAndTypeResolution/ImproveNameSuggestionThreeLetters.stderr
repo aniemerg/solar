@@ -1,0 +1,14 @@
+error: unresolved symbol `abd`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ImproveNameSuggestionThreeLetters.sol:LL:CC
+   │
+LL │         a = abd;
+   ╰╴            ━━━
+
+error: unresolved symbol `ade`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ImproveNameSuggestionThreeLetters.sol:LL:CC
+   │
+LL │         a = ade;
+   ╰╴            ━━━
+
+error: aborting due to 2 previous errors
+

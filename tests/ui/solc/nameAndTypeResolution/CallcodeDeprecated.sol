@@ -1,0 +1,6 @@
+//@ compile-flags: -Ztypeck
+contract test {
+    function f() pure public {
+        address(0x12).callcode; //~ ERROR: invalid explicit type conversion
+    }
+}

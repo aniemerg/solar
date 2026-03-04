@@ -1,0 +1,8 @@
+error: unresolved symbol `fun`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/InheritenceSuggestions.sol:LL:CC
+   │
+LL │         uint var1 = fun();
+   ╰╴                    ━━━
+
+error: aborting due to 1 previous error
+

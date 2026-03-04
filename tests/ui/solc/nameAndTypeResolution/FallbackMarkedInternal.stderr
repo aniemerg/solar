@@ -1,0 +1,8 @@
+error: `internal` not allowed here; allowed values: external
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/FallbackMarkedInternal.sol:LL:CC
+   │
+LL │     fallback () internal { }
+   ╰╴                ━━━━━━━━
+
+error: aborting due to 1 previous error
+

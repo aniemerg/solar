@@ -1,0 +1,38 @@
+error: unresolved symbol `a`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ImproveNameSuggestionFourLetters.sol:LL:CC
+   │
+LL │         a = land;
+   ╰╴        ━
+
+error: unresolved symbol `land`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ImproveNameSuggestionFourLetters.sol:LL:CC
+   │
+LL │         a = land;
+   ╰╴            ━━━━
+
+error: unresolved symbol `a`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ImproveNameSuggestionFourLetters.sol:LL:CC
+   │
+LL │         a = lost;
+   ╰╴        ━
+
+error: unresolved symbol `lost`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ImproveNameSuggestionFourLetters.sol:LL:CC
+   │
+LL │         a = lost;
+   ╰╴            ━━━━
+
+error: unresolved symbol `a`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ImproveNameSuggestionFourLetters.sol:LL:CC
+   │
+LL │         a = lang;
+   ╰╴        ━
+
+error: unresolved symbol `lang`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ImproveNameSuggestionFourLetters.sol:LL:CC
+   │
+LL │         a = lang;
+   ╰╴            ━━━━
+
+error: aborting due to 6 previous errors
+

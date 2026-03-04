@@ -1,0 +1,8 @@
+error: member `value` not found on type `function (bytes memory) pure returns (bytes32)`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/BuiltinSha256RejectValue.sol:LL:CC
+   │
+LL │         sha256.value();
+   ╰╴               ━━━━━
+
+error: aborting due to 1 previous error
+

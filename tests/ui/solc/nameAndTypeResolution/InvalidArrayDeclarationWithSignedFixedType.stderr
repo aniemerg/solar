@@ -1,0 +1,8 @@
+error: failed to evaluate constant: unsupported expression
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/InvalidArrayDeclarationWithSignedFixedType.sol:LL:CC
+   │
+LL │         uint[fixed(3.5)] a; a;
+   ╰╴             ━━━━━━━━━━ evaluation of constant value failed here
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,8 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/FixedPointCastingExponentsNeg.sol:LL:CC
+   │
+LL │         ufixed c = 42 ** fixed(-1/4);
+   ╰╴                         ━━━━━━━━━━━ cannot convert `int8` to `fixed256x0`
+
+error: aborting due to 1 previous error
+

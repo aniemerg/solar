@@ -1,0 +1,10 @@
+error: cannot apply builtin operator `==` to `mapping(uint256 => uint256)` and `mapping(uint256 => uint256)`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ComparisonOfMappingTypes.sol:LL:CC
+   │
+LL │         return x == y;
+   │                ┬ ━━ ─ mapping(uint256 => uint256)
+   │                │
+   ╰╴               mapping(uint256 => uint256)
+
+error: aborting due to 1 previous error
+

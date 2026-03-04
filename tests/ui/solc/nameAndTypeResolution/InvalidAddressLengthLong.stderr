@@ -1,0 +1,8 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/InvalidAddressLengthLong.sol:LL:CC
+   │
+LL │         address x = 0xFA0bFc97E48458494Ccd857e1A85DC91F7F0046E0;
+   ╰╴                    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ expected `address`, found `int_literal[164]`
+
+error: aborting due to 1 previous error
+

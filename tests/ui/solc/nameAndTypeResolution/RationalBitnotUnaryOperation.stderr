@@ -1,0 +1,14 @@
+error: rational literals are not supported
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/RationalBitnotUnaryOperation.sol:LL:CC
+   │
+LL │         ~fixed(3.5);
+   ╰╴               ━━━
+
+error: cannot apply unary operator `~` to `fixed256x0`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/RationalBitnotUnaryOperation.sol:LL:CC
+   │
+LL │         ~fixed(3.5);
+   ╰╴         ━━━━━━━━━━
+
+error: aborting due to 2 previous errors
+

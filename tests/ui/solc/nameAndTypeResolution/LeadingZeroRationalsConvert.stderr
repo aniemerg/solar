@@ -1,0 +1,26 @@
+error: unresolved symbol `ufixed16x2`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/LeadingZeroRationalsConvert.sol:LL:CC
+   │
+LL │         ufixed16x2 a = 0.5;
+   ╰╴        ━━━━━━━━━━
+
+error: unresolved symbol `ufixed256x52`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/LeadingZeroRationalsConvert.sol:LL:CC
+   │
+LL │         ufixed256x52 b = 0.0000000000000006661338147750939242541790008544921875;
+   ╰╴        ━━━━━━━━━━━━
+
+error: unresolved symbol `fixed16x2`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/LeadingZeroRationalsConvert.sol:LL:CC
+   │
+LL │         fixed16x2 c = -0.5;
+   ╰╴        ━━━━━━━━━
+
+error: unresolved symbol `fixed256x52`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/LeadingZeroRationalsConvert.sol:LL:CC
+   │
+LL │         fixed256x52 d = -0.0000000000000006661338147750939242541790008544921875;
+   ╰╴        ━━━━━━━━━━━
+
+error: aborting due to 4 previous errors
+

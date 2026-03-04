@@ -1,0 +1,8 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/StringLiteralNotConvertibleToAddressAsAssignment.sol:LL:CC
+   │
+LL │     address public test = "0xCA35b7d915458EF540aDe6068dFe2F44E8fa733c";
+   ╰╴                          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ expected `address`, found `utf8_string_literal[32]`
+
+error: aborting due to 1 previous error
+

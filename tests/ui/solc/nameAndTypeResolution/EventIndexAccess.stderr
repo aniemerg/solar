@@ -1,0 +1,8 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/EventIndexAccess.sol:LL:CC
+   │
+LL │         a[MyCustomEvent];
+   ╰╴          ━━━━━━━━━━━━━ expected `uint256`, found `event Test.MyCustomEvent(uint256)`
+
+error: aborting due to 1 previous error
+

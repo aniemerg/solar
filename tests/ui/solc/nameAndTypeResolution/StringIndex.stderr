@@ -1,0 +1,8 @@
+error: cannot index into string storage
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/StringIndex.sol:LL:CC
+   │
+LL │     function f() public { bytes1 a = s[2]; }
+   ╰╴                                     ━━━━
+
+error: aborting due to 1 previous error
+

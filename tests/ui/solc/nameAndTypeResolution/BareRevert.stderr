@@ -1,0 +1,8 @@
+error: no matching declarations found
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/BareRevert.sol:LL:CC
+   │
+LL │             revert;
+   ╰╴            ━━━━━━
+
+error: aborting due to 1 previous error
+

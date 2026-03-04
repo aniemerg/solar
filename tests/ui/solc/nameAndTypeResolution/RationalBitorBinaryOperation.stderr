@@ -1,0 +1,16 @@
+error: rational literals are not supported
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/RationalBitorBinaryOperation.sol:LL:CC
+   │
+LL │         fixed(1.5) | 3;
+   ╰╴              ━━━
+
+error: cannot apply builtin operator `|` to `fixed256x0` and `int_literal[2]`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/RationalBitorBinaryOperation.sol:LL:CC
+   │
+LL │         fixed(1.5) | 3;
+   │         ┬───────── ━ ─ int_literal[2]
+   │         │
+   ╰╴        fixed256x0
+
+error: aborting due to 2 previous errors
+

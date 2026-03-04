@@ -1,0 +1,14 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ComplexInheritance.sol:LL:CC
+   │
+LL │ contract A { function f() public virtual { uint8 x = C(address(0)).g(); } }
+   ╰╴                                                       ━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
+
+error: member `f` not found on type `type(contract A)`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ComplexInheritance.sol:LL:CC
+   │
+LL │ contract C is A, B { function f() public override (A, B) { A.f(); } }
+   ╰╴                                                             ━
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,8 @@
+error: member `blockhash` not found on type `block`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/BlockBlockhashDeprecated.sol:LL:CC
+   │
+LL │         return block.blockhash(3);
+   ╰╴                     ━━━━━━━━━
+
+error: aborting due to 1 previous error
+

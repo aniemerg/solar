@@ -1,0 +1,8 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/UnusedReturnValueCallValue.sol:LL:CC
+   │
+LL │         address(0x12).call{value: 2}("abc");
+   ╰╴        ━━━━━━━━━━━━━ cannot convert `int_literal[5]` to `address`
+
+error: aborting due to 1 previous error
+

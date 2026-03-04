@@ -1,0 +1,8 @@
+error: member `value` not found on type `function (bytes32,uint8,bytes32,bytes32) pure returns (address)`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/BuiltinEcrecoverRejectValue.sol:LL:CC
+   │
+LL │ …     ecrecover.value();
+   ╰╴                ━━━━━
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,14 @@
+error: mismatched types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ArrayLengthInvalidExpressionNegativeBool.sol:LL:CC
+   │
+LL │     uint[-true] ids;
+   ╰╴          ━━━━ expected `uint256`, found `bool`
+
+error: cannot apply unary operator `-` to `bool`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ArrayLengthInvalidExpressionNegativeBool.sol:LL:CC
+   │
+LL │     uint[-true] ids;
+   ╰╴          ━━━━
+
+error: aborting due to 2 previous errors
+

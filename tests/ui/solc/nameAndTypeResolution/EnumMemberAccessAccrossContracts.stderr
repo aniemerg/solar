@@ -1,0 +1,8 @@
+error: member `MyEnum` not found on type `type(contract Interface)`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/EnumMemberAccessAccrossContracts.sol:LL:CC
+   │
+LL │         return Interface.MyEnum.One;
+   ╰╴                         ━━━━━━
+
+error: aborting due to 1 previous error
+

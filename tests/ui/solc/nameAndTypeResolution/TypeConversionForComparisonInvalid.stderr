@@ -1,0 +1,10 @@
+error: cannot apply builtin operator `==` to `int32` and `uint64`
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/TypeConversionForComparisonInvalid.sol:LL:CC
+   │
+LL │     function f() public { int32(2) == uint64(2); }
+   │                           ┬─────── ━━ ───────── uint64
+   │                           │
+   ╰╴                          int32
+
+error: aborting due to 1 previous error
+

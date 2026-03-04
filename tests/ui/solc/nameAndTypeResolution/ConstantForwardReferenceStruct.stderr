@@ -1,0 +1,8 @@
+error: constant variable must be initialized
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ConstantForwardReferenceStruct.sol:LL:CC
+   │
+LL │ S constant x;
+   ╰╴━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+

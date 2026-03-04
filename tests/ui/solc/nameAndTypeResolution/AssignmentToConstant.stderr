@@ -1,0 +1,8 @@
+error: cannot assign to a constant variable
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/AssignmentToConstant.sol:LL:CC
+   │
+LL │     function f() public { a = 2; }
+   ╰╴                          ━
+
+error: aborting due to 1 previous error
+

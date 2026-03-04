@@ -1,0 +1,8 @@
+error: invalid explicit type conversion
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ExplicitLiteralToUnspecifiedString.sol:LL:CC
+   │
+LL │         string("abc");
+   ╰╴        ━━━━━━━━━━━━━ cannot convert `utf8_string_literal[3]` to `string`
+
+error: aborting due to 1 previous error
+

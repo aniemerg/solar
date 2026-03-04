@@ -1,0 +1,8 @@
+error: data location can only be specified for array, struct or mapping types
+   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/StorageLocationNonArrayOrStructDisallowed.sol:LL:CC
+   │
+LL │     function f(uint storage a) public { }
+   ╰╴               ━━━━━━━━━━━━━━
+
+error: aborting due to 1 previous error
+
