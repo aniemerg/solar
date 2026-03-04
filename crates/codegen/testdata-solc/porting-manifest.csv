@@ -1041,69 +1041,69 @@ multiSource/import_overloaded_function.sol,pending,,,,
 multiSource/imported_free_function_via_alias.sol,pending,,,,
 multiSource/imported_free_function_via_alias_direct_call.sol,pending,,,,
 multiSource/reimport_imported_function.sol,pending,,,,
-operators/compound_assign.sol,pending,,,,
-operators/compound_assign_transient_storage.sol,pending,,,,
-operators/shifts/bitwise_shifting_constantinople.sol,pending,,,,
-operators/shifts/bitwise_shifting_constantinople_combined.sol,pending,,,,
-operators/shifts/bitwise_shifting_constants_constantinople.sol,pending,,,,
-operators/shifts/shift_bytes_cleanup.sol,pending,,,,
-operators/shifts/shift_bytes_cleanup_viaYul.sol,pending,,,,
-operators/shifts/shift_cleanup.sol,pending,,,,
-operators/shifts/shift_cleanup_garbled.sol,pending,,,,
-operators/shifts/shift_constant_left.sol,pending,,,,
-operators/shifts/shift_constant_left_assignment.sol,pending,,,,
-operators/shifts/shift_constant_right.sol,pending,,,,
-operators/shifts/shift_constant_right_assignment.sol,pending,,,,
+operators/compound_assign.sol,ported,operators,src/CompoundAssign.sol,,Compound assignment operators with state
+operators/compound_assign_transient_storage.sol,blocked,,,,Requires separate EVM transactions to reset transient storage between 8 calls; Forge runs all calls in one transaction.
+operators/shifts/bitwise_shifting_constantinople.sol,ported,operators,src/BitwiseShiftingConstantinople.sol,,Bitwise shl/shr/sar via assembly
+operators/shifts/bitwise_shifting_constantinople_combined.sol,ported,operators,src/BitwiseShiftingConstantinopleC.sol,,Combined bitwise shift cases
+operators/shifts/bitwise_shifting_constants_constantinople.sol,ported,operators,src/BitwiseShiftingConstantinopleConstants.sol,,Bitwise shift with constant operands
+operators/shifts/shift_bytes_cleanup.sol,skipped,,,,compileViaYul:false only; bytes20 dirty-slot shift semantics differ by compiler. Do not re-attempt.
+operators/shifts/shift_bytes_cleanup_viaYul.sol,skipped,,,,compileViaYul:true only; results differ from default compilation. Do not re-attempt.
+operators/shifts/shift_cleanup.sol,ported,operators,src/ShiftCleanup.sol,,Shift with uint16 overflow cleanup
+operators/shifts/shift_cleanup_garbled.sol,ported,operators,src/ShiftCleanupGarbled.sol,,Shift cleanup with garbled assembly value
+operators/shifts/shift_constant_left.sol,ported,operators,src/ShiftConstantLeft.sol,,Constant left shift at state init
+operators/shifts/shift_constant_left_assignment.sol,ported,operators,src/ShiftConstantLeftAssignment.sol,,Constant left shift assignment
+operators/shifts/shift_constant_right.sol,ported,operators,src/ShiftConstantRight.sol,,Constant right shift at state init
+operators/shifts/shift_constant_right_assignment.sol,ported,operators,src/ShiftConstantRightAssignment.sol,,Constant right shift assignment
 operators/shifts/shift_left.sol,ported,operators,src/ShiftLeft.sol,,Left shift semantics
-operators/shifts/shift_left_assignment.sol,pending,,,,
-operators/shifts/shift_left_assignment_different_type.sol,pending,,,,
-operators/shifts/shift_left_larger_type.sol,pending,,,,
-operators/shifts/shift_left_uint32.sol,pending,,,,
-operators/shifts/shift_left_uint8.sol,pending,,,,
-operators/shifts/shift_negative_constant_left.sol,pending,,,,
-operators/shifts/shift_negative_constant_right.sol,pending,,,,
-operators/shifts/shift_overflow.sol,pending,,,,
+operators/shifts/shift_left_assignment.sol,ported,operators,src/ShiftLeftAssignment.sol,,Left shift assignment operator
+operators/shifts/shift_left_assignment_different_type.sol,ported,operators,src/ShiftLeftAssignmentDifferentType.sol,,Left shift assignment with uint8 rhs
+operators/shifts/shift_left_larger_type.sol,ported,operators,src/ShiftLeftLargerType.sol,,Signed left shift with large uint8 rhs
+operators/shifts/shift_left_uint32.sol,ported,operators,src/ShiftLeftUint32.sol,,Left shift with uint32 operands
+operators/shifts/shift_left_uint8.sol,ported,operators,src/ShiftLeftUint8.sol,,Left shift with uint8 operands
+operators/shifts/shift_negative_constant_left.sol,ported,operators,src/ShiftNegativeConstantLeft.sol,,Negative constant left shift
+operators/shifts/shift_negative_constant_right.sol,ported,operators,src/ShiftNegativeConstantRight.sol,,Negative constant right shift
+operators/shifts/shift_overflow.sol,ported,operators,src/ShiftOverflow.sol,,Shift overflow for uint8 and int8
 operators/shifts/shift_right.sol,ported,operators,src/ShiftRight.sol,,Right shift semantics
-operators/shifts/shift_right_assignment.sol,pending,,,,
-operators/shifts/shift_right_garbled_signed_v1.sol,pending,,,,
-operators/shifts/shift_right_garbled_signed_v2.sol,pending,,,,
-operators/shifts/shift_right_garbled_v1.sol,pending,,,,
-operators/shifts/shift_right_garbled_v2.sol,pending,,,,
-operators/shifts/shift_right_negative_literal.sol,pending,,,,
-operators/shifts/shift_right_negative_lvalue.sol,pending,,,,
-operators/shifts/shift_right_negative_lvalue_assignment.sol,pending,,,,
-operators/shifts/shift_right_negative_lvalue_int16.sol,pending,,,,
-operators/shifts/shift_right_negative_lvalue_int32.sol,pending,,,,
-operators/shifts/shift_right_negative_lvalue_int8.sol,pending,,,,
-operators/shifts/shift_right_negative_lvalue_signextend_int16_v1.sol,pending,,,,
-operators/shifts/shift_right_negative_lvalue_signextend_int16_v2.sol,pending,,,,
-operators/shifts/shift_right_negative_lvalue_signextend_int32_v1.sol,pending,,,,
-operators/shifts/shift_right_negative_lvalue_signextend_int32_v2.sol,pending,,,,
-operators/shifts/shift_right_negative_lvalue_signextend_int8_v1.sol,pending,,,,
-operators/shifts/shift_right_negative_lvalue_signextend_int8_v2.sol,pending,,,,
-operators/shifts/shift_right_uint32.sol,pending,,,,
-operators/shifts/shift_right_uint8.sol,pending,,,,
-operators/shifts/shift_underflow_negative_rvalue.sol,pending,,,,
-operators/shifts/shifts.sol,pending,,,,
-operators/transient_storage_variable_increment_decrement.sol,pending,,,,
-operators/userDefined/all_possible_operators.sol,pending,,,,
-operators/userDefined/all_possible_user_defined_value_types_with_operators.sol,pending,,,,
-operators/userDefined/attaching_and_defining_operator_with_same_function.sol,pending,,,,
-operators/userDefined/checked_operators.sol,pending,,,,
-operators/userDefined/consecutive_operator_invocations.sol,pending,,,,
-operators/userDefined/fixed_point_udvt_with_operators.sol,pending,,,,
-operators/userDefined/multiple_operator_definitions_different_types_different_functions_separate_directives.sol,pending,,,,
-operators/userDefined/multiple_operator_definitions_same_type_same_function_same_directive.sol,pending,,,,
-operators/userDefined/operator_definition_shadowing_builtin_keccak256.sol,pending,,,,
-operators/userDefined/operator_evaluation_order.sol,pending,,,,
-operators/userDefined/operator_making_pure_external_call.sol,pending,,,,
-operators/userDefined/operator_making_view_external_call.sol,pending,,,,
-operators/userDefined/operator_parameter_and_return_cleanup_between_calls.sol,pending,,,,
-operators/userDefined/operator_parameter_cleanup.sol,pending,,,,
-operators/userDefined/operator_precendence.sol,pending,,,,
-operators/userDefined/operator_return_parameter_cleanup.sol,pending,,,,
-operators/userDefined/recursive_operator.sol,pending,,,,
-operators/userDefined/unchecked_operators.sol,pending,,,,
+operators/shifts/shift_right_assignment.sol,ported,operators,src/ShiftRightAssignment.sol,,Right shift assignment operator
+operators/shifts/shift_right_garbled_signed_v1.sol,skipped,,,,ABIEncoderV1Only + compileViaYul:false; relies on dirty byte passing via legacy ABI v1. Do not re-attempt.
+operators/shifts/shift_right_garbled_signed_v2.sol,ported,operators,src/ShiftRightGarbledSignedV2.sol,,Signed right shift with garbled int8 via assembly
+operators/shifts/shift_right_garbled_v1.sol,skipped,,,,ABIEncoderV1Only; relies on dirty byte passing via legacy ABI v1. Do not re-attempt.
+operators/shifts/shift_right_garbled_v2.sol,ported,operators,src/ShiftRightGarbledV2.sol,,Unsigned right shift with garbled uint8 via assembly
+operators/shifts/shift_right_negative_literal.sol,ported,operators,src/ShiftRightNegativeLiteral.sol,,Arithmetic right shift of negative literals
+operators/shifts/shift_right_negative_lvalue.sol,ported,operators,src/ShiftRightNegativeLvalue.sol,,Arithmetic right shift of negative int256
+operators/shifts/shift_right_negative_lvalue_assignment.sol,ported,operators,src/ShiftRightNegativeLvalueAssignment.sol,,Arithmetic right shift assignment of negative int256
+operators/shifts/shift_right_negative_lvalue_int16.sol,ported,operators,src/ShiftRightNegativeLvalueInt16.sol,,Arithmetic right shift of negative int16
+operators/shifts/shift_right_negative_lvalue_int32.sol,ported,operators,src/ShiftRightNegativeLvalueInt32.sol,,Arithmetic right shift of negative int32
+operators/shifts/shift_right_negative_lvalue_int8.sol,ported,operators,src/ShiftRightNegativeLvalueInt8.sol,,Arithmetic right shift of negative int8
+operators/shifts/shift_right_negative_lvalue_signextend_int16_v1.sol,skipped,,,,ABIEncoderV1Only; legacy ABI v1 dirty byte sign-extension. Do not re-attempt.
+operators/shifts/shift_right_negative_lvalue_signextend_int16_v2.sol,skipped,,,,All FAILURE cases testing raw out-of-range ABI values; not meaningful in normal Solidity. Do not re-attempt.
+operators/shifts/shift_right_negative_lvalue_signextend_int32_v1.sol,skipped,,,,ABIEncoderV1Only; legacy ABI v1 dirty byte sign-extension. Do not re-attempt.
+operators/shifts/shift_right_negative_lvalue_signextend_int32_v2.sol,skipped,,,,All FAILURE cases testing raw out-of-range ABI values; not meaningful in normal Solidity. Do not re-attempt.
+operators/shifts/shift_right_negative_lvalue_signextend_int8_v1.sol,skipped,,,,ABIEncoderV1Only; legacy ABI v1 dirty byte sign-extension. Do not re-attempt.
+operators/shifts/shift_right_negative_lvalue_signextend_int8_v2.sol,skipped,,,,All FAILURE cases testing raw out-of-range ABI values; not meaningful in normal Solidity. Do not re-attempt.
+operators/shifts/shift_right_uint32.sol,ported,operators,src/ShiftRightUint32.sol,,Right shift with uint32 operands
+operators/shifts/shift_right_uint8.sol,ported,operators,src/ShiftRightUint8.sol,,Right shift with uint8 operands
+operators/shifts/shift_underflow_negative_rvalue.sol,ported,operators,src/ShiftUnderflowNegativeRvalue.sol,,Shift by huge value (bit-cast from -1)
+operators/shifts/shifts.sol,ported,operators,src/Shifts.sol,,Basic shl via assembly
+operators/transient_storage_variable_increment_decrement.sol,ported,operators,src/TransientStorageVariableIncrementDecrement.sol,,Transient storage increment/decrement
+operators/userDefined/all_possible_operators.sol,ported,operators,src/AllPossibleOperators.sol,,All UDVT operators: bitwise arithmetic comparison
+operators/userDefined/all_possible_user_defined_value_types_with_operators.sol,ported,operators,src/AllPossibleUserDefinedValueTypesWithOperators.sol,,All value types with UDVT operators
+operators/userDefined/attaching_and_defining_operator_with_same_function.sol,ported,operators,src/AttachingAndDefiningOperatorWithSameFunction.sol,,UDVT: attach and define operator with same function
+operators/userDefined/checked_operators.sol,ported,operators,src/CheckedOperators.sol,,UDVT checked add overflows panic
+operators/userDefined/consecutive_operator_invocations.sol,ported,operators,src/ConsecutiveOperatorInvocations.sol,,Chained UDVT operator calls
+operators/userDefined/fixed_point_udvt_with_operators.sol,ported,operators,src/FixedPointUdvtWithOperators.sol,,Fixed-point arithmetic via UDVT operators
+operators/userDefined/multiple_operator_definitions_different_types_different_functions_separate_directives.sol,ported,operators,src/MultipleOperatorDifferentTypesDifferentFunctions.sol,,Multiple UDVT types with different operator functions
+operators/userDefined/multiple_operator_definitions_same_type_same_function_same_directive.sol,ported,operators,src/MultipleOperatorSameTypeSameFunctionSameDirective.sol,,Same function bound to multiple operators
+operators/userDefined/operator_definition_shadowing_builtin_keccak256.sol,ported,operators,src/OperatorDefinitionShadowingBuiltinKeccak256.sol,,User-defined function named keccak256 as operator
+operators/userDefined/operator_evaluation_order.sol,ported,operators,src/OperatorEvaluationOrder.sol,,UDVT operator left-to-right evaluation order
+operators/userDefined/operator_making_pure_external_call.sol,ported,operators,src/OperatorMakingPureExternalCall.sol,,UDVT operator dispatches to pure external contract
+operators/userDefined/operator_making_view_external_call.sol,ported,operators,src/OperatorMakingViewExternalCall.sol,,UDVT operator dispatches to view external contract
+operators/userDefined/operator_parameter_and_return_cleanup_between_calls.sol,ported,operators,src/OperatorParameterAndReturnCleanupBetweenCalls.sol,,UDVT parameter cleanup between chained calls
+operators/userDefined/operator_parameter_cleanup.sol,ported,operators,src/OperatorParameterCleanup.sol,,UDVT parameter cleanup on call entry
+operators/userDefined/operator_precendence.sol,ported,operators,src/OperatorPrecedence.sol,,UDVT operator precedence matches builtin
+operators/userDefined/operator_return_parameter_cleanup.sol,ported,operators,src/OperatorReturnParameterCleanup.sol,,UDVT return value cleanup
+operators/userDefined/recursive_operator.sol,ported,operators,src/RecursiveOperator.sol,,Recursive UDVT operators overflow stack
+operators/userDefined/unchecked_operators.sol,ported,operators,src/UncheckedOperators.sol,,UDVT unchecked add wraps around
 payable/no_nonpayable_circumvention_by_modifier.sol,ported,payable,src/NoNonpayableCircumventionByModifier.sol,,Nonpayable enforcement through modifier
 receive/empty_calldata_calls_receive.sol,ported,receive,src/EmptyCalldataCallsReceive.sol,,Empty calldata hits receive
 receive/ether_and_data.sol,ported,receive,src/EtherAndData.sol,,"Receive accepts ether, rejects data"
