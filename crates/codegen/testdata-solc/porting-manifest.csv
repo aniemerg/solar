@@ -1264,78 +1264,78 @@ strings/return_string.sol,ported,strings,src/ReturnString.sol,,Storage -> memory
 strings/string_escapes.sol,ported,strings,src/StringEscapes.sol,,Standard escape sequences in string literals
 strings/unicode_escapes.sol,ported,strings,src/UnicodeEscapes.sol,,Unicode escape sequences in string literals
 strings/unicode_string.sol,ported,strings,src/UnicodeString.sol,,"unicode""..."" emoji string literals"
-structs/array_of_recursive_struct.sol,pending,,,,
-structs/calldata/calldata_nested_structs.sol,pending,,,,
-structs/calldata/calldata_struct.sol,pending,,,,
-structs/calldata/calldata_struct_and_ints.sol,pending,,,,
-structs/calldata/calldata_struct_array_member.sol,pending,,,,
-structs/calldata/calldata_struct_array_member_dynamic.sol,pending,,,,
-structs/calldata/calldata_struct_as_argument_of_lib_function.sol,pending,,,,
-structs/calldata/calldata_struct_as_memory_argument.sol,pending,,,,
-structs/calldata/calldata_struct_struct_member.sol,pending,,,,
-structs/calldata/calldata_struct_struct_member_dynamic.sol,pending,,,,
-structs/calldata/calldata_struct_to_memory.sol,pending,,,,
-structs/calldata/calldata_struct_to_memory_tuple_assignment.sol,pending,,,,
-structs/calldata/calldata_struct_to_storage.sol,pending,,,,
-structs/calldata/calldata_struct_with_array_to_memory.sol,pending,,,,
-structs/calldata/calldata_struct_with_bytes_to_memory.sol,pending,,,,
-structs/calldata/calldata_struct_with_nested_array_to_memory.sol,pending,,,,
-structs/calldata/calldata_struct_with_nested_array_to_storage.sol,pending,,,,
-structs/calldata/calldata_structs.sol,pending,,,,
-structs/calldata/dynamic_nested.sol,pending,,,,
-structs/calldata/dynamically_encoded.sol,pending,,,,
-structs/conversion/recursive_storage_memory.sol,pending,,,,
-structs/conversion/recursive_storage_memory_complex.sol,pending,,,,
-structs/copy_from_mapping.sol,pending,,,,
-structs/copy_from_storage.sol,pending,,,,
-structs/copy_struct_array_from_storage.sol,pending,,,,
-structs/copy_struct_with_nested_array_from_calldata_to_memory.sol,pending,,,,
-structs/copy_struct_with_nested_array_from_calldata_to_storage.sol,pending,,,,
-structs/copy_struct_with_nested_array_from_memory_to_memory.sol,pending,,,,
-structs/copy_struct_with_nested_array_from_storage_to_storage.sol,pending,,,,
-structs/copy_substructures_from_mapping.sol,pending,,,,
-structs/copy_substructures_to_mapping.sol,pending,,,,
-structs/copy_to_mapping.sol,pending,,,,
-structs/delete_struct.sol,pending,,,,
-structs/event.sol,pending,,,,
-structs/function_type_copy.sol,pending,,,,
-structs/global.sol,pending,,,,
-structs/lone_struct_array_type.sol,pending,,,,
-structs/memory_struct_named_constructor.sol,pending,,,,
-structs/memory_structs_as_function_args.sol,pending,,,,
-structs/memory_structs_nested.sol,pending,,,,
-structs/memory_structs_nested_load.sol,pending,,,,
+structs/array_of_recursive_struct.sol,ported,structs,src/ArrayOfRecursiveStruct.sol,,"Recursive struct with array of self, creates instance and asserts length"
+structs/calldata/calldata_nested_structs.sol,ported,structs,src/CalldataNestedStructs.sol,,"Calldata nested structs with dynamic arrays, copy to memory and access"
+structs/calldata/calldata_struct.sol,ported,structs,src/CalldataStruct.sol,,Basic calldata struct access
+structs/calldata/calldata_struct_and_ints.sol,ported,structs,src/CalldataStructAndInts.sol,,Calldata struct mixed with plain int args
+structs/calldata/calldata_struct_array_member.sol,ported,structs,src/CalldataStructArrayMember.sol,,Calldata struct with fixed array member
+structs/calldata/calldata_struct_array_member_dynamic.sol,ported,structs,src/CalldataStructArrayMemberDynamic.sol,,Calldata struct with dynamic array member
+structs/calldata/calldata_struct_as_argument_of_lib_function.sol,ported,structs,src/CalldataStructAsArgumentOfLibFunction.sol,,Calldata struct passed as memory arg to library function
+structs/calldata/calldata_struct_as_memory_argument.sol,ported,structs,src/CalldataStructAsMemoryArgument.sol,,Calldata struct converted to memory for internal call
+structs/calldata/calldata_struct_struct_member.sol,ported,structs,src/CalldataStructStructMember.sol,,Calldata struct with nested struct member
+structs/calldata/calldata_struct_struct_member_dynamic.sol,ported,structs,src/CalldataStructStructMemberDynamic.sol,,Calldata struct with nested struct containing dynamic bytes
+structs/calldata/calldata_struct_to_memory.sol,ported,structs,src/CalldataStructToMemory.sol,,Calldata struct copied to memory
+structs/calldata/calldata_struct_to_memory_tuple_assignment.sol,ported,structs,src/CalldataStructToMemoryTupleAssignment.sol,,Calldata struct to memory via tuple assignment
+structs/calldata/calldata_struct_to_storage.sol,ported,structs,src/CalldataStructToStorage.sol,,Calldata struct copied to storage
+structs/calldata/calldata_struct_with_array_to_memory.sol,ported,structs,src/CalldataStructWithArrayToMemory.sol,,Calldata struct with fixed array copied to memory
+structs/calldata/calldata_struct_with_bytes_to_memory.sol,ported,structs,src/CalldataStructWithBytesToMemory.sol,,Calldata struct with bytes member copied to memory
+structs/calldata/calldata_struct_with_nested_array_to_memory.sol,ported,structs,src/CalldataStructWithNestedArrayToMemory.sol,,"Calldata struct with nested dynamic array to memory, independence check"
+structs/calldata/calldata_struct_with_nested_array_to_storage.sol,ported,structs,src/CalldataStructWithNestedArrayToStorage.sol,,Calldata struct with nested dynamic array copied to storage
+structs/calldata/calldata_structs.sol,ported,structs,src/CalldataStructs.sol,,Multiple calldata struct args
+structs/calldata/dynamic_nested.sol,ported,structs,src/CalldataDynamicNested.sol,,Calldata struct with dynamic array of nested structs
+structs/calldata/dynamically_encoded.sol,ported,structs,src/CalldataDynamicallyEncoded.sol,,Calldata struct with dynamic array member
+structs/conversion/recursive_storage_memory.sol,ported,structs,src/RecursiveStorageMemory.sol,,Recursive tree struct storage-to-memory copy
+structs/conversion/recursive_storage_memory_complex.sol,ported,structs,src/RecursiveStorageMemoryComplex.sol,,Recursive tree struct complex storage-to-memory copy with data traversal
+structs/copy_from_mapping.sol,ported,structs,src/CopyFromMapping.sol,,"Copy struct with dynamic members from mapping to state, storage, memory"
+structs/copy_from_storage.sol,ported,structs,src/CopyFromStorage.sol,,Copy struct from storage to memory array element
+structs/copy_struct_array_from_storage.sol,ported,structs,src/CopyStructArrayFromStorage.sol,,Copy 2D struct array from storage to storage and memory
+structs/copy_struct_with_nested_array_from_calldata_to_memory.sol,ported,structs,src/CopyStructNestedArrayCalldataMemory.sol,,Copy struct with nested dynamic array from calldata to memory
+structs/copy_struct_with_nested_array_from_calldata_to_storage.sol,ported,structs,src/CopyStructNestedArrayCalldataStorage.sol,,Copy struct with nested dynamic array from calldata to storage
+structs/copy_struct_with_nested_array_from_memory_to_memory.sol,ported,structs,src/CopyStructNestedArrayMemoryMemory.sol,,"Memory struct with nested dynamic array, return default (not input)"
+structs/copy_struct_with_nested_array_from_storage_to_storage.sol,ported,structs,src/CopyStructNestedArrayStorageStorage.sol,,Copy struct with nested dynamic array from storage to storage
+structs/copy_substructures_from_mapping.sol,ported,structs,src/CopySubstructuresFromMapping.sol,,Copy struct subfields from mapping individually
+structs/copy_substructures_to_mapping.sol,ported,structs,src/CopySubstructuresToMapping.sol,,Copy struct subfields to mapping from various data locations
+structs/copy_to_mapping.sol,ported,structs,src/CopyToMapping.sol,,Copy struct with dynamic members to mapping from various data locations
+structs/delete_struct.sol,ported,structs,src/DeleteStruct.sol,,"Delete struct with nested structs and mappings, verify field reset but mappings unchanged"
+structs/event.sol,ported,structs,src/EventStruct.sol,,Struct in library event emission
+structs/function_type_copy.sol,ported,structs,src/FunctionTypeCopy.sol,,"Struct containing array of external function pointers, copy via calldata"
+structs/global.sol,ported,structs,src/Global.sol,,File-level struct in calldata
+structs/lone_struct_array_type.sol,ported,structs,src/LoneStructArrayType.sol,,Lone struct array type expression as statement has no effect
+structs/memory_struct_named_constructor.sol,ported,structs,src/MemoryStructNamedConstructor.sol,,Named struct constructor in memory
+structs/memory_structs_as_function_args.sol,ported,structs,src/MemoryStructsAsFunctionArgs.sol,,Memory structs as internal function arguments
+structs/memory_structs_nested.sol,ported,structs,src/MemoryStructsNested.sol,,Nested memory structs build and read
+structs/memory_structs_nested_load.sol,ported,structs,src/MemoryStructsNestedLoad.sol,,Storage/memory round-trip for nested structs with arrays
 structs/memory_structs_read_write.sol,ported,structs,src/MemoryStructsReadWrite.sol,,Memory struct read/write
-structs/msg_data_to_struct_member_copy.sol,pending,,,,
-structs/multislot_struct_allocation.sol,pending,,,,
-structs/nested_struct_allocation.sol,pending,,,,
-structs/packed_storage_structs_delete.sol,pending,,,,
-structs/recursive_struct_2.sol,pending,,,,
-structs/recursive_structs.sol,pending,,,,
+structs/msg_data_to_struct_member_copy.sol,ported,structs,src/MsgDataToStructMemberCopy.sol,,"msg.data captured into struct bytes member, verify length"
+structs/multislot_struct_allocation.sol,ported,structs,src/MultislotStructAllocation.sol,,"Struct with external function pointer, call via struct field"
+structs/nested_struct_allocation.sol,ported,structs,src/NestedStructAllocation.sol,,Nested struct allocation and field access
+structs/packed_storage_structs_delete.sol,ported,structs,src/PackedStorageStructsDelete.sol,,Packed storage struct delete clears individual fields
+structs/recursive_struct_2.sol,ported,structs,src/RecursiveStruct2.sol,,Delete recursive struct clears dynamic array slots in storage
+structs/recursive_structs.sol,ported,structs,src/RecursiveStructs.sol,,Delete recursive struct in memory and storage
 structs/simple_struct_allocation.sol,ported,structs,src/SimpleStructAllocation.sol,,Memory struct allocation
 structs/struct_assign_reference_to_struct.sol,ported,structs,src/StructAssignReferenceToStruct.sol,,Struct storage reference vs copy
-structs/struct_constructor_nested.sol,pending,,,,
-structs/struct_containing_bytes_copy_and_delete.sol,pending,,,,
+structs/struct_constructor_nested.sol,ported,structs,src/StructConstructorNested.sol,,Nested struct constructor with fixed array and inner struct
+structs/struct_containing_bytes_copy_and_delete.sol,ported,structs,src/StructContainingBytesCopyAndDelete.sol,,Struct with bytes field: set copy and delete operations
 structs/struct_copy.sol,ported,structs,src/StructCopy.sol,,Struct copy in mapping
 structs/struct_copy_via_local.sol,ported,structs,src/StructCopyViaLocal.sol,,Struct copy via local memory
 structs/struct_delete_member.sol,ported,structs,src/StructDeleteMember.sol,,Delete struct member
-structs/struct_delete_storage.sol,pending,,,,
-structs/struct_delete_storage_nested_small.sol,pending,,,,
-structs/struct_delete_storage_small.sol,pending,,,,
-structs/struct_delete_storage_with_array.sol,pending,,,,
-structs/struct_delete_storage_with_arrays_small.sol,pending,,,,
-structs/struct_delete_struct_in_mapping.sol,pending,,,,
-structs/struct_memory_to_storage.sol,pending,,,,
-structs/struct_memory_to_storage_function_ptr.sol,pending,,,,
+structs/struct_delete_storage.sol,ported,structs,src/StructDeleteStorage.sol,,Delete packed storage struct clears fields but not adjacent variables
+structs/struct_delete_storage_nested_small.sol,ported,structs,src/StructDeleteStorageNestedSmall.sol,,"Delete nested struct with packed fields, verify field-level clearing"
+structs/struct_delete_storage_small.sol,ported,structs,src/StructDeleteStorageSmall.sol,,"Delete packed struct, verify fields cleared"
+structs/struct_delete_storage_with_array.sol,ported,structs,src/StructDeleteStorageWithArray.sol,,"Delete struct with dynamic array, verify array cleared"
+structs/struct_delete_storage_with_arrays_small.sol,ported,structs,src/StructDeleteStorageWithArraysSmall.sol,,"Delete packed struct with arrays, verify fields cleared"
+structs/struct_delete_struct_in_mapping.sol,ported,structs,src/StructDeleteStructInMapping.sol,,Delete struct stored in mapping
+structs/struct_memory_to_storage.sol,ported,structs,src/StructMemoryToStorage.sol,,Copy nested struct from memory to storage with padding
+structs/struct_memory_to_storage_function_ptr.sol,ported,structs,src/StructMemoryToStorageFunctionPtr.sol,,Memory-to-storage nested struct with internal function pointer
 structs/struct_named_constructor.sol,ported,structs,src/StructNamedConstructor.sol,,Struct named constructor
 structs/struct_reference.sol,ported,structs,src/StructReference.sol,,Recursive struct reference
-structs/struct_referencing.sol,pending,,,,
+structs/struct_referencing.sol,ported,structs,src/StructReferencing.sol,,"Struct defined in interface and library, referenced from contract"
 structs/struct_storage_push_zero_value.sol,ported,structs,src/StructStoragePushZeroValue.sol,,Struct push zero initialization
-structs/struct_storage_to_mapping.sol,pending,,,,
-structs/struct_storage_to_memory.sol,pending,,,,
-structs/struct_storage_to_memory_function_ptr.sol,pending,,,,
-structs/structs.sol,pending,,,,
-structs/using_for_function_on_struct.sol,pending,,,,
+structs/struct_storage_to_mapping.sol,ported,structs,src/StructStorageToMapping.sol,,Copy storage struct to mapping entry
+structs/struct_storage_to_memory.sol,ported,structs,src/StructStorageToMemory.sol,,Copy nested struct from storage to memory with padding
+structs/struct_storage_to_memory_function_ptr.sol,ported,structs,src/StructStorageToMemoryFunctionPtr.sol,,Storage-to-memory nested struct with internal function pointer
+structs/structs.sol,ported,structs,src/Structs.sol,,"Struct with recursive mapping, check/set operations"
+structs/using_for_function_on_struct.sol,ported,structs,src/UsingForFunctionOnStruct.sol,,using-for library function on struct in storage
 tryCatch/assert.sol,ported,try-catch,src/TryCatchAssert.sol,,try/catch around assert
 tryCatch/assert_pre_byzantium.sol,skipped,,,,Requires EVMVersion <byzantium; test relies on pre-Byzantium assert behavior (no revert propagation). Current Foundry/Solar infra targets >=byzantium. Do not re-attempt without a pre-byzantium EVM target.
 tryCatch/create.sol,ported,try-catch,src/TryCatchCreate.sol,,try/catch around constructor creation

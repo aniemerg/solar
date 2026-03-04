@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "../src/CalldataStructWithArrayToMemory.sol";
+
+contract CalldataStructWithArrayToMemoryTest {
+    CalldataStructWithArrayToMemory c;
+
+    function setUp() public {
+        c = new CalldataStructWithArrayToMemory();
+    }
+
+    function test_CalldataStructWithArrayToMemory() public view {
+        CalldataStructWithArrayToMemory.S memory s;
+        s.a = 42;
+        s.b[0] = 1;
+        s.b[1] = 2;
+        s.c = 23;
+        (uint256 a, uint256 b0, uint256 b1, uint256 cc) = c.f(s);
+        assert(a == 42 && b0 == 1 && b1 == 2 && cc == 23);
+    }
+}
