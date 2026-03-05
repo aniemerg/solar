@@ -1,8 +1,0 @@
-error: `public` not allowed here; allowed values: external
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/FallbackMarkedPublic.sol:LL:CC
-   │
-LL │     fallback () public { }
-   ╰╴                ━━━━━━
-
-error: aborting due to 1 previous error
-

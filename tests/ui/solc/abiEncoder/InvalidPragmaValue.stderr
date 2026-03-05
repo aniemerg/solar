@@ -1,8 +1,0 @@
-error: unknown pragma
-   ╭▸ ROOT/tests/ui/solc/abiEncoder/InvalidPragmaValue.sol:LL:CC
-   │
-LL │ pragma abicoder something;
-   ╰╴━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

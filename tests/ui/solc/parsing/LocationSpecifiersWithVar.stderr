@@ -1,8 +1,0 @@
-error: expected one of `(`, `+`, `[`, `_`, `assembly`, `break`, `continue`, `delete`, `do`, `emit`, `for`, `if`, `new`, `payable`, `return`, `revert`, `throw`, `try`, `type`, `unchecked`, `while`, `{`, `}`, elementary type name, identifier, or literal, found reserved keyword `var`
-   ╭▸ ROOT/tests/ui/solc/parsing/LocationSpecifiersWithVar.sol:LL:CC
-   │
-LL │     function f() { var memory x; }
-   ╰╴                   ━━━ expected one of 26 possible tokens
-
-error: aborting due to 1 previous error
-

@@ -1,8 +1,0 @@
-error: library cannot have non-constant state variable
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/LibraryHavingVariables.sol:LL:CC
-   │
-LL │ library Lib { uint x; }
-   ╰╴              ━━━━━━━
-
-error: aborting due to 1 previous error
-

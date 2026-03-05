@@ -1,8 +1,0 @@
-error: expected identifier, found `.`
-   ╭▸ ROOT/tests/ui/solc/inlineAssembly/invalid/IdentifierStartingWithDot.sol:LL:CC
-   │
-LL │       let a, .a, aa.b := f()
-   ╰╴             ━
-
-error: aborting due to 1 previous error
-

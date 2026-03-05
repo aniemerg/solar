@@ -1,8 +1,0 @@
-error: expected `(`, found `;`
-   ╭▸ ROOT/tests/ui/solc/parsing/EmitWithoutEvent.sol:LL:CC
-   │
-LL │         emit A;
-   ╰╴              ━ expected `(`
-
-error: aborting due to 1 previous error
-

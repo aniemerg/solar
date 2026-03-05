@@ -1,8 +1,0 @@
-error: name has to refer to a valid user-defined type
-   ╭▸ ROOT/tests/ui/solc/types/ConstantOfInvalidFunctionType.sol:LL:CC
-   │
-LL │     function() returns (x) constant x = x;
-   ╰╴                        ━
-
-error: aborting due to 1 previous error
-

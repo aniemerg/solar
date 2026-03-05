@@ -1,8 +1,0 @@
-error: unresolved symbol `someModifier`
-   ╭▸ ROOT/tests/ui/solc/freeFunctions/FreeFunctionModifier.sol:LL:CC
-   │
-LL │ function fun() someModifier {
-   ╰╴               ━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

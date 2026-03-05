@@ -1,8 +1,0 @@
-error: type `mapping(uint256 => uint256)` is only valid in storage because it contains a (nested) mapping
-   ╭▸ ROOT/tests/ui/solc/types/mapping/MappingDataLocationFunctionParamInternal.sol:LL:CC
-   │
-LL │     function f5(mapping(uint => uint) memory) pure internal {}
-   ╰╴                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

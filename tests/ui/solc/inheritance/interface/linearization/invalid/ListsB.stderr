@@ -1,8 +1,0 @@
-error: linearization of inheritance graph impossible
-   ╭▸ ROOT/tests/ui/solc/inheritance/interface/linearization/invalid/ListsB.sol:LL:CC
-   │
-LL │ contract ListsB is Sub, ParentB {}
-   ╰╴         ━━━━━━
-
-error: aborting due to 1 previous error
-

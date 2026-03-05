@@ -1,8 +1,0 @@
-error: type `mapping(uint256 => uint256)[2] memory` is only valid in storage because it contains a (nested) mapping
-   ╭▸ ROOT/tests/ui/solc/types/mapping/FunctionTypeArgumentArray.sol:LL:CC
-   │
-LL │     function f(mapping(uint => uint)[2] memory b) internal {
-   ╰╴               ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

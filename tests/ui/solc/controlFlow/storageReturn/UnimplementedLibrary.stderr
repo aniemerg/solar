@@ -1,8 +1,0 @@
-error: expected `contract`, found keyword `library`
-   ╭▸ ROOT/tests/ui/solc/controlFlow/storageReturn/UnimplementedLibrary.sol:LL:CC
-   │
-LL │ abstract library T {
-   ╰╴         ━━━━━━━ expected `contract`
-
-error: aborting due to 1 previous error
-

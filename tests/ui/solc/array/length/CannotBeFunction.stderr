@@ -1,8 +1,0 @@
-error: failed to evaluate constant: only constant variables are allowed
-   ╭▸ ROOT/tests/ui/solc/array/length/CannotBeFunction.sol:LL:CC
-   │
-LL │     uint[f] ids;
-   ╰╴         ━ evaluation of constant value failed here
-
-error: aborting due to 1 previous error
-

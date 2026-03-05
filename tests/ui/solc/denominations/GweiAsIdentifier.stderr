@@ -1,8 +1,0 @@
-error: expected identifier, found keyword `gwei`
-   ╭▸ ROOT/tests/ui/solc/denominations/GweiAsIdentifier.sol:LL:CC
-   │
-LL │     uint constant gwei = 1;
-   ╰╴                  ━━━━
-
-error: aborting due to 1 previous error
-

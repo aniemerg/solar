@@ -1,8 +1,0 @@
-error: expression has to be an lvalue
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/LeftValueInConditionalExpressionNotSupportedYet.sol:LL:CC
-   │
-LL │         (true ? x : y) = 1;
-   ╰╴         ━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

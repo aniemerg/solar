@@ -1,8 +1,0 @@
-error: unresolved symbol `S`
-   ╭▸ ROOT/tests/ui/solc/freeFunctions/FunctionUsingStructAfterContract.sol:LL:CC
-   │
-LL │ function f() returns (uint) { S storage t; }
-   ╰╴                              ━
-
-error: aborting due to 1 previous error
-

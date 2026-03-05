@@ -1,8 +1,0 @@
-error: expected one of `(`, `)`, `,`, `.`, `?`, `[`, `payable`, `pure`, `view`, or `{`, found keyword `calldata`
-   ╭▸ ROOT/tests/ui/solc/specialFunctions/abidecode/AbiDecodeCalldata.sol:LL:CC
-   │
-LL │     abi.decode("abc", (bytes calldata));
-   ╰╴                             ━━━━━━━━ expected one of 10 possible tokens
-
-error: aborting due to 1 previous error
-

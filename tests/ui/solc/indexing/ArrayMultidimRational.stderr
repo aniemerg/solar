@@ -1,8 +1,0 @@
-error: rational literals are not supported
-   ╭▸ ROOT/tests/ui/solc/indexing/ArrayMultidimRational.sol:LL:CC
-   │
-LL │     a[8**90][8**90][8**90*0.1];
-   ╰╴                          ━━━
-
-error: aborting due to 1 previous error
-

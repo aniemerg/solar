@@ -1,8 +1,0 @@
-error: member `address` not found on type `function ()`
-   ╭▸ ROOT/tests/ui/solc/inlineAssembly/invalid/InternalFunctionPointerAddress.sol:LL:CC
-   │
-LL │         return testFunction.address;
-   ╰╴                            ━━━━━━━
-
-error: aborting due to 1 previous error
-

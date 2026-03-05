@@ -1,8 +1,0 @@
-error: unresolved symbol `notfound`
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/UndeclaredName.sol:LL:CC
-   │
-LL │         f(notfound);
-   ╰╴          ━━━━━━━━
-
-error: aborting due to 1 previous error
-

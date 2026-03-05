@@ -1,8 +1,0 @@
-error: mismatched types
-   ╭▸ ROOT/tests/ui/solc/inheritance/WrongTypeBaseArguments.sol:LL:CC
-   │
-LL │ contract Derived is Base(300) { }
-   ╰╴                         ━━━ expected `uint8`, found `int_literal[9]`
-
-error: aborting due to 1 previous error
-

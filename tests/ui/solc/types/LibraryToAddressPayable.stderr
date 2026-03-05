@@ -1,8 +1,0 @@
-error: invalid explicit type conversion
-   ╭▸ ROOT/tests/ui/solc/types/LibraryToAddressPayable.sol:LL:CC
-   │
-LL │         return address(L);
-   ╰╴               ━━━━━━━━━━ cannot convert `type(library L)` to `address`
-
-error: aborting due to 1 previous error
-

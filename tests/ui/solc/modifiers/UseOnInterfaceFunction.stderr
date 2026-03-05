@@ -1,8 +1,0 @@
-error: functions in interfaces cannot have modifiers
-   ╭▸ ROOT/tests/ui/solc/modifiers/UseOnInterfaceFunction.sol:LL:CC
-   │
-LL │   function f() external m pure returns (uint);
-   ╰╴  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

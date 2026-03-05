@@ -1,8 +1,0 @@
-error: integer part too large
-   ╭▸ ROOT/tests/ui/solc/types/address/LiteralToAddressOversized.sol:LL:CC
-   │
-LL │         address(0x11223345567aaaaaaaaaaaaaaaaaaaaaaaaaaaaa0112233445566778899001122);
-   ╰╴                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

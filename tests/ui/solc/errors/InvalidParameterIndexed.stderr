@@ -1,8 +1,0 @@
-error: `indexed` is not allowed here
-   ╭▸ ROOT/tests/ui/solc/errors/InvalidParameterIndexed.sol:LL:CC
-   │
-LL │     error e1(uint indexed x);
-   ╰╴                  ━━━━━━━
-
-error: aborting due to 1 previous error
-

@@ -1,8 +1,0 @@
-error: invalid explicit type conversion
-   ╭▸ ROOT/tests/ui/solc/userDefinedValueType/ExplicitConversionsWrap.sol:LL:CC
-   │
-LL │     MyAddress.wrap(address(5));
-   ╰╴                   ━━━━━━━━━━ cannot convert `int_literal[3]` to `address`
-
-error: aborting due to 1 previous error
-

@@ -1,8 +1,0 @@
-error: recursive types cannot be parameter or return types of public functions
-   ╭▸ ROOT/tests/ui/solc/structs/recursion/RecursiveStructAsContractFunctionParameter.sol:LL:CC
-   │
-LL │     function f(MyStructName memory s) public {}
-   ╰╴               ━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

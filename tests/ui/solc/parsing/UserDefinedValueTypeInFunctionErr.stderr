@@ -1,8 +1,0 @@
-error: expected `(`, found `MyInt`
-   ╭▸ ROOT/tests/ui/solc/parsing/UserDefinedValueTypeInFunctionErr.sol:LL:CC
-   │
-LL │     type MyInt is int;
-   ╰╴         ━━━━━ expected `(`
-
-error: aborting due to 1 previous error
-

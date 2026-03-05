@@ -1,8 +1,0 @@
-error: unary plus is not supported
-   ╭▸ ROOT/tests/ui/solc/parsing/UnaryPlusExpression.sol:LL:CC
-   │
-LL │         uint y = +x;
-   ╰╴                 ━
-
-error: aborting due to 1 previous error
-

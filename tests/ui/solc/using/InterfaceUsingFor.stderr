@@ -1,8 +1,0 @@
-error: the `using for` directive is not allowed inside interfaces
-   ╭▸ ROOT/tests/ui/solc/using/InterfaceUsingFor.sol:LL:CC
-   │
-LL │     using L for int;
-   ╰╴    ━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

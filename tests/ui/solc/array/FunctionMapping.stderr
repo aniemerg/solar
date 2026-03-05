@@ -1,8 +1,0 @@
-error: types containing mappings cannot be parameter or return types of public functions
-   ╭▸ ROOT/tests/ui/solc/array/FunctionMapping.sol:LL:CC
-   │
-LL │     function f(mapping(uint => uint)[] memory x) public pure {}
-   ╰╴               ━━━━━━━━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

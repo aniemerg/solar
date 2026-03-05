@@ -1,8 +1,0 @@
-error: failed to evaluate constant: arithmetic overflow
-   ╭▸ ROOT/tests/ui/solc/array/length/Bytes32TooLarge.sol:LL:CC
-   │
-LL │     bytes32[8**90] ids;
-   ╰╴            ━━━━━ evaluation of constant value failed here
-
-error: aborting due to 1 previous error
-

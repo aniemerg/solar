@@ -1,8 +1,0 @@
-error: name has to refer to a valid user-defined type
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/FunctionIsNotAValidTypename.sol:LL:CC
-   │
-LL │         foo g;
-   ╰╴        ━━━
-
-error: aborting due to 1 previous error
-

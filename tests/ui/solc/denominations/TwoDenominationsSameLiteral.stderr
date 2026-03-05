@@ -1,8 +1,0 @@
-error: expected one of `(`, `.`, `;`, `?`, `[`, or `{`, found keyword `ether`
-   ╭▸ ROOT/tests/ui/solc/denominations/TwoDenominationsSameLiteral.sol:LL:CC
-   │
-LL │     uint constant y = 8 gwei ether;
-   ╰╴                             ━━━━━ expected one of `(`, `.`, `;`, `?`, `[`, or `{`
-
-error: aborting due to 1 previous error
-

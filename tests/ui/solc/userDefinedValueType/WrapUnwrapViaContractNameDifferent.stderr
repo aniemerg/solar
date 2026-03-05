@@ -1,8 +1,0 @@
-error: member `T` not found on type `type(library L)`
-   ╭▸ ROOT/tests/ui/solc/userDefinedValueType/WrapUnwrapViaContractNameDifferent.sol:LL:CC
-   │
-LL │     C.T x = L.T.wrap(uint(1));
-   ╰╴              ━
-
-error: aborting due to 1 previous error
-

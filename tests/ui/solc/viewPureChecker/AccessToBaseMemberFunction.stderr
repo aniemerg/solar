@@ -1,8 +1,0 @@
-error: member `x` not found on type `type(contract A)`
-   ╭▸ ROOT/tests/ui/solc/viewPureChecker/AccessToBaseMemberFunction.sol:LL:CC
-   │
-LL │         A.x();
-   ╰╴          ━
-
-error: aborting due to 1 previous error
-

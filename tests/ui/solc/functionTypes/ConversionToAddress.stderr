@@ -1,8 +1,0 @@
-error: invalid explicit type conversion
-   ╭▸ ROOT/tests/ui/solc/functionTypes/ConversionToAddress.sol:LL:CC
-   │
-LL │         return address(this.f);
-   ╰╴               ━━━━━━━━━━━━━━━ cannot convert `function () view returns (address)` to `address`
-
-error: aborting due to 1 previous error
-

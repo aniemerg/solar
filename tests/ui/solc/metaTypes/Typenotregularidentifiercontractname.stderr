@@ -1,8 +1,0 @@
-error: expected identifier, found keyword `type`
-   ╭▸ ROOT/tests/ui/solc/metaTypes/Typenotregularidentifiercontractname.sol:LL:CC
-   │
-LL │ contract type { }
-   ╰╴         ━━━━
-
-error: aborting due to 1 previous error
-

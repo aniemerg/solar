@@ -1,8 +1,0 @@
-error: expected identifier, found Yul EVM builtin keyword `mod`
-   ╭▸ ROOT/tests/ui/solc/inlineAssembly/invalid/AssignToInstruction.sol:LL:CC
-   │
-LL │       let mod := 2
-   ╰╴          ━━━
-
-error: aborting due to 1 previous error
-

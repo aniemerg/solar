@@ -1,8 +1,0 @@
-error: mismatched types
-   ╭▸ ROOT/tests/ui/solc/errors/ErrorWrongTypeBaseArg.sol:LL:CC
-   │
-LL │ contract Derived is Base(MyCustomError) {}
-   ╰╴                         ━━━━━━━━━━━━━ expected `uint8`, found `error MyCustomError(uint256,bool)`
-
-error: aborting due to 1 previous error
-

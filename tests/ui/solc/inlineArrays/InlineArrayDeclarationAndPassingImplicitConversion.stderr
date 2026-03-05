@@ -1,8 +1,0 @@
-error: mismatched types
-   ╭▸ ROOT/tests/ui/solc/inlineArrays/InlineArrayDeclarationAndPassingImplicitConversion.sol:LL:CC
-   │
-LL │             uint32[3] memory ending = [x, y, z];
-   ╰╴                                      ━━━━━━━━━ expected `uint32[3] memory`, found `uint32[3]`
-
-error: aborting due to 1 previous error
-

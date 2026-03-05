@@ -1,8 +1,0 @@
-error: invalid explicit type conversion
-   ╭▸ ROOT/tests/ui/solc/types/address/AddressZeroToPayableErr.sol:LL:CC
-   │
-LL │         address payable a = address(0);
-   ╰╴                            ━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
-
-error: aborting due to 1 previous error
-

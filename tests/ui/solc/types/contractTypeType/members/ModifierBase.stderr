@@ -1,8 +1,0 @@
-error: member `mod` not found on type `type(contract A)`
-   ╭▸ ROOT/tests/ui/solc/types/contractTypeType/members/ModifierBase.sol:LL:CC
-   │
-LL │         A.mod;
-   ╰╴          ━━━
-
-error: aborting due to 1 previous error
-

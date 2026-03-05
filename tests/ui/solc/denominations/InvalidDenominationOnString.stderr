@@ -1,8 +1,0 @@
-error: sub-denominations are only allowed on number and rational literals
-   ╭▸ ROOT/tests/ui/solc/denominations/InvalidDenominationOnString.sol:LL:CC
-   │
-LL │     string s = "abc" ether;
-   ╰╴               ━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

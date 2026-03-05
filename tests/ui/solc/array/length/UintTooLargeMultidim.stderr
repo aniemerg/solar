@@ -1,8 +1,0 @@
-error: failed to evaluate constant: arithmetic overflow
-   ╭▸ ROOT/tests/ui/solc/array/length/UintTooLargeMultidim.sol:LL:CC
-   │
-LL │     uint[8**90][500] ids;
-   ╰╴         ━━━━━ evaluation of constant value failed here
-
-error: aborting due to 1 previous error
-

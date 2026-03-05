@@ -1,8 +1,0 @@
-error: member `call` not found on type `contract C`
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/WarnAboutAddressMembersOnNonThisContractCall.sol:LL:CC
-   │
-LL │         c.call;
-   ╰╴          ━━━━
-
-error: aborting due to 1 previous error
-

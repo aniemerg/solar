@@ -1,8 +1,0 @@
-error: unknown start of token: #
-   ╭▸ ROOT/tests/ui/solc/pragma/BrokenVersion3.sol:LL:CC
-   │
-LL │ pragma solidity #8.0.0;
-   ╰╴                ━
-
-error: aborting due to 1 previous error
-

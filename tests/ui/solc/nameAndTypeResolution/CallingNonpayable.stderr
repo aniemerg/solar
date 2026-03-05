@@ -1,8 +1,0 @@
-error: member `value` not found on type `function ()`
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/CallingNonpayable.sol:LL:CC
-   │
-LL │     function g() public { (new receiver()).nopay.value(10)(); }
-   ╰╴                                                 ━━━━━
-
-error: aborting due to 1 previous error
-

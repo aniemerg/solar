@@ -1,8 +1,0 @@
-error: incompatible conditional types
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ConditionalExpressionWithDifferentFunctionType.sol:LL:CC
-   │
-LL │         true ? x : y;
-   ╰╴        ━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

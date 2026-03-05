@@ -1,8 +1,0 @@
-error: mismatched types
-   ╭▸ ROOT/tests/ui/solc/functionTypes/FunctionTypeVariableExternalInternal.sol:LL:CC
-   │
-LL │     function(bytes memory) external internal a = fa;
-   ╰╴                                                 ━━ expected `function (bytes memory) external`, found `function (bytes memory)`
-
-error: aborting due to 1 previous error
-

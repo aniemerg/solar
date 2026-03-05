@@ -1,8 +1,0 @@
-error: unresolved symbol `Nested`
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/FunctionTypeUndeclaredTypeMultiNested.sol:LL:CC
-   │
-LL │     function a(function(function(function(Nested)))) external pure {}
-   ╰╴                                          ━━━━━━
-
-error: aborting due to 1 previous error
-

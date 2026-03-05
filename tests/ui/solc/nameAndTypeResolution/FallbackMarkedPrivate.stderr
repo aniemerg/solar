@@ -1,8 +1,0 @@
-error: `private` not allowed here; allowed values: external
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/FallbackMarkedPrivate.sol:LL:CC
-   │
-LL │     fallback () private { }
-   ╰╴                ━━━━━━━
-
-error: aborting due to 1 previous error
-

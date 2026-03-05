@@ -1,8 +1,0 @@
-error: experimental solidity features are not supported
-   ╭▸ ROOT/tests/ui/solc/experimental/import/ExperimentalSolidityOutOfOrder2.sol:LL:CC
-   │
-LL │ pragma experimental solidity;
-   ╰╴━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

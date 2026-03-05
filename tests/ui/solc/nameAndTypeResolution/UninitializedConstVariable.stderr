@@ -1,8 +1,0 @@
-error: constant variable must be initialized
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/UninitializedConstVariable.sol:LL:CC
-   │
-LL │     uint constant y;
-   ╰╴    ━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

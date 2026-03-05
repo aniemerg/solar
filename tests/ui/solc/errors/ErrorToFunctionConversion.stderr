@@ -1,8 +1,0 @@
-error: mismatched types
-   ╭▸ ROOT/tests/ui/solc/errors/ErrorToFunctionConversion.sol:LL:CC
-   │
-LL │     function() internal pure x = E;
-   ╰╴                                 ━ expected `function () pure`, found `error E()`
-
-error: aborting due to 1 previous error
-

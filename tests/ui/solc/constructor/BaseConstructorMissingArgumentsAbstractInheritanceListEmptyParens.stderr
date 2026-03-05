@@ -1,8 +1,0 @@
-error: modifier-style base constructor call without arguments
-   ╭▸ ROOT/tests/ui/solc/constructor/BaseConstructorMissingArgumentsAbstractInheritanceListEmptyParens.sol:LL:CC
-   │
-LL │ abstract contract F is C() { constructor() C {} }
-   ╰╴                                           ━
-
-error: aborting due to 1 previous error
-

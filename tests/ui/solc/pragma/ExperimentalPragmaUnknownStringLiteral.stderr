@@ -1,8 +1,0 @@
-error: unknown pragma
-   ╭▸ ROOT/tests/ui/solc/pragma/ExperimentalPragmaUnknownStringLiteral.sol:LL:CC
-   │
-LL │ pragma experimental unsupportedName;
-   ╰╴━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

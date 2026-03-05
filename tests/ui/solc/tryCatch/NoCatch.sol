@@ -1,6 +1,0 @@
-contract C {
-    function f() public returns (uint, uint) {
-        try this.f() {
-        }
-    } //~ ERROR: expected `catch`, found `}`
-}

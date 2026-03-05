@@ -1,8 +1,0 @@
-error: mismatched types
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ArrayCopyWithDifferentTypes1.sol:LL:CC
-   │
-LL │     function f() public { b = a; }
-   ╰╴                              ━ expected `uint256[] storage`, found `bytes storage`
-
-error: aborting due to 1 previous error
-

@@ -1,8 +1,0 @@
-error: member `transfer` not found on type `type(contract Banana)`
-   ╭▸ ROOT/tests/ui/solc/types/functionTypes/FunctionDefinitionExpression.sol:LL:CC
-   │
-LL │         Banana.transfer;
-   ╰╴               ━━━━━━━━
-
-error: aborting due to 1 previous error
-

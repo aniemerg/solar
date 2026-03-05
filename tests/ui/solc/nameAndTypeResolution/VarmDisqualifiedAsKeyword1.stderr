@@ -1,8 +1,0 @@
-error: unresolved symbol `uintM`
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/VarmDisqualifiedAsKeyword1.sol:LL:CC
-   │
-LL │         uintM something = 3;
-   ╰╴        ━━━━━
-
-error: aborting due to 1 previous error
-

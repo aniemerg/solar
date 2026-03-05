@@ -1,8 +1,0 @@
-error: member `f` not found on type `function () pure returns (uint8)`
-   ╭▸ ROOT/tests/ui/solc/constructor/OverridingConstructor.sol:LL:CC
-   │
-LL │     A.f();
-   ╰╴      ━
-
-error: aborting due to 1 previous error
-

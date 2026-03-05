@@ -1,8 +1,0 @@
-error: unresolved symbol `bytes256`
-   ╭▸ ROOT/tests/ui/solc/types/Bytes256.sol:LL:CC
-   │
-LL │   bytes256 b256 = 1;
-   ╰╴  ━━━━━━━━
-
-error: aborting due to 1 previous error
-

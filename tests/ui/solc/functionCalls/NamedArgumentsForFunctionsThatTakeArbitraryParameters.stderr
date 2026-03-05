@@ -1,8 +1,0 @@
-error: named arguments cannot be used for functions that take arbitrary parameters
-   ╭▸ ROOT/tests/ui/solc/functionCalls/NamedArgumentsForFunctionsThatTakeArbitraryParameters.sol:LL:CC
-   │
-LL │ …     abi.encodeWithSelector({selector:"abc"});
-   ╰╴                            ━━━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

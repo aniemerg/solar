@@ -1,8 +1,0 @@
-error: expected `is`, found `=`
-   ╭▸ ROOT/tests/ui/solc/experimental/builtin/BuiltinTypeDefinitionUnknown.sol:LL:CC
-   │
-LL │ type someUnknownType = __builtin("someUnknownType");
-   ╰╴                     ━ expected `is`
-
-error: aborting due to 1 previous error
-

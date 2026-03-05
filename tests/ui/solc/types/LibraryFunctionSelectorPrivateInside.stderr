@@ -1,8 +1,0 @@
-error: member `selector` not found on type `function (uint256)`
-   ╭▸ ROOT/tests/ui/solc/types/LibraryFunctionSelectorPrivateInside.sol:LL:CC
-   │
-LL │         return f.selector;
-   ╰╴                 ━━━━━━━━
-
-error: aborting due to 1 previous error
-

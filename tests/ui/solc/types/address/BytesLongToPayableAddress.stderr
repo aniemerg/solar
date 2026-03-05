@@ -1,8 +1,0 @@
-error: invalid explicit type conversion
-   ╭▸ ROOT/tests/ui/solc/types/address/BytesLongToPayableAddress.sol:LL:CC
-   │
-LL │         return address(x);
-   ╰╴               ━━━━━━━━━━ cannot convert `bytes32` to `address`
-
-error: aborting due to 1 previous error
-

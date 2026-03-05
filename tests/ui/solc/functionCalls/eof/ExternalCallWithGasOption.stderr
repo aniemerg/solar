@@ -1,8 +1,0 @@
-error: no matching declarations found
-   ╭▸ ROOT/tests/ui/solc/functionCalls/eof/ExternalCallWithGasOption.sol:LL:CC
-   │
-LL │         require(x);
-   ╰╴        ━━━━━━━
-
-error: aborting due to 1 previous error
-

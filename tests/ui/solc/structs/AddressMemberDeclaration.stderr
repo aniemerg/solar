@@ -1,8 +1,0 @@
-error: expected identifier, found keyword `address`
-   ╭▸ ROOT/tests/ui/solc/structs/AddressMemberDeclaration.sol:LL:CC
-   │
-LL │     struct S { uint address; }
-   ╰╴                    ━━━━━━━
-
-error: aborting due to 1 previous error
-

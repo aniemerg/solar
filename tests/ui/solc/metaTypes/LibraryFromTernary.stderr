@@ -1,8 +1,0 @@
-error: member `f` not found on type `type(library L)`
-   ╭▸ ROOT/tests/ui/solc/metaTypes/LibraryFromTernary.sol:LL:CC
-   │
-LL │         (c ? L : L).f();
-   ╰╴                    ━
-
-error: aborting due to 1 previous error
-

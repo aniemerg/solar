@@ -1,8 +1,0 @@
-error: member `f` not found on type `error E(uint256)`
-   ╭▸ ROOT/tests/ui/solc/errors/Using2.sol:LL:CC
-   │
-LL │         E.f();
-   ╰╴          ━
-
-error: aborting due to 1 previous error
-

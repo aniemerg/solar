@@ -1,8 +1,0 @@
-error: mismatched types
-   ╭▸ ROOT/tests/ui/solc/events/EventToFunctionConversion.sol:LL:CC
-   │
-LL │     function() internal pure x = E;
-   ╰╴                                 ━ expected `function () pure`, found `event C.E(uint256)`
-
-error: aborting due to 1 previous error
-

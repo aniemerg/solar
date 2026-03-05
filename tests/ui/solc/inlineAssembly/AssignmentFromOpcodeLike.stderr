@@ -1,8 +1,0 @@
-error: expected identifier, found Yul EVM builtin keyword `mload`
-   ╭▸ ROOT/tests/ui/solc/inlineAssembly/AssignmentFromOpcodeLike.sol:LL:CC
-   │
-LL │             let x := mload
-   ╰╴                     ━━━━━
-
-error: aborting due to 1 previous error
-

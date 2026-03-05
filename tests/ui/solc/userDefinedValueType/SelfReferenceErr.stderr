@@ -1,8 +1,0 @@
-error: the underlying type of UDVTs must be an elementary value type
-   ╭▸ ROOT/tests/ui/solc/userDefinedValueType/SelfReferenceErr.sol:LL:CC
-   │
-LL │ type MyInt is MyInt;
-   ╰╴              ━━━━━
-
-error: aborting due to 1 previous error
-

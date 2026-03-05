@@ -1,8 +1,0 @@
-error: `continue` outside of a loop
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ContinueNotInLoop2.sol:LL:CC
-   │
-LL │         continue;
-   ╰╴        ━━━━━━━━━
-
-error: aborting due to 1 previous error
-

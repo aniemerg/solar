@@ -1,8 +1,0 @@
-error: storage layout is only allowed for contracts
-   ╭▸ ROOT/tests/ui/solc/storageLayoutSpecifier/Library.sol:LL:CC
-   │
-LL │ library L layout at 42 { }
-   ╰╴          ━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

@@ -1,8 +1,0 @@
-error: integer part too large
-   ╭▸ ROOT/tests/ui/solc/types/RationalNumberHugeFail.sol:LL:CC
-   │
-LL │         y = 0xffffffff00000000ffffffff00000000ffffffff00000000ffffffff000000001;
-   ╰╴            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

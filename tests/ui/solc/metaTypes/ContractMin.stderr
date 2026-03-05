@@ -1,8 +1,0 @@
-error: member `min` not found on type `type(contract Min)`
-   ╭▸ ROOT/tests/ui/solc/metaTypes/ContractMin.sol:LL:CC
-   │
-LL │         type(Min).min;
-   ╰╴                  ━━━
-
-error: aborting due to 1 previous error
-

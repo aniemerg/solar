@@ -1,8 +1,0 @@
-error: mismatched types
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/PositiveIntegersToSignedOutOfBound.sol:LL:CC
-   │
-LL │     int8 public j = 128;
-   ╰╴                    ━━━ expected `int8`, found `int_literal[8]`
-
-error: aborting due to 1 previous error
-

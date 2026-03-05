@@ -1,8 +1,0 @@
-error: expected contract, found function
-   ╭▸ ROOT/tests/ui/solc/inheritance/override/OverrideTypeMismatch2.sol:LL:CC
-   │
-LL │   function f() public override (g) {}
-   ╰╴                                ━
-
-error: aborting due to 1 previous error
-

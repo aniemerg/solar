@@ -1,8 +1,0 @@
-error: member `E` not found on type `type(library Y)`
-   ╭▸ ROOT/tests/ui/solc/events/EventSelectorLibraryCalledInsideFunction.sol:LL:CC
-   │
-LL │         return Y.E.selector;
-   ╰╴                 ━
-
-error: aborting due to 1 previous error
-

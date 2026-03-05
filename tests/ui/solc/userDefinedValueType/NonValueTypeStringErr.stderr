@@ -1,8 +1,0 @@
-error: the underlying type of UDVTs must be an elementary value type
-   ╭▸ ROOT/tests/ui/solc/userDefinedValueType/NonValueTypeStringErr.sol:LL:CC
-   │
-LL │ type MyString is string;
-   ╰╴                 ━━━━━━
-
-error: aborting due to 1 previous error
-

@@ -1,8 +1,0 @@
-error: failed to evaluate constant: attempted to divide by zero
-   ╭▸ ROOT/tests/ui/solc/array/length/InvalidExpression5.sol:LL:CC
-   │
-LL │     uint[3/0] ids;
-   ╰╴         ━━━ evaluation of constant value failed here
-
-error: aborting due to 1 previous error
-

@@ -1,8 +1,0 @@
-error: `indexed` is not allowed here
-   ╭▸ ROOT/tests/ui/solc/modifiers/InvalidParameterIndexed.sol:LL:CC
-   │
-LL │     modifier mod1(uint indexed a) { _; }
-   ╰╴                       ━━━━━━━
-
-error: aborting due to 1 previous error
-

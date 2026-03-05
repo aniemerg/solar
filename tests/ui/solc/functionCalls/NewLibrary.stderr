@@ -1,8 +1,0 @@
-error: cannot instantiate librarys
-   ╭▸ ROOT/tests/ui/solc/functionCalls/NewLibrary.sol:LL:CC
-   │
-LL │     new L();
-   ╰╴        ━
-
-error: aborting due to 1 previous error
-

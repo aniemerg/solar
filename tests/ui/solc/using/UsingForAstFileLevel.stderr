@@ -1,8 +1,0 @@
-error: the type has to be specified explicitly at file level (cannot use `*`)
-   ╭▸ ROOT/tests/ui/solc/using/UsingForAstFileLevel.sol:LL:CC
-   │
-LL │ using {id} for *;
-   ╰╴━━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

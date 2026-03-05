@@ -1,8 +1,0 @@
-error: exponent too large
-   ╭▸ ROOT/tests/ui/solc/array/length/InvalidExpression4.sol:LL:CC
-   │
-LL │     uint[1.111111E1111111111111] ids;
-   ╰╴         ━━━━━━━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

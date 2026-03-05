@@ -1,8 +1,0 @@
-error: odd number of hex nibbles
-   ╭▸ ROOT/tests/ui/solc/string/StringMultipartHexValidParts.sol:LL:CC
-   │
-LL │         bytes32 escapeCharacters = hex"aa" hex"b";
-   ╰╴                                               ━
-
-error: aborting due to 1 previous error
-

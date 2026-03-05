@@ -1,8 +1,0 @@
-error: invalid explicit type conversion
-   ╭▸ ROOT/tests/ui/solc/types/BytesnnToContract.sol:LL:CC
-   │
-LL │                 C(bytes20(uint160(0x1234)));
-   ╰╴                ━━━━━━━━━━━━━━━━━━━━━━━━━━━ cannot convert `bytes20` to `contract C`
-
-error: aborting due to 1 previous error
-

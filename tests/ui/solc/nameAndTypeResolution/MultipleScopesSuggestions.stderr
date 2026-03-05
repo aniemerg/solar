@@ -1,8 +1,0 @@
-error: unresolved symbol `lgox`
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/MultipleScopesSuggestions.sol:LL:CC
-   │
-LL │         uint var1 = lgox;
-   ╰╴                    ━━━━
-
-error: aborting due to 1 previous error
-

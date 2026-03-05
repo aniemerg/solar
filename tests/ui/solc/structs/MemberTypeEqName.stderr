@@ -1,8 +1,0 @@
-error: unresolved symbol `t`
-   ╭▸ ROOT/tests/ui/solc/structs/MemberTypeEqName.sol:LL:CC
-   │
-LL │   struct S {t t;}
-   ╰╴            ━
-
-error: aborting due to 1 previous error
-

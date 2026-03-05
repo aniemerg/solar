@@ -1,8 +1,0 @@
-error: mismatched types
-   ╭▸ ROOT/tests/ui/solc/types/EmptyTupleLvalueArray.sol:LL:CC
-   │
-LL │         (x, y) = [f(), f()];
-   ╰╴                 ━━━━━━━━━━ expected `tuple(uint256,uint256)`, found `tuple()[2]`
-
-error: aborting due to 1 previous error
-

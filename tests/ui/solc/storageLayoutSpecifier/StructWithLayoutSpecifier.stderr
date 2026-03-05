@@ -1,8 +1,0 @@
-error: expected `{`, found `layout`
-   ╭▸ ROOT/tests/ui/solc/storageLayoutSpecifier/StructWithLayoutSpecifier.sol:LL:CC
-   │
-LL │ struct S layout at 23 { }
-   ╰╴         ━━━━━━ expected `{`
-
-error: aborting due to 1 previous error
-

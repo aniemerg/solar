@@ -1,8 +1,0 @@
-error: version number too large
-   ╭▸ ROOT/tests/ui/solc/pragma/VersionNumberTooLarge.sol:LL:CC
-   │
-LL │ pragma solidity 4294967296;
-   ╰╴                          ━
-
-error: aborting due to 1 previous error
-

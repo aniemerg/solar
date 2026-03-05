@@ -1,8 +1,0 @@
-error: member `f` not found on type `type(contract base)`
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ExternalBaseVisibility.sol:LL:CC
-   │
-LL │     function g() public { base.f(); }
-   ╰╴                               ━
-
-error: aborting due to 1 previous error
-

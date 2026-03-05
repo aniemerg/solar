@@ -1,8 +1,0 @@
-error: invalid explicit type conversion
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/CallcodeDeprecated.sol:LL:CC
-   │
-LL │         address(0x12).callcode;
-   ╰╴        ━━━━━━━━━━━━━ cannot convert `int_literal[5]` to `address`
-
-error: aborting due to 1 previous error
-

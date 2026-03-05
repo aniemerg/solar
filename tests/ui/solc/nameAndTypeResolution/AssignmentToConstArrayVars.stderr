@@ -1,8 +1,0 @@
-error: mismatched types
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/AssignmentToConstArrayVars.sol:LL:CC
-   │
-LL │     uint[3] constant x = [uint(1), 2, 3];
-   ╰╴                         ━━━━━━━━━━━━━━━ expected `uint256[3] memory`, found `uint256[3]`
-
-error: aborting due to 1 previous error
-

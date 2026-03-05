@@ -1,8 +1,0 @@
-error: mismatched types
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/LargeStringLiteral.sol:LL:CC
-   │
-LL │     function f() public { string memory x = "123456789012345678901234567890123"; }
-   ╰╴                                            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ expected `string memory`, found `utf8_string_literal[32]`
-
-error: aborting due to 1 previous error
-

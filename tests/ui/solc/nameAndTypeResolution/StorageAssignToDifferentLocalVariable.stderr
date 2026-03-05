@@ -1,8 +1,0 @@
-error: mismatched types
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/StorageAssignToDifferentLocalVariable.sol:LL:CC
-   │
-LL │         y = x;
-   ╰╴            ━ expected `uint256[] storage`, found `uint8[] storage`
-
-error: aborting due to 1 previous error
-

@@ -1,8 +1,0 @@
-error: expected `is`, found `(`
-   ╭▸ ROOT/tests/ui/solc/experimental/inference/PolymorphicFunctionCallTypeMismatch.sol:LL:CC
-   │
-LL │ type T(A);
-   ╰╴      ━ expected `is`
-
-error: aborting due to 1 previous error
-

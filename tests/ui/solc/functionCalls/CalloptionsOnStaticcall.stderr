@@ -1,8 +1,0 @@
-error: invalid explicit type conversion
-   ╭▸ ROOT/tests/ui/solc/functionCalls/CalloptionsOnStaticcall.sol:LL:CC
-   │
-LL │         address(10).staticcall{value: 7, gas: 3}("");
-   ╰╴        ━━━━━━━━━━━ cannot convert `int_literal[4]` to `address`
-
-error: aborting due to 1 previous error
-

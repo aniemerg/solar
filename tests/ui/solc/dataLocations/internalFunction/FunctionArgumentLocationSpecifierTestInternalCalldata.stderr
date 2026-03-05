@@ -1,8 +1,0 @@
-error[5424]: functions without implementation must be marked virtual
-   ╭▸ ROOT/tests/ui/solc/dataLocations/internalFunction/FunctionArgumentLocationSpecifierTestInternalCalldata.sol:LL:CC
-   │
-LL │     function f(bytes calldata) internal;
-   ╰╴    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

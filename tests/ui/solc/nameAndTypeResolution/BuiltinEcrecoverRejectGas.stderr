@@ -1,8 +1,0 @@
-error: member `gas` not found on type `function (bytes32,uint8,bytes32,bytes32) pure returns (address)`
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/BuiltinEcrecoverRejectGas.sol:LL:CC
-   │
-LL │         ecrecover.gas();
-   ╰╴                  ━━━
-
-error: aborting due to 1 previous error
-

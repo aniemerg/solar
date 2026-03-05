@@ -1,7 +1,0 @@
-//@ compile-flags: -Ztypeck
-contract C {
-  function f() public {
-    bytes32 b;
-    b[888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888]; //~ ERROR: integer part too large
-  }
-}

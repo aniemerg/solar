@@ -1,8 +1,0 @@
-error: member `MyCustomError` not found on type `type(contract MyInterface)`
-   ╭▸ ROOT/tests/ui/solc/indexing/ErrorTypeWithoutIndex.sol:LL:CC
-   │
-LL │         MyInterface.MyCustomError[];
-   ╰╴                    ━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

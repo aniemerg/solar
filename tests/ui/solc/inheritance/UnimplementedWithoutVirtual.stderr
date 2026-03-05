@@ -1,8 +1,0 @@
-error[5424]: functions without implementation must be marked virtual
-   ╭▸ ROOT/tests/ui/solc/inheritance/UnimplementedWithoutVirtual.sol:LL:CC
-   │
-LL │     function f() external;
-   ╰╴    ━━━━━━━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

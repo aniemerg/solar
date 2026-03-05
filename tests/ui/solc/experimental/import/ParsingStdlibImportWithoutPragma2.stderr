@@ -1,8 +1,0 @@
-error: expected string literal, found `std`
-   ╭▸ ROOT/tests/ui/solc/experimental/import/ParsingStdlibImportWithoutPragma2.sol:LL:CC
-   │
-LL │ import { identity } from std.stub;
-   ╰╴                         ━━━ expected string literal
-
-error: aborting due to 1 previous error
-

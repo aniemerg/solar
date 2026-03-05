@@ -1,8 +1,0 @@
-error: invalid explicit type conversion
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/IntegerAndFixedInteraction.sol:LL:CC
-   │
-LL │         ufixed a = uint64(1) + ufixed(2);
-   ╰╴                               ━━━━━━━━━ cannot convert `int_literal[2]` to `ufixed256x0`
-
-error: aborting due to 1 previous error
-

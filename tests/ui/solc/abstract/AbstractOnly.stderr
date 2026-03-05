@@ -1,8 +1,0 @@
-error: expected `contract`, found `<eof>`
-   ╭▸ ROOT/tests/ui/solc/abstract/AbstractOnly.sol:LL:CC
-   │
-LL │ abstract
-   ╰╴━━━━━━━━ expected `contract`
-
-error: aborting due to 1 previous error
-

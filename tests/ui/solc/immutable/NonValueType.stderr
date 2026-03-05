@@ -1,8 +1,0 @@
-error: immutable variables cannot have a non-value type
-   ╭▸ ROOT/tests/ui/solc/immutable/NonValueType.sol:LL:CC
-   │
-LL │     uint[] immutable x;
-   ╰╴    ━━━━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

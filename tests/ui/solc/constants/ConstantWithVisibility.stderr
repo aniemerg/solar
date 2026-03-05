@@ -1,8 +1,0 @@
-error: visibility is not allowed here
-   ╭▸ ROOT/tests/ui/solc/constants/ConstantWithVisibility.sol:LL:CC
-   │
-LL │ uint public constant x = 7;
-   ╰╴     ━━━━━━
-
-error: aborting due to 1 previous error
-

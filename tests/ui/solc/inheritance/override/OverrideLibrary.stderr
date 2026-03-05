@@ -1,8 +1,0 @@
-error: override is not a base contract
-   ╭▸ ROOT/tests/ui/solc/inheritance/override/OverrideLibrary.sol:LL:CC
-   │
-LL │     function f() public override (L) {}
-   ╰╴                        ━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

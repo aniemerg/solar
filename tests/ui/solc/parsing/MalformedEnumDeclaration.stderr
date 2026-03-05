@@ -1,8 +1,0 @@
-error: trailing `,` separator is not allowed
-   ╭▸ ROOT/tests/ui/solc/parsing/MalformedEnumDeclaration.sol:LL:CC
-   │
-LL │     enum foo { WARNING,}
-   ╰╴                      ━
-
-error: aborting due to 1 previous error
-

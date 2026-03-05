@@ -1,8 +1,0 @@
-error: library is not allowed to inherit
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/InheritingLibrary.sol:LL:CC
-   │
-LL │ library Lib is Test {}
-   ╰╴        ━━━
-
-error: aborting due to 1 previous error
-

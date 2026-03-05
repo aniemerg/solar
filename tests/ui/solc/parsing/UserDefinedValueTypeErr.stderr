@@ -1,8 +1,0 @@
-error: expected identifier, found `(`
-   ╭▸ ROOT/tests/ui/solc/parsing/UserDefinedValueTypeErr.sol:LL:CC
-   │
-LL │ type(MyInt) is uint256;
-   ╰╴    ━
-
-error: aborting due to 1 previous error
-

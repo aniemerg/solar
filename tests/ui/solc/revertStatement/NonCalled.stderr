@@ -1,8 +1,0 @@
-error: expected `(`, found `;`
-   ╭▸ ROOT/tests/ui/solc/revertStatement/NonCalled.sol:LL:CC
-   │
-LL │     revert E;
-   ╰╴            ━ expected `(`
-
-error: aborting due to 1 previous error
-

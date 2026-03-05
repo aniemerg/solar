@@ -1,8 +1,0 @@
-error: member `transfer` not found on type `address`
-   ╭▸ ROOT/tests/ui/solc/memberLookup/TxOriginNonPayableTransfer.sol:LL:CC
-   │
-LL │         (tx.origin).transfer(10);
-   ╰╴                    ━━━━━━━━
-
-error: aborting due to 1 previous error
-

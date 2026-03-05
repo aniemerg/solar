@@ -1,8 +1,0 @@
-error: unresolved symbol `BokkyDateTime`
-   ╭▸ ROOT/tests/ui/solc/comments/UnicodeDirectionOverride1.sol:LL:CC
-   │
-LL │ …     (/*year*/,/*month�*/,d/*yad*/,m/*��hour*/,/*minute*/,/*second*/) = BokkyDateTime.timestampToDateTime(block.timestamp);
-   ╰╴                                                                         ━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

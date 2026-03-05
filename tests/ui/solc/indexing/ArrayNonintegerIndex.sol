@@ -1,7 +1,0 @@
-//@ compile-flags: -Ztypeck
-contract C {
-  function f() public {
-    bytes[32] memory a;
-    a[888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888]; //~ ERROR: integer part too large
-  }
-}

@@ -1,8 +1,0 @@
-error: expected identifier, found `:`
-   ╭▸ ROOT/tests/ui/solc/parsing/MissingParameterNameInNamedArgs.sol:LL:CC
-   │
-LL │     function b() returns (uint r) { r = a({: 1, : 2, : 3}); }
-   ╰╴                                           ━
-
-error: aborting due to 1 previous error
-

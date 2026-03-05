@@ -1,8 +1,0 @@
-error: data locations are not allowed here
-   ╭▸ ROOT/tests/ui/solc/constants/FileLevelMemory.sol:LL:CC
-   │
-LL │ uint[] memory constant x = 2;
-   ╰╴       ━━━━━━
-
-error: aborting due to 1 previous error
-

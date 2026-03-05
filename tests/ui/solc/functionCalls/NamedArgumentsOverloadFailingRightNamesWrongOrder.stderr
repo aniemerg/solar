@@ -1,8 +1,0 @@
-error: no matching declarations found
-   ╭▸ ROOT/tests/ui/solc/functionCalls/NamedArgumentsOverloadFailingRightNamesWrongOrder.sol:LL:CC
-   │
-LL │         f({y: 1, x: "abc", z: true});
-   ╰╴        ━
-
-error: aborting due to 1 previous error
-

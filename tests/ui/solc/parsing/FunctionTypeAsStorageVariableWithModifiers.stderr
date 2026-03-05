@@ -1,8 +1,0 @@
-error: expected one of `;` or `=`, found `(`
-   ╭▸ ROOT/tests/ui/solc/parsing/FunctionTypeAsStorageVariableWithModifiers.sol:LL:CC
-   │
-LL │     function (uint, uint) modifier1() returns (uint) f1;
-   ╰╴                                   ━ expected one of `;` or `=`
-
-error: aborting due to 1 previous error
-

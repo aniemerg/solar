@@ -1,8 +1,0 @@
-error: compound assignment is not allowed for tuples
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/compoundAssignment/Tuple.sol:LL:CC
-   │
-LL │         (a, b) += (1, 1);
-   ╰╴        ━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

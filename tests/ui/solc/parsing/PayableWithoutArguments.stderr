@@ -1,8 +1,0 @@
-error: expected `(`, found `;`
-   ╭▸ ROOT/tests/ui/solc/parsing/PayableWithoutArguments.sol:LL:CC
-   │
-LL │         address payable q = payable;
-   ╰╴                                   ━ expected `(`
-
-error: aborting due to 1 previous error
-

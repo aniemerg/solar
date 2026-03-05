@@ -1,8 +1,0 @@
-error: failed to evaluate constant: unsupported expression
-   ╭▸ ROOT/tests/ui/solc/userDefinedValueType/Constant.sol:LL:CC
-   │
-LL │     uint[MyInt.unwrap(mi)] arr;
-   ╰╴         ━━━━━━━━━━━━━━━━ evaluation of constant value failed here
-
-error: aborting due to 1 previous error
-

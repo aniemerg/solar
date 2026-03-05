@@ -1,8 +1,0 @@
-error: name has to refer to a valid user-defined type
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ModifierIsNotAValidTypename.sol:LL:CC
-   │
-LL │         mod g;
-   ╰╴        ━━━
-
-error: aborting due to 1 previous error
-

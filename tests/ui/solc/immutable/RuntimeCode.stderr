@@ -1,8 +1,0 @@
-error: invalid explicit type conversion
-   ╭▸ ROOT/tests/ui/solc/immutable/RuntimeCode.sol:LL:CC
-   │
-LL │     address public immutable user = address(0x0);
-   ╰╴                                    ━━━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
-
-error: aborting due to 1 previous error
-

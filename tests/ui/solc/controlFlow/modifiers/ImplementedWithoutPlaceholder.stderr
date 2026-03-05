@@ -1,8 +1,0 @@
-error: modifier must have a `_;` placeholder statement
-   ╭▸ ROOT/tests/ui/solc/controlFlow/modifiers/ImplementedWithoutPlaceholder.sol:LL:CC
-   │
-LL │     modifier mod() virtual { }
-   ╰╴             ━━━
-
-error: aborting due to 1 previous error
-

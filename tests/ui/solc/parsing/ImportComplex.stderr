@@ -1,8 +1,0 @@
-error: file hello not found
-   ╭▸ ROOT/tests/ui/solc/parsing/ImportComplex.sol:LL:CC
-   │
-LL │ import {hello, world} from "hello";
-   ╰╴                           ━━━━━━━
-
-error: aborting due to 1 previous error
-

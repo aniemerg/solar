@@ -1,8 +1,0 @@
-error: free functions must be implemented
-   ╭▸ ROOT/tests/ui/solc/freeFunctions/FreeFunctionWithoutBody.sol:LL:CC
-   │
-LL │ function f();
-   ╰╴━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

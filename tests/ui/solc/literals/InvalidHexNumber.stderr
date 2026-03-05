@@ -1,8 +1,0 @@
-error: expected one of `(`, `.`, `;`, `?`, `[`, or `{`, found `gh`
-   ╭▸ ROOT/tests/ui/solc/literals/InvalidHexNumber.sol:LL:CC
-   │
-LL │     uint x = 0x1000abcdefgh;
-   ╰╴                         ━━ expected one of `(`, `.`, `;`, `?`, `[`, or `{`
-
-error: aborting due to 1 previous error
-

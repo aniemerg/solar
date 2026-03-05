@@ -1,8 +1,0 @@
-error: invalid explicit type conversion
-   ╭▸ ROOT/tests/ui/solc/types/ContractToUnrelatedContract.sol:LL:CC
-   │
-LL │     B b = B(new A());
-   ╰╴          ━━━━━━━━━━ contract `contract A` does not inherit from `contract B`
-
-error: aborting due to 1 previous error
-

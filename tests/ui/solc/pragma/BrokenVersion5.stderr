@@ -1,8 +1,0 @@
-error: unexpected trailing characters
-   ╭▸ ROOT/tests/ui/solc/pragma/BrokenVersion5.sol:LL:CC
-   │
-LL │ pragma solidity 88_;
-   ╰╴                  ━
-
-error: aborting due to 1 previous error
-

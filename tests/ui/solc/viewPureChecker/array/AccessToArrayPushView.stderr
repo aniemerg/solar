@@ -1,8 +1,0 @@
-error: member `push` not unique on type `uint256[] storage`
-   ╭▸ ROOT/tests/ui/solc/viewPureChecker/array/AccessToArrayPushView.sol:LL:CC
-   │
-LL │         return x.push();
-   ╰╴                 ━━━━
-
-error: aborting due to 1 previous error
-

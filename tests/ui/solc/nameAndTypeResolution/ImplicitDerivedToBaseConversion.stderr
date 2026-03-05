@@ -1,8 +1,0 @@
-error: invalid explicit type conversion
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/ImplicitDerivedToBaseConversion.sol:LL:CC
-   │
-LL │     function f() public { A a = B(address(1)); }
-   ╰╴                                  ━━━━━━━━━━ cannot convert `int_literal[1]` to `address`
-
-error: aborting due to 1 previous error
-

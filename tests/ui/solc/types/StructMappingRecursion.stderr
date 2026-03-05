@@ -1,8 +1,0 @@
-error: recursive types cannot be parameter or return types of public functions
-   ╭▸ ROOT/tests/ui/solc/types/StructMappingRecursion.sol:LL:CC
-   │
-LL │     function g (S calldata) external view {}
-   ╰╴                ━
-
-error: aborting due to 1 previous error
-

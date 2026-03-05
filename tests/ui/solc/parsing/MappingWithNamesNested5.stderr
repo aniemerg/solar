@@ -1,8 +1,0 @@
-error: expected identifier, found `;`
-   ╭▸ ROOT/tests/ui/solc/parsing/MappingWithNamesNested5.sol:LL:CC
-   │
-LL │     mapping(address owner => mapping(address spender => bytes32 note));
-   ╰╴                                                                      ━
-
-error: aborting due to 1 previous error
-

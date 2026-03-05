@@ -1,8 +1,0 @@
-error: unresolved symbol `bytes0`
-   ╭▸ ROOT/tests/ui/solc/types/Bytes0.sol:LL:CC
-   │
-LL │   bytes0 b0 = 1;
-   ╰╴  ━━━━━━
-
-error: aborting due to 1 previous error
-

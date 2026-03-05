@@ -1,8 +1,0 @@
-error: member `address` not found on type `function () view returns (address payable)`
-   ╭▸ ROOT/tests/ui/solc/functionTypes/ExternalFunctionTypeToAddressPayable.sol:LL:CC
-   │
-LL │         return this.f.address;
-   ╰╴                      ━━━━━━━
-
-error: aborting due to 1 previous error
-

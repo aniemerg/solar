@@ -1,8 +1,0 @@
-error: expected one of `)` or `,`, found `.`
-   ╭▸ ROOT/tests/ui/solc/inlineAssembly/invalid/DotInFunParam.sol:LL:CC
-   │
-LL │       function f(a., x.b) -> t.b, b.. {}
-   ╰╴                  ━ expected one of `)` or `,`
-
-error: aborting due to 1 previous error
-

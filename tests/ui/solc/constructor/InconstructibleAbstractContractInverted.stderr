@@ -1,8 +1,0 @@
-error: cannot instantiate abstract contracts
-   ╭▸ ROOT/tests/ui/solc/constructor/InconstructibleAbstractContractInverted.sol:LL:CC
-   │
-LL │         a = new A(address(this));
-   ╰╴                ━
-
-error: aborting due to 1 previous error
-

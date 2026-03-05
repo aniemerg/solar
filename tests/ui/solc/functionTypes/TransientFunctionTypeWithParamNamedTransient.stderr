@@ -1,6 +1,0 @@
-warning[6162]: named function type parameters are deprecated
-   ╭▸ ROOT/tests/ui/solc/functionTypes/TransientFunctionTypeWithParamNamedTransient.sol:LL:CC
-   │
-LL │     function (uint transient) external transient y;
-   ╰╴                   ━━━━━━━━━
-

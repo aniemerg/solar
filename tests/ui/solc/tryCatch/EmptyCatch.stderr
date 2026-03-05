@@ -1,8 +1,0 @@
-error: expected one of `function`, `mapping`, elementary type name, or path, found `)`
-   ╭▸ ROOT/tests/ui/solc/tryCatch/EmptyCatch.sol:LL:CC
-   │
-LL │         } catch () {
-   ╰╴                 ━ expected one of `function`, `mapping`, elementary type name, or path
-
-error: aborting due to 1 previous error
-

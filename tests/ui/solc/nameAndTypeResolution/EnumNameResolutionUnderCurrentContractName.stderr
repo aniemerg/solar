@@ -1,8 +1,0 @@
-error: member `Foo` not found on type `type(contract A)`
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/EnumNameResolutionUnderCurrentContractName.sol:LL:CC
-   │
-LL │         A.Foo;
-   ╰╴          ━━━
-
-error: aborting due to 1 previous error
-

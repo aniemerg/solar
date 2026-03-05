@@ -1,8 +1,0 @@
-error: cannot assign to a constant variable
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/AssigningValueToConstVariable.sol:LL:CC
-   │
-LL │     function changeIt() public { x = 9; }
-   ╰╴                                 ━
-
-error: aborting due to 1 previous error
-

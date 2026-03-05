@@ -1,8 +1,0 @@
-error: member `length` is read-only and cannot be used to resize arrays
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/MemoryArraysNotResizeable.sol:LL:CC
-   │
-LL │         x.length = 2;
-   ╰╴        ━━━━━━━━
-
-error: aborting due to 1 previous error
-

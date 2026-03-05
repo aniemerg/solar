@@ -1,8 +1,0 @@
-error: types containing mappings cannot be parameter or return types of public functions
-   ╭▸ ROOT/tests/ui/solc/structs/CalldataStructMappingFunction.sol:LL:CC
-   │
-LL │     function f(S calldata b) external {
-   ╰╴               ━
-
-error: aborting due to 1 previous error
-

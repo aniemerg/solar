@@ -1,8 +1,0 @@
-error: expected identifier, found keyword `address`
-   ╭▸ ROOT/tests/ui/solc/inheritance/override/OverrideMultipleFail3.sol:LL:CC
-   │
-LL │     function foo() internal override(X, address) returns (uint256);
-   ╰╴                                        ━━━━━━━
-
-error: aborting due to 1 previous error
-

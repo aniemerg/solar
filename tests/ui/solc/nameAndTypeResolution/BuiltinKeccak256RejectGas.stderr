@@ -1,8 +1,0 @@
-error: member `gas` not found on type `function (bytes memory) pure returns (bytes32)`
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/BuiltinKeccak256RejectGas.sol:LL:CC
-   │
-LL │         keccak256.gas();
-   ╰╴                  ━━━
-
-error: aborting due to 1 previous error
-

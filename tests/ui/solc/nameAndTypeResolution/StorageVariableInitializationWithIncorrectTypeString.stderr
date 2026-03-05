@@ -1,8 +1,0 @@
-error: mismatched types
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/StorageVariableInitializationWithIncorrectTypeString.sol:LL:CC
-   │
-LL │     uint a = "abc";
-   ╰╴             ━━━━━ expected `uint256`, found `utf8_string_literal[3]`
-
-error: aborting due to 1 previous error
-

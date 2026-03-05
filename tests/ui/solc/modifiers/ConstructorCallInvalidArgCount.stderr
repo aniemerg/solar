@@ -1,8 +1,0 @@
-error: wrong number of arguments for base constructor: expected 0, found 1
-   ╭▸ ROOT/tests/ui/solc/modifiers/ConstructorCallInvalidArgCount.sol:LL:CC
-   │
-LL │     constructor() C(5) {}
-   ╰╴                  ━━━━
-
-error: aborting due to 1 previous error
-

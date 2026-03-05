@@ -1,8 +1,0 @@
-error: member `gas` not found on type `function (bytes memory) pure returns (bytes20)`
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/BuiltinRipemd160RejectGas.sol:LL:CC
-   │
-LL │         ripemd160.gas();
-   ╰╴                  ━━━
-
-error: aborting due to 1 previous error
-

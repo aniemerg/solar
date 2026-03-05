@@ -1,8 +1,0 @@
-error: unresolved symbol `a`
-   ╭▸ ROOT/tests/ui/solc/scoping/ScopingSelfUse.sol:LL:CC
-   │
-LL │         uint a = a;
-   ╰╴                 ━
-
-error: aborting due to 1 previous error
-

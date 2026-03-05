@@ -1,8 +1,0 @@
-error: expected `(`, found `.`
-   ╭▸ ROOT/tests/ui/solc/inlineAssembly/invalid/DotInFundecl.sol:LL:CC
-   │
-LL │       function f.() {}
-   ╰╴                ━ expected `(`
-
-error: aborting due to 1 previous error
-

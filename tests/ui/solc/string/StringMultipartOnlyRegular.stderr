@@ -1,8 +1,0 @@
-error: expected one of `(`, `.`, `;`, `?`, `[`, or `{`, found `<hex string>`
-   ╭▸ ROOT/tests/ui/solc/string/StringMultipartOnlyRegular.sol:LL:CC
-   │
-LL │ …     bytes32 escapeCharacters = "foo" "bar" hex"aa";
-   ╰╴                                             ━━━━━━━ expected one of `(`, `.`, `;`, `?`, `[`, or `{`
-
-error: aborting due to 1 previous error
-

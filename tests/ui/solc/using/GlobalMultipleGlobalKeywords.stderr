@@ -1,8 +1,0 @@
-error: expected `;`, found `global`
-   ╭▸ ROOT/tests/ui/solc/using/GlobalMultipleGlobalKeywords.sol:LL:CC
-   │
-LL │ using {f} for S global global;
-   ╰╴                       ━━━━━━ expected `;`
-
-error: aborting due to 1 previous error
-

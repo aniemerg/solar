@@ -1,8 +1,0 @@
-error: expected identifier, found `)`
-   ╭▸ ROOT/tests/ui/solc/inheritance/override/OverrideEmptyList.sol:LL:CC
-   │
-LL │     function test() internal override() returns (uint256);
-   ╰╴                                      ━
-
-error: aborting due to 1 previous error
-

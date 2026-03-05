@@ -1,8 +1,0 @@
-error: type `mapping(T => T)` is only valid in storage because it contains a (nested) mapping
-   ╭▸ ROOT/tests/ui/solc/types/mapping/UserDefinedTypesMappingMemory.sol:LL:CC
-   │
-LL │   function f(mapping(T=>T) memory) public {}
-   ╰╴             ━━━━━━━━━━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

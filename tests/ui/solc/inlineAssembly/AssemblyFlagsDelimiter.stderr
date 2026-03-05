@@ -1,8 +1,0 @@
-error: expected one of `)` or `,`, found `<string>`
-   ╭▸ ROOT/tests/ui/solc/inlineAssembly/AssemblyFlagsDelimiter.sol:LL:CC
-   │
-LL │     assembly ("a" "b") {}
-   ╰╴                  ━━━ expected one of `)` or `,`
-
-error: aborting due to 1 previous error
-

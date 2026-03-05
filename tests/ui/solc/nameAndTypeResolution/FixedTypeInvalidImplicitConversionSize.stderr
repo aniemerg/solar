@@ -1,8 +1,0 @@
-error: unresolved symbol `ufixed248x8`
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/FixedTypeInvalidImplicitConversionSize.sol:LL:CC
-   │
-LL │         ufixed248x8 b = a; b;
-   ╰╴        ━━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

@@ -1,8 +1,0 @@
-error: expected one of `)` or `[`, found `=`
-   ╭▸ ROOT/tests/ui/solc/specialFunctions/abidecode/AbiDecodeInvalidArgumentArrayLengthTernaryWithMaxKeyword.sol:LL:CC
-   │
-LL │         abi.decode("", (uint[type(x = true ? uint8 : uint8).max]));
-   ╰╴                                    ━ expected one of `)` or `[`
-
-error: aborting due to 1 previous error
-

@@ -1,8 +1,0 @@
-error: calldata structs are read-only
-   ╭▸ ROOT/tests/ui/solc/structs/CalldataArrayAssign.sol:LL:CC
-   │
-LL │         s.a = a;
-   ╰╴        ━━━
-
-error: aborting due to 1 previous error
-

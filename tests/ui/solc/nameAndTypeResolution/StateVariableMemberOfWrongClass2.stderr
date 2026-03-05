@@ -1,8 +1,0 @@
-error: member `m_aMember2` not found on type `type(contract Child)`
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/StateVariableMemberOfWrongClass2.sol:LL:CC
-   │
-LL │     function foo() public returns (uint256) { return Child.m_aMember2; }
-   ╰╴                                                           ━━━━━━━━━━
-
-error: aborting due to 1 previous error
-

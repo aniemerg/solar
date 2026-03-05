@@ -1,8 +1,0 @@
-error: member `f` not found on type `type(contract B)`
-   ╭▸ ROOT/tests/ui/solc/inheritance/override/OverrideImplementedAndUnimplementedWithImplementedCallViaContract.sol:LL:CC
-   │
-LL │         B.f(); // Should not skip over to A.f() just because B.f() has no implementation.
-   ╰╴          ━
-
-error: aborting due to 1 previous error
-

@@ -1,8 +1,0 @@
-error: mismatched types
-   ╭▸ ROOT/tests/ui/solc/errors/ErrorVariableDeclarationImplicitConversion.sol:LL:CC
-   │
-LL │         bytes4 a = MyCustomError;
-   ╰╴                   ━━━━━━━━━━━━━ expected `bytes4`, found `error MyCustomError(uint256,bool)`
-
-error: aborting due to 1 previous error
-

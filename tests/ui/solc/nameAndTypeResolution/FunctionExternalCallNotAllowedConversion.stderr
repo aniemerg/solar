@@ -1,8 +1,0 @@
-error: mismatched types
-   ╭▸ ROOT/tests/ui/solc/nameAndTypeResolution/FunctionExternalCallNotAllowedConversion.sol:LL:CC
-   │
-LL │         this.g(arg);
-   ╰╴               ━━━ expected `contract C`, found `address`
-
-error: aborting due to 1 previous error
-
