@@ -946,7 +946,20 @@ fn test_project_solar_only(project_name: &str, project_path: &str) {
 }
 
 fn test_project_solar_ported(project_name: &str, project_path: &str) {
-    TestConfig::new(project_name, project_path).run();
+    let project_dir = get_crate_dir().join(project_path);
+    let results = run_forge_isolated(project_name, &project_dir);
+
+    let passed = results.iter().filter(|t| t.passed).count();
+    let failed = results.iter().filter(|t| !t.passed).count();
+
+    for t in results.iter().filter(|t| !t.passed) {
+        eprintln!("  FAIL: {}", t.name);
+    }
+
+    // TDD: assert all tests pass. Most will fail while Solar codegen is incomplete.
+    // Tests go green as Solar implements features.
+    assert!(!results.is_empty(), "[{project_name}] No tests ran — Solar may have panicked compiling src");
+    assert_eq!(failed, 0, "[{project_name}] {failed} of {} tests failed", passed + failed);
 }
 
 // ============================================================================
@@ -962,31 +975,7 @@ mod tests {
         test_project_solar("arithmetic", "testdata/arithmetic");
     }
 
-    /// Proof-of-concept for Georgios's isolated approach:
-    /// source contracts compiled with Solar, test files compiled with system solc.
-    /// Solar bytecodes are injected into the test environment at runtime.
-    /// This gives precise failure attribution: failures mean Solar's *contract*
-    /// bytecode is wrong, not that Solar misbehaved compiling forge-std.
-    #[test]
-    fn test_ported_arithmetic_isolated() {
-        let project_dir = get_crate_dir().join("testdata-solc/arithmetic");
-        let results = run_forge_isolated("arithmetic_isolated", &project_dir);
-
-        let passed = results.iter().filter(|t| t.passed).count();
-        let failed = results.iter().filter(|t| !t.passed).count();
-        eprintln!("arithmetic_isolated: {passed} passed, {failed} failed");
-
-        for t in results.iter().filter(|t| !t.passed) {
-            eprintln!("  FAIL: {}", t.name);
-        }
-
-        // Don't assert all pass — Solar codegen is a WIP.
-        // This test exists to verify the harness *runs* correctly.
-        // Once Solar improves, failures here are precisely attributable to Solar's bytecode.
-        assert!(!results.is_empty(), "No tests ran — check harness setup");
-    }
-
-    #[test]
+#[test]
     fn test_control_flow() {
         test_project_solar("control_flow", "testdata/control-flow");
     }
